@@ -17,36 +17,34 @@ func Sync(ctx context.Context, root string) (bool, error) {
 	if err != nil {
 		return false, err
 	}
-	states, err := downloadAll(ctx, root, baseSources(), previous)
+	sources, err := downloadAll(ctx, root, baseSources(), previous)
 	if err != nil {
 		return false, err
 	}
+	states := newStates(sources)
 	if err := writeUpdatedSources(root, states); err != nil {
 		return false, err
 	}
-	indexes, m49Updated, err := GenerateM49(root, states)
+	m49, err := GenerateM49(root, states)
 	if err != nil {
 		return false, err
 	}
-	callingCodes, phonePrefixes, phonesUpdated, err := GeneratePhones(root, states)
+	phones, err := GeneratePhones(root, states)
 	if err != nil {
 		return false, err
 	}
-	regionsUpdated, err := GenerateRegions(
-		root, states, indexes, m49Updated, phonesUpdated, callingCodes, phonePrefixes,
-	)
+	regions, err := GenerateRegions(root, states)
 	if err != nil {
 		return false, err
 	}
-
-	flagsUpdated, err := GenerateFlags(root)
+	flagsUpdated, err := GenerateFlags(root, states)
 	if err != nil {
 		return false, err
 	}
 	if err := validateGeneratedData(root); err != nil {
 		return false, err
 	}
-	return sourcesUpdated(states) || m49Updated || regionsUpdated || phonesUpdated || flagsUpdated, nil
+	return states.SourcesAreUpdated() || m49.Updated || phones.Updated || regions.Updated || flagsUpdated, nil
 }
 
 func readSourceIndex(root string) (SourceIndex, error) {
@@ -67,9 +65,10 @@ func readSourceIndex(root string) (SourceIndex, error) {
 	return index, nil
 }
 
-func writeUpdatedSources(root string, states map[string]SourceState) error {
-	index := SourceIndex{Sources: make(map[string]SourceRecord, len(states))}
-	for sourcePath, state := range states {
+func writeUpdatedSources(root string, states *States) error {
+	sources := states.Sources()
+	index := SourceIndex{Sources: make(map[string]SourceRecord, len(sources))}
+	for sourcePath, state := range sources {
 		state.Record.SHA256 = filesHash(state.Files)
 		index.Sources[sourcePath] = state.Record
 		if !state.Updated {
@@ -86,15 +85,6 @@ func writeUpdatedSources(root string, states map[string]SourceState) error {
 		return err
 	}
 	return writeFile(filepath.Join(root, "generated"), "sources.json", append(body, '\n'))
-}
-
-func sourcesUpdated(states map[string]SourceState) bool {
-	for _, state := range states {
-		if state.Updated {
-			return true
-		}
-	}
-	return false
 }
 
 func filesHash(files map[string][]byte) string {

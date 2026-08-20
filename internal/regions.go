@@ -46,109 +46,68 @@ type phoneTerritory struct {
 	MainCountryForCode bool   `xml:"mainCountryForCode,attr"`
 }
 
-// GenerateRegions 在任一依赖源更新时重新生成 regions.json。
-func GenerateRegions(
-	root string,
-	states map[string]SourceState,
-	indexes map[string]M49Index,
-	m49Updated, phonesUpdated bool,
-	callingCodes map[string][]string,
-	phonePrefixes map[string][]string,
-) (bool, error) {
-	if !m49Updated && !phonesUpdated && !anySourceUpdated(states, regionSourcePaths) {
-		regionsPath := filepath.Join(root, "generated", "regions.json")
-		legacyCountriesPath := filepath.Join(root, "generated", "countries.json")
-		if _, err := os.Stat(regionsPath); err == nil {
-			hasPhonePrefixes, err := generatedRegionsHavePhonePrefixes(regionsPath)
-			if err != nil {
-				return false, err
-			}
-			if hasPhonePrefixes {
-				if _, err := os.Stat(legacyCountriesPath); os.IsNotExist(err) {
-					return false, nil
-				} else if err != nil {
-					return false, fmt.Errorf("stat legacy countries: %w", err)
-				}
-			}
-		} else if !os.IsNotExist(err) {
-			return false, fmt.Errorf("stat generated regions: %w", err)
-		}
+// GenerateRegions 在任一依赖更新时重新生成 regions.json，否则解析既有生成文件。
+func GenerateRegions(root string, states *States) (RegionGeneration, error) {
+	if cached := states.Regions(); cached != nil {
+		return *cached, nil
 	}
-	files, err := sourceFiles(states, regionSourcePaths)
+
+	result, err := generateRegions(root, states)
 	if err != nil {
-		return false, err
+		return RegionGeneration{}, err
 	}
-	regions, _, err := parseRegions(files, indexes, callingCodes, phonePrefixes)
+	states.SetRegions(result)
+	return result, nil
+}
+
+func generateRegions(root string, states *States) (RegionGeneration, error) {
+	m49, err := GenerateM49(root, states)
 	if err != nil {
-		return false, err
+		return RegionGeneration{}, err
+	}
+	phones, err := GeneratePhones(root, states)
+	if err != nil {
+		return RegionGeneration{}, err
+	}
+	if !m49.Updated && !phones.Updated && !states.SourcesUpdated(regionSourcePaths) {
+		return readGeneratedRegions(root)
+	}
+
+	files, err := states.SourceFiles(regionSourcePaths)
+	if err != nil {
+		return RegionGeneration{}, err
+	}
+	regions, err := parseRegions(files, m49.Indexes, phones.CallingCodes, phones.PhonePrefixes)
+	if err != nil {
+		return RegionGeneration{}, err
+	}
+	if err := validateRegions(regions); err != nil {
+		return RegionGeneration{}, err
 	}
 	body, err := json.MarshalIndent(regions, "", "  ")
 	if err != nil {
-		return false, err
+		return RegionGeneration{}, err
 	}
 	if err := writeFile(filepath.Join(root, "generated"), "regions.json", append(body, '\n')); err != nil {
-		return false, err
+		return RegionGeneration{}, err
 	}
 	if err := os.Remove(filepath.Join(root, "generated", "countries.json")); err != nil && !os.IsNotExist(err) {
-		return false, fmt.Errorf("remove legacy countries: %w", err)
+		return RegionGeneration{}, fmt.Errorf("remove legacy countries: %w", err)
 	}
-	return true, nil
-}
-func generatedRegionsHavePhonePrefixes(path string) (bool, error) {
-	body, err := os.ReadFile(path)
-	if err != nil {
-		return false, fmt.Errorf("read generated regions: %w", err)
-	}
-	var regions []Region
-	if err := json.Unmarshal(body, &regions); err != nil {
-		return false, fmt.Errorf("parse generated regions: %w", err)
-	}
-	for _, region := range regions {
-		if region.PhonePrefixes == nil {
-			return false, nil
-		}
-	}
-	return true, nil
+	return RegionGeneration{Regions: regions, Updated: true}, nil
 }
 
-func sourceFiles(states map[string]SourceState, paths []string) (map[string][]byte, error) {
-	files := make(map[string][]byte, len(paths))
-	for _, sourcePath := range paths {
-		state, exists := states[sourcePath]
-		if !exists {
-			return nil, fmt.Errorf("missing region source %s", sourcePath)
-		}
-		for filePath, body := range state.Files {
-			files[filePath] = body
-		}
-	}
-	return files, nil
-}
-
-func anySourceUpdated(states map[string]SourceState, paths []string) bool {
-	for _, sourcePath := range paths {
-		if states[sourcePath].Updated {
-			return true
-		}
-	}
-	return false
-}
-
-func parseRegions(
-	files map[string][]byte,
-	indexes map[string]M49Index,
-	callingCodes, phonePrefixes map[string][]string,
-) ([]Region, []SourceSpec, error) {
+func parseRegions(files map[string][]byte, indexes map[string]M49Index, callingCodes, phonePrefixes map[string][]string) ([]Region, error) {
 	var mappings codeMappingsFile
 	var en, zh territoryNamesFile
 	if err := json.Unmarshal(files["cldr/codeMappings.json"], &mappings); err != nil {
-		return nil, nil, fmt.Errorf("parse codeMappings: %w", err)
+		return nil, fmt.Errorf("parse codeMappings: %w", err)
 	}
 	if err := json.Unmarshal(files["cldr/en-territories.json"], &en); err != nil {
-		return nil, nil, fmt.Errorf("parse English territories: %w", err)
+		return nil, fmt.Errorf("parse English territories: %w", err)
 	}
 	if err := json.Unmarshal(files["cldr/zh-territories.json"], &zh); err != nil {
-		return nil, nil, fmt.Errorf("parse Chinese territories: %w", err)
+		return nil, fmt.Errorf("parse Chinese territories: %w", err)
 	}
 
 	enNames, zhNames := namesFor(en, "en"), namesFor(zh, "zh")
@@ -171,8 +130,9 @@ func parseRegions(
 		})
 	}
 	sort.Slice(regions, func(i, j int) bool { return regions[i].ISO < regions[j].ISO })
-	return regions, nil, validateRegions(regions)
+	return regions, nil
 }
+
 func phonePrefixesFor(iso string, prefixes, callingCodes map[string][]string) []string {
 	if values := prefixes[iso]; values != nil {
 		return values

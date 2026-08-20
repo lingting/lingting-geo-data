@@ -16,45 +16,109 @@ const phoneMetadataSourcePath = "libphonenumber/PhoneNumberMetadata.xml"
 
 // PhonePrefix 表示国际号码前缀与 ISO 区域代码的映射。
 type PhonePrefix struct {
-	Prefix int    `json:"prefix"`
-	Region string `json:"region"`
+	Prefix  int    `json:"prefix"`
+	Calling int    `json:"calling"`
+	Region  string `json:"region"`
 }
 
-// GeneratePhones 在 libphonenumber 元数据更新时重新生成 phones.json，并返回区域电话前缀索引。
-func GeneratePhones(
-	root string,
-	states map[string]SourceState,
-) (map[string][]string, map[string][]string, bool, error) {
-	phones, err := parsePhones(states[phoneMetadataSourcePath].Files[phoneMetadataSourcePath])
-	if err != nil {
-		return nil, nil, false, err
+// GeneratePhones 在元数据更新时重新生成 phones.json，否则解析既有生成文件。
+func GeneratePhones(root string, states *States) (PhoneGeneration, error) {
+	if cached := states.Phones(); cached != nil {
+		return *cached, nil
 	}
-	phonePrefixes := phonePrefixes(phones)
-	callingCodes, err := phoneCallingCodes(states[phoneMetadataSourcePath].Files[phoneMetadataSourcePath])
+
+	result, err := generatePhones(root, states)
 	if err != nil {
-		return nil, nil, false, err
+		return PhoneGeneration{}, err
 	}
-	body, err := json.MarshalIndent(phones, "", "  ")
+	states.SetPhones(result)
+	return result, nil
+}
+
+func generatePhones(root string, states *States) (PhoneGeneration, error) {
+	state, err := states.Source(phoneMetadataSourcePath)
 	if err != nil {
-		return nil, nil, false, err
+		return PhoneGeneration{}, err
+	}
+
+	regions, err := parsePhones(state.Files[phoneMetadataSourcePath])
+	if err != nil {
+		return PhoneGeneration{}, err
+	}
+	result := newPhoneGeneration(regions, false)
+	body, err := json.MarshalIndent(flattenPhones(regions), "", "  ")
+	if err != nil {
+		return PhoneGeneration{}, err
 	}
 	updated, err := writeGeneratedPhones(root, append(body, '\n'))
 	if err != nil {
-		return nil, nil, false, err
+		return PhoneGeneration{}, err
 	}
-	return callingCodes, phonePrefixes, updated, nil
+	result.Updated = updated
+	return result, nil
 }
-func phonePrefixes(phones []PhonePrefix) map[string][]string {
-	prefixes := make(map[string][]string)
-	for _, phone := range phones {
-		prefixes[phone.Region] = append(prefixes[phone.Region], strconv.Itoa(phone.Prefix))
+
+func newPhoneGeneration(regions map[string][]PhoneNumber, updated bool) PhoneGeneration {
+	return PhoneGeneration{
+		Regions:       regions,
+		CallingCodes:  phoneCallingCodes(regions),
+		PhonePrefixes: phonePrefixes(regions),
+		Updated:       updated,
 	}
-	for region, values := range prefixes {
-		prefixes[region] = sortedUnique(values)
+}
+
+func phonePrefixes(regions map[string][]PhoneNumber) map[string][]string {
+	prefixes := make(map[string][]string, len(regions))
+	for region, numbers := range regions {
+		for _, number := range numbers {
+			for _, prefix := range number.Prefixes {
+				prefixes[region] = append(prefixes[region], strconv.Itoa(prefix))
+			}
+		}
+		prefixes[region] = sortedUnique(prefixes[region])
 	}
 	return prefixes
 }
 
+func phoneCallingCodes(regions map[string][]PhoneNumber) map[string][]string {
+	callingCodes := make(map[string][]string, len(regions))
+	for region, numbers := range regions {
+		for _, number := range numbers {
+			callingCodes[region] = append(callingCodes[region], strconv.Itoa(number.Calling))
+		}
+		callingCodes[region] = sortedUnique(callingCodes[region])
+	}
+	return callingCodes
+}
+
+func flattenPhones(regions map[string][]PhoneNumber) []PhonePrefix {
+	phones := make([]PhonePrefix, 0)
+	for region, numbers := range regions {
+		for _, number := range numbers {
+			for _, prefix := range number.Prefixes {
+				phones = append(phones, PhonePrefix{
+					Prefix:  prefix,
+					Calling: number.Calling,
+					Region:  region,
+				})
+			}
+		}
+	}
+	sort.Slice(phones, func(i, j int) bool {
+		if phones[i].Prefix != phones[j].Prefix {
+			return phones[i].Prefix > phones[j].Prefix
+		}
+		if phones[i].Calling != phones[j].Calling {
+			return phones[i].Calling > phones[j].Calling
+		}
+		return phones[i].Region < phones[j].Region
+	})
+	return phones
+}
+
+func generatedPhonesNeedCalling(err error) bool {
+	return strings.Contains(err.Error(), "missing calling")
+}
 func writeGeneratedPhones(root string, body []byte) (bool, error) {
 	phonesPath := filepath.Join(root, "generated", "phones.json")
 	current, err := os.ReadFile(phonesPath)
@@ -70,66 +134,60 @@ func writeGeneratedPhones(root string, body []byte) (bool, error) {
 	return true, nil
 }
 
-func parsePhones(body []byte) ([]PhonePrefix, error) {
+func parsePhones(body []byte) (map[string][]PhoneNumber, error) {
 	var metadata phoneMetadata
 	if err := xml.Unmarshal(body, &metadata); err != nil {
 		return nil, fmt.Errorf("parse libphonenumber metadata: %w", err)
 	}
-	byCountryCode := make(map[string][]phoneTerritory)
+
+	regions := make(map[string][]PhoneNumber, len(metadata.Territories))
 	for _, territory := range metadata.Territories {
-		byCountryCode[territory.CountryCode] = append(byCountryCode[territory.CountryCode], territory)
-	}
-
-	prefixes := make(map[int]string)
-	for countryCode, territories := range byCountryCode {
-		if len(territories) == 1 {
-			if err := addPhonePrefix(prefixes, countryCode, territories[0].ID); err != nil {
-				return nil, err
-			}
-			continue
+		if territory.ID == "" {
+			return nil, fmt.Errorf("missing territory ID")
 		}
-		for _, territory := range territories {
-			leadingDigits, err := expandLeadingDigits(territory.LeadingDigits)
-			if err != nil {
-				return nil, fmt.Errorf("expand leading digits for %s: %w", territory.ID, err)
-			}
-			for _, leadingDigit := range leadingDigits {
-				if err := addPhonePrefix(prefixes, countryCode+leadingDigit, territory.ID); err != nil {
-					return nil, err
-				}
-			}
-			if territory.MainCountryForCode {
-				if err := addPhonePrefix(prefixes, countryCode, territory.ID); err != nil {
-					return nil, err
-				}
-			}
+		calling, err := strconv.Atoi(territory.CountryCode)
+		if err != nil {
+			return nil, fmt.Errorf("parse calling code %q: %w", territory.CountryCode, err)
 		}
+		prefixes, err := phonePrefixesForTerritory(territory, calling)
+		if err != nil {
+			return nil, err
+		}
+		regions[territory.ID] = append(regions[territory.ID], PhoneNumber{
+			Calling:  calling,
+			Prefixes: prefixes,
+		})
 	}
-
-	phones := make([]PhonePrefix, 0, len(prefixes))
-	for prefix, region := range prefixes {
-		phones = append(phones, PhonePrefix{Prefix: prefix, Region: region})
-	}
-	sort.Slice(phones, func(i, j int) bool {
-		return phones[i].Prefix > phones[j].Prefix
-	})
-	return phones, nil
+	return regions, nil
 }
-func phoneCallingCodes(body []byte) (map[string][]string, error) {
-	var metadata phoneMetadata
-	if err := xml.Unmarshal(body, &metadata); err != nil {
-		return nil, fmt.Errorf("parse libphonenumber metadata: %w", err)
+
+func phonePrefixesForTerritory(territory phoneTerritory, calling int) ([]int, error) {
+	prefixes := []int{calling}
+	leadingDigits, err := expandLeadingDigits(territory.LeadingDigits)
+	if err != nil {
+		return nil, fmt.Errorf("expand leading digits for %s: %w", territory.ID, err)
 	}
-	callingCodes := make(map[string][]string)
-	for _, territory := range metadata.Territories {
-		if territory.ID != "" && territory.CountryCode != "" {
-			callingCodes[territory.ID] = append(callingCodes[territory.ID], territory.CountryCode)
+	for _, leadingDigit := range leadingDigits {
+		prefix, err := strconv.Atoi(strconv.Itoa(calling) + leadingDigit)
+		if err != nil {
+			return nil, fmt.Errorf("parse phone prefix for %s: %w", territory.ID, err)
+		}
+		prefixes = append(prefixes, prefix)
+	}
+	return uniqueInts(prefixes), nil
+}
+
+func uniqueInts(values []int) []int {
+	seen := make(map[int]struct{}, len(values))
+	result := make([]int, 0, len(values))
+	for _, value := range values {
+		if _, exists := seen[value]; !exists {
+			seen[value] = struct{}{}
+			result = append(result, value)
 		}
 	}
-	for region, prefixes := range callingCodes {
-		callingCodes[region] = sortedUnique(prefixes)
-	}
-	return callingCodes, nil
+	sort.Ints(result)
+	return result
 }
 
 func expandLeadingDigits(value string) ([]string, error) {
@@ -218,16 +276,4 @@ func uniqueStrings(values []string) []string {
 		}
 	}
 	return result
-}
-
-func addPhonePrefix(prefixes map[int]string, value, region string) error {
-	prefix, err := strconv.Atoi(value)
-	if err != nil {
-		return fmt.Errorf("parse phone prefix %q: %w", value, err)
-	}
-	if previous, exists := prefixes[prefix]; exists && previous != region {
-		return fmt.Errorf("phone prefix %d maps to both %s and %s", prefix, previous, region)
-	}
-	prefixes[prefix] = region
-	return nil
 }

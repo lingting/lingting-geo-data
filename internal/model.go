@@ -34,6 +34,37 @@ type SourceState struct {
 	Updated bool
 }
 
+// M49Generation 是 M.49 生成或解析得到的结果。
+type M49Generation struct {
+	Indexes map[string]M49Index
+	Updated bool
+}
+
+// PhoneGeneration 是电话前缀生成或解析得到的结果。
+type PhoneGeneration struct {
+	Regions       map[string][]PhoneNumber
+	CallingCodes  map[string][]string
+	PhonePrefixes map[string][]string
+	Updated       bool
+}
+
+// PhoneNumber 是一个区域在同一国际区号下的电话号码前缀集合。
+type PhoneNumber struct {
+	Calling  int
+	Prefixes []int
+}
+
+// RegionGeneration 是区域生成或解析得到的结果。
+type RegionGeneration struct {
+	Regions []Region
+	Updated bool
+}
+
+// M49ParseResult 是解析 M.49 源文件得到的层级和区域索引。
+type M49ParseResult struct {
+	Root    *M49Node
+	Indexes map[string]M49Index
+}
 type Names struct {
 	English string `json:"en"`
 	Chinese string `json:"zh"`

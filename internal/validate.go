@@ -74,6 +74,11 @@ func validateRegions(regions []Region) error {
 				return fmt.Errorf("invalid calling code %q", code)
 			}
 		}
+		for _, prefix := range region.PhonePrefixes {
+			if !codePattern.MatchString(prefix) {
+				return fmt.Errorf("invalid phone prefix %q", prefix)
+			}
+		}
 	}
 	return nil
 }

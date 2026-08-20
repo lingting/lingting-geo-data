@@ -1,1202 +1,1697 @@
 [
   {
     "prefix": 4474576,
+    "calling": 44,
     "region": "IM"
   },
   {
     "prefix": 3906698,
+    "calling": 39,
     "region": "VA"
   },
   {
     "prefix": 447624,
+    "calling": 44,
     "region": "IM"
   },
   {
     "prefix": 447524,
+    "calling": 44,
     "region": "IM"
   },
   {
     "prefix": 441624,
+    "calling": 44,
     "region": "IM"
   },
   {
     "prefix": 35819,
+    "calling": 358,
     "region": "FI"
   },
   {
     "prefix": 35818,
+    "calling": 358,
     "region": "AX"
   },
   {
     "prefix": 35817,
+    "calling": 358,
     "region": "FI"
   },
   {
     "prefix": 35816,
+    "calling": 358,
     "region": "FI"
   },
   {
     "prefix": 35815,
+    "calling": 358,
     "region": "FI"
   },
   {
     "prefix": 35814,
+    "calling": 358,
     "region": "FI"
   },
   {
     "prefix": 35813,
+    "calling": 358,
     "region": "FI"
   },
   {
     "prefix": 35810,
+    "calling": 358,
     "region": "FI"
   },
   {
     "prefix": 18001,
+    "calling": 1,
     "region": "DO"
   },
   {
     "prefix": 5999,
+    "calling": 599,
     "region": "CW"
   },
   {
     "prefix": 5997,
+    "calling": 599,
     "region": "BQ"
   },
   {
     "prefix": 5996,
+    "calling": 599,
     "region": "CW"
   },
   {
     "prefix": 5994,
+    "calling": 599,
     "region": "BQ"
   },
   {
     "prefix": 5993,
+    "calling": 599,
     "region": "BQ"
   },
   {
     "prefix": 4779,
+    "calling": 47,
     "region": "SJ"
   },
   {
     "prefix": 4778,
+    "calling": 47,
     "region": "NO"
   },
   {
     "prefix": 4777,
+    "calling": 47,
     "region": "NO"
   },
   {
     "prefix": 4776,
+    "calling": 47,
     "region": "NO"
   },
   {
     "prefix": 4775,
+    "calling": 47,
     "region": "NO"
   },
   {
     "prefix": 4774,
+    "calling": 47,
     "region": "NO"
   },
   {
     "prefix": 4773,
+    "calling": 47,
     "region": "NO"
   },
   {
     "prefix": 4772,
+    "calling": 47,
     "region": "NO"
   },
   {
     "prefix": 4771,
+    "calling": 47,
     "region": "NO"
   },
   {
     "prefix": 4770,
+    "calling": 47,
     "region": "NO"
   },
   {
     "prefix": 3589,
+    "calling": 358,
     "region": "FI"
   },
   {
     "prefix": 3588,
+    "calling": 358,
     "region": "FI"
   },
   {
     "prefix": 3587,
+    "calling": 358,
     "region": "FI"
   },
   {
     "prefix": 3586,
+    "calling": 358,
     "region": "FI"
   },
   {
     "prefix": 3585,
+    "calling": 358,
     "region": "FI"
   },
   {
     "prefix": 3584,
+    "calling": 358,
     "region": "FI"
   },
   {
     "prefix": 3583,
+    "calling": 358,
     "region": "FI"
   },
   {
     "prefix": 3582,
+    "calling": 358,
     "region": "FI"
   },
   {
     "prefix": 2908,
+    "calling": 290,
     "region": "TA"
   },
   {
     "prefix": 2906,
+    "calling": 290,
     "region": "SH"
   },
   {
     "prefix": 2905,
+    "calling": 290,
     "region": "SH"
   },
   {
     "prefix": 2902,
+    "calling": 290,
     "region": "SH"
   },
   {
     "prefix": 2128,
+    "calling": 212,
     "region": "MA"
   },
   {
     "prefix": 2127,
+    "calling": 212,
     "region": "MA"
   },
   {
     "prefix": 2126,
+    "calling": 212,
     "region": "MA"
   },
   {
     "prefix": 2125,
+    "calling": 212,
     "region": "MA"
   },
   {
     "prefix": 1939,
+    "calling": 1,
     "region": "PR"
   },
   {
     "prefix": 1876,
+    "calling": 1,
     "region": "JM"
   },
   {
     "prefix": 1869,
+    "calling": 1,
     "region": "KN"
   },
   {
     "prefix": 1868,
+    "calling": 1,
     "region": "TT"
   },
   {
     "prefix": 1849,
+    "calling": 1,
     "region": "DO"
   },
   {
     "prefix": 1829,
+    "calling": 1,
     "region": "DO"
   },
   {
     "prefix": 1809,
+    "calling": 1,
     "region": "DO"
   },
   {
     "prefix": 1787,
+    "calling": 1,
     "region": "PR"
   },
   {
     "prefix": 1784,
+    "calling": 1,
     "region": "VC"
   },
   {
     "prefix": 1767,
+    "calling": 1,
     "region": "DM"
   },
   {
     "prefix": 1758,
+    "calling": 1,
     "region": "LC"
   },
   {
     "prefix": 1721,
+    "calling": 1,
     "region": "SX"
   },
   {
     "prefix": 1684,
+    "calling": 1,
     "region": "AS"
   },
   {
     "prefix": 1671,
+    "calling": 1,
     "region": "GU"
   },
   {
     "prefix": 1670,
+    "calling": 1,
     "region": "MP"
   },
   {
     "prefix": 1664,
+    "calling": 1,
     "region": "MS"
   },
   {
     "prefix": 1658,
+    "calling": 1,
     "region": "JM"
   },
   {
     "prefix": 1649,
+    "calling": 1,
     "region": "TC"
   },
   {
     "prefix": 1473,
+    "calling": 1,
     "region": "GD"
   },
   {
     "prefix": 1441,
+    "calling": 1,
     "region": "BM"
   },
   {
     "prefix": 1345,
+    "calling": 1,
     "region": "KY"
   },
   {
     "prefix": 1340,
+    "calling": 1,
     "region": "VI"
   },
   {
     "prefix": 1284,
+    "calling": 1,
     "region": "VG"
   },
   {
     "prefix": 1268,
+    "calling": 1,
     "region": "AG"
   },
   {
     "prefix": 1264,
+    "calling": 1,
     "region": "AI"
   },
   {
     "prefix": 1246,
+    "calling": 1,
     "region": "BB"
   },
   {
     "prefix": 1242,
+    "calling": 1,
     "region": "BS"
   },
   {
     "prefix": 998,
+    "calling": 998,
     "region": "UZ"
   },
   {
     "prefix": 996,
+    "calling": 996,
     "region": "KG"
   },
   {
     "prefix": 995,
+    "calling": 995,
     "region": "GE"
   },
   {
     "prefix": 994,
+    "calling": 994,
     "region": "AZ"
   },
   {
     "prefix": 993,
+    "calling": 993,
     "region": "TM"
   },
   {
     "prefix": 992,
+    "calling": 992,
     "region": "TJ"
   },
   {
     "prefix": 979,
+    "calling": 979,
     "region": "001"
   },
   {
     "prefix": 977,
+    "calling": 977,
     "region": "NP"
   },
   {
     "prefix": 976,
+    "calling": 976,
     "region": "MN"
   },
   {
     "prefix": 975,
+    "calling": 975,
     "region": "BT"
   },
   {
     "prefix": 974,
+    "calling": 974,
     "region": "QA"
   },
   {
     "prefix": 973,
+    "calling": 973,
     "region": "BH"
   },
   {
     "prefix": 972,
+    "calling": 972,
     "region": "IL"
   },
   {
     "prefix": 971,
+    "calling": 971,
     "region": "AE"
   },
   {
     "prefix": 970,
+    "calling": 970,
     "region": "PS"
   },
   {
     "prefix": 968,
+    "calling": 968,
     "region": "OM"
   },
   {
     "prefix": 967,
+    "calling": 967,
     "region": "YE"
   },
   {
     "prefix": 966,
+    "calling": 966,
     "region": "SA"
   },
   {
     "prefix": 965,
+    "calling": 965,
     "region": "KW"
   },
   {
     "prefix": 964,
+    "calling": 964,
     "region": "IQ"
   },
   {
     "prefix": 963,
+    "calling": 963,
     "region": "SY"
   },
   {
     "prefix": 962,
+    "calling": 962,
     "region": "JO"
   },
   {
     "prefix": 961,
+    "calling": 961,
     "region": "LB"
   },
   {
     "prefix": 960,
+    "calling": 960,
     "region": "MV"
   },
   {
     "prefix": 888,
+    "calling": 888,
     "region": "001"
   },
   {
     "prefix": 886,
+    "calling": 886,
     "region": "TW"
   },
   {
     "prefix": 883,
+    "calling": 883,
     "region": "001"
   },
   {
     "prefix": 882,
+    "calling": 882,
     "region": "001"
   },
   {
     "prefix": 881,
+    "calling": 881,
     "region": "001"
   },
   {
     "prefix": 880,
+    "calling": 880,
     "region": "BD"
   },
   {
     "prefix": 878,
+    "calling": 878,
     "region": "001"
   },
   {
     "prefix": 870,
+    "calling": 870,
     "region": "001"
   },
   {
     "prefix": 856,
+    "calling": 856,
     "region": "LA"
   },
   {
     "prefix": 855,
+    "calling": 855,
     "region": "KH"
   },
   {
     "prefix": 853,
+    "calling": 853,
     "region": "MO"
   },
   {
     "prefix": 852,
+    "calling": 852,
     "region": "HK"
   },
   {
     "prefix": 850,
+    "calling": 850,
     "region": "KP"
   },
   {
     "prefix": 808,
+    "calling": 808,
     "region": "001"
   },
   {
     "prefix": 800,
+    "calling": 800,
     "region": "001"
   },
   {
     "prefix": 692,
+    "calling": 692,
     "region": "MH"
   },
   {
     "prefix": 691,
+    "calling": 691,
     "region": "FM"
   },
   {
     "prefix": 690,
+    "calling": 690,
     "region": "TK"
   },
   {
     "prefix": 689,
+    "calling": 689,
     "region": "PF"
   },
   {
     "prefix": 688,
+    "calling": 688,
     "region": "TV"
   },
   {
     "prefix": 687,
+    "calling": 687,
     "region": "NC"
   },
   {
     "prefix": 686,
+    "calling": 686,
     "region": "KI"
   },
   {
     "prefix": 685,
+    "calling": 685,
     "region": "WS"
   },
   {
     "prefix": 683,
+    "calling": 683,
     "region": "NU"
   },
   {
     "prefix": 682,
+    "calling": 682,
     "region": "CK"
   },
   {
     "prefix": 681,
+    "calling": 681,
     "region": "WF"
   },
   {
     "prefix": 680,
+    "calling": 680,
     "region": "PW"
   },
   {
     "prefix": 679,
+    "calling": 679,
     "region": "FJ"
   },
   {
     "prefix": 678,
+    "calling": 678,
     "region": "VU"
   },
   {
     "prefix": 677,
+    "calling": 677,
     "region": "SB"
   },
   {
     "prefix": 676,
+    "calling": 676,
     "region": "TO"
   },
   {
     "prefix": 675,
+    "calling": 675,
     "region": "PG"
   },
   {
     "prefix": 674,
+    "calling": 674,
     "region": "NR"
   },
   {
     "prefix": 673,
+    "calling": 673,
     "region": "BN"
   },
   {
     "prefix": 672,
+    "calling": 672,
     "region": "NF"
   },
   {
     "prefix": 670,
+    "calling": 670,
     "region": "TL"
   },
   {
     "prefix": 599,
+    "calling": 599,
+    "region": "BQ"
+  },
+  {
+    "prefix": 599,
+    "calling": 599,
     "region": "CW"
   },
   {
     "prefix": 598,
+    "calling": 598,
     "region": "UY"
   },
   {
     "prefix": 597,
+    "calling": 597,
     "region": "SR"
   },
   {
     "prefix": 596,
+    "calling": 596,
     "region": "MQ"
   },
   {
     "prefix": 595,
+    "calling": 595,
     "region": "PY"
   },
   {
     "prefix": 594,
+    "calling": 594,
     "region": "GF"
   },
   {
     "prefix": 593,
+    "calling": 593,
     "region": "EC"
   },
   {
     "prefix": 592,
+    "calling": 592,
     "region": "GY"
   },
   {
     "prefix": 591,
+    "calling": 591,
     "region": "BO"
   },
   {
     "prefix": 590,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 590,
+    "calling": 590,
     "region": "GP"
   },
   {
+    "prefix": 590,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
     "prefix": 509,
+    "calling": 509,
     "region": "HT"
   },
   {
     "prefix": 508,
+    "calling": 508,
     "region": "PM"
   },
   {
     "prefix": 507,
+    "calling": 507,
     "region": "PA"
   },
   {
     "prefix": 506,
+    "calling": 506,
     "region": "CR"
   },
   {
     "prefix": 505,
+    "calling": 505,
     "region": "NI"
   },
   {
     "prefix": 504,
+    "calling": 504,
     "region": "HN"
   },
   {
     "prefix": 503,
+    "calling": 503,
     "region": "SV"
   },
   {
     "prefix": 502,
+    "calling": 502,
     "region": "GT"
   },
   {
     "prefix": 501,
+    "calling": 501,
     "region": "BZ"
   },
   {
     "prefix": 500,
+    "calling": 500,
     "region": "FK"
   },
   {
     "prefix": 479,
+    "calling": 47,
     "region": "NO"
   },
   {
     "prefix": 478,
+    "calling": 47,
     "region": "NO"
   },
   {
     "prefix": 476,
+    "calling": 47,
     "region": "NO"
   },
   {
     "prefix": 475,
+    "calling": 47,
     "region": "NO"
   },
   {
     "prefix": 474,
+    "calling": 47,
     "region": "NO"
   },
   {
     "prefix": 473,
+    "calling": 47,
     "region": "NO"
   },
   {
     "prefix": 472,
+    "calling": 47,
     "region": "NO"
   },
   {
     "prefix": 470,
+    "calling": 47,
     "region": "NO"
   },
   {
     "prefix": 423,
+    "calling": 423,
     "region": "LI"
   },
   {
     "prefix": 421,
+    "calling": 421,
     "region": "SK"
   },
   {
     "prefix": 420,
+    "calling": 420,
     "region": "CZ"
   },
   {
     "prefix": 389,
+    "calling": 389,
     "region": "MK"
   },
   {
     "prefix": 387,
+    "calling": 387,
     "region": "BA"
   },
   {
     "prefix": 386,
+    "calling": 386,
     "region": "SI"
   },
   {
     "prefix": 385,
+    "calling": 385,
     "region": "HR"
   },
   {
     "prefix": 383,
+    "calling": 383,
     "region": "XK"
   },
   {
     "prefix": 382,
+    "calling": 382,
     "region": "ME"
   },
   {
     "prefix": 381,
+    "calling": 381,
     "region": "RS"
   },
   {
     "prefix": 380,
+    "calling": 380,
     "region": "UA"
   },
   {
     "prefix": 378,
+    "calling": 378,
     "region": "SM"
   },
   {
     "prefix": 377,
+    "calling": 377,
     "region": "MC"
   },
   {
     "prefix": 376,
+    "calling": 376,
     "region": "AD"
   },
   {
     "prefix": 375,
+    "calling": 375,
     "region": "BY"
   },
   {
     "prefix": 374,
+    "calling": 374,
     "region": "AM"
   },
   {
     "prefix": 373,
+    "calling": 373,
     "region": "MD"
   },
   {
     "prefix": 372,
+    "calling": 372,
     "region": "EE"
   },
   {
     "prefix": 371,
+    "calling": 371,
     "region": "LV"
   },
   {
     "prefix": 370,
+    "calling": 370,
     "region": "LT"
   },
   {
     "prefix": 359,
+    "calling": 359,
     "region": "BG"
   },
   {
     "prefix": 358,
+    "calling": 358,
+    "region": "AX"
+  },
+  {
+    "prefix": 358,
+    "calling": 358,
     "region": "FI"
   },
   {
     "prefix": 357,
+    "calling": 357,
     "region": "CY"
   },
   {
     "prefix": 356,
+    "calling": 356,
     "region": "MT"
   },
   {
     "prefix": 355,
+    "calling": 355,
     "region": "AL"
   },
   {
     "prefix": 354,
+    "calling": 354,
     "region": "IS"
   },
   {
     "prefix": 353,
+    "calling": 353,
     "region": "IE"
   },
   {
     "prefix": 352,
+    "calling": 352,
     "region": "LU"
   },
   {
     "prefix": 351,
+    "calling": 351,
     "region": "PT"
   },
   {
     "prefix": 350,
+    "calling": 350,
     "region": "GI"
   },
   {
     "prefix": 299,
+    "calling": 299,
     "region": "GL"
   },
   {
     "prefix": 298,
+    "calling": 298,
     "region": "FO"
   },
   {
     "prefix": 297,
+    "calling": 297,
     "region": "AW"
   },
   {
     "prefix": 291,
+    "calling": 291,
     "region": "ER"
   },
   {
     "prefix": 290,
+    "calling": 290,
     "region": "SH"
   },
   {
+    "prefix": 290,
+    "calling": 290,
+    "region": "TA"
+  },
+  {
     "prefix": 269,
+    "calling": 269,
     "region": "KM"
   },
   {
     "prefix": 268,
+    "calling": 268,
     "region": "SZ"
   },
   {
     "prefix": 267,
+    "calling": 267,
     "region": "BW"
   },
   {
     "prefix": 266,
+    "calling": 266,
     "region": "LS"
   },
   {
     "prefix": 265,
+    "calling": 265,
     "region": "MW"
   },
   {
     "prefix": 264,
+    "calling": 264,
     "region": "NA"
   },
   {
     "prefix": 263,
+    "calling": 263,
     "region": "ZW"
   },
   {
     "prefix": 262,
+    "calling": 262,
     "region": "RE"
   },
   {
+    "prefix": 262,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
     "prefix": 261,
+    "calling": 261,
     "region": "MG"
   },
   {
     "prefix": 260,
+    "calling": 260,
     "region": "ZM"
   },
   {
     "prefix": 258,
+    "calling": 258,
     "region": "MZ"
   },
   {
     "prefix": 257,
+    "calling": 257,
     "region": "BI"
   },
   {
     "prefix": 256,
+    "calling": 256,
     "region": "UG"
   },
   {
     "prefix": 255,
+    "calling": 255,
     "region": "TZ"
   },
   {
     "prefix": 254,
+    "calling": 254,
     "region": "KE"
   },
   {
     "prefix": 253,
+    "calling": 253,
     "region": "DJ"
   },
   {
     "prefix": 252,
+    "calling": 252,
     "region": "SO"
   },
   {
     "prefix": 251,
+    "calling": 251,
     "region": "ET"
   },
   {
     "prefix": 250,
+    "calling": 250,
     "region": "RW"
   },
   {
     "prefix": 249,
+    "calling": 249,
     "region": "SD"
   },
   {
     "prefix": 248,
+    "calling": 248,
     "region": "SC"
   },
   {
     "prefix": 247,
+    "calling": 247,
     "region": "AC"
   },
   {
     "prefix": 246,
+    "calling": 246,
     "region": "IO"
   },
   {
     "prefix": 245,
+    "calling": 245,
     "region": "GW"
   },
   {
     "prefix": 244,
+    "calling": 244,
     "region": "AO"
   },
   {
     "prefix": 243,
+    "calling": 243,
     "region": "CD"
   },
   {
     "prefix": 242,
+    "calling": 242,
     "region": "CG"
   },
   {
     "prefix": 241,
+    "calling": 241,
     "region": "GA"
   },
   {
     "prefix": 240,
+    "calling": 240,
     "region": "GQ"
   },
   {
     "prefix": 239,
+    "calling": 239,
     "region": "ST"
   },
   {
     "prefix": 238,
+    "calling": 238,
     "region": "CV"
   },
   {
     "prefix": 237,
+    "calling": 237,
     "region": "CM"
   },
   {
     "prefix": 236,
+    "calling": 236,
     "region": "CF"
   },
   {
     "prefix": 235,
+    "calling": 235,
     "region": "TD"
   },
   {
     "prefix": 234,
+    "calling": 234,
     "region": "NG"
   },
   {
     "prefix": 233,
+    "calling": 233,
     "region": "GH"
   },
   {
     "prefix": 232,
+    "calling": 232,
     "region": "SL"
   },
   {
     "prefix": 231,
+    "calling": 231,
     "region": "LR"
   },
   {
     "prefix": 230,
+    "calling": 230,
     "region": "MU"
   },
   {
     "prefix": 229,
+    "calling": 229,
     "region": "BJ"
   },
   {
     "prefix": 228,
+    "calling": 228,
     "region": "TG"
   },
   {
     "prefix": 227,
+    "calling": 227,
     "region": "NE"
   },
   {
     "prefix": 226,
+    "calling": 226,
     "region": "BF"
   },
   {
     "prefix": 225,
+    "calling": 225,
     "region": "CI"
   },
   {
     "prefix": 224,
+    "calling": 224,
     "region": "GN"
   },
   {
     "prefix": 223,
+    "calling": 223,
     "region": "ML"
   },
   {
     "prefix": 222,
+    "calling": 222,
     "region": "MR"
   },
   {
     "prefix": 221,
+    "calling": 221,
     "region": "SN"
   },
   {
     "prefix": 220,
+    "calling": 220,
     "region": "GM"
   },
   {
     "prefix": 218,
+    "calling": 218,
     "region": "LY"
   },
   {
     "prefix": 216,
+    "calling": 216,
     "region": "TN"
   },
   {
     "prefix": 213,
+    "calling": 213,
     "region": "DZ"
   },
   {
     "prefix": 212,
+    "calling": 212,
+    "region": "EH"
+  },
+  {
+    "prefix": 212,
+    "calling": 212,
     "region": "MA"
   },
   {
     "prefix": 211,
+    "calling": 211,
     "region": "SS"
   },
   {
     "prefix": 98,
+    "calling": 98,
     "region": "IR"
   },
   {
     "prefix": 95,
+    "calling": 95,
     "region": "MM"
   },
   {
     "prefix": 94,
+    "calling": 94,
     "region": "LK"
   },
   {
     "prefix": 93,
+    "calling": 93,
     "region": "AF"
   },
   {
     "prefix": 92,
+    "calling": 92,
     "region": "PK"
   },
   {
     "prefix": 91,
+    "calling": 91,
     "region": "IN"
   },
   {
     "prefix": 90,
+    "calling": 90,
     "region": "TR"
   },
   {
     "prefix": 86,
+    "calling": 86,
     "region": "CN"
   },
   {
     "prefix": 84,
+    "calling": 84,
     "region": "VN"
   },
   {
     "prefix": 82,
+    "calling": 82,
     "region": "KR"
   },
   {
     "prefix": 81,
+    "calling": 81,
     "region": "JP"
   },
   {
     "prefix": 79,
+    "calling": 7,
     "region": "RU"
   },
   {
     "prefix": 78,
+    "calling": 7,
     "region": "RU"
   },
   {
     "prefix": 77,
+    "calling": 7,
     "region": "KZ"
   },
   {
     "prefix": 74,
+    "calling": 7,
     "region": "RU"
   },
   {
     "prefix": 73,
+    "calling": 7,
     "region": "RU"
   },
   {
     "prefix": 66,
+    "calling": 66,
     "region": "TH"
   },
   {
     "prefix": 65,
+    "calling": 65,
     "region": "SG"
   },
   {
     "prefix": 64,
+    "calling": 64,
     "region": "NZ"
   },
   {
     "prefix": 63,
+    "calling": 63,
     "region": "PH"
   },
   {
     "prefix": 62,
+    "calling": 62,
     "region": "ID"
   },
   {
     "prefix": 61,
+    "calling": 61,
     "region": "AU"
   },
   {
+    "prefix": 61,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
     "prefix": 60,
+    "calling": 60,
     "region": "MY"
   },
   {
     "prefix": 58,
+    "calling": 58,
     "region": "VE"
   },
   {
     "prefix": 57,
+    "calling": 57,
     "region": "CO"
   },
   {
     "prefix": 56,
+    "calling": 56,
     "region": "CL"
   },
   {
     "prefix": 55,
+    "calling": 55,
     "region": "BR"
   },
   {
     "prefix": 54,
+    "calling": 54,
     "region": "AR"
   },
   {
     "prefix": 53,
+    "calling": 53,
     "region": "CU"
   },
   {
     "prefix": 52,
+    "calling": 52,
     "region": "MX"
   },
   {
     "prefix": 51,
+    "calling": 51,
     "region": "PE"
   },
   {
     "prefix": 49,
+    "calling": 49,
     "region": "DE"
   },
   {
     "prefix": 48,
+    "calling": 48,
     "region": "PL"
   },
   {
     "prefix": 47,
+    "calling": 47,
     "region": "NO"
   },
   {
+    "prefix": 47,
+    "calling": 47,
+    "region": "SJ"
+  },
+  {
     "prefix": 46,
+    "calling": 46,
     "region": "SE"
   },
   {
     "prefix": 45,
+    "calling": 45,
     "region": "DK"
   },
   {
     "prefix": 44,
+    "calling": 44,
     "region": "GB"
   },
   {
+    "prefix": 44,
+    "calling": 44,
+    "region": "GG"
+  },
+  {
+    "prefix": 44,
+    "calling": 44,
+    "region": "IM"
+  },
+  {
+    "prefix": 44,
+    "calling": 44,
+    "region": "JE"
+  },
+  {
     "prefix": 43,
+    "calling": 43,
     "region": "AT"
   },
   {
     "prefix": 41,
+    "calling": 41,
     "region": "CH"
   },
   {
     "prefix": 40,
+    "calling": 40,
     "region": "RO"
   },
   {
     "prefix": 39,
+    "calling": 39,
     "region": "IT"
   },
   {
+    "prefix": 39,
+    "calling": 39,
+    "region": "VA"
+  },
+  {
     "prefix": 36,
+    "calling": 36,
     "region": "HU"
   },
   {
     "prefix": 34,
+    "calling": 34,
     "region": "ES"
   },
   {
     "prefix": 33,
+    "calling": 33,
     "region": "FR"
   },
   {
     "prefix": 32,
+    "calling": 32,
     "region": "BE"
   },
   {
     "prefix": 31,
+    "calling": 31,
     "region": "NL"
   },
   {
     "prefix": 30,
+    "calling": 30,
     "region": "GR"
   },
   {
     "prefix": 27,
+    "calling": 27,
     "region": "ZA"
   },
   {
     "prefix": 20,
+    "calling": 20,
     "region": "EG"
   },
   {
     "prefix": 7,
+    "calling": 7,
+    "region": "KZ"
+  },
+  {
+    "prefix": 7,
+    "calling": 7,
     "region": "RU"
   },
   {
     "prefix": 1,
+    "calling": 1,
+    "region": "AG"
+  },
+  {
+    "prefix": 1,
+    "calling": 1,
+    "region": "AI"
+  },
+  {
+    "prefix": 1,
+    "calling": 1,
+    "region": "AS"
+  },
+  {
+    "prefix": 1,
+    "calling": 1,
+    "region": "BB"
+  },
+  {
+    "prefix": 1,
+    "calling": 1,
+    "region": "BM"
+  },
+  {
+    "prefix": 1,
+    "calling": 1,
+    "region": "BS"
+  },
+  {
+    "prefix": 1,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1,
+    "calling": 1,
+    "region": "DM"
+  },
+  {
+    "prefix": 1,
+    "calling": 1,
+    "region": "DO"
+  },
+  {
+    "prefix": 1,
+    "calling": 1,
+    "region": "GD"
+  },
+  {
+    "prefix": 1,
+    "calling": 1,
+    "region": "GU"
+  },
+  {
+    "prefix": 1,
+    "calling": 1,
+    "region": "JM"
+  },
+  {
+    "prefix": 1,
+    "calling": 1,
+    "region": "KN"
+  },
+  {
+    "prefix": 1,
+    "calling": 1,
+    "region": "KY"
+  },
+  {
+    "prefix": 1,
+    "calling": 1,
+    "region": "LC"
+  },
+  {
+    "prefix": 1,
+    "calling": 1,
+    "region": "MP"
+  },
+  {
+    "prefix": 1,
+    "calling": 1,
+    "region": "MS"
+  },
+  {
+    "prefix": 1,
+    "calling": 1,
+    "region": "PR"
+  },
+  {
+    "prefix": 1,
+    "calling": 1,
+    "region": "SX"
+  },
+  {
+    "prefix": 1,
+    "calling": 1,
+    "region": "TC"
+  },
+  {
+    "prefix": 1,
+    "calling": 1,
+    "region": "TT"
+  },
+  {
+    "prefix": 1,
+    "calling": 1,
     "region": "US"
+  },
+  {
+    "prefix": 1,
+    "calling": 1,
+    "region": "VC"
+  },
+  {
+    "prefix": 1,
+    "calling": 1,
+    "region": "VG"
+  },
+  {
+    "prefix": 1,
+    "calling": 1,
+    "region": "VI"
   }
 ]

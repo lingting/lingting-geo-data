@@ -2,22 +2,25 @@ package internal
 
 import (
 	"bytes"
-	"encoding/json"
 	"fmt"
 	"os"
 	"path/filepath"
 )
 
 // GenerateFlags 仅生成被 regions.json 引用的旗帜，并删除其余旗帜文件。
-func GenerateFlags(root string) (bool, error) {
-	regions, err := readGeneratedRegions(root)
+func GenerateFlags(root string, states *States) (bool, error) {
+	regions, err := GenerateRegions(root, states)
 	if err != nil {
 		return false, err
 	}
+	if !regions.Updated && !states.SourcesUpdated([]string{"flag-icons"}) {
+		return false, nil
+	}
+
 	flagsDir := filepath.Join(root, "generated", "flags")
-	used := make(map[string]struct{}, len(regions))
+	used := make(map[string]struct{}, len(regions.Regions))
 	updated := false
-	for _, region := range regions {
+	for _, region := range regions.Regions {
 		used[region.Flag] = struct{}{}
 		changed, err := syncFlag(root, flagsDir, region.Flag)
 		if err != nil {
@@ -63,28 +66,4 @@ func syncFlag(root, flagsDir, flag string) (bool, error) {
 		return false, fmt.Errorf("write generated flag %s: %w", flag, err)
 	}
 	return true, nil
-}
-
-func readGeneratedPhones(root string) ([]PhonePrefix, error) {
-	body, err := os.ReadFile(filepath.Join(root, "generated", "phones.json"))
-	if err != nil {
-		return nil, fmt.Errorf("read generated phones: %w", err)
-	}
-	var phones []PhonePrefix
-	if err := json.Unmarshal(body, &phones); err != nil {
-		return nil, fmt.Errorf("parse generated phones: %w", err)
-	}
-	return phones, nil
-}
-
-func readGeneratedRegions(root string) ([]Region, error) {
-	body, err := os.ReadFile(filepath.Join(root, "generated", "regions.json"))
-	if err != nil {
-		return nil, fmt.Errorf("read generated regions: %w", err)
-	}
-	var regions []Region
-	if err := json.Unmarshal(body, &regions); err != nil {
-		return nil, fmt.Errorf("parse generated regions: %w", err)
-	}
-	return regions, nil
 }
