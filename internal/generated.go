@@ -9,6 +9,7 @@ import (
 func validateGeneratedData(root string) error {
 	for _, path := range []string{
 		filepath.Join(root, "generated", "sources.json"),
+		filepath.Join(root, "generated", "m49.json"),
 		filepath.Join(root, "generated", "regions.json"),
 		filepath.Join(root, "generated", "flags"),
 	} {

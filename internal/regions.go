@@ -17,11 +17,14 @@ var regionSourcePaths = []string{
 	"libphonenumber/PhoneNumberMetadata.xml",
 }
 
+type codeMapping struct {
+	Alpha3  string `json:"_alpha3"`
+	Numeric string `json:"_numeric"`
+}
+
 type codeMappingsFile struct {
 	Supplemental struct {
-		CodeMappings map[string]struct {
-			Alpha3 string `json:"_alpha3"`
-		} `json:"codeMappings"`
+		CodeMappings map[string]codeMapping `json:"codeMappings"`
 	} `json:"supplemental"`
 }
 
@@ -41,8 +44,8 @@ type phoneMetadata struct {
 }
 
 // GenerateRegions 在任一依赖源更新时重新生成 regions.json。
-func GenerateRegions(root string, states map[string]SourceState) (bool, error) {
-	if !anySourceUpdated(states, regionSourcePaths) {
+func GenerateRegions(root string, states map[string]SourceState, indexes map[string]M49Index, m49Updated bool) (bool, error) {
+	if !m49Updated && !anySourceUpdated(states, regionSourcePaths) {
 		regionsPath := filepath.Join(root, "generated", "regions.json")
 		legacyCountriesPath := filepath.Join(root, "generated", "countries.json")
 		if _, err := os.Stat(regionsPath); err == nil {
@@ -55,17 +58,11 @@ func GenerateRegions(root string, states map[string]SourceState) (bool, error) {
 			return false, fmt.Errorf("stat generated regions: %w", err)
 		}
 	}
-	files := make(map[string][]byte, len(regionSourcePaths))
-	for _, sourcePath := range regionSourcePaths {
-		state, exists := states[sourcePath]
-		if !exists {
-			return false, fmt.Errorf("missing region source %s", sourcePath)
-		}
-		for filePath, body := range state.Files {
-			files[filePath] = body
-		}
+	files, err := sourceFiles(states, regionSourcePaths)
+	if err != nil {
+		return false, err
 	}
-	regions, _, err := parseRegions(files)
+	regions, _, err := parseRegions(files, indexes)
 	if err != nil {
 		return false, err
 	}
@@ -82,6 +79,20 @@ func GenerateRegions(root string, states map[string]SourceState) (bool, error) {
 	return true, nil
 }
 
+func sourceFiles(states map[string]SourceState, paths []string) (map[string][]byte, error) {
+	files := make(map[string][]byte, len(paths))
+	for _, sourcePath := range paths {
+		state, exists := states[sourcePath]
+		if !exists {
+			return nil, fmt.Errorf("missing region source %s", sourcePath)
+		}
+		for filePath, body := range state.Files {
+			files[filePath] = body
+		}
+	}
+	return files, nil
+}
+
 func anySourceUpdated(states map[string]SourceState, paths []string) bool {
 	for _, sourcePath := range paths {
 		if states[sourcePath].Updated {
@@ -91,7 +102,7 @@ func anySourceUpdated(states map[string]SourceState, paths []string) bool {
 	return false
 }
 
-func parseRegions(files map[string][]byte) ([]Region, []SourceSpec, error) {
+func parseRegions(files map[string][]byte, indexes map[string]M49Index) ([]Region, []SourceSpec, error) {
 	var mappings codeMappingsFile
 	var en, zh territoryNamesFile
 	var phone phoneMetadata
@@ -115,11 +126,11 @@ func parseRegions(files map[string][]byte) ([]Region, []SourceSpec, error) {
 			callingCodes[territory.ID] = append(callingCodes[territory.ID], territory.CountryCode)
 		}
 	}
-	regions := make([]Region, 0, len(mappings.Supplemental.CodeMappings))
-	for iso := range mappings.Supplemental.CodeMappings {
+	regions := make([]Region, 0, len(indexes))
+	for iso, index := range indexes {
 		mapping, exists := mappings.Supplemental.CodeMappings[iso]
 		name := enNames[iso]
-		if !exists || !validISO(iso) || !validISO3(mapping.Alpha3) || name == "" || nonISORegions[iso] {
+		if !exists || !isISORegion(iso, mapping) || name == "" {
 			continue
 		}
 		regions = append(regions, Region{
@@ -128,6 +139,8 @@ func parseRegions(files map[string][]byte) ([]Region, []SourceSpec, error) {
 			Flag:         flagFor(iso),
 			CallingCodes: sortedUnique(callingCodes[iso]),
 			Names:        Names{English: name, Chinese: zhNames[iso]},
+			Numeric:      mapping.Numeric,
+			M49:          index,
 		})
 	}
 	sort.Slice(regions, func(i, j int) bool { return regions[i].ISO < regions[j].ISO })

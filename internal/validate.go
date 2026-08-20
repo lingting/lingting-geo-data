@@ -10,6 +10,8 @@ var (
 	iso3Pattern = regexp.MustCompile(`^[A-Z]{3}$`)
 	codePattern = regexp.MustCompile(`^[1-9][0-9]*$`)
 
+	m49Pattern = regexp.MustCompile(`^[0-9]{3}$`)
+
 	// CLDR 包含保留、用户分配、私有使用和伪区域代码，均不属于 ISO 3166-1 区域。
 	nonISORegions = map[string]bool{
 		"AC": true, "CP": true, "CQ": true, "DG": true, "EA": true, "EU": true, "EZ": true,
@@ -19,7 +21,17 @@ var (
 
 func validISO(value string) bool  { return isoPattern.MatchString(value) }
 func validISO3(value string) bool { return iso3Pattern.MatchString(value) }
+func validM49(value string) bool  { return m49Pattern.MatchString(value) }
 
+func isISORegion(iso string, mapping codeMapping) bool {
+	return validISO(iso) &&
+
+		validISO3(mapping.Alpha3) &&
+
+		validM49(mapping.Numeric) &&
+
+		!nonISORegions[iso]
+}
 func validateRegions(regions []Region) error {
 	if len(regions) == 0 {
 		return fmt.Errorf("no regions generated")
@@ -47,6 +59,15 @@ func validateRegions(regions []Region) error {
 		}
 		if region.Names.English == "" {
 			return fmt.Errorf("missing English name for %s", region.ISO)
+		}
+		if !validM49(region.Numeric) {
+			return fmt.Errorf("invalid numeric M.49 %q", region.Numeric)
+		}
+		if region.M49.Region != "" && !validM49(region.M49.Region) {
+			return fmt.Errorf("invalid M.49 region for %s", region.ISO)
+		}
+		if region.M49.Subregion != "" && !validM49(region.M49.Subregion) {
+			return fmt.Errorf("invalid M.49 subregion for %s", region.ISO)
 		}
 		for _, code := range region.CallingCodes {
 			if !codePattern.MatchString(code) {

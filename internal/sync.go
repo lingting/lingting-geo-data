@@ -24,7 +24,11 @@ func Sync(ctx context.Context, root string) (bool, error) {
 	if err := writeUpdatedSources(root, states); err != nil {
 		return false, err
 	}
-	regionsUpdated, err := GenerateRegions(root, states)
+	indexes, m49Updated, err := GenerateM49(root, states)
+	if err != nil {
+		return false, err
+	}
+	regionsUpdated, err := GenerateRegions(root, states, indexes, m49Updated)
 	if err != nil {
 		return false, err
 	}
@@ -35,7 +39,7 @@ func Sync(ctx context.Context, root string) (bool, error) {
 	if err := validateGeneratedData(root); err != nil {
 		return false, err
 	}
-	return sourcesUpdated(states) || regionsUpdated || flagsUpdated, nil
+	return sourcesUpdated(states) || m49Updated || regionsUpdated || flagsUpdated, nil
 }
 
 func readSourceIndex(root string) (SourceIndex, error) {

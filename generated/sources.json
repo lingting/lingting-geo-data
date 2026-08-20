@@ -12,6 +12,12 @@
       "sha256": "9366b0dd98e81bd4610b945521b82f3e450a2bc4a072f3a47bbd9780e281b473",
       "provenance": "Unicode CLDR (Unicode License v3)"
     },
+    "cldr/supplementalData.xml": {
+      "url": "https://raw.githubusercontent.com/unicode-org/cldr/main/common/supplemental/supplementalData.xml",
+      "etag": "W/\"dcdc19ec2163ea877a00a2fe015a2f3c44e7ba5ab4e0ae12a828b0baa58cdf59\"",
+      "sha256": "5e227881e3f259f035c67e90b18d1abbd243ec8edf5b0a98aa10e78d2c2f27a7",
+      "provenance": "Unicode CLDR (Unicode License v3)"
+    },
     "cldr/zh-territories.json": {
       "url": "https://raw.githubusercontent.com/unicode-org/cldr-json/main/cldr-json/cldr-localenames-full/main/zh/territories.json",
       "etag": "W/\"2ab4938f5759a30780803fb3fb83c960d2beb2880849745090750602cadd49fa\"",

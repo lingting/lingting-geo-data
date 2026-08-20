@@ -9,6 +9,11 @@
     "names": {
       "en": "Andorra",
       "zh": "安道尔"
+    },
+    "numeric": "020",
+    "m49": {
+      "region": "150",
+      "subregion": "039"
     }
   },
   {
@@ -21,6 +26,11 @@
     "names": {
       "en": "United Arab Emirates",
       "zh": "阿拉伯联合酋长国"
+    },
+    "numeric": "784",
+    "m49": {
+      "region": "142",
+      "subregion": "145"
     }
   },
   {
@@ -33,6 +43,11 @@
     "names": {
       "en": "Afghanistan",
       "zh": "阿富汗"
+    },
+    "numeric": "004",
+    "m49": {
+      "region": "142",
+      "subregion": "034"
     }
   },
   {
@@ -45,6 +60,11 @@
     "names": {
       "en": "Antigua \u0026 Barbuda",
       "zh": "安提瓜和巴布达"
+    },
+    "numeric": "028",
+    "m49": {
+      "region": "019",
+      "subregion": "029"
     }
   },
   {
@@ -57,6 +77,11 @@
     "names": {
       "en": "Anguilla",
       "zh": "安圭拉"
+    },
+    "numeric": "660",
+    "m49": {
+      "region": "019",
+      "subregion": "029"
     }
   },
   {
@@ -69,6 +94,11 @@
     "names": {
       "en": "Albania",
       "zh": "阿尔巴尼亚"
+    },
+    "numeric": "008",
+    "m49": {
+      "region": "150",
+      "subregion": "039"
     }
   },
   {
@@ -81,6 +111,11 @@
     "names": {
       "en": "Armenia",
       "zh": "亚美尼亚"
+    },
+    "numeric": "051",
+    "m49": {
+      "region": "142",
+      "subregion": "145"
     }
   },
   {
@@ -93,6 +128,11 @@
     "names": {
       "en": "Angola",
       "zh": "安哥拉"
+    },
+    "numeric": "024",
+    "m49": {
+      "region": "002",
+      "subregion": "017"
     }
   },
   {
@@ -103,7 +143,9 @@
     "names": {
       "en": "Antarctica",
       "zh": "南极洲"
-    }
+    },
+    "numeric": "010",
+    "m49": {}
   },
   {
     "iso": "AR",
@@ -115,6 +157,11 @@
     "names": {
       "en": "Argentina",
       "zh": "阿根廷"
+    },
+    "numeric": "032",
+    "m49": {
+      "region": "019",
+      "subregion": "005"
     }
   },
   {
@@ -127,6 +174,11 @@
     "names": {
       "en": "American Samoa",
       "zh": "美属萨摩亚"
+    },
+    "numeric": "016",
+    "m49": {
+      "region": "009",
+      "subregion": "061"
     }
   },
   {
@@ -139,6 +191,11 @@
     "names": {
       "en": "Austria",
       "zh": "奥地利"
+    },
+    "numeric": "040",
+    "m49": {
+      "region": "150",
+      "subregion": "155"
     }
   },
   {
@@ -151,6 +208,11 @@
     "names": {
       "en": "Australia",
       "zh": "澳大利亚"
+    },
+    "numeric": "036",
+    "m49": {
+      "region": "009",
+      "subregion": "053"
     }
   },
   {
@@ -163,6 +225,11 @@
     "names": {
       "en": "Aruba",
       "zh": "阿鲁巴"
+    },
+    "numeric": "533",
+    "m49": {
+      "region": "019",
+      "subregion": "029"
     }
   },
   {
@@ -175,6 +242,11 @@
     "names": {
       "en": "Åland Islands",
       "zh": "奥兰群岛"
+    },
+    "numeric": "248",
+    "m49": {
+      "region": "150",
+      "subregion": "154"
     }
   },
   {
@@ -187,6 +259,11 @@
     "names": {
       "en": "Azerbaijan",
       "zh": "阿塞拜疆"
+    },
+    "numeric": "031",
+    "m49": {
+      "region": "142",
+      "subregion": "145"
     }
   },
   {
@@ -199,6 +276,11 @@
     "names": {
       "en": "Bosnia \u0026 Herzegovina",
       "zh": "波斯尼亚和黑塞哥维那"
+    },
+    "numeric": "070",
+    "m49": {
+      "region": "150",
+      "subregion": "039"
     }
   },
   {
@@ -211,6 +293,11 @@
     "names": {
       "en": "Barbados",
       "zh": "巴巴多斯"
+    },
+    "numeric": "052",
+    "m49": {
+      "region": "019",
+      "subregion": "029"
     }
   },
   {
@@ -223,6 +310,11 @@
     "names": {
       "en": "Bangladesh",
       "zh": "孟加拉国"
+    },
+    "numeric": "050",
+    "m49": {
+      "region": "142",
+      "subregion": "034"
     }
   },
   {
@@ -235,6 +327,11 @@
     "names": {
       "en": "Belgium",
       "zh": "比利时"
+    },
+    "numeric": "056",
+    "m49": {
+      "region": "150",
+      "subregion": "155"
     }
   },
   {
@@ -247,6 +344,11 @@
     "names": {
       "en": "Burkina Faso",
       "zh": "布基纳法索"
+    },
+    "numeric": "854",
+    "m49": {
+      "region": "002",
+      "subregion": "011"
     }
   },
   {
@@ -259,6 +361,11 @@
     "names": {
       "en": "Bulgaria",
       "zh": "保加利亚"
+    },
+    "numeric": "100",
+    "m49": {
+      "region": "150",
+      "subregion": "151"
     }
   },
   {
@@ -271,6 +378,11 @@
     "names": {
       "en": "Bahrain",
       "zh": "巴林"
+    },
+    "numeric": "048",
+    "m49": {
+      "region": "142",
+      "subregion": "145"
     }
   },
   {
@@ -283,6 +395,11 @@
     "names": {
       "en": "Burundi",
       "zh": "布隆迪"
+    },
+    "numeric": "108",
+    "m49": {
+      "region": "002",
+      "subregion": "014"
     }
   },
   {
@@ -295,6 +412,11 @@
     "names": {
       "en": "Benin",
       "zh": "贝宁"
+    },
+    "numeric": "204",
+    "m49": {
+      "region": "002",
+      "subregion": "011"
     }
   },
   {
@@ -307,6 +429,11 @@
     "names": {
       "en": "St. Barthélemy",
       "zh": "圣巴泰勒米"
+    },
+    "numeric": "652",
+    "m49": {
+      "region": "019",
+      "subregion": "029"
     }
   },
   {
@@ -319,6 +446,11 @@
     "names": {
       "en": "Bermuda",
       "zh": "百慕大"
+    },
+    "numeric": "060",
+    "m49": {
+      "region": "019",
+      "subregion": "021"
     }
   },
   {
@@ -331,6 +463,11 @@
     "names": {
       "en": "Brunei",
       "zh": "文莱"
+    },
+    "numeric": "096",
+    "m49": {
+      "region": "142",
+      "subregion": "035"
     }
   },
   {
@@ -343,6 +480,11 @@
     "names": {
       "en": "Bolivia",
       "zh": "玻利维亚"
+    },
+    "numeric": "068",
+    "m49": {
+      "region": "019",
+      "subregion": "005"
     }
   },
   {
@@ -355,6 +497,11 @@
     "names": {
       "en": "Caribbean Netherlands",
       "zh": "荷属加勒比区"
+    },
+    "numeric": "535",
+    "m49": {
+      "region": "019",
+      "subregion": "029"
     }
   },
   {
@@ -367,6 +514,11 @@
     "names": {
       "en": "Brazil",
       "zh": "巴西"
+    },
+    "numeric": "076",
+    "m49": {
+      "region": "019",
+      "subregion": "005"
     }
   },
   {
@@ -379,6 +531,11 @@
     "names": {
       "en": "Bahamas",
       "zh": "巴哈马"
+    },
+    "numeric": "044",
+    "m49": {
+      "region": "019",
+      "subregion": "029"
     }
   },
   {
@@ -391,6 +548,11 @@
     "names": {
       "en": "Bhutan",
       "zh": "不丹"
+    },
+    "numeric": "064",
+    "m49": {
+      "region": "142",
+      "subregion": "034"
     }
   },
   {
@@ -401,6 +563,11 @@
     "names": {
       "en": "Bouvet Island",
       "zh": "布韦岛"
+    },
+    "numeric": "074",
+    "m49": {
+      "region": "019",
+      "subregion": "005"
     }
   },
   {
@@ -413,6 +580,11 @@
     "names": {
       "en": "Botswana",
       "zh": "博茨瓦纳"
+    },
+    "numeric": "072",
+    "m49": {
+      "region": "002",
+      "subregion": "018"
     }
   },
   {
@@ -425,6 +597,11 @@
     "names": {
       "en": "Belarus",
       "zh": "白俄罗斯"
+    },
+    "numeric": "112",
+    "m49": {
+      "region": "150",
+      "subregion": "151"
     }
   },
   {
@@ -437,6 +614,11 @@
     "names": {
       "en": "Belize",
       "zh": "伯利兹"
+    },
+    "numeric": "084",
+    "m49": {
+      "region": "019",
+      "subregion": "013"
     }
   },
   {
@@ -449,6 +631,11 @@
     "names": {
       "en": "Canada",
       "zh": "加拿大"
+    },
+    "numeric": "124",
+    "m49": {
+      "region": "019",
+      "subregion": "021"
     }
   },
   {
@@ -461,6 +648,11 @@
     "names": {
       "en": "Cocos (Keeling) Islands",
       "zh": "科科斯（基林）群岛"
+    },
+    "numeric": "166",
+    "m49": {
+      "region": "009",
+      "subregion": "053"
     }
   },
   {
@@ -473,6 +665,11 @@
     "names": {
       "en": "Congo - Kinshasa",
       "zh": "刚果（金）"
+    },
+    "numeric": "180",
+    "m49": {
+      "region": "002",
+      "subregion": "017"
     }
   },
   {
@@ -485,6 +682,11 @@
     "names": {
       "en": "Central African Republic",
       "zh": "中非共和国"
+    },
+    "numeric": "140",
+    "m49": {
+      "region": "002",
+      "subregion": "017"
     }
   },
   {
@@ -497,6 +699,11 @@
     "names": {
       "en": "Congo - Brazzaville",
       "zh": "刚果（布）"
+    },
+    "numeric": "178",
+    "m49": {
+      "region": "002",
+      "subregion": "017"
     }
   },
   {
@@ -509,6 +716,11 @@
     "names": {
       "en": "Switzerland",
       "zh": "瑞士"
+    },
+    "numeric": "756",
+    "m49": {
+      "region": "150",
+      "subregion": "155"
     }
   },
   {
@@ -521,6 +733,11 @@
     "names": {
       "en": "Côte d’Ivoire",
       "zh": "科特迪瓦"
+    },
+    "numeric": "384",
+    "m49": {
+      "region": "002",
+      "subregion": "011"
     }
   },
   {
@@ -533,6 +750,11 @@
     "names": {
       "en": "Cook Islands",
       "zh": "库克群岛"
+    },
+    "numeric": "184",
+    "m49": {
+      "region": "009",
+      "subregion": "061"
     }
   },
   {
@@ -545,6 +767,11 @@
     "names": {
       "en": "Chile",
       "zh": "智利"
+    },
+    "numeric": "152",
+    "m49": {
+      "region": "019",
+      "subregion": "005"
     }
   },
   {
@@ -557,6 +784,11 @@
     "names": {
       "en": "Cameroon",
       "zh": "喀麦隆"
+    },
+    "numeric": "120",
+    "m49": {
+      "region": "002",
+      "subregion": "017"
     }
   },
   {
@@ -569,6 +801,11 @@
     "names": {
       "en": "China",
       "zh": "中国"
+    },
+    "numeric": "156",
+    "m49": {
+      "region": "142",
+      "subregion": "030"
     }
   },
   {
@@ -581,6 +818,11 @@
     "names": {
       "en": "Colombia",
       "zh": "哥伦比亚"
+    },
+    "numeric": "170",
+    "m49": {
+      "region": "019",
+      "subregion": "005"
     }
   },
   {
@@ -593,6 +835,11 @@
     "names": {
       "en": "Costa Rica",
       "zh": "哥斯达黎加"
+    },
+    "numeric": "188",
+    "m49": {
+      "region": "019",
+      "subregion": "013"
     }
   },
   {
@@ -605,6 +852,11 @@
     "names": {
       "en": "Cuba",
       "zh": "古巴"
+    },
+    "numeric": "192",
+    "m49": {
+      "region": "019",
+      "subregion": "029"
     }
   },
   {
@@ -617,6 +869,11 @@
     "names": {
       "en": "Cape Verde",
       "zh": "佛得角"
+    },
+    "numeric": "132",
+    "m49": {
+      "region": "002",
+      "subregion": "011"
     }
   },
   {
@@ -629,6 +886,11 @@
     "names": {
       "en": "Curaçao",
       "zh": "库拉索"
+    },
+    "numeric": "531",
+    "m49": {
+      "region": "019",
+      "subregion": "029"
     }
   },
   {
@@ -641,6 +903,11 @@
     "names": {
       "en": "Christmas Island",
       "zh": "圣诞岛"
+    },
+    "numeric": "162",
+    "m49": {
+      "region": "009",
+      "subregion": "053"
     }
   },
   {
@@ -653,6 +920,11 @@
     "names": {
       "en": "Cyprus",
       "zh": "塞浦路斯"
+    },
+    "numeric": "196",
+    "m49": {
+      "region": "142",
+      "subregion": "145"
     }
   },
   {
@@ -665,6 +937,11 @@
     "names": {
       "en": "Czechia",
       "zh": "捷克"
+    },
+    "numeric": "203",
+    "m49": {
+      "region": "150",
+      "subregion": "151"
     }
   },
   {
@@ -677,6 +954,11 @@
     "names": {
       "en": "Germany",
       "zh": "德国"
+    },
+    "numeric": "276",
+    "m49": {
+      "region": "150",
+      "subregion": "155"
     }
   },
   {
@@ -689,6 +971,11 @@
     "names": {
       "en": "Djibouti",
       "zh": "吉布提"
+    },
+    "numeric": "262",
+    "m49": {
+      "region": "002",
+      "subregion": "014"
     }
   },
   {
@@ -701,6 +988,11 @@
     "names": {
       "en": "Denmark",
       "zh": "丹麦"
+    },
+    "numeric": "208",
+    "m49": {
+      "region": "150",
+      "subregion": "154"
     }
   },
   {
@@ -713,6 +1005,11 @@
     "names": {
       "en": "Dominica",
       "zh": "多米尼克"
+    },
+    "numeric": "212",
+    "m49": {
+      "region": "019",
+      "subregion": "029"
     }
   },
   {
@@ -725,6 +1022,11 @@
     "names": {
       "en": "Dominican Republic",
       "zh": "多米尼加共和国"
+    },
+    "numeric": "214",
+    "m49": {
+      "region": "019",
+      "subregion": "029"
     }
   },
   {
@@ -737,6 +1039,11 @@
     "names": {
       "en": "Algeria",
       "zh": "阿尔及利亚"
+    },
+    "numeric": "012",
+    "m49": {
+      "region": "002",
+      "subregion": "015"
     }
   },
   {
@@ -749,6 +1056,11 @@
     "names": {
       "en": "Ecuador",
       "zh": "厄瓜多尔"
+    },
+    "numeric": "218",
+    "m49": {
+      "region": "019",
+      "subregion": "005"
     }
   },
   {
@@ -761,6 +1073,11 @@
     "names": {
       "en": "Estonia",
       "zh": "爱沙尼亚"
+    },
+    "numeric": "233",
+    "m49": {
+      "region": "150",
+      "subregion": "154"
     }
   },
   {
@@ -773,6 +1090,11 @@
     "names": {
       "en": "Egypt",
       "zh": "埃及"
+    },
+    "numeric": "818",
+    "m49": {
+      "region": "002",
+      "subregion": "015"
     }
   },
   {
@@ -785,6 +1107,11 @@
     "names": {
       "en": "Western Sahara",
       "zh": "西撒哈拉"
+    },
+    "numeric": "732",
+    "m49": {
+      "region": "002",
+      "subregion": "015"
     }
   },
   {
@@ -797,6 +1124,11 @@
     "names": {
       "en": "Eritrea",
       "zh": "厄立特里亚"
+    },
+    "numeric": "232",
+    "m49": {
+      "region": "002",
+      "subregion": "014"
     }
   },
   {
@@ -809,6 +1141,11 @@
     "names": {
       "en": "Spain",
       "zh": "西班牙"
+    },
+    "numeric": "724",
+    "m49": {
+      "region": "150",
+      "subregion": "039"
     }
   },
   {
@@ -821,6 +1158,11 @@
     "names": {
       "en": "Ethiopia",
       "zh": "埃塞俄比亚"
+    },
+    "numeric": "231",
+    "m49": {
+      "region": "002",
+      "subregion": "014"
     }
   },
   {
@@ -833,6 +1175,11 @@
     "names": {
       "en": "Finland",
       "zh": "芬兰"
+    },
+    "numeric": "246",
+    "m49": {
+      "region": "150",
+      "subregion": "154"
     }
   },
   {
@@ -845,6 +1192,11 @@
     "names": {
       "en": "Fiji",
       "zh": "斐济"
+    },
+    "numeric": "242",
+    "m49": {
+      "region": "009",
+      "subregion": "054"
     }
   },
   {
@@ -857,6 +1209,11 @@
     "names": {
       "en": "Falkland Islands",
       "zh": "福克兰群岛"
+    },
+    "numeric": "238",
+    "m49": {
+      "region": "019",
+      "subregion": "005"
     }
   },
   {
@@ -869,6 +1226,11 @@
     "names": {
       "en": "Micronesia",
       "zh": "密克罗尼西亚"
+    },
+    "numeric": "583",
+    "m49": {
+      "region": "009",
+      "subregion": "057"
     }
   },
   {
@@ -881,6 +1243,11 @@
     "names": {
       "en": "Faroe Islands",
       "zh": "法罗群岛"
+    },
+    "numeric": "234",
+    "m49": {
+      "region": "150",
+      "subregion": "154"
     }
   },
   {
@@ -893,6 +1260,11 @@
     "names": {
       "en": "France",
       "zh": "法国"
+    },
+    "numeric": "250",
+    "m49": {
+      "region": "150",
+      "subregion": "155"
     }
   },
   {
@@ -905,6 +1277,11 @@
     "names": {
       "en": "Gabon",
       "zh": "加蓬"
+    },
+    "numeric": "266",
+    "m49": {
+      "region": "002",
+      "subregion": "017"
     }
   },
   {
@@ -917,6 +1294,11 @@
     "names": {
       "en": "United Kingdom",
       "zh": "英国"
+    },
+    "numeric": "826",
+    "m49": {
+      "region": "150",
+      "subregion": "154"
     }
   },
   {
@@ -929,6 +1311,11 @@
     "names": {
       "en": "Grenada",
       "zh": "格林纳达"
+    },
+    "numeric": "308",
+    "m49": {
+      "region": "019",
+      "subregion": "029"
     }
   },
   {
@@ -941,6 +1328,11 @@
     "names": {
       "en": "Georgia",
       "zh": "格鲁吉亚"
+    },
+    "numeric": "268",
+    "m49": {
+      "region": "142",
+      "subregion": "145"
     }
   },
   {
@@ -953,6 +1345,11 @@
     "names": {
       "en": "French Guiana",
       "zh": "法属圭亚那"
+    },
+    "numeric": "254",
+    "m49": {
+      "region": "019",
+      "subregion": "005"
     }
   },
   {
@@ -965,6 +1362,11 @@
     "names": {
       "en": "Guernsey",
       "zh": "根西岛"
+    },
+    "numeric": "831",
+    "m49": {
+      "region": "150",
+      "subregion": "154"
     }
   },
   {
@@ -977,6 +1379,11 @@
     "names": {
       "en": "Ghana",
       "zh": "加纳"
+    },
+    "numeric": "288",
+    "m49": {
+      "region": "002",
+      "subregion": "011"
     }
   },
   {
@@ -989,6 +1396,11 @@
     "names": {
       "en": "Gibraltar",
       "zh": "直布罗陀"
+    },
+    "numeric": "292",
+    "m49": {
+      "region": "150",
+      "subregion": "039"
     }
   },
   {
@@ -1001,6 +1413,11 @@
     "names": {
       "en": "Greenland",
       "zh": "格陵兰"
+    },
+    "numeric": "304",
+    "m49": {
+      "region": "019",
+      "subregion": "021"
     }
   },
   {
@@ -1013,6 +1430,11 @@
     "names": {
       "en": "Gambia",
       "zh": "冈比亚"
+    },
+    "numeric": "270",
+    "m49": {
+      "region": "002",
+      "subregion": "011"
     }
   },
   {
@@ -1025,6 +1447,11 @@
     "names": {
       "en": "Guinea",
       "zh": "几内亚"
+    },
+    "numeric": "324",
+    "m49": {
+      "region": "002",
+      "subregion": "011"
     }
   },
   {
@@ -1037,6 +1464,11 @@
     "names": {
       "en": "Guadeloupe",
       "zh": "瓜德罗普"
+    },
+    "numeric": "312",
+    "m49": {
+      "region": "019",
+      "subregion": "029"
     }
   },
   {
@@ -1049,6 +1481,11 @@
     "names": {
       "en": "Equatorial Guinea",
       "zh": "赤道几内亚"
+    },
+    "numeric": "226",
+    "m49": {
+      "region": "002",
+      "subregion": "017"
     }
   },
   {
@@ -1061,6 +1498,11 @@
     "names": {
       "en": "Greece",
       "zh": "希腊"
+    },
+    "numeric": "300",
+    "m49": {
+      "region": "150",
+      "subregion": "039"
     }
   },
   {
@@ -1071,6 +1513,11 @@
     "names": {
       "en": "South Georgia \u0026 South Sandwich Islands",
       "zh": "南乔治亚和南桑威奇群岛"
+    },
+    "numeric": "239",
+    "m49": {
+      "region": "019",
+      "subregion": "005"
     }
   },
   {
@@ -1083,6 +1530,11 @@
     "names": {
       "en": "Guatemala",
       "zh": "危地马拉"
+    },
+    "numeric": "320",
+    "m49": {
+      "region": "019",
+      "subregion": "013"
     }
   },
   {
@@ -1095,6 +1547,11 @@
     "names": {
       "en": "Guam",
       "zh": "关岛"
+    },
+    "numeric": "316",
+    "m49": {
+      "region": "009",
+      "subregion": "057"
     }
   },
   {
@@ -1107,6 +1564,11 @@
     "names": {
       "en": "Guinea-Bissau",
       "zh": "几内亚比绍"
+    },
+    "numeric": "624",
+    "m49": {
+      "region": "002",
+      "subregion": "011"
     }
   },
   {
@@ -1119,6 +1581,11 @@
     "names": {
       "en": "Guyana",
       "zh": "圭亚那"
+    },
+    "numeric": "328",
+    "m49": {
+      "region": "019",
+      "subregion": "005"
     }
   },
   {
@@ -1131,6 +1598,11 @@
     "names": {
       "en": "Hong Kong SAR China",
       "zh": "中国香港特别行政区"
+    },
+    "numeric": "344",
+    "m49": {
+      "region": "142",
+      "subregion": "030"
     }
   },
   {
@@ -1141,6 +1613,11 @@
     "names": {
       "en": "Heard \u0026 McDonald Islands",
       "zh": "赫德岛和麦克唐纳群岛"
+    },
+    "numeric": "334",
+    "m49": {
+      "region": "009",
+      "subregion": "053"
     }
   },
   {
@@ -1153,6 +1630,11 @@
     "names": {
       "en": "Honduras",
       "zh": "洪都拉斯"
+    },
+    "numeric": "340",
+    "m49": {
+      "region": "019",
+      "subregion": "013"
     }
   },
   {
@@ -1165,6 +1647,11 @@
     "names": {
       "en": "Croatia",
       "zh": "克罗地亚"
+    },
+    "numeric": "191",
+    "m49": {
+      "region": "150",
+      "subregion": "039"
     }
   },
   {
@@ -1177,6 +1664,11 @@
     "names": {
       "en": "Haiti",
       "zh": "海地"
+    },
+    "numeric": "332",
+    "m49": {
+      "region": "019",
+      "subregion": "029"
     }
   },
   {
@@ -1189,6 +1681,11 @@
     "names": {
       "en": "Hungary",
       "zh": "匈牙利"
+    },
+    "numeric": "348",
+    "m49": {
+      "region": "150",
+      "subregion": "151"
     }
   },
   {
@@ -1201,6 +1698,11 @@
     "names": {
       "en": "Indonesia",
       "zh": "印度尼西亚"
+    },
+    "numeric": "360",
+    "m49": {
+      "region": "142",
+      "subregion": "035"
     }
   },
   {
@@ -1213,6 +1715,11 @@
     "names": {
       "en": "Ireland",
       "zh": "爱尔兰"
+    },
+    "numeric": "372",
+    "m49": {
+      "region": "150",
+      "subregion": "154"
     }
   },
   {
@@ -1225,6 +1732,11 @@
     "names": {
       "en": "Israel",
       "zh": "以色列"
+    },
+    "numeric": "376",
+    "m49": {
+      "region": "142",
+      "subregion": "145"
     }
   },
   {
@@ -1237,6 +1749,11 @@
     "names": {
       "en": "Isle of Man",
       "zh": "马恩岛"
+    },
+    "numeric": "833",
+    "m49": {
+      "region": "150",
+      "subregion": "154"
     }
   },
   {
@@ -1249,6 +1766,11 @@
     "names": {
       "en": "India",
       "zh": "印度"
+    },
+    "numeric": "356",
+    "m49": {
+      "region": "142",
+      "subregion": "034"
     }
   },
   {
@@ -1261,6 +1783,11 @@
     "names": {
       "en": "British Indian Ocean Territory",
       "zh": "英属印度洋领地"
+    },
+    "numeric": "086",
+    "m49": {
+      "region": "002",
+      "subregion": "014"
     }
   },
   {
@@ -1273,6 +1800,11 @@
     "names": {
       "en": "Iraq",
       "zh": "伊拉克"
+    },
+    "numeric": "368",
+    "m49": {
+      "region": "142",
+      "subregion": "145"
     }
   },
   {
@@ -1285,6 +1817,11 @@
     "names": {
       "en": "Iran",
       "zh": "伊朗"
+    },
+    "numeric": "364",
+    "m49": {
+      "region": "142",
+      "subregion": "034"
     }
   },
   {
@@ -1297,6 +1834,11 @@
     "names": {
       "en": "Iceland",
       "zh": "冰岛"
+    },
+    "numeric": "352",
+    "m49": {
+      "region": "150",
+      "subregion": "154"
     }
   },
   {
@@ -1309,6 +1851,11 @@
     "names": {
       "en": "Italy",
       "zh": "意大利"
+    },
+    "numeric": "380",
+    "m49": {
+      "region": "150",
+      "subregion": "039"
     }
   },
   {
@@ -1321,6 +1868,11 @@
     "names": {
       "en": "Jersey",
       "zh": "泽西岛"
+    },
+    "numeric": "832",
+    "m49": {
+      "region": "150",
+      "subregion": "154"
     }
   },
   {
@@ -1333,6 +1885,11 @@
     "names": {
       "en": "Jamaica",
       "zh": "牙买加"
+    },
+    "numeric": "388",
+    "m49": {
+      "region": "019",
+      "subregion": "029"
     }
   },
   {
@@ -1345,6 +1902,11 @@
     "names": {
       "en": "Jordan",
       "zh": "约旦"
+    },
+    "numeric": "400",
+    "m49": {
+      "region": "142",
+      "subregion": "145"
     }
   },
   {
@@ -1357,6 +1919,11 @@
     "names": {
       "en": "Japan",
       "zh": "日本"
+    },
+    "numeric": "392",
+    "m49": {
+      "region": "142",
+      "subregion": "030"
     }
   },
   {
@@ -1369,6 +1936,11 @@
     "names": {
       "en": "Kenya",
       "zh": "肯尼亚"
+    },
+    "numeric": "404",
+    "m49": {
+      "region": "002",
+      "subregion": "014"
     }
   },
   {
@@ -1381,6 +1953,11 @@
     "names": {
       "en": "Kyrgyzstan",
       "zh": "吉尔吉斯斯坦"
+    },
+    "numeric": "417",
+    "m49": {
+      "region": "142",
+      "subregion": "143"
     }
   },
   {
@@ -1393,6 +1970,11 @@
     "names": {
       "en": "Cambodia",
       "zh": "柬埔寨"
+    },
+    "numeric": "116",
+    "m49": {
+      "region": "142",
+      "subregion": "035"
     }
   },
   {
@@ -1405,6 +1987,11 @@
     "names": {
       "en": "Kiribati",
       "zh": "基里巴斯"
+    },
+    "numeric": "296",
+    "m49": {
+      "region": "009",
+      "subregion": "057"
     }
   },
   {
@@ -1417,6 +2004,11 @@
     "names": {
       "en": "Comoros",
       "zh": "科摩罗"
+    },
+    "numeric": "174",
+    "m49": {
+      "region": "002",
+      "subregion": "014"
     }
   },
   {
@@ -1429,6 +2021,11 @@
     "names": {
       "en": "St. Kitts \u0026 Nevis",
       "zh": "圣基茨和尼维斯"
+    },
+    "numeric": "659",
+    "m49": {
+      "region": "019",
+      "subregion": "029"
     }
   },
   {
@@ -1441,6 +2038,11 @@
     "names": {
       "en": "North Korea",
       "zh": "朝鲜"
+    },
+    "numeric": "408",
+    "m49": {
+      "region": "142",
+      "subregion": "030"
     }
   },
   {
@@ -1453,6 +2055,11 @@
     "names": {
       "en": "South Korea",
       "zh": "韩国"
+    },
+    "numeric": "410",
+    "m49": {
+      "region": "142",
+      "subregion": "030"
     }
   },
   {
@@ -1465,6 +2072,11 @@
     "names": {
       "en": "Kuwait",
       "zh": "科威特"
+    },
+    "numeric": "414",
+    "m49": {
+      "region": "142",
+      "subregion": "145"
     }
   },
   {
@@ -1477,6 +2089,11 @@
     "names": {
       "en": "Cayman Islands",
       "zh": "开曼群岛"
+    },
+    "numeric": "136",
+    "m49": {
+      "region": "019",
+      "subregion": "029"
     }
   },
   {
@@ -1489,6 +2106,11 @@
     "names": {
       "en": "Kazakhstan",
       "zh": "哈萨克斯坦"
+    },
+    "numeric": "398",
+    "m49": {
+      "region": "142",
+      "subregion": "143"
     }
   },
   {
@@ -1501,6 +2123,11 @@
     "names": {
       "en": "Laos",
       "zh": "老挝"
+    },
+    "numeric": "418",
+    "m49": {
+      "region": "142",
+      "subregion": "035"
     }
   },
   {
@@ -1513,6 +2140,11 @@
     "names": {
       "en": "Lebanon",
       "zh": "黎巴嫩"
+    },
+    "numeric": "422",
+    "m49": {
+      "region": "142",
+      "subregion": "145"
     }
   },
   {
@@ -1525,6 +2157,11 @@
     "names": {
       "en": "St. Lucia",
       "zh": "圣卢西亚"
+    },
+    "numeric": "662",
+    "m49": {
+      "region": "019",
+      "subregion": "029"
     }
   },
   {
@@ -1537,6 +2174,11 @@
     "names": {
       "en": "Liechtenstein",
       "zh": "列支敦士登"
+    },
+    "numeric": "438",
+    "m49": {
+      "region": "150",
+      "subregion": "155"
     }
   },
   {
@@ -1549,6 +2191,11 @@
     "names": {
       "en": "Sri Lanka",
       "zh": "斯里兰卡"
+    },
+    "numeric": "144",
+    "m49": {
+      "region": "142",
+      "subregion": "034"
     }
   },
   {
@@ -1561,6 +2208,11 @@
     "names": {
       "en": "Liberia",
       "zh": "利比里亚"
+    },
+    "numeric": "430",
+    "m49": {
+      "region": "002",
+      "subregion": "011"
     }
   },
   {
@@ -1573,6 +2225,11 @@
     "names": {
       "en": "Lesotho",
       "zh": "莱索托"
+    },
+    "numeric": "426",
+    "m49": {
+      "region": "002",
+      "subregion": "018"
     }
   },
   {
@@ -1585,6 +2242,11 @@
     "names": {
       "en": "Lithuania",
       "zh": "立陶宛"
+    },
+    "numeric": "440",
+    "m49": {
+      "region": "150",
+      "subregion": "154"
     }
   },
   {
@@ -1597,6 +2259,11 @@
     "names": {
       "en": "Luxembourg",
       "zh": "卢森堡"
+    },
+    "numeric": "442",
+    "m49": {
+      "region": "150",
+      "subregion": "155"
     }
   },
   {
@@ -1609,6 +2276,11 @@
     "names": {
       "en": "Latvia",
       "zh": "拉脱维亚"
+    },
+    "numeric": "428",
+    "m49": {
+      "region": "150",
+      "subregion": "154"
     }
   },
   {
@@ -1621,6 +2293,11 @@
     "names": {
       "en": "Libya",
       "zh": "利比亚"
+    },
+    "numeric": "434",
+    "m49": {
+      "region": "002",
+      "subregion": "015"
     }
   },
   {
@@ -1633,6 +2310,11 @@
     "names": {
       "en": "Morocco",
       "zh": "摩洛哥"
+    },
+    "numeric": "504",
+    "m49": {
+      "region": "002",
+      "subregion": "015"
     }
   },
   {
@@ -1645,6 +2327,11 @@
     "names": {
       "en": "Monaco",
       "zh": "摩纳哥"
+    },
+    "numeric": "492",
+    "m49": {
+      "region": "150",
+      "subregion": "155"
     }
   },
   {
@@ -1657,6 +2344,11 @@
     "names": {
       "en": "Moldova",
       "zh": "摩尔多瓦"
+    },
+    "numeric": "498",
+    "m49": {
+      "region": "150",
+      "subregion": "151"
     }
   },
   {
@@ -1669,6 +2361,11 @@
     "names": {
       "en": "Montenegro",
       "zh": "黑山"
+    },
+    "numeric": "499",
+    "m49": {
+      "region": "150",
+      "subregion": "039"
     }
   },
   {
@@ -1681,6 +2378,11 @@
     "names": {
       "en": "St. Martin",
       "zh": "法属圣马丁"
+    },
+    "numeric": "663",
+    "m49": {
+      "region": "019",
+      "subregion": "029"
     }
   },
   {
@@ -1693,6 +2395,11 @@
     "names": {
       "en": "Madagascar",
       "zh": "马达加斯加"
+    },
+    "numeric": "450",
+    "m49": {
+      "region": "002",
+      "subregion": "014"
     }
   },
   {
@@ -1705,6 +2412,11 @@
     "names": {
       "en": "Marshall Islands",
       "zh": "马绍尔群岛"
+    },
+    "numeric": "584",
+    "m49": {
+      "region": "009",
+      "subregion": "057"
     }
   },
   {
@@ -1717,6 +2429,11 @@
     "names": {
       "en": "North Macedonia",
       "zh": "北马其顿"
+    },
+    "numeric": "807",
+    "m49": {
+      "region": "150",
+      "subregion": "039"
     }
   },
   {
@@ -1729,6 +2446,11 @@
     "names": {
       "en": "Mali",
       "zh": "马里"
+    },
+    "numeric": "466",
+    "m49": {
+      "region": "002",
+      "subregion": "011"
     }
   },
   {
@@ -1741,6 +2463,11 @@
     "names": {
       "en": "Myanmar (Burma)",
       "zh": "缅甸"
+    },
+    "numeric": "104",
+    "m49": {
+      "region": "142",
+      "subregion": "035"
     }
   },
   {
@@ -1753,6 +2480,11 @@
     "names": {
       "en": "Mongolia",
       "zh": "蒙古"
+    },
+    "numeric": "496",
+    "m49": {
+      "region": "142",
+      "subregion": "030"
     }
   },
   {
@@ -1765,6 +2497,11 @@
     "names": {
       "en": "Macao SAR China",
       "zh": "中国澳门特别行政区"
+    },
+    "numeric": "446",
+    "m49": {
+      "region": "142",
+      "subregion": "030"
     }
   },
   {
@@ -1777,6 +2514,11 @@
     "names": {
       "en": "Northern Mariana Islands",
       "zh": "北马里亚纳群岛"
+    },
+    "numeric": "580",
+    "m49": {
+      "region": "009",
+      "subregion": "057"
     }
   },
   {
@@ -1789,6 +2531,11 @@
     "names": {
       "en": "Martinique",
       "zh": "马提尼克"
+    },
+    "numeric": "474",
+    "m49": {
+      "region": "019",
+      "subregion": "029"
     }
   },
   {
@@ -1801,6 +2548,11 @@
     "names": {
       "en": "Mauritania",
       "zh": "毛里塔尼亚"
+    },
+    "numeric": "478",
+    "m49": {
+      "region": "002",
+      "subregion": "011"
     }
   },
   {
@@ -1813,6 +2565,11 @@
     "names": {
       "en": "Montserrat",
       "zh": "蒙特塞拉特"
+    },
+    "numeric": "500",
+    "m49": {
+      "region": "019",
+      "subregion": "029"
     }
   },
   {
@@ -1825,6 +2582,11 @@
     "names": {
       "en": "Malta",
       "zh": "马耳他"
+    },
+    "numeric": "470",
+    "m49": {
+      "region": "150",
+      "subregion": "039"
     }
   },
   {
@@ -1837,6 +2599,11 @@
     "names": {
       "en": "Mauritius",
       "zh": "毛里求斯"
+    },
+    "numeric": "480",
+    "m49": {
+      "region": "002",
+      "subregion": "014"
     }
   },
   {
@@ -1849,6 +2616,11 @@
     "names": {
       "en": "Maldives",
       "zh": "马尔代夫"
+    },
+    "numeric": "462",
+    "m49": {
+      "region": "142",
+      "subregion": "034"
     }
   },
   {
@@ -1861,6 +2633,11 @@
     "names": {
       "en": "Malawi",
       "zh": "马拉维"
+    },
+    "numeric": "454",
+    "m49": {
+      "region": "002",
+      "subregion": "014"
     }
   },
   {
@@ -1873,6 +2650,11 @@
     "names": {
       "en": "Mexico",
       "zh": "墨西哥"
+    },
+    "numeric": "484",
+    "m49": {
+      "region": "019",
+      "subregion": "013"
     }
   },
   {
@@ -1885,6 +2667,11 @@
     "names": {
       "en": "Malaysia",
       "zh": "马来西亚"
+    },
+    "numeric": "458",
+    "m49": {
+      "region": "142",
+      "subregion": "035"
     }
   },
   {
@@ -1897,6 +2684,11 @@
     "names": {
       "en": "Mozambique",
       "zh": "莫桑比克"
+    },
+    "numeric": "508",
+    "m49": {
+      "region": "002",
+      "subregion": "014"
     }
   },
   {
@@ -1909,6 +2701,11 @@
     "names": {
       "en": "Namibia",
       "zh": "纳米比亚"
+    },
+    "numeric": "516",
+    "m49": {
+      "region": "002",
+      "subregion": "018"
     }
   },
   {
@@ -1921,6 +2718,11 @@
     "names": {
       "en": "New Caledonia",
       "zh": "新喀里多尼亚"
+    },
+    "numeric": "540",
+    "m49": {
+      "region": "009",
+      "subregion": "054"
     }
   },
   {
@@ -1933,6 +2735,11 @@
     "names": {
       "en": "Niger",
       "zh": "尼日尔"
+    },
+    "numeric": "562",
+    "m49": {
+      "region": "002",
+      "subregion": "011"
     }
   },
   {
@@ -1945,6 +2752,11 @@
     "names": {
       "en": "Norfolk Island",
       "zh": "诺福克岛"
+    },
+    "numeric": "574",
+    "m49": {
+      "region": "009",
+      "subregion": "053"
     }
   },
   {
@@ -1957,6 +2769,11 @@
     "names": {
       "en": "Nigeria",
       "zh": "尼日利亚"
+    },
+    "numeric": "566",
+    "m49": {
+      "region": "002",
+      "subregion": "011"
     }
   },
   {
@@ -1969,6 +2786,11 @@
     "names": {
       "en": "Nicaragua",
       "zh": "尼加拉瓜"
+    },
+    "numeric": "558",
+    "m49": {
+      "region": "019",
+      "subregion": "013"
     }
   },
   {
@@ -1981,6 +2803,11 @@
     "names": {
       "en": "Netherlands",
       "zh": "荷兰"
+    },
+    "numeric": "528",
+    "m49": {
+      "region": "150",
+      "subregion": "155"
     }
   },
   {
@@ -1993,6 +2820,11 @@
     "names": {
       "en": "Norway",
       "zh": "挪威"
+    },
+    "numeric": "578",
+    "m49": {
+      "region": "150",
+      "subregion": "154"
     }
   },
   {
@@ -2005,6 +2837,11 @@
     "names": {
       "en": "Nepal",
       "zh": "尼泊尔"
+    },
+    "numeric": "524",
+    "m49": {
+      "region": "142",
+      "subregion": "034"
     }
   },
   {
@@ -2017,6 +2854,11 @@
     "names": {
       "en": "Nauru",
       "zh": "瑙鲁"
+    },
+    "numeric": "520",
+    "m49": {
+      "region": "009",
+      "subregion": "057"
     }
   },
   {
@@ -2029,6 +2871,11 @@
     "names": {
       "en": "Niue",
       "zh": "纽埃"
+    },
+    "numeric": "570",
+    "m49": {
+      "region": "009",
+      "subregion": "061"
     }
   },
   {
@@ -2041,6 +2888,11 @@
     "names": {
       "en": "New Zealand",
       "zh": "新西兰"
+    },
+    "numeric": "554",
+    "m49": {
+      "region": "009",
+      "subregion": "053"
     }
   },
   {
@@ -2053,6 +2905,11 @@
     "names": {
       "en": "Oman",
       "zh": "阿曼"
+    },
+    "numeric": "512",
+    "m49": {
+      "region": "142",
+      "subregion": "145"
     }
   },
   {
@@ -2065,6 +2922,11 @@
     "names": {
       "en": "Panama",
       "zh": "巴拿马"
+    },
+    "numeric": "591",
+    "m49": {
+      "region": "019",
+      "subregion": "013"
     }
   },
   {
@@ -2077,6 +2939,11 @@
     "names": {
       "en": "Peru",
       "zh": "秘鲁"
+    },
+    "numeric": "604",
+    "m49": {
+      "region": "019",
+      "subregion": "005"
     }
   },
   {
@@ -2089,6 +2956,11 @@
     "names": {
       "en": "French Polynesia",
       "zh": "法属波利尼西亚"
+    },
+    "numeric": "258",
+    "m49": {
+      "region": "009",
+      "subregion": "061"
     }
   },
   {
@@ -2101,6 +2973,11 @@
     "names": {
       "en": "Papua New Guinea",
       "zh": "巴布亚新几内亚"
+    },
+    "numeric": "598",
+    "m49": {
+      "region": "009",
+      "subregion": "054"
     }
   },
   {
@@ -2113,6 +2990,11 @@
     "names": {
       "en": "Philippines",
       "zh": "菲律宾"
+    },
+    "numeric": "608",
+    "m49": {
+      "region": "142",
+      "subregion": "035"
     }
   },
   {
@@ -2125,6 +3007,11 @@
     "names": {
       "en": "Pakistan",
       "zh": "巴基斯坦"
+    },
+    "numeric": "586",
+    "m49": {
+      "region": "142",
+      "subregion": "034"
     }
   },
   {
@@ -2137,6 +3024,11 @@
     "names": {
       "en": "Poland",
       "zh": "波兰"
+    },
+    "numeric": "616",
+    "m49": {
+      "region": "150",
+      "subregion": "151"
     }
   },
   {
@@ -2149,6 +3041,11 @@
     "names": {
       "en": "St. Pierre \u0026 Miquelon",
       "zh": "圣皮埃尔和密克隆群岛"
+    },
+    "numeric": "666",
+    "m49": {
+      "region": "019",
+      "subregion": "021"
     }
   },
   {
@@ -2159,6 +3056,11 @@
     "names": {
       "en": "Pitcairn Islands",
       "zh": "皮特凯恩群岛"
+    },
+    "numeric": "612",
+    "m49": {
+      "region": "009",
+      "subregion": "061"
     }
   },
   {
@@ -2171,6 +3073,11 @@
     "names": {
       "en": "Puerto Rico",
       "zh": "波多黎各"
+    },
+    "numeric": "630",
+    "m49": {
+      "region": "019",
+      "subregion": "029"
     }
   },
   {
@@ -2183,6 +3090,11 @@
     "names": {
       "en": "Palestinian Territories",
       "zh": "巴勒斯坦领土"
+    },
+    "numeric": "275",
+    "m49": {
+      "region": "142",
+      "subregion": "145"
     }
   },
   {
@@ -2195,6 +3107,11 @@
     "names": {
       "en": "Portugal",
       "zh": "葡萄牙"
+    },
+    "numeric": "620",
+    "m49": {
+      "region": "150",
+      "subregion": "039"
     }
   },
   {
@@ -2207,6 +3124,11 @@
     "names": {
       "en": "Palau",
       "zh": "帕劳"
+    },
+    "numeric": "585",
+    "m49": {
+      "region": "009",
+      "subregion": "057"
     }
   },
   {
@@ -2219,6 +3141,11 @@
     "names": {
       "en": "Paraguay",
       "zh": "巴拉圭"
+    },
+    "numeric": "600",
+    "m49": {
+      "region": "019",
+      "subregion": "005"
     }
   },
   {
@@ -2231,6 +3158,11 @@
     "names": {
       "en": "Qatar",
       "zh": "卡塔尔"
+    },
+    "numeric": "634",
+    "m49": {
+      "region": "142",
+      "subregion": "145"
     }
   },
   {
@@ -2243,6 +3175,11 @@
     "names": {
       "en": "Réunion",
       "zh": "留尼汪"
+    },
+    "numeric": "638",
+    "m49": {
+      "region": "002",
+      "subregion": "014"
     }
   },
   {
@@ -2255,6 +3192,11 @@
     "names": {
       "en": "Romania",
       "zh": "罗马尼亚"
+    },
+    "numeric": "642",
+    "m49": {
+      "region": "150",
+      "subregion": "151"
     }
   },
   {
@@ -2267,6 +3209,11 @@
     "names": {
       "en": "Serbia",
       "zh": "塞尔维亚"
+    },
+    "numeric": "688",
+    "m49": {
+      "region": "150",
+      "subregion": "039"
     }
   },
   {
@@ -2279,6 +3226,11 @@
     "names": {
       "en": "Russia",
       "zh": "俄罗斯"
+    },
+    "numeric": "643",
+    "m49": {
+      "region": "150",
+      "subregion": "151"
     }
   },
   {
@@ -2291,6 +3243,11 @@
     "names": {
       "en": "Rwanda",
       "zh": "卢旺达"
+    },
+    "numeric": "646",
+    "m49": {
+      "region": "002",
+      "subregion": "014"
     }
   },
   {
@@ -2303,6 +3260,11 @@
     "names": {
       "en": "Saudi Arabia",
       "zh": "沙特阿拉伯"
+    },
+    "numeric": "682",
+    "m49": {
+      "region": "142",
+      "subregion": "145"
     }
   },
   {
@@ -2315,6 +3277,11 @@
     "names": {
       "en": "Solomon Islands",
       "zh": "所罗门群岛"
+    },
+    "numeric": "090",
+    "m49": {
+      "region": "009",
+      "subregion": "054"
     }
   },
   {
@@ -2327,6 +3294,11 @@
     "names": {
       "en": "Seychelles",
       "zh": "塞舌尔"
+    },
+    "numeric": "690",
+    "m49": {
+      "region": "002",
+      "subregion": "014"
     }
   },
   {
@@ -2339,6 +3311,11 @@
     "names": {
       "en": "Sudan",
       "zh": "苏丹"
+    },
+    "numeric": "729",
+    "m49": {
+      "region": "002",
+      "subregion": "015"
     }
   },
   {
@@ -2351,6 +3328,11 @@
     "names": {
       "en": "Sweden",
       "zh": "瑞典"
+    },
+    "numeric": "752",
+    "m49": {
+      "region": "150",
+      "subregion": "154"
     }
   },
   {
@@ -2363,6 +3345,11 @@
     "names": {
       "en": "Singapore",
       "zh": "新加坡"
+    },
+    "numeric": "702",
+    "m49": {
+      "region": "142",
+      "subregion": "035"
     }
   },
   {
@@ -2375,6 +3362,11 @@
     "names": {
       "en": "St. Helena",
       "zh": "圣赫勒拿"
+    },
+    "numeric": "654",
+    "m49": {
+      "region": "002",
+      "subregion": "011"
     }
   },
   {
@@ -2387,6 +3379,11 @@
     "names": {
       "en": "Slovenia",
       "zh": "斯洛文尼亚"
+    },
+    "numeric": "705",
+    "m49": {
+      "region": "150",
+      "subregion": "039"
     }
   },
   {
@@ -2399,6 +3396,11 @@
     "names": {
       "en": "Svalbard \u0026 Jan Mayen",
       "zh": "斯瓦尔巴和扬马延"
+    },
+    "numeric": "744",
+    "m49": {
+      "region": "150",
+      "subregion": "154"
     }
   },
   {
@@ -2411,6 +3413,11 @@
     "names": {
       "en": "Slovakia",
       "zh": "斯洛伐克"
+    },
+    "numeric": "703",
+    "m49": {
+      "region": "150",
+      "subregion": "151"
     }
   },
   {
@@ -2423,6 +3430,11 @@
     "names": {
       "en": "Sierra Leone",
       "zh": "塞拉利昂"
+    },
+    "numeric": "694",
+    "m49": {
+      "region": "002",
+      "subregion": "011"
     }
   },
   {
@@ -2435,6 +3447,11 @@
     "names": {
       "en": "San Marino",
       "zh": "圣马力诺"
+    },
+    "numeric": "674",
+    "m49": {
+      "region": "150",
+      "subregion": "039"
     }
   },
   {
@@ -2447,6 +3464,11 @@
     "names": {
       "en": "Senegal",
       "zh": "塞内加尔"
+    },
+    "numeric": "686",
+    "m49": {
+      "region": "002",
+      "subregion": "011"
     }
   },
   {
@@ -2459,6 +3481,11 @@
     "names": {
       "en": "Somalia",
       "zh": "索马里"
+    },
+    "numeric": "706",
+    "m49": {
+      "region": "002",
+      "subregion": "014"
     }
   },
   {
@@ -2471,6 +3498,11 @@
     "names": {
       "en": "Suriname",
       "zh": "苏里南"
+    },
+    "numeric": "740",
+    "m49": {
+      "region": "019",
+      "subregion": "005"
     }
   },
   {
@@ -2483,6 +3515,11 @@
     "names": {
       "en": "South Sudan",
       "zh": "南苏丹"
+    },
+    "numeric": "728",
+    "m49": {
+      "region": "002",
+      "subregion": "014"
     }
   },
   {
@@ -2495,6 +3532,11 @@
     "names": {
       "en": "São Tomé \u0026 Príncipe",
       "zh": "圣多美和普林西比"
+    },
+    "numeric": "678",
+    "m49": {
+      "region": "002",
+      "subregion": "017"
     }
   },
   {
@@ -2507,6 +3549,11 @@
     "names": {
       "en": "El Salvador",
       "zh": "萨尔瓦多"
+    },
+    "numeric": "222",
+    "m49": {
+      "region": "019",
+      "subregion": "013"
     }
   },
   {
@@ -2519,6 +3566,11 @@
     "names": {
       "en": "Sint Maarten",
       "zh": "荷属圣马丁"
+    },
+    "numeric": "534",
+    "m49": {
+      "region": "019",
+      "subregion": "029"
     }
   },
   {
@@ -2531,6 +3583,11 @@
     "names": {
       "en": "Syria",
       "zh": "叙利亚"
+    },
+    "numeric": "760",
+    "m49": {
+      "region": "142",
+      "subregion": "145"
     }
   },
   {
@@ -2543,6 +3600,11 @@
     "names": {
       "en": "Eswatini",
       "zh": "斯威士兰"
+    },
+    "numeric": "748",
+    "m49": {
+      "region": "002",
+      "subregion": "018"
     }
   },
   {
@@ -2555,6 +3617,11 @@
     "names": {
       "en": "Turks \u0026 Caicos Islands",
       "zh": "特克斯和凯科斯群岛"
+    },
+    "numeric": "796",
+    "m49": {
+      "region": "019",
+      "subregion": "029"
     }
   },
   {
@@ -2567,6 +3634,11 @@
     "names": {
       "en": "Chad",
       "zh": "乍得"
+    },
+    "numeric": "148",
+    "m49": {
+      "region": "002",
+      "subregion": "017"
     }
   },
   {
@@ -2577,6 +3649,11 @@
     "names": {
       "en": "French Southern Territories",
       "zh": "法属南部领地"
+    },
+    "numeric": "260",
+    "m49": {
+      "region": "002",
+      "subregion": "014"
     }
   },
   {
@@ -2589,6 +3666,11 @@
     "names": {
       "en": "Togo",
       "zh": "多哥"
+    },
+    "numeric": "768",
+    "m49": {
+      "region": "002",
+      "subregion": "011"
     }
   },
   {
@@ -2601,6 +3683,11 @@
     "names": {
       "en": "Thailand",
       "zh": "泰国"
+    },
+    "numeric": "764",
+    "m49": {
+      "region": "142",
+      "subregion": "035"
     }
   },
   {
@@ -2613,6 +3700,11 @@
     "names": {
       "en": "Tajikistan",
       "zh": "塔吉克斯坦"
+    },
+    "numeric": "762",
+    "m49": {
+      "region": "142",
+      "subregion": "143"
     }
   },
   {
@@ -2625,6 +3717,11 @@
     "names": {
       "en": "Tokelau",
       "zh": "托克劳"
+    },
+    "numeric": "772",
+    "m49": {
+      "region": "009",
+      "subregion": "061"
     }
   },
   {
@@ -2637,6 +3734,11 @@
     "names": {
       "en": "Timor-Leste",
       "zh": "东帝汶"
+    },
+    "numeric": "626",
+    "m49": {
+      "region": "142",
+      "subregion": "035"
     }
   },
   {
@@ -2649,6 +3751,11 @@
     "names": {
       "en": "Turkmenistan",
       "zh": "土库曼斯坦"
+    },
+    "numeric": "795",
+    "m49": {
+      "region": "142",
+      "subregion": "143"
     }
   },
   {
@@ -2661,6 +3768,11 @@
     "names": {
       "en": "Tunisia",
       "zh": "突尼斯"
+    },
+    "numeric": "788",
+    "m49": {
+      "region": "002",
+      "subregion": "015"
     }
   },
   {
@@ -2673,6 +3785,11 @@
     "names": {
       "en": "Tonga",
       "zh": "汤加"
+    },
+    "numeric": "776",
+    "m49": {
+      "region": "009",
+      "subregion": "061"
     }
   },
   {
@@ -2685,6 +3802,11 @@
     "names": {
       "en": "Türkiye",
       "zh": "土耳其"
+    },
+    "numeric": "792",
+    "m49": {
+      "region": "142",
+      "subregion": "145"
     }
   },
   {
@@ -2697,6 +3819,11 @@
     "names": {
       "en": "Trinidad \u0026 Tobago",
       "zh": "特立尼达和多巴哥"
+    },
+    "numeric": "780",
+    "m49": {
+      "region": "019",
+      "subregion": "029"
     }
   },
   {
@@ -2709,6 +3836,11 @@
     "names": {
       "en": "Tuvalu",
       "zh": "图瓦卢"
+    },
+    "numeric": "798",
+    "m49": {
+      "region": "009",
+      "subregion": "061"
     }
   },
   {
@@ -2721,6 +3853,11 @@
     "names": {
       "en": "Taiwan",
       "zh": "台湾"
+    },
+    "numeric": "158",
+    "m49": {
+      "region": "142",
+      "subregion": "030"
     }
   },
   {
@@ -2733,6 +3870,11 @@
     "names": {
       "en": "Tanzania",
       "zh": "坦桑尼亚"
+    },
+    "numeric": "834",
+    "m49": {
+      "region": "002",
+      "subregion": "014"
     }
   },
   {
@@ -2745,6 +3887,11 @@
     "names": {
       "en": "Ukraine",
       "zh": "乌克兰"
+    },
+    "numeric": "804",
+    "m49": {
+      "region": "150",
+      "subregion": "151"
     }
   },
   {
@@ -2757,6 +3904,11 @@
     "names": {
       "en": "Uganda",
       "zh": "乌干达"
+    },
+    "numeric": "800",
+    "m49": {
+      "region": "002",
+      "subregion": "014"
     }
   },
   {
@@ -2767,6 +3919,11 @@
     "names": {
       "en": "U.S. Outlying Islands",
       "zh": "美国本土外小岛屿"
+    },
+    "numeric": "581",
+    "m49": {
+      "region": "009",
+      "subregion": "057"
     }
   },
   {
@@ -2779,6 +3936,11 @@
     "names": {
       "en": "United States",
       "zh": "美国"
+    },
+    "numeric": "840",
+    "m49": {
+      "region": "019",
+      "subregion": "021"
     }
   },
   {
@@ -2791,6 +3953,11 @@
     "names": {
       "en": "Uruguay",
       "zh": "乌拉圭"
+    },
+    "numeric": "858",
+    "m49": {
+      "region": "019",
+      "subregion": "005"
     }
   },
   {
@@ -2803,6 +3970,11 @@
     "names": {
       "en": "Uzbekistan",
       "zh": "乌兹别克斯坦"
+    },
+    "numeric": "860",
+    "m49": {
+      "region": "142",
+      "subregion": "143"
     }
   },
   {
@@ -2815,6 +3987,11 @@
     "names": {
       "en": "Vatican City",
       "zh": "梵蒂冈"
+    },
+    "numeric": "336",
+    "m49": {
+      "region": "150",
+      "subregion": "039"
     }
   },
   {
@@ -2827,6 +4004,11 @@
     "names": {
       "en": "St. Vincent \u0026 Grenadines",
       "zh": "圣文森特和格林纳丁斯"
+    },
+    "numeric": "670",
+    "m49": {
+      "region": "019",
+      "subregion": "029"
     }
   },
   {
@@ -2839,6 +4021,11 @@
     "names": {
       "en": "Venezuela",
       "zh": "委内瑞拉"
+    },
+    "numeric": "862",
+    "m49": {
+      "region": "019",
+      "subregion": "005"
     }
   },
   {
@@ -2851,6 +4038,11 @@
     "names": {
       "en": "British Virgin Islands",
       "zh": "英属维尔京群岛"
+    },
+    "numeric": "092",
+    "m49": {
+      "region": "019",
+      "subregion": "029"
     }
   },
   {
@@ -2863,6 +4055,11 @@
     "names": {
       "en": "U.S. Virgin Islands",
       "zh": "美属维尔京群岛"
+    },
+    "numeric": "850",
+    "m49": {
+      "region": "019",
+      "subregion": "029"
     }
   },
   {
@@ -2875,6 +4072,11 @@
     "names": {
       "en": "Vietnam",
       "zh": "越南"
+    },
+    "numeric": "704",
+    "m49": {
+      "region": "142",
+      "subregion": "035"
     }
   },
   {
@@ -2887,6 +4089,11 @@
     "names": {
       "en": "Vanuatu",
       "zh": "瓦努阿图"
+    },
+    "numeric": "548",
+    "m49": {
+      "region": "009",
+      "subregion": "054"
     }
   },
   {
@@ -2899,6 +4106,11 @@
     "names": {
       "en": "Wallis \u0026 Futuna",
       "zh": "瓦利斯和富图纳"
+    },
+    "numeric": "876",
+    "m49": {
+      "region": "009",
+      "subregion": "061"
     }
   },
   {
@@ -2911,6 +4123,11 @@
     "names": {
       "en": "Samoa",
       "zh": "萨摩亚"
+    },
+    "numeric": "882",
+    "m49": {
+      "region": "009",
+      "subregion": "061"
     }
   },
   {
@@ -2923,6 +4140,11 @@
     "names": {
       "en": "Yemen",
       "zh": "也门"
+    },
+    "numeric": "887",
+    "m49": {
+      "region": "142",
+      "subregion": "145"
     }
   },
   {
@@ -2935,6 +4157,11 @@
     "names": {
       "en": "Mayotte",
       "zh": "马约特"
+    },
+    "numeric": "175",
+    "m49": {
+      "region": "002",
+      "subregion": "014"
     }
   },
   {
@@ -2947,6 +4174,11 @@
     "names": {
       "en": "South Africa",
       "zh": "南非"
+    },
+    "numeric": "710",
+    "m49": {
+      "region": "002",
+      "subregion": "018"
     }
   },
   {
@@ -2959,6 +4191,11 @@
     "names": {
       "en": "Zambia",
       "zh": "赞比亚"
+    },
+    "numeric": "894",
+    "m49": {
+      "region": "002",
+      "subregion": "014"
     }
   },
   {
@@ -2971,6 +4208,11 @@
     "names": {
       "en": "Zimbabwe",
       "zh": "津巴布韦"
+    },
+    "numeric": "716",
+    "m49": {
+      "region": "002",
+      "subregion": "014"
     }
   }
 ]

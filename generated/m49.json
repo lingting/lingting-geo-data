@@ -1,0 +1,551 @@
+{
+  "code": "001",
+  "name": {
+    "en": "world",
+    "zh": "世界"
+  },
+  "children": [
+    {
+      "code": "002",
+      "name": {
+        "en": "Africa",
+        "zh": "非洲"
+      },
+      "children": [
+        {
+          "code": "014",
+          "name": {
+            "en": "Eastern Africa",
+            "zh": "东非"
+          },
+          "regions": [
+            "BI",
+            "DJ",
+            "ER",
+            "ET",
+            "IO",
+            "KE",
+            "KM",
+            "MG",
+            "MU",
+            "MW",
+            "MZ",
+            "RE",
+            "RW",
+            "SC",
+            "SO",
+            "SS",
+            "TF",
+            "TZ",
+            "UG",
+            "YT",
+            "ZM",
+            "ZW"
+          ]
+        },
+        {
+          "code": "017",
+          "name": {
+            "en": "Middle Africa",
+            "zh": "中非"
+          },
+          "regions": [
+            "AO",
+            "CD",
+            "CF",
+            "CG",
+            "CM",
+            "GA",
+            "GQ",
+            "ST",
+            "TD"
+          ]
+        },
+        {
+          "code": "015",
+          "name": {
+            "en": "Northern Africa",
+            "zh": "北非"
+          },
+          "regions": [
+            "DZ",
+            "EG",
+            "EH",
+            "LY",
+            "MA",
+            "SD",
+            "TN"
+          ]
+        },
+        {
+          "code": "018",
+          "name": {
+            "en": "Southern Africa",
+            "zh": "南部非洲"
+          },
+          "regions": [
+            "BW",
+            "LS",
+            "NA",
+            "SZ",
+            "ZA"
+          ]
+        },
+        {
+          "code": "011",
+          "name": {
+            "en": "Western Africa",
+            "zh": "西非"
+          },
+          "regions": [
+            "BF",
+            "BJ",
+            "CI",
+            "CV",
+            "GH",
+            "GM",
+            "GN",
+            "GW",
+            "LR",
+            "ML",
+            "MR",
+            "NE",
+            "NG",
+            "SH",
+            "SL",
+            "SN",
+            "TG"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "019",
+      "name": {
+        "en": "Americas",
+        "zh": "美洲"
+      },
+      "children": [
+        {
+          "code": "029",
+          "name": {
+            "en": "Caribbean",
+            "zh": "加勒比地区"
+          },
+          "regions": [
+            "AG",
+            "AI",
+            "AW",
+            "BB",
+            "BL",
+            "BQ",
+            "BS",
+            "CU",
+            "CW",
+            "DM",
+            "DO",
+            "GD",
+            "GP",
+            "HT",
+            "JM",
+            "KN",
+            "KY",
+            "LC",
+            "MF",
+            "MQ",
+            "MS",
+            "PR",
+            "SX",
+            "TC",
+            "TT",
+            "VC",
+            "VG",
+            "VI"
+          ]
+        },
+        {
+          "code": "013",
+          "name": {
+            "en": "Central America",
+            "zh": "中美洲"
+          },
+          "regions": [
+            "BZ",
+            "CR",
+            "GT",
+            "HN",
+            "MX",
+            "NI",
+            "PA",
+            "SV"
+          ]
+        },
+        {
+          "code": "021",
+          "name": {
+            "en": "Northern America",
+            "zh": "美洲北部"
+          },
+          "regions": [
+            "BM",
+            "CA",
+            "GL",
+            "PM",
+            "US"
+          ]
+        },
+        {
+          "code": "005",
+          "name": {
+            "en": "South America",
+            "zh": "南美洲"
+          },
+          "regions": [
+            "AR",
+            "BO",
+            "BR",
+            "BV",
+            "CL",
+            "CO",
+            "EC",
+            "FK",
+            "GF",
+            "GS",
+            "GY",
+            "PE",
+            "PY",
+            "SR",
+            "UY",
+            "VE"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "142",
+      "name": {
+        "en": "Asia",
+        "zh": "亚洲"
+      },
+      "children": [
+        {
+          "code": "143",
+          "name": {
+            "en": "Central Asia",
+            "zh": "中亚"
+          },
+          "regions": [
+            "KG",
+            "KZ",
+            "TJ",
+            "TM",
+            "UZ"
+          ]
+        },
+        {
+          "code": "030",
+          "name": {
+            "en": "Eastern Asia",
+            "zh": "东亚"
+          },
+          "regions": [
+            "CN",
+            "HK",
+            "JP",
+            "KP",
+            "KR",
+            "MN",
+            "MO",
+            "TW"
+          ]
+        },
+        {
+          "code": "035",
+          "name": {
+            "en": "Southeast Asia",
+            "zh": "东南亚"
+          },
+          "regions": [
+            "BN",
+            "ID",
+            "KH",
+            "LA",
+            "MM",
+            "MY",
+            "PH",
+            "SG",
+            "TH",
+            "TL",
+            "VN"
+          ]
+        },
+        {
+          "code": "034",
+          "name": {
+            "en": "Southern Asia",
+            "zh": "南亚"
+          },
+          "regions": [
+            "AF",
+            "BD",
+            "BT",
+            "IN",
+            "IR",
+            "LK",
+            "MV",
+            "NP",
+            "PK"
+          ]
+        },
+        {
+          "code": "145",
+          "name": {
+            "en": "Western Asia",
+            "zh": "西亚"
+          },
+          "regions": [
+            "AE",
+            "AM",
+            "AZ",
+            "BH",
+            "CY",
+            "GE",
+            "IL",
+            "IQ",
+            "JO",
+            "KW",
+            "LB",
+            "OM",
+            "PS",
+            "QA",
+            "SA",
+            "SY",
+            "TR",
+            "YE"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "150",
+      "name": {
+        "en": "Europe",
+        "zh": "欧洲"
+      },
+      "children": [
+        {
+          "code": "151",
+          "name": {
+            "en": "Eastern Europe",
+            "zh": "东欧"
+          },
+          "regions": [
+            "BG",
+            "BY",
+            "CZ",
+            "HU",
+            "MD",
+            "PL",
+            "RO",
+            "RU",
+            "SK",
+            "UA"
+          ]
+        },
+        {
+          "code": "154",
+          "name": {
+            "en": "Northern Europe",
+            "zh": "北欧"
+          },
+          "regions": [
+            "AX",
+            "DK",
+            "EE",
+            "FI",
+            "FO",
+            "GB",
+            "GG",
+            "IE",
+            "IM",
+            "IS",
+            "JE",
+            "LT",
+            "LV",
+            "NO",
+            "SE",
+            "SJ"
+          ]
+        },
+        {
+          "code": "039",
+          "name": {
+            "en": "Southern Europe",
+            "zh": "南欧"
+          },
+          "regions": [
+            "AD",
+            "AL",
+            "BA",
+            "ES",
+            "GI",
+            "GR",
+            "HR",
+            "IT",
+            "ME",
+            "MK",
+            "MT",
+            "PT",
+            "RS",
+            "SI",
+            "SM",
+            "VA"
+          ]
+        },
+        {
+          "code": "155",
+          "name": {
+            "en": "Western Europe",
+            "zh": "西欧"
+          },
+          "regions": [
+            "AT",
+            "BE",
+            "CH",
+            "DE",
+            "FR",
+            "LI",
+            "LU",
+            "MC",
+            "NL"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "009",
+      "name": {
+        "en": "Oceania",
+        "zh": "大洋洲"
+      },
+      "children": [
+        {
+          "code": "053",
+          "name": {
+            "en": "Australasia",
+            "zh": "澳大拉西亚"
+          },
+          "regions": [
+            "AU",
+            "CC",
+            "CX",
+            "HM",
+            "NF",
+            "NZ"
+          ]
+        },
+        {
+          "code": "054",
+          "name": {
+            "en": "Melanesia",
+            "zh": "美拉尼西亚"
+          },
+          "regions": [
+            "FJ",
+            "NC",
+            "PG",
+            "SB",
+            "VU"
+          ]
+        },
+        {
+          "code": "057",
+          "name": {
+            "en": "Micronesian Region",
+            "zh": "密克罗尼西亚地区"
+          },
+          "regions": [
+            "FM",
+            "GU",
+            "KI",
+            "MH",
+            "MP",
+            "NR",
+            "PW",
+            "UM"
+          ]
+        },
+        {
+          "code": "061",
+          "name": {
+            "en": "Polynesia",
+            "zh": "玻利尼西亚"
+          },
+          "regions": [
+            "AS",
+            "CK",
+            "NU",
+            "PF",
+            "PN",
+            "TK",
+            "TO",
+            "TV",
+            "WF",
+            "WS"
+          ]
+        }
+      ]
+    }
+  ],
+  "regions": [
+    "AA",
+    "AN",
+    "AQ",
+    "BU",
+    "CS",
+    "DD",
+    "FX",
+    "NT",
+    "QM",
+    "QN",
+    "QP",
+    "QQ",
+    "QR",
+    "QS",
+    "QT",
+    "QU",
+    "QV",
+    "QW",
+    "QX",
+    "QY",
+    "QZ",
+    "SU",
+    "TP",
+    "XC",
+    "XD",
+    "XE",
+    "XF",
+    "XG",
+    "XH",
+    "XI",
+    "XJ",
+    "XL",
+    "XM",
+    "XN",
+    "XO",
+    "XP",
+    "XQ",
+    "XR",
+    "XS",
+    "XT",
+    "XU",
+    "XV",
+    "XW",
+    "XX",
+    "XY",
+    "XZ",
+    "YD",
+    "YU",
+    "ZR"
+  ]
+}
