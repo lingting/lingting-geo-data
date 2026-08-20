@@ -162,11 +162,15 @@ func parsePhones(body []byte) (map[string][]PhoneNumber, error) {
 }
 
 func phonePrefixesForTerritory(territory phoneTerritory, calling int) ([]int, error) {
-	prefixes := []int{calling}
 	leadingDigits, err := expandLeadingDigits(territory.LeadingDigits)
 	if err != nil {
 		return nil, fmt.Errorf("expand leading digits for %s: %w", territory.ID, err)
 	}
+	if len(leadingDigits) == 0 {
+		return []int{calling}, nil
+	}
+
+	prefixes := make([]int, 0, len(leadingDigits))
 	for _, leadingDigit := range leadingDigits {
 		prefix, err := strconv.Atoi(strconv.Itoa(calling) + leadingDigit)
 		if err != nil {
