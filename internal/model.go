@@ -40,13 +40,14 @@ type Names struct {
 }
 
 type Region struct {
-	ISO          string   `json:"iso"`
-	ISO3         string   `json:"iso3,omitempty"`
-	Flag         string   `json:"flag"`
-	CallingCodes []string `json:"callingCodes"`
-	Names        Names    `json:"names"`
-	Numeric      string   `json:"numeric"`
-	M49          M49Index `json:"m49"`
+	ISO           string   `json:"iso"`
+	ISO3          string   `json:"iso3,omitempty"`
+	Flag          string   `json:"flag"`
+	CallingCodes  []string `json:"callingCodes"`
+	PhonePrefixes []string `json:"phonePrefixes"`
+	Names         Names    `json:"names"`
+	Numeric       string   `json:"numeric"`
+	M49           M49Index `json:"m49"`
 }
 
 type M49Index struct {

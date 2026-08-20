@@ -2,7 +2,6 @@ package internal
 
 import (
 	"encoding/json"
-	"encoding/xml"
 	"fmt"
 	"os"
 	"path/filepath"
@@ -37,22 +36,39 @@ type territoryNamesFile struct {
 }
 
 type phoneMetadata struct {
-	Territories []struct {
-		ID          string `xml:"id,attr"`
-		CountryCode string `xml:"countryCode,attr"`
-	} `xml:"territories>territory"`
+	Territories []phoneTerritory `xml:"territories>territory"`
+}
+
+type phoneTerritory struct {
+	ID                 string `xml:"id,attr"`
+	CountryCode        string `xml:"countryCode,attr"`
+	LeadingDigits      string `xml:"leadingDigits,attr"`
+	MainCountryForCode bool   `xml:"mainCountryForCode,attr"`
 }
 
 // GenerateRegions 在任一依赖源更新时重新生成 regions.json。
-func GenerateRegions(root string, states map[string]SourceState, indexes map[string]M49Index, m49Updated bool) (bool, error) {
-	if !m49Updated && !anySourceUpdated(states, regionSourcePaths) {
+func GenerateRegions(
+	root string,
+	states map[string]SourceState,
+	indexes map[string]M49Index,
+	m49Updated, phonesUpdated bool,
+	callingCodes map[string][]string,
+	phonePrefixes map[string][]string,
+) (bool, error) {
+	if !m49Updated && !phonesUpdated && !anySourceUpdated(states, regionSourcePaths) {
 		regionsPath := filepath.Join(root, "generated", "regions.json")
 		legacyCountriesPath := filepath.Join(root, "generated", "countries.json")
 		if _, err := os.Stat(regionsPath); err == nil {
-			if _, err := os.Stat(legacyCountriesPath); os.IsNotExist(err) {
-				return false, nil
-			} else if err != nil {
-				return false, fmt.Errorf("stat legacy countries: %w", err)
+			hasPhonePrefixes, err := generatedRegionsHavePhonePrefixes(regionsPath)
+			if err != nil {
+				return false, err
+			}
+			if hasPhonePrefixes {
+				if _, err := os.Stat(legacyCountriesPath); os.IsNotExist(err) {
+					return false, nil
+				} else if err != nil {
+					return false, fmt.Errorf("stat legacy countries: %w", err)
+				}
 			}
 		} else if !os.IsNotExist(err) {
 			return false, fmt.Errorf("stat generated regions: %w", err)
@@ -62,7 +78,7 @@ func GenerateRegions(root string, states map[string]SourceState, indexes map[str
 	if err != nil {
 		return false, err
 	}
-	regions, _, err := parseRegions(files, indexes)
+	regions, _, err := parseRegions(files, indexes, callingCodes, phonePrefixes)
 	if err != nil {
 		return false, err
 	}
@@ -75,6 +91,22 @@ func GenerateRegions(root string, states map[string]SourceState, indexes map[str
 	}
 	if err := os.Remove(filepath.Join(root, "generated", "countries.json")); err != nil && !os.IsNotExist(err) {
 		return false, fmt.Errorf("remove legacy countries: %w", err)
+	}
+	return true, nil
+}
+func generatedRegionsHavePhonePrefixes(path string) (bool, error) {
+	body, err := os.ReadFile(path)
+	if err != nil {
+		return false, fmt.Errorf("read generated regions: %w", err)
+	}
+	var regions []Region
+	if err := json.Unmarshal(body, &regions); err != nil {
+		return false, fmt.Errorf("parse generated regions: %w", err)
+	}
+	for _, region := range regions {
+		if region.PhonePrefixes == nil {
+			return false, nil
+		}
 	}
 	return true, nil
 }
@@ -102,10 +134,13 @@ func anySourceUpdated(states map[string]SourceState, paths []string) bool {
 	return false
 }
 
-func parseRegions(files map[string][]byte, indexes map[string]M49Index) ([]Region, []SourceSpec, error) {
+func parseRegions(
+	files map[string][]byte,
+	indexes map[string]M49Index,
+	callingCodes, phonePrefixes map[string][]string,
+) ([]Region, []SourceSpec, error) {
 	var mappings codeMappingsFile
 	var en, zh territoryNamesFile
-	var phone phoneMetadata
 	if err := json.Unmarshal(files["cldr/codeMappings.json"], &mappings); err != nil {
 		return nil, nil, fmt.Errorf("parse codeMappings: %w", err)
 	}
@@ -115,17 +150,8 @@ func parseRegions(files map[string][]byte, indexes map[string]M49Index) ([]Regio
 	if err := json.Unmarshal(files["cldr/zh-territories.json"], &zh); err != nil {
 		return nil, nil, fmt.Errorf("parse Chinese territories: %w", err)
 	}
-	if err := xml.Unmarshal(files["libphonenumber/PhoneNumberMetadata.xml"], &phone); err != nil {
-		return nil, nil, fmt.Errorf("parse libphonenumber metadata: %w", err)
-	}
 
 	enNames, zhNames := namesFor(en, "en"), namesFor(zh, "zh")
-	callingCodes := make(map[string][]string)
-	for _, territory := range phone.Territories {
-		if territory.ID != "" && territory.CountryCode != "" {
-			callingCodes[territory.ID] = append(callingCodes[territory.ID], territory.CountryCode)
-		}
-	}
 	regions := make([]Region, 0, len(indexes))
 	for iso, index := range indexes {
 		mapping, exists := mappings.Supplemental.CodeMappings[iso]
@@ -134,17 +160,27 @@ func parseRegions(files map[string][]byte, indexes map[string]M49Index) ([]Regio
 			continue
 		}
 		regions = append(regions, Region{
-			ISO:          iso,
-			ISO3:         mapping.Alpha3,
-			Flag:         flagFor(iso),
-			CallingCodes: sortedUnique(callingCodes[iso]),
-			Names:        Names{English: name, Chinese: zhNames[iso]},
-			Numeric:      mapping.Numeric,
-			M49:          index,
+			ISO:           iso,
+			ISO3:          mapping.Alpha3,
+			Flag:          flagFor(iso),
+			CallingCodes:  callingCodes[iso],
+			PhonePrefixes: phonePrefixesFor(iso, phonePrefixes, callingCodes),
+			Names:         Names{English: name, Chinese: zhNames[iso]},
+			Numeric:       mapping.Numeric,
+			M49:           index,
 		})
 	}
 	sort.Slice(regions, func(i, j int) bool { return regions[i].ISO < regions[j].ISO })
 	return regions, nil, validateRegions(regions)
+}
+func phonePrefixesFor(iso string, prefixes, callingCodes map[string][]string) []string {
+	if values := prefixes[iso]; values != nil {
+		return values
+	}
+	if values := callingCodes[iso]; values != nil {
+		return values
+	}
+	return []string{}
 }
 
 func flagFor(iso string) string {

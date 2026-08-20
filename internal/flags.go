@@ -65,6 +65,18 @@ func syncFlag(root, flagsDir, flag string) (bool, error) {
 	return true, nil
 }
 
+func readGeneratedPhones(root string) ([]PhonePrefix, error) {
+	body, err := os.ReadFile(filepath.Join(root, "generated", "phones.json"))
+	if err != nil {
+		return nil, fmt.Errorf("read generated phones: %w", err)
+	}
+	var phones []PhonePrefix
+	if err := json.Unmarshal(body, &phones); err != nil {
+		return nil, fmt.Errorf("parse generated phones: %w", err)
+	}
+	return phones, nil
+}
+
 func readGeneratedRegions(root string) ([]Region, error) {
 	body, err := os.ReadFile(filepath.Join(root, "generated", "regions.json"))
 	if err != nil {
