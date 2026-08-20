@@ -2,14 +2,17 @@ package internal
 
 const (
 	directSource = iota
-	githubLatestSourceArchive
+	githubLatestReleaseAsset
+	githubLatestReleaseArchive
 )
 
-// SourceSpec 描述一个明确需要的上游文件或源码归档。
+// SourceSpec 描述一个明确需要的上游文件、Release 资产或源码归档。
 type SourceSpec struct {
 	Path       string
 	URL        string
 	Repository string
+	Asset      string
+	Kind       int
 	Provenance string
 }
 
@@ -22,6 +25,14 @@ type SourceRecord struct {
 
 type SourceIndex struct {
 	Sources map[string]SourceRecord `json:"sources"`
+}
+
+// SourceState 记录本次同步后的源文件、索引记录和更新状态。
+type SourceState struct {
+	Spec    SourceSpec
+	Files   map[string][]byte
+	Record  SourceRecord
+	Updated bool
 }
 
 type Names struct {
@@ -47,5 +58,6 @@ func baseSources() []SourceSpec {
 		{Path: "cldr/en-territories.json", URL: cldrBase + "cldr-localenames-full/main/en/territories.json", Provenance: "Unicode CLDR (Unicode License v3)"},
 		{Path: "cldr/zh-territories.json", URL: cldrBase + "cldr-localenames-full/main/zh/territories.json", Provenance: "Unicode CLDR (Unicode License v3)"},
 		{Path: "libphonenumber/PhoneNumberMetadata.xml", URL: phoneURL, Provenance: "Google libphonenumber (Apache-2.0)"},
+		{Path: "flag-icons", Repository: "lipis/flag-icons", Kind: githubLatestReleaseArchive, Provenance: "flag-icons (MIT)"},
 	}
 }

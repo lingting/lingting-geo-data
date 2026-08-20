@@ -4,8 +4,16 @@ import (
 	"encoding/json"
 	"encoding/xml"
 	"fmt"
+	"path/filepath"
 	"sort"
 )
+
+var countrySourcePaths = []string{
+	"cldr/codeMappings.json",
+	"cldr/en-territories.json",
+	"cldr/zh-territories.json",
+	"libphonenumber/PhoneNumberMetadata.xml",
+}
 
 type codeMappingsFile struct {
 	Supplemental struct {
@@ -28,6 +36,44 @@ type phoneMetadata struct {
 		ID          string `xml:"id,attr"`
 		CountryCode string `xml:"countryCode,attr"`
 	} `xml:"territories>territory"`
+}
+
+// GenerateCountries 在任一依赖源更新时重新生成 countries.json。
+func GenerateCountries(root string, states map[string]SourceState) (bool, error) {
+	if !anySourceUpdated(states, countrySourcePaths) {
+		return false, nil
+	}
+	files := make(map[string][]byte, len(countrySourcePaths))
+	for _, sourcePath := range countrySourcePaths {
+		state, exists := states[sourcePath]
+		if !exists {
+			return false, fmt.Errorf("missing country source %s", sourcePath)
+		}
+		for filePath, body := range state.Files {
+			files[filePath] = body
+		}
+	}
+	countries, _, err := parseCountries(files)
+	if err != nil {
+		return false, err
+	}
+	body, err := json.MarshalIndent(countries, "", "  ")
+	if err != nil {
+		return false, err
+	}
+	if err := writeFile(filepath.Join(root, "generated"), "countries.json", append(body, '\n')); err != nil {
+		return false, err
+	}
+	return true, nil
+}
+
+func anySourceUpdated(states map[string]SourceState, paths []string) bool {
+	for _, sourcePath := range paths {
+		if states[sourcePath].Updated {
+			return true
+		}
+	}
+	return false
 }
 
 func parseCountries(files map[string][]byte) ([]Country, []SourceSpec, error) {
@@ -73,6 +119,7 @@ func parseCountries(files map[string][]byte) ([]Country, []SourceSpec, error) {
 func namesFor(file territoryNamesFile, locale string) map[string]string {
 	return file.Main[locale].LocaleDisplayNames.Territories
 }
+
 func sortedUnique(values []string) []string {
 	seen := make(map[string]struct{}, len(values))
 	for _, value := range values {

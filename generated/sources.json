@@ -18,6 +18,12 @@
       "sha256": "5f1aa4258485939956ba83c238f88579913ee63ea42f9d9b9070c62da2bb135c",
       "provenance": "Unicode CLDR (Unicode License v3)"
     },
+    "flag-icons": {
+      "url": "https://api.github.com/repos/lipis/flag-icons/releases/latest",
+      "etag": "W/\"007a3596f8356a79a223df2f3fff87d98ba895f11606046aadb7e8d27a7f416c\"",
+      "sha256": "ecd90f3c499eb0d588dfef14a435fe420d2a32992dfeb81112a05227fdc43c42",
+      "provenance": "flag-icons (MIT)"
+    },
     "libphonenumber/PhoneNumberMetadata.xml": {
       "url": "https://raw.githubusercontent.com/google/libphonenumber/master/resources/PhoneNumberMetadata.xml",
       "etag": "W/\"f34a0f8b27ff4930386281d38ee90f9a514d04404e2ce3040d8375aa93fbeea0\"",
