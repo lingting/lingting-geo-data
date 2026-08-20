@@ -1,0 +1,28 @@
+{
+  "sources": {
+    "cldr/codeMappings.json": {
+      "url": "https://raw.githubusercontent.com/unicode-org/cldr-json/main/cldr-json/cldr-core/supplemental/codeMappings.json",
+      "etag": "W/\"0e9ad644deb6ca65b1933caebb91b25b4b3e7474468214bbe5bfbd94b1c4479d\"",
+      "sha256": "14c7f056f7ef391de421d95743613e5bd3b3fe14a300681be56b7bdc07e8b1c9",
+      "provenance": "Unicode CLDR (Unicode License v3)"
+    },
+    "cldr/en-territories.json": {
+      "url": "https://raw.githubusercontent.com/unicode-org/cldr-json/main/cldr-json/cldr-localenames-full/main/en/territories.json",
+      "etag": "W/\"5868f9041cb37e75ae3d7cac9d64f1e8a5bd1fd93b4d4c19c5ff1381b7f7c746\"",
+      "sha256": "9366b0dd98e81bd4610b945521b82f3e450a2bc4a072f3a47bbd9780e281b473",
+      "provenance": "Unicode CLDR (Unicode License v3)"
+    },
+    "cldr/zh-territories.json": {
+      "url": "https://raw.githubusercontent.com/unicode-org/cldr-json/main/cldr-json/cldr-localenames-full/main/zh/territories.json",
+      "etag": "W/\"2ab4938f5759a30780803fb3fb83c960d2beb2880849745090750602cadd49fa\"",
+      "sha256": "5f1aa4258485939956ba83c238f88579913ee63ea42f9d9b9070c62da2bb135c",
+      "provenance": "Unicode CLDR (Unicode License v3)"
+    },
+    "libphonenumber/PhoneNumberMetadata.xml": {
+      "url": "https://raw.githubusercontent.com/google/libphonenumber/master/resources/PhoneNumberMetadata.xml",
+      "etag": "W/\"f34a0f8b27ff4930386281d38ee90f9a514d04404e2ce3040d8375aa93fbeea0\"",
+      "sha256": "d4ed6029b5989c9c439a16c0c34d4807f4f1ca08afd71f781dd808ed102d2481",
+      "provenance": "Google libphonenumber (Apache-2.0)"
+    }
+  }
+}

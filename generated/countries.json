@@ -1,0 +1,2745 @@
+[
+  {
+    "iso": "AD",
+    "iso3": "AND",
+    "callingCodes": [
+      "376"
+    ],
+    "names": {
+      "en": "Andorra",
+      "zh": "安道尔"
+    }
+  },
+  {
+    "iso": "AE",
+    "iso3": "ARE",
+    "callingCodes": [
+      "971"
+    ],
+    "names": {
+      "en": "United Arab Emirates",
+      "zh": "阿拉伯联合酋长国"
+    }
+  },
+  {
+    "iso": "AF",
+    "iso3": "AFG",
+    "callingCodes": [
+      "93"
+    ],
+    "names": {
+      "en": "Afghanistan",
+      "zh": "阿富汗"
+    }
+  },
+  {
+    "iso": "AG",
+    "iso3": "ATG",
+    "callingCodes": [
+      "1"
+    ],
+    "names": {
+      "en": "Antigua \u0026 Barbuda",
+      "zh": "安提瓜和巴布达"
+    }
+  },
+  {
+    "iso": "AI",
+    "iso3": "AIA",
+    "callingCodes": [
+      "1"
+    ],
+    "names": {
+      "en": "Anguilla",
+      "zh": "安圭拉"
+    }
+  },
+  {
+    "iso": "AL",
+    "iso3": "ALB",
+    "callingCodes": [
+      "355"
+    ],
+    "names": {
+      "en": "Albania",
+      "zh": "阿尔巴尼亚"
+    }
+  },
+  {
+    "iso": "AM",
+    "iso3": "ARM",
+    "callingCodes": [
+      "374"
+    ],
+    "names": {
+      "en": "Armenia",
+      "zh": "亚美尼亚"
+    }
+  },
+  {
+    "iso": "AO",
+    "iso3": "AGO",
+    "callingCodes": [
+      "244"
+    ],
+    "names": {
+      "en": "Angola",
+      "zh": "安哥拉"
+    }
+  },
+  {
+    "iso": "AQ",
+    "iso3": "ATA",
+    "callingCodes": [],
+    "names": {
+      "en": "Antarctica",
+      "zh": "南极洲"
+    }
+  },
+  {
+    "iso": "AR",
+    "iso3": "ARG",
+    "callingCodes": [
+      "54"
+    ],
+    "names": {
+      "en": "Argentina",
+      "zh": "阿根廷"
+    }
+  },
+  {
+    "iso": "AS",
+    "iso3": "ASM",
+    "callingCodes": [
+      "1"
+    ],
+    "names": {
+      "en": "American Samoa",
+      "zh": "美属萨摩亚"
+    }
+  },
+  {
+    "iso": "AT",
+    "iso3": "AUT",
+    "callingCodes": [
+      "43"
+    ],
+    "names": {
+      "en": "Austria",
+      "zh": "奥地利"
+    }
+  },
+  {
+    "iso": "AU",
+    "iso3": "AUS",
+    "callingCodes": [
+      "61"
+    ],
+    "names": {
+      "en": "Australia",
+      "zh": "澳大利亚"
+    }
+  },
+  {
+    "iso": "AW",
+    "iso3": "ABW",
+    "callingCodes": [
+      "297"
+    ],
+    "names": {
+      "en": "Aruba",
+      "zh": "阿鲁巴"
+    }
+  },
+  {
+    "iso": "AX",
+    "iso3": "ALA",
+    "callingCodes": [
+      "358"
+    ],
+    "names": {
+      "en": "Åland Islands",
+      "zh": "奥兰群岛"
+    }
+  },
+  {
+    "iso": "AZ",
+    "iso3": "AZE",
+    "callingCodes": [
+      "994"
+    ],
+    "names": {
+      "en": "Azerbaijan",
+      "zh": "阿塞拜疆"
+    }
+  },
+  {
+    "iso": "BA",
+    "iso3": "BIH",
+    "callingCodes": [
+      "387"
+    ],
+    "names": {
+      "en": "Bosnia \u0026 Herzegovina",
+      "zh": "波斯尼亚和黑塞哥维那"
+    }
+  },
+  {
+    "iso": "BB",
+    "iso3": "BRB",
+    "callingCodes": [
+      "1"
+    ],
+    "names": {
+      "en": "Barbados",
+      "zh": "巴巴多斯"
+    }
+  },
+  {
+    "iso": "BD",
+    "iso3": "BGD",
+    "callingCodes": [
+      "880"
+    ],
+    "names": {
+      "en": "Bangladesh",
+      "zh": "孟加拉国"
+    }
+  },
+  {
+    "iso": "BE",
+    "iso3": "BEL",
+    "callingCodes": [
+      "32"
+    ],
+    "names": {
+      "en": "Belgium",
+      "zh": "比利时"
+    }
+  },
+  {
+    "iso": "BF",
+    "iso3": "BFA",
+    "callingCodes": [
+      "226"
+    ],
+    "names": {
+      "en": "Burkina Faso",
+      "zh": "布基纳法索"
+    }
+  },
+  {
+    "iso": "BG",
+    "iso3": "BGR",
+    "callingCodes": [
+      "359"
+    ],
+    "names": {
+      "en": "Bulgaria",
+      "zh": "保加利亚"
+    }
+  },
+  {
+    "iso": "BH",
+    "iso3": "BHR",
+    "callingCodes": [
+      "973"
+    ],
+    "names": {
+      "en": "Bahrain",
+      "zh": "巴林"
+    }
+  },
+  {
+    "iso": "BI",
+    "iso3": "BDI",
+    "callingCodes": [
+      "257"
+    ],
+    "names": {
+      "en": "Burundi",
+      "zh": "布隆迪"
+    }
+  },
+  {
+    "iso": "BJ",
+    "iso3": "BEN",
+    "callingCodes": [
+      "229"
+    ],
+    "names": {
+      "en": "Benin",
+      "zh": "贝宁"
+    }
+  },
+  {
+    "iso": "BL",
+    "iso3": "BLM",
+    "callingCodes": [
+      "590"
+    ],
+    "names": {
+      "en": "St. Barthélemy",
+      "zh": "圣巴泰勒米"
+    }
+  },
+  {
+    "iso": "BM",
+    "iso3": "BMU",
+    "callingCodes": [
+      "1"
+    ],
+    "names": {
+      "en": "Bermuda",
+      "zh": "百慕大"
+    }
+  },
+  {
+    "iso": "BN",
+    "iso3": "BRN",
+    "callingCodes": [
+      "673"
+    ],
+    "names": {
+      "en": "Brunei",
+      "zh": "文莱"
+    }
+  },
+  {
+    "iso": "BO",
+    "iso3": "BOL",
+    "callingCodes": [
+      "591"
+    ],
+    "names": {
+      "en": "Bolivia",
+      "zh": "玻利维亚"
+    }
+  },
+  {
+    "iso": "BQ",
+    "iso3": "BES",
+    "callingCodes": [
+      "599"
+    ],
+    "names": {
+      "en": "Caribbean Netherlands",
+      "zh": "荷属加勒比区"
+    }
+  },
+  {
+    "iso": "BR",
+    "iso3": "BRA",
+    "callingCodes": [
+      "55"
+    ],
+    "names": {
+      "en": "Brazil",
+      "zh": "巴西"
+    }
+  },
+  {
+    "iso": "BS",
+    "iso3": "BHS",
+    "callingCodes": [
+      "1"
+    ],
+    "names": {
+      "en": "Bahamas",
+      "zh": "巴哈马"
+    }
+  },
+  {
+    "iso": "BT",
+    "iso3": "BTN",
+    "callingCodes": [
+      "975"
+    ],
+    "names": {
+      "en": "Bhutan",
+      "zh": "不丹"
+    }
+  },
+  {
+    "iso": "BV",
+    "iso3": "BVT",
+    "callingCodes": [],
+    "names": {
+      "en": "Bouvet Island",
+      "zh": "布韦岛"
+    }
+  },
+  {
+    "iso": "BW",
+    "iso3": "BWA",
+    "callingCodes": [
+      "267"
+    ],
+    "names": {
+      "en": "Botswana",
+      "zh": "博茨瓦纳"
+    }
+  },
+  {
+    "iso": "BY",
+    "iso3": "BLR",
+    "callingCodes": [
+      "375"
+    ],
+    "names": {
+      "en": "Belarus",
+      "zh": "白俄罗斯"
+    }
+  },
+  {
+    "iso": "BZ",
+    "iso3": "BLZ",
+    "callingCodes": [
+      "501"
+    ],
+    "names": {
+      "en": "Belize",
+      "zh": "伯利兹"
+    }
+  },
+  {
+    "iso": "CA",
+    "iso3": "CAN",
+    "callingCodes": [
+      "1"
+    ],
+    "names": {
+      "en": "Canada",
+      "zh": "加拿大"
+    }
+  },
+  {
+    "iso": "CC",
+    "iso3": "CCK",
+    "callingCodes": [
+      "61"
+    ],
+    "names": {
+      "en": "Cocos (Keeling) Islands",
+      "zh": "科科斯（基林）群岛"
+    }
+  },
+  {
+    "iso": "CD",
+    "iso3": "COD",
+    "callingCodes": [
+      "243"
+    ],
+    "names": {
+      "en": "Congo - Kinshasa",
+      "zh": "刚果（金）"
+    }
+  },
+  {
+    "iso": "CF",
+    "iso3": "CAF",
+    "callingCodes": [
+      "236"
+    ],
+    "names": {
+      "en": "Central African Republic",
+      "zh": "中非共和国"
+    }
+  },
+  {
+    "iso": "CG",
+    "iso3": "COG",
+    "callingCodes": [
+      "242"
+    ],
+    "names": {
+      "en": "Congo - Brazzaville",
+      "zh": "刚果（布）"
+    }
+  },
+  {
+    "iso": "CH",
+    "iso3": "CHE",
+    "callingCodes": [
+      "41"
+    ],
+    "names": {
+      "en": "Switzerland",
+      "zh": "瑞士"
+    }
+  },
+  {
+    "iso": "CI",
+    "iso3": "CIV",
+    "callingCodes": [
+      "225"
+    ],
+    "names": {
+      "en": "Côte d’Ivoire",
+      "zh": "科特迪瓦"
+    }
+  },
+  {
+    "iso": "CK",
+    "iso3": "COK",
+    "callingCodes": [
+      "682"
+    ],
+    "names": {
+      "en": "Cook Islands",
+      "zh": "库克群岛"
+    }
+  },
+  {
+    "iso": "CL",
+    "iso3": "CHL",
+    "callingCodes": [
+      "56"
+    ],
+    "names": {
+      "en": "Chile",
+      "zh": "智利"
+    }
+  },
+  {
+    "iso": "CM",
+    "iso3": "CMR",
+    "callingCodes": [
+      "237"
+    ],
+    "names": {
+      "en": "Cameroon",
+      "zh": "喀麦隆"
+    }
+  },
+  {
+    "iso": "CN",
+    "iso3": "CHN",
+    "callingCodes": [
+      "86"
+    ],
+    "names": {
+      "en": "China",
+      "zh": "中国"
+    }
+  },
+  {
+    "iso": "CO",
+    "iso3": "COL",
+    "callingCodes": [
+      "57"
+    ],
+    "names": {
+      "en": "Colombia",
+      "zh": "哥伦比亚"
+    }
+  },
+  {
+    "iso": "CR",
+    "iso3": "CRI",
+    "callingCodes": [
+      "506"
+    ],
+    "names": {
+      "en": "Costa Rica",
+      "zh": "哥斯达黎加"
+    }
+  },
+  {
+    "iso": "CU",
+    "iso3": "CUB",
+    "callingCodes": [
+      "53"
+    ],
+    "names": {
+      "en": "Cuba",
+      "zh": "古巴"
+    }
+  },
+  {
+    "iso": "CV",
+    "iso3": "CPV",
+    "callingCodes": [
+      "238"
+    ],
+    "names": {
+      "en": "Cape Verde",
+      "zh": "佛得角"
+    }
+  },
+  {
+    "iso": "CW",
+    "iso3": "CUW",
+    "callingCodes": [
+      "599"
+    ],
+    "names": {
+      "en": "Curaçao",
+      "zh": "库拉索"
+    }
+  },
+  {
+    "iso": "CX",
+    "iso3": "CXR",
+    "callingCodes": [
+      "61"
+    ],
+    "names": {
+      "en": "Christmas Island",
+      "zh": "圣诞岛"
+    }
+  },
+  {
+    "iso": "CY",
+    "iso3": "CYP",
+    "callingCodes": [
+      "357"
+    ],
+    "names": {
+      "en": "Cyprus",
+      "zh": "塞浦路斯"
+    }
+  },
+  {
+    "iso": "CZ",
+    "iso3": "CZE",
+    "callingCodes": [
+      "420"
+    ],
+    "names": {
+      "en": "Czechia",
+      "zh": "捷克"
+    }
+  },
+  {
+    "iso": "DE",
+    "iso3": "DEU",
+    "callingCodes": [
+      "49"
+    ],
+    "names": {
+      "en": "Germany",
+      "zh": "德国"
+    }
+  },
+  {
+    "iso": "DJ",
+    "iso3": "DJI",
+    "callingCodes": [
+      "253"
+    ],
+    "names": {
+      "en": "Djibouti",
+      "zh": "吉布提"
+    }
+  },
+  {
+    "iso": "DK",
+    "iso3": "DNK",
+    "callingCodes": [
+      "45"
+    ],
+    "names": {
+      "en": "Denmark",
+      "zh": "丹麦"
+    }
+  },
+  {
+    "iso": "DM",
+    "iso3": "DMA",
+    "callingCodes": [
+      "1"
+    ],
+    "names": {
+      "en": "Dominica",
+      "zh": "多米尼克"
+    }
+  },
+  {
+    "iso": "DO",
+    "iso3": "DOM",
+    "callingCodes": [
+      "1"
+    ],
+    "names": {
+      "en": "Dominican Republic",
+      "zh": "多米尼加共和国"
+    }
+  },
+  {
+    "iso": "DZ",
+    "iso3": "DZA",
+    "callingCodes": [
+      "213"
+    ],
+    "names": {
+      "en": "Algeria",
+      "zh": "阿尔及利亚"
+    }
+  },
+  {
+    "iso": "EC",
+    "iso3": "ECU",
+    "callingCodes": [
+      "593"
+    ],
+    "names": {
+      "en": "Ecuador",
+      "zh": "厄瓜多尔"
+    }
+  },
+  {
+    "iso": "EE",
+    "iso3": "EST",
+    "callingCodes": [
+      "372"
+    ],
+    "names": {
+      "en": "Estonia",
+      "zh": "爱沙尼亚"
+    }
+  },
+  {
+    "iso": "EG",
+    "iso3": "EGY",
+    "callingCodes": [
+      "20"
+    ],
+    "names": {
+      "en": "Egypt",
+      "zh": "埃及"
+    }
+  },
+  {
+    "iso": "EH",
+    "iso3": "ESH",
+    "callingCodes": [
+      "212"
+    ],
+    "names": {
+      "en": "Western Sahara",
+      "zh": "西撒哈拉"
+    }
+  },
+  {
+    "iso": "ER",
+    "iso3": "ERI",
+    "callingCodes": [
+      "291"
+    ],
+    "names": {
+      "en": "Eritrea",
+      "zh": "厄立特里亚"
+    }
+  },
+  {
+    "iso": "ES",
+    "iso3": "ESP",
+    "callingCodes": [
+      "34"
+    ],
+    "names": {
+      "en": "Spain",
+      "zh": "西班牙"
+    }
+  },
+  {
+    "iso": "ET",
+    "iso3": "ETH",
+    "callingCodes": [
+      "251"
+    ],
+    "names": {
+      "en": "Ethiopia",
+      "zh": "埃塞俄比亚"
+    }
+  },
+  {
+    "iso": "FI",
+    "iso3": "FIN",
+    "callingCodes": [
+      "358"
+    ],
+    "names": {
+      "en": "Finland",
+      "zh": "芬兰"
+    }
+  },
+  {
+    "iso": "FJ",
+    "iso3": "FJI",
+    "callingCodes": [
+      "679"
+    ],
+    "names": {
+      "en": "Fiji",
+      "zh": "斐济"
+    }
+  },
+  {
+    "iso": "FK",
+    "iso3": "FLK",
+    "callingCodes": [
+      "500"
+    ],
+    "names": {
+      "en": "Falkland Islands",
+      "zh": "福克兰群岛"
+    }
+  },
+  {
+    "iso": "FM",
+    "iso3": "FSM",
+    "callingCodes": [
+      "691"
+    ],
+    "names": {
+      "en": "Micronesia",
+      "zh": "密克罗尼西亚"
+    }
+  },
+  {
+    "iso": "FO",
+    "iso3": "FRO",
+    "callingCodes": [
+      "298"
+    ],
+    "names": {
+      "en": "Faroe Islands",
+      "zh": "法罗群岛"
+    }
+  },
+  {
+    "iso": "FR",
+    "iso3": "FRA",
+    "callingCodes": [
+      "33"
+    ],
+    "names": {
+      "en": "France",
+      "zh": "法国"
+    }
+  },
+  {
+    "iso": "GA",
+    "iso3": "GAB",
+    "callingCodes": [
+      "241"
+    ],
+    "names": {
+      "en": "Gabon",
+      "zh": "加蓬"
+    }
+  },
+  {
+    "iso": "GB",
+    "iso3": "GBR",
+    "callingCodes": [
+      "44"
+    ],
+    "names": {
+      "en": "United Kingdom",
+      "zh": "英国"
+    }
+  },
+  {
+    "iso": "GD",
+    "iso3": "GRD",
+    "callingCodes": [
+      "1"
+    ],
+    "names": {
+      "en": "Grenada",
+      "zh": "格林纳达"
+    }
+  },
+  {
+    "iso": "GE",
+    "iso3": "GEO",
+    "callingCodes": [
+      "995"
+    ],
+    "names": {
+      "en": "Georgia",
+      "zh": "格鲁吉亚"
+    }
+  },
+  {
+    "iso": "GF",
+    "iso3": "GUF",
+    "callingCodes": [
+      "594"
+    ],
+    "names": {
+      "en": "French Guiana",
+      "zh": "法属圭亚那"
+    }
+  },
+  {
+    "iso": "GG",
+    "iso3": "GGY",
+    "callingCodes": [
+      "44"
+    ],
+    "names": {
+      "en": "Guernsey",
+      "zh": "根西岛"
+    }
+  },
+  {
+    "iso": "GH",
+    "iso3": "GHA",
+    "callingCodes": [
+      "233"
+    ],
+    "names": {
+      "en": "Ghana",
+      "zh": "加纳"
+    }
+  },
+  {
+    "iso": "GI",
+    "iso3": "GIB",
+    "callingCodes": [
+      "350"
+    ],
+    "names": {
+      "en": "Gibraltar",
+      "zh": "直布罗陀"
+    }
+  },
+  {
+    "iso": "GL",
+    "iso3": "GRL",
+    "callingCodes": [
+      "299"
+    ],
+    "names": {
+      "en": "Greenland",
+      "zh": "格陵兰"
+    }
+  },
+  {
+    "iso": "GM",
+    "iso3": "GMB",
+    "callingCodes": [
+      "220"
+    ],
+    "names": {
+      "en": "Gambia",
+      "zh": "冈比亚"
+    }
+  },
+  {
+    "iso": "GN",
+    "iso3": "GIN",
+    "callingCodes": [
+      "224"
+    ],
+    "names": {
+      "en": "Guinea",
+      "zh": "几内亚"
+    }
+  },
+  {
+    "iso": "GP",
+    "iso3": "GLP",
+    "callingCodes": [
+      "590"
+    ],
+    "names": {
+      "en": "Guadeloupe",
+      "zh": "瓜德罗普"
+    }
+  },
+  {
+    "iso": "GQ",
+    "iso3": "GNQ",
+    "callingCodes": [
+      "240"
+    ],
+    "names": {
+      "en": "Equatorial Guinea",
+      "zh": "赤道几内亚"
+    }
+  },
+  {
+    "iso": "GR",
+    "iso3": "GRC",
+    "callingCodes": [
+      "30"
+    ],
+    "names": {
+      "en": "Greece",
+      "zh": "希腊"
+    }
+  },
+  {
+    "iso": "GS",
+    "iso3": "SGS",
+    "callingCodes": [],
+    "names": {
+      "en": "South Georgia \u0026 South Sandwich Islands",
+      "zh": "南乔治亚和南桑威奇群岛"
+    }
+  },
+  {
+    "iso": "GT",
+    "iso3": "GTM",
+    "callingCodes": [
+      "502"
+    ],
+    "names": {
+      "en": "Guatemala",
+      "zh": "危地马拉"
+    }
+  },
+  {
+    "iso": "GU",
+    "iso3": "GUM",
+    "callingCodes": [
+      "1"
+    ],
+    "names": {
+      "en": "Guam",
+      "zh": "关岛"
+    }
+  },
+  {
+    "iso": "GW",
+    "iso3": "GNB",
+    "callingCodes": [
+      "245"
+    ],
+    "names": {
+      "en": "Guinea-Bissau",
+      "zh": "几内亚比绍"
+    }
+  },
+  {
+    "iso": "GY",
+    "iso3": "GUY",
+    "callingCodes": [
+      "592"
+    ],
+    "names": {
+      "en": "Guyana",
+      "zh": "圭亚那"
+    }
+  },
+  {
+    "iso": "HK",
+    "iso3": "HKG",
+    "callingCodes": [
+      "852"
+    ],
+    "names": {
+      "en": "Hong Kong SAR China",
+      "zh": "中国香港特别行政区"
+    }
+  },
+  {
+    "iso": "HM",
+    "iso3": "HMD",
+    "callingCodes": [],
+    "names": {
+      "en": "Heard \u0026 McDonald Islands",
+      "zh": "赫德岛和麦克唐纳群岛"
+    }
+  },
+  {
+    "iso": "HN",
+    "iso3": "HND",
+    "callingCodes": [
+      "504"
+    ],
+    "names": {
+      "en": "Honduras",
+      "zh": "洪都拉斯"
+    }
+  },
+  {
+    "iso": "HR",
+    "iso3": "HRV",
+    "callingCodes": [
+      "385"
+    ],
+    "names": {
+      "en": "Croatia",
+      "zh": "克罗地亚"
+    }
+  },
+  {
+    "iso": "HT",
+    "iso3": "HTI",
+    "callingCodes": [
+      "509"
+    ],
+    "names": {
+      "en": "Haiti",
+      "zh": "海地"
+    }
+  },
+  {
+    "iso": "HU",
+    "iso3": "HUN",
+    "callingCodes": [
+      "36"
+    ],
+    "names": {
+      "en": "Hungary",
+      "zh": "匈牙利"
+    }
+  },
+  {
+    "iso": "ID",
+    "iso3": "IDN",
+    "callingCodes": [
+      "62"
+    ],
+    "names": {
+      "en": "Indonesia",
+      "zh": "印度尼西亚"
+    }
+  },
+  {
+    "iso": "IE",
+    "iso3": "IRL",
+    "callingCodes": [
+      "353"
+    ],
+    "names": {
+      "en": "Ireland",
+      "zh": "爱尔兰"
+    }
+  },
+  {
+    "iso": "IL",
+    "iso3": "ISR",
+    "callingCodes": [
+      "972"
+    ],
+    "names": {
+      "en": "Israel",
+      "zh": "以色列"
+    }
+  },
+  {
+    "iso": "IM",
+    "iso3": "IMN",
+    "callingCodes": [
+      "44"
+    ],
+    "names": {
+      "en": "Isle of Man",
+      "zh": "马恩岛"
+    }
+  },
+  {
+    "iso": "IN",
+    "iso3": "IND",
+    "callingCodes": [
+      "91"
+    ],
+    "names": {
+      "en": "India",
+      "zh": "印度"
+    }
+  },
+  {
+    "iso": "IO",
+    "iso3": "IOT",
+    "callingCodes": [
+      "246"
+    ],
+    "names": {
+      "en": "British Indian Ocean Territory",
+      "zh": "英属印度洋领地"
+    }
+  },
+  {
+    "iso": "IQ",
+    "iso3": "IRQ",
+    "callingCodes": [
+      "964"
+    ],
+    "names": {
+      "en": "Iraq",
+      "zh": "伊拉克"
+    }
+  },
+  {
+    "iso": "IR",
+    "iso3": "IRN",
+    "callingCodes": [
+      "98"
+    ],
+    "names": {
+      "en": "Iran",
+      "zh": "伊朗"
+    }
+  },
+  {
+    "iso": "IS",
+    "iso3": "ISL",
+    "callingCodes": [
+      "354"
+    ],
+    "names": {
+      "en": "Iceland",
+      "zh": "冰岛"
+    }
+  },
+  {
+    "iso": "IT",
+    "iso3": "ITA",
+    "callingCodes": [
+      "39"
+    ],
+    "names": {
+      "en": "Italy",
+      "zh": "意大利"
+    }
+  },
+  {
+    "iso": "JE",
+    "iso3": "JEY",
+    "callingCodes": [
+      "44"
+    ],
+    "names": {
+      "en": "Jersey",
+      "zh": "泽西岛"
+    }
+  },
+  {
+    "iso": "JM",
+    "iso3": "JAM",
+    "callingCodes": [
+      "1"
+    ],
+    "names": {
+      "en": "Jamaica",
+      "zh": "牙买加"
+    }
+  },
+  {
+    "iso": "JO",
+    "iso3": "JOR",
+    "callingCodes": [
+      "962"
+    ],
+    "names": {
+      "en": "Jordan",
+      "zh": "约旦"
+    }
+  },
+  {
+    "iso": "JP",
+    "iso3": "JPN",
+    "callingCodes": [
+      "81"
+    ],
+    "names": {
+      "en": "Japan",
+      "zh": "日本"
+    }
+  },
+  {
+    "iso": "KE",
+    "iso3": "KEN",
+    "callingCodes": [
+      "254"
+    ],
+    "names": {
+      "en": "Kenya",
+      "zh": "肯尼亚"
+    }
+  },
+  {
+    "iso": "KG",
+    "iso3": "KGZ",
+    "callingCodes": [
+      "996"
+    ],
+    "names": {
+      "en": "Kyrgyzstan",
+      "zh": "吉尔吉斯斯坦"
+    }
+  },
+  {
+    "iso": "KH",
+    "iso3": "KHM",
+    "callingCodes": [
+      "855"
+    ],
+    "names": {
+      "en": "Cambodia",
+      "zh": "柬埔寨"
+    }
+  },
+  {
+    "iso": "KI",
+    "iso3": "KIR",
+    "callingCodes": [
+      "686"
+    ],
+    "names": {
+      "en": "Kiribati",
+      "zh": "基里巴斯"
+    }
+  },
+  {
+    "iso": "KM",
+    "iso3": "COM",
+    "callingCodes": [
+      "269"
+    ],
+    "names": {
+      "en": "Comoros",
+      "zh": "科摩罗"
+    }
+  },
+  {
+    "iso": "KN",
+    "iso3": "KNA",
+    "callingCodes": [
+      "1"
+    ],
+    "names": {
+      "en": "St. Kitts \u0026 Nevis",
+      "zh": "圣基茨和尼维斯"
+    }
+  },
+  {
+    "iso": "KP",
+    "iso3": "PRK",
+    "callingCodes": [
+      "850"
+    ],
+    "names": {
+      "en": "North Korea",
+      "zh": "朝鲜"
+    }
+  },
+  {
+    "iso": "KR",
+    "iso3": "KOR",
+    "callingCodes": [
+      "82"
+    ],
+    "names": {
+      "en": "South Korea",
+      "zh": "韩国"
+    }
+  },
+  {
+    "iso": "KW",
+    "iso3": "KWT",
+    "callingCodes": [
+      "965"
+    ],
+    "names": {
+      "en": "Kuwait",
+      "zh": "科威特"
+    }
+  },
+  {
+    "iso": "KY",
+    "iso3": "CYM",
+    "callingCodes": [
+      "1"
+    ],
+    "names": {
+      "en": "Cayman Islands",
+      "zh": "开曼群岛"
+    }
+  },
+  {
+    "iso": "KZ",
+    "iso3": "KAZ",
+    "callingCodes": [
+      "7"
+    ],
+    "names": {
+      "en": "Kazakhstan",
+      "zh": "哈萨克斯坦"
+    }
+  },
+  {
+    "iso": "LA",
+    "iso3": "LAO",
+    "callingCodes": [
+      "856"
+    ],
+    "names": {
+      "en": "Laos",
+      "zh": "老挝"
+    }
+  },
+  {
+    "iso": "LB",
+    "iso3": "LBN",
+    "callingCodes": [
+      "961"
+    ],
+    "names": {
+      "en": "Lebanon",
+      "zh": "黎巴嫩"
+    }
+  },
+  {
+    "iso": "LC",
+    "iso3": "LCA",
+    "callingCodes": [
+      "1"
+    ],
+    "names": {
+      "en": "St. Lucia",
+      "zh": "圣卢西亚"
+    }
+  },
+  {
+    "iso": "LI",
+    "iso3": "LIE",
+    "callingCodes": [
+      "423"
+    ],
+    "names": {
+      "en": "Liechtenstein",
+      "zh": "列支敦士登"
+    }
+  },
+  {
+    "iso": "LK",
+    "iso3": "LKA",
+    "callingCodes": [
+      "94"
+    ],
+    "names": {
+      "en": "Sri Lanka",
+      "zh": "斯里兰卡"
+    }
+  },
+  {
+    "iso": "LR",
+    "iso3": "LBR",
+    "callingCodes": [
+      "231"
+    ],
+    "names": {
+      "en": "Liberia",
+      "zh": "利比里亚"
+    }
+  },
+  {
+    "iso": "LS",
+    "iso3": "LSO",
+    "callingCodes": [
+      "266"
+    ],
+    "names": {
+      "en": "Lesotho",
+      "zh": "莱索托"
+    }
+  },
+  {
+    "iso": "LT",
+    "iso3": "LTU",
+    "callingCodes": [
+      "370"
+    ],
+    "names": {
+      "en": "Lithuania",
+      "zh": "立陶宛"
+    }
+  },
+  {
+    "iso": "LU",
+    "iso3": "LUX",
+    "callingCodes": [
+      "352"
+    ],
+    "names": {
+      "en": "Luxembourg",
+      "zh": "卢森堡"
+    }
+  },
+  {
+    "iso": "LV",
+    "iso3": "LVA",
+    "callingCodes": [
+      "371"
+    ],
+    "names": {
+      "en": "Latvia",
+      "zh": "拉脱维亚"
+    }
+  },
+  {
+    "iso": "LY",
+    "iso3": "LBY",
+    "callingCodes": [
+      "218"
+    ],
+    "names": {
+      "en": "Libya",
+      "zh": "利比亚"
+    }
+  },
+  {
+    "iso": "MA",
+    "iso3": "MAR",
+    "callingCodes": [
+      "212"
+    ],
+    "names": {
+      "en": "Morocco",
+      "zh": "摩洛哥"
+    }
+  },
+  {
+    "iso": "MC",
+    "iso3": "MCO",
+    "callingCodes": [
+      "377"
+    ],
+    "names": {
+      "en": "Monaco",
+      "zh": "摩纳哥"
+    }
+  },
+  {
+    "iso": "MD",
+    "iso3": "MDA",
+    "callingCodes": [
+      "373"
+    ],
+    "names": {
+      "en": "Moldova",
+      "zh": "摩尔多瓦"
+    }
+  },
+  {
+    "iso": "ME",
+    "iso3": "MNE",
+    "callingCodes": [
+      "382"
+    ],
+    "names": {
+      "en": "Montenegro",
+      "zh": "黑山"
+    }
+  },
+  {
+    "iso": "MF",
+    "iso3": "MAF",
+    "callingCodes": [
+      "590"
+    ],
+    "names": {
+      "en": "St. Martin",
+      "zh": "法属圣马丁"
+    }
+  },
+  {
+    "iso": "MG",
+    "iso3": "MDG",
+    "callingCodes": [
+      "261"
+    ],
+    "names": {
+      "en": "Madagascar",
+      "zh": "马达加斯加"
+    }
+  },
+  {
+    "iso": "MH",
+    "iso3": "MHL",
+    "callingCodes": [
+      "692"
+    ],
+    "names": {
+      "en": "Marshall Islands",
+      "zh": "马绍尔群岛"
+    }
+  },
+  {
+    "iso": "MK",
+    "iso3": "MKD",
+    "callingCodes": [
+      "389"
+    ],
+    "names": {
+      "en": "North Macedonia",
+      "zh": "北马其顿"
+    }
+  },
+  {
+    "iso": "ML",
+    "iso3": "MLI",
+    "callingCodes": [
+      "223"
+    ],
+    "names": {
+      "en": "Mali",
+      "zh": "马里"
+    }
+  },
+  {
+    "iso": "MM",
+    "iso3": "MMR",
+    "callingCodes": [
+      "95"
+    ],
+    "names": {
+      "en": "Myanmar (Burma)",
+      "zh": "缅甸"
+    }
+  },
+  {
+    "iso": "MN",
+    "iso3": "MNG",
+    "callingCodes": [
+      "976"
+    ],
+    "names": {
+      "en": "Mongolia",
+      "zh": "蒙古"
+    }
+  },
+  {
+    "iso": "MO",
+    "iso3": "MAC",
+    "callingCodes": [
+      "853"
+    ],
+    "names": {
+      "en": "Macao SAR China",
+      "zh": "中国澳门特别行政区"
+    }
+  },
+  {
+    "iso": "MP",
+    "iso3": "MNP",
+    "callingCodes": [
+      "1"
+    ],
+    "names": {
+      "en": "Northern Mariana Islands",
+      "zh": "北马里亚纳群岛"
+    }
+  },
+  {
+    "iso": "MQ",
+    "iso3": "MTQ",
+    "callingCodes": [
+      "596"
+    ],
+    "names": {
+      "en": "Martinique",
+      "zh": "马提尼克"
+    }
+  },
+  {
+    "iso": "MR",
+    "iso3": "MRT",
+    "callingCodes": [
+      "222"
+    ],
+    "names": {
+      "en": "Mauritania",
+      "zh": "毛里塔尼亚"
+    }
+  },
+  {
+    "iso": "MS",
+    "iso3": "MSR",
+    "callingCodes": [
+      "1"
+    ],
+    "names": {
+      "en": "Montserrat",
+      "zh": "蒙特塞拉特"
+    }
+  },
+  {
+    "iso": "MT",
+    "iso3": "MLT",
+    "callingCodes": [
+      "356"
+    ],
+    "names": {
+      "en": "Malta",
+      "zh": "马耳他"
+    }
+  },
+  {
+    "iso": "MU",
+    "iso3": "MUS",
+    "callingCodes": [
+      "230"
+    ],
+    "names": {
+      "en": "Mauritius",
+      "zh": "毛里求斯"
+    }
+  },
+  {
+    "iso": "MV",
+    "iso3": "MDV",
+    "callingCodes": [
+      "960"
+    ],
+    "names": {
+      "en": "Maldives",
+      "zh": "马尔代夫"
+    }
+  },
+  {
+    "iso": "MW",
+    "iso3": "MWI",
+    "callingCodes": [
+      "265"
+    ],
+    "names": {
+      "en": "Malawi",
+      "zh": "马拉维"
+    }
+  },
+  {
+    "iso": "MX",
+    "iso3": "MEX",
+    "callingCodes": [
+      "52"
+    ],
+    "names": {
+      "en": "Mexico",
+      "zh": "墨西哥"
+    }
+  },
+  {
+    "iso": "MY",
+    "iso3": "MYS",
+    "callingCodes": [
+      "60"
+    ],
+    "names": {
+      "en": "Malaysia",
+      "zh": "马来西亚"
+    }
+  },
+  {
+    "iso": "MZ",
+    "iso3": "MOZ",
+    "callingCodes": [
+      "258"
+    ],
+    "names": {
+      "en": "Mozambique",
+      "zh": "莫桑比克"
+    }
+  },
+  {
+    "iso": "NA",
+    "iso3": "NAM",
+    "callingCodes": [
+      "264"
+    ],
+    "names": {
+      "en": "Namibia",
+      "zh": "纳米比亚"
+    }
+  },
+  {
+    "iso": "NC",
+    "iso3": "NCL",
+    "callingCodes": [
+      "687"
+    ],
+    "names": {
+      "en": "New Caledonia",
+      "zh": "新喀里多尼亚"
+    }
+  },
+  {
+    "iso": "NE",
+    "iso3": "NER",
+    "callingCodes": [
+      "227"
+    ],
+    "names": {
+      "en": "Niger",
+      "zh": "尼日尔"
+    }
+  },
+  {
+    "iso": "NF",
+    "iso3": "NFK",
+    "callingCodes": [
+      "672"
+    ],
+    "names": {
+      "en": "Norfolk Island",
+      "zh": "诺福克岛"
+    }
+  },
+  {
+    "iso": "NG",
+    "iso3": "NGA",
+    "callingCodes": [
+      "234"
+    ],
+    "names": {
+      "en": "Nigeria",
+      "zh": "尼日利亚"
+    }
+  },
+  {
+    "iso": "NI",
+    "iso3": "NIC",
+    "callingCodes": [
+      "505"
+    ],
+    "names": {
+      "en": "Nicaragua",
+      "zh": "尼加拉瓜"
+    }
+  },
+  {
+    "iso": "NL",
+    "iso3": "NLD",
+    "callingCodes": [
+      "31"
+    ],
+    "names": {
+      "en": "Netherlands",
+      "zh": "荷兰"
+    }
+  },
+  {
+    "iso": "NO",
+    "iso3": "NOR",
+    "callingCodes": [
+      "47"
+    ],
+    "names": {
+      "en": "Norway",
+      "zh": "挪威"
+    }
+  },
+  {
+    "iso": "NP",
+    "iso3": "NPL",
+    "callingCodes": [
+      "977"
+    ],
+    "names": {
+      "en": "Nepal",
+      "zh": "尼泊尔"
+    }
+  },
+  {
+    "iso": "NR",
+    "iso3": "NRU",
+    "callingCodes": [
+      "674"
+    ],
+    "names": {
+      "en": "Nauru",
+      "zh": "瑙鲁"
+    }
+  },
+  {
+    "iso": "NU",
+    "iso3": "NIU",
+    "callingCodes": [
+      "683"
+    ],
+    "names": {
+      "en": "Niue",
+      "zh": "纽埃"
+    }
+  },
+  {
+    "iso": "NZ",
+    "iso3": "NZL",
+    "callingCodes": [
+      "64"
+    ],
+    "names": {
+      "en": "New Zealand",
+      "zh": "新西兰"
+    }
+  },
+  {
+    "iso": "OM",
+    "iso3": "OMN",
+    "callingCodes": [
+      "968"
+    ],
+    "names": {
+      "en": "Oman",
+      "zh": "阿曼"
+    }
+  },
+  {
+    "iso": "PA",
+    "iso3": "PAN",
+    "callingCodes": [
+      "507"
+    ],
+    "names": {
+      "en": "Panama",
+      "zh": "巴拿马"
+    }
+  },
+  {
+    "iso": "PE",
+    "iso3": "PER",
+    "callingCodes": [
+      "51"
+    ],
+    "names": {
+      "en": "Peru",
+      "zh": "秘鲁"
+    }
+  },
+  {
+    "iso": "PF",
+    "iso3": "PYF",
+    "callingCodes": [
+      "689"
+    ],
+    "names": {
+      "en": "French Polynesia",
+      "zh": "法属波利尼西亚"
+    }
+  },
+  {
+    "iso": "PG",
+    "iso3": "PNG",
+    "callingCodes": [
+      "675"
+    ],
+    "names": {
+      "en": "Papua New Guinea",
+      "zh": "巴布亚新几内亚"
+    }
+  },
+  {
+    "iso": "PH",
+    "iso3": "PHL",
+    "callingCodes": [
+      "63"
+    ],
+    "names": {
+      "en": "Philippines",
+      "zh": "菲律宾"
+    }
+  },
+  {
+    "iso": "PK",
+    "iso3": "PAK",
+    "callingCodes": [
+      "92"
+    ],
+    "names": {
+      "en": "Pakistan",
+      "zh": "巴基斯坦"
+    }
+  },
+  {
+    "iso": "PL",
+    "iso3": "POL",
+    "callingCodes": [
+      "48"
+    ],
+    "names": {
+      "en": "Poland",
+      "zh": "波兰"
+    }
+  },
+  {
+    "iso": "PM",
+    "iso3": "SPM",
+    "callingCodes": [
+      "508"
+    ],
+    "names": {
+      "en": "St. Pierre \u0026 Miquelon",
+      "zh": "圣皮埃尔和密克隆群岛"
+    }
+  },
+  {
+    "iso": "PN",
+    "iso3": "PCN",
+    "callingCodes": [],
+    "names": {
+      "en": "Pitcairn Islands",
+      "zh": "皮特凯恩群岛"
+    }
+  },
+  {
+    "iso": "PR",
+    "iso3": "PRI",
+    "callingCodes": [
+      "1"
+    ],
+    "names": {
+      "en": "Puerto Rico",
+      "zh": "波多黎各"
+    }
+  },
+  {
+    "iso": "PS",
+    "iso3": "PSE",
+    "callingCodes": [
+      "970"
+    ],
+    "names": {
+      "en": "Palestinian Territories",
+      "zh": "巴勒斯坦领土"
+    }
+  },
+  {
+    "iso": "PT",
+    "iso3": "PRT",
+    "callingCodes": [
+      "351"
+    ],
+    "names": {
+      "en": "Portugal",
+      "zh": "葡萄牙"
+    }
+  },
+  {
+    "iso": "PW",
+    "iso3": "PLW",
+    "callingCodes": [
+      "680"
+    ],
+    "names": {
+      "en": "Palau",
+      "zh": "帕劳"
+    }
+  },
+  {
+    "iso": "PY",
+    "iso3": "PRY",
+    "callingCodes": [
+      "595"
+    ],
+    "names": {
+      "en": "Paraguay",
+      "zh": "巴拉圭"
+    }
+  },
+  {
+    "iso": "QA",
+    "iso3": "QAT",
+    "callingCodes": [
+      "974"
+    ],
+    "names": {
+      "en": "Qatar",
+      "zh": "卡塔尔"
+    }
+  },
+  {
+    "iso": "RE",
+    "iso3": "REU",
+    "callingCodes": [
+      "262"
+    ],
+    "names": {
+      "en": "Réunion",
+      "zh": "留尼汪"
+    }
+  },
+  {
+    "iso": "RO",
+    "iso3": "ROU",
+    "callingCodes": [
+      "40"
+    ],
+    "names": {
+      "en": "Romania",
+      "zh": "罗马尼亚"
+    }
+  },
+  {
+    "iso": "RS",
+    "iso3": "SRB",
+    "callingCodes": [
+      "381"
+    ],
+    "names": {
+      "en": "Serbia",
+      "zh": "塞尔维亚"
+    }
+  },
+  {
+    "iso": "RU",
+    "iso3": "RUS",
+    "callingCodes": [
+      "7"
+    ],
+    "names": {
+      "en": "Russia",
+      "zh": "俄罗斯"
+    }
+  },
+  {
+    "iso": "RW",
+    "iso3": "RWA",
+    "callingCodes": [
+      "250"
+    ],
+    "names": {
+      "en": "Rwanda",
+      "zh": "卢旺达"
+    }
+  },
+  {
+    "iso": "SA",
+    "iso3": "SAU",
+    "callingCodes": [
+      "966"
+    ],
+    "names": {
+      "en": "Saudi Arabia",
+      "zh": "沙特阿拉伯"
+    }
+  },
+  {
+    "iso": "SB",
+    "iso3": "SLB",
+    "callingCodes": [
+      "677"
+    ],
+    "names": {
+      "en": "Solomon Islands",
+      "zh": "所罗门群岛"
+    }
+  },
+  {
+    "iso": "SC",
+    "iso3": "SYC",
+    "callingCodes": [
+      "248"
+    ],
+    "names": {
+      "en": "Seychelles",
+      "zh": "塞舌尔"
+    }
+  },
+  {
+    "iso": "SD",
+    "iso3": "SDN",
+    "callingCodes": [
+      "249"
+    ],
+    "names": {
+      "en": "Sudan",
+      "zh": "苏丹"
+    }
+  },
+  {
+    "iso": "SE",
+    "iso3": "SWE",
+    "callingCodes": [
+      "46"
+    ],
+    "names": {
+      "en": "Sweden",
+      "zh": "瑞典"
+    }
+  },
+  {
+    "iso": "SG",
+    "iso3": "SGP",
+    "callingCodes": [
+      "65"
+    ],
+    "names": {
+      "en": "Singapore",
+      "zh": "新加坡"
+    }
+  },
+  {
+    "iso": "SH",
+    "iso3": "SHN",
+    "callingCodes": [
+      "290"
+    ],
+    "names": {
+      "en": "St. Helena",
+      "zh": "圣赫勒拿"
+    }
+  },
+  {
+    "iso": "SI",
+    "iso3": "SVN",
+    "callingCodes": [
+      "386"
+    ],
+    "names": {
+      "en": "Slovenia",
+      "zh": "斯洛文尼亚"
+    }
+  },
+  {
+    "iso": "SJ",
+    "iso3": "SJM",
+    "callingCodes": [
+      "47"
+    ],
+    "names": {
+      "en": "Svalbard \u0026 Jan Mayen",
+      "zh": "斯瓦尔巴和扬马延"
+    }
+  },
+  {
+    "iso": "SK",
+    "iso3": "SVK",
+    "callingCodes": [
+      "421"
+    ],
+    "names": {
+      "en": "Slovakia",
+      "zh": "斯洛伐克"
+    }
+  },
+  {
+    "iso": "SL",
+    "iso3": "SLE",
+    "callingCodes": [
+      "232"
+    ],
+    "names": {
+      "en": "Sierra Leone",
+      "zh": "塞拉利昂"
+    }
+  },
+  {
+    "iso": "SM",
+    "iso3": "SMR",
+    "callingCodes": [
+      "378"
+    ],
+    "names": {
+      "en": "San Marino",
+      "zh": "圣马力诺"
+    }
+  },
+  {
+    "iso": "SN",
+    "iso3": "SEN",
+    "callingCodes": [
+      "221"
+    ],
+    "names": {
+      "en": "Senegal",
+      "zh": "塞内加尔"
+    }
+  },
+  {
+    "iso": "SO",
+    "iso3": "SOM",
+    "callingCodes": [
+      "252"
+    ],
+    "names": {
+      "en": "Somalia",
+      "zh": "索马里"
+    }
+  },
+  {
+    "iso": "SR",
+    "iso3": "SUR",
+    "callingCodes": [
+      "597"
+    ],
+    "names": {
+      "en": "Suriname",
+      "zh": "苏里南"
+    }
+  },
+  {
+    "iso": "SS",
+    "iso3": "SSD",
+    "callingCodes": [
+      "211"
+    ],
+    "names": {
+      "en": "South Sudan",
+      "zh": "南苏丹"
+    }
+  },
+  {
+    "iso": "ST",
+    "iso3": "STP",
+    "callingCodes": [
+      "239"
+    ],
+    "names": {
+      "en": "São Tomé \u0026 Príncipe",
+      "zh": "圣多美和普林西比"
+    }
+  },
+  {
+    "iso": "SV",
+    "iso3": "SLV",
+    "callingCodes": [
+      "503"
+    ],
+    "names": {
+      "en": "El Salvador",
+      "zh": "萨尔瓦多"
+    }
+  },
+  {
+    "iso": "SX",
+    "iso3": "SXM",
+    "callingCodes": [
+      "1"
+    ],
+    "names": {
+      "en": "Sint Maarten",
+      "zh": "荷属圣马丁"
+    }
+  },
+  {
+    "iso": "SY",
+    "iso3": "SYR",
+    "callingCodes": [
+      "963"
+    ],
+    "names": {
+      "en": "Syria",
+      "zh": "叙利亚"
+    }
+  },
+  {
+    "iso": "SZ",
+    "iso3": "SWZ",
+    "callingCodes": [
+      "268"
+    ],
+    "names": {
+      "en": "Eswatini",
+      "zh": "斯威士兰"
+    }
+  },
+  {
+    "iso": "TC",
+    "iso3": "TCA",
+    "callingCodes": [
+      "1"
+    ],
+    "names": {
+      "en": "Turks \u0026 Caicos Islands",
+      "zh": "特克斯和凯科斯群岛"
+    }
+  },
+  {
+    "iso": "TD",
+    "iso3": "TCD",
+    "callingCodes": [
+      "235"
+    ],
+    "names": {
+      "en": "Chad",
+      "zh": "乍得"
+    }
+  },
+  {
+    "iso": "TF",
+    "iso3": "ATF",
+    "callingCodes": [],
+    "names": {
+      "en": "French Southern Territories",
+      "zh": "法属南部领地"
+    }
+  },
+  {
+    "iso": "TG",
+    "iso3": "TGO",
+    "callingCodes": [
+      "228"
+    ],
+    "names": {
+      "en": "Togo",
+      "zh": "多哥"
+    }
+  },
+  {
+    "iso": "TH",
+    "iso3": "THA",
+    "callingCodes": [
+      "66"
+    ],
+    "names": {
+      "en": "Thailand",
+      "zh": "泰国"
+    }
+  },
+  {
+    "iso": "TJ",
+    "iso3": "TJK",
+    "callingCodes": [
+      "992"
+    ],
+    "names": {
+      "en": "Tajikistan",
+      "zh": "塔吉克斯坦"
+    }
+  },
+  {
+    "iso": "TK",
+    "iso3": "TKL",
+    "callingCodes": [
+      "690"
+    ],
+    "names": {
+      "en": "Tokelau",
+      "zh": "托克劳"
+    }
+  },
+  {
+    "iso": "TL",
+    "iso3": "TLS",
+    "callingCodes": [
+      "670"
+    ],
+    "names": {
+      "en": "Timor-Leste",
+      "zh": "东帝汶"
+    }
+  },
+  {
+    "iso": "TM",
+    "iso3": "TKM",
+    "callingCodes": [
+      "993"
+    ],
+    "names": {
+      "en": "Turkmenistan",
+      "zh": "土库曼斯坦"
+    }
+  },
+  {
+    "iso": "TN",
+    "iso3": "TUN",
+    "callingCodes": [
+      "216"
+    ],
+    "names": {
+      "en": "Tunisia",
+      "zh": "突尼斯"
+    }
+  },
+  {
+    "iso": "TO",
+    "iso3": "TON",
+    "callingCodes": [
+      "676"
+    ],
+    "names": {
+      "en": "Tonga",
+      "zh": "汤加"
+    }
+  },
+  {
+    "iso": "TR",
+    "iso3": "TUR",
+    "callingCodes": [
+      "90"
+    ],
+    "names": {
+      "en": "Türkiye",
+      "zh": "土耳其"
+    }
+  },
+  {
+    "iso": "TT",
+    "iso3": "TTO",
+    "callingCodes": [
+      "1"
+    ],
+    "names": {
+      "en": "Trinidad \u0026 Tobago",
+      "zh": "特立尼达和多巴哥"
+    }
+  },
+  {
+    "iso": "TV",
+    "iso3": "TUV",
+    "callingCodes": [
+      "688"
+    ],
+    "names": {
+      "en": "Tuvalu",
+      "zh": "图瓦卢"
+    }
+  },
+  {
+    "iso": "TW",
+    "iso3": "TWN",
+    "callingCodes": [
+      "886"
+    ],
+    "names": {
+      "en": "Taiwan",
+      "zh": "台湾"
+    }
+  },
+  {
+    "iso": "TZ",
+    "iso3": "TZA",
+    "callingCodes": [
+      "255"
+    ],
+    "names": {
+      "en": "Tanzania",
+      "zh": "坦桑尼亚"
+    }
+  },
+  {
+    "iso": "UA",
+    "iso3": "UKR",
+    "callingCodes": [
+      "380"
+    ],
+    "names": {
+      "en": "Ukraine",
+      "zh": "乌克兰"
+    }
+  },
+  {
+    "iso": "UG",
+    "iso3": "UGA",
+    "callingCodes": [
+      "256"
+    ],
+    "names": {
+      "en": "Uganda",
+      "zh": "乌干达"
+    }
+  },
+  {
+    "iso": "UM",
+    "iso3": "UMI",
+    "callingCodes": [],
+    "names": {
+      "en": "U.S. Outlying Islands",
+      "zh": "美国本土外小岛屿"
+    }
+  },
+  {
+    "iso": "US",
+    "iso3": "USA",
+    "callingCodes": [
+      "1"
+    ],
+    "names": {
+      "en": "United States",
+      "zh": "美国"
+    }
+  },
+  {
+    "iso": "UY",
+    "iso3": "URY",
+    "callingCodes": [
+      "598"
+    ],
+    "names": {
+      "en": "Uruguay",
+      "zh": "乌拉圭"
+    }
+  },
+  {
+    "iso": "UZ",
+    "iso3": "UZB",
+    "callingCodes": [
+      "998"
+    ],
+    "names": {
+      "en": "Uzbekistan",
+      "zh": "乌兹别克斯坦"
+    }
+  },
+  {
+    "iso": "VA",
+    "iso3": "VAT",
+    "callingCodes": [
+      "39"
+    ],
+    "names": {
+      "en": "Vatican City",
+      "zh": "梵蒂冈"
+    }
+  },
+  {
+    "iso": "VC",
+    "iso3": "VCT",
+    "callingCodes": [
+      "1"
+    ],
+    "names": {
+      "en": "St. Vincent \u0026 Grenadines",
+      "zh": "圣文森特和格林纳丁斯"
+    }
+  },
+  {
+    "iso": "VE",
+    "iso3": "VEN",
+    "callingCodes": [
+      "58"
+    ],
+    "names": {
+      "en": "Venezuela",
+      "zh": "委内瑞拉"
+    }
+  },
+  {
+    "iso": "VG",
+    "iso3": "VGB",
+    "callingCodes": [
+      "1"
+    ],
+    "names": {
+      "en": "British Virgin Islands",
+      "zh": "英属维尔京群岛"
+    }
+  },
+  {
+    "iso": "VI",
+    "iso3": "VIR",
+    "callingCodes": [
+      "1"
+    ],
+    "names": {
+      "en": "U.S. Virgin Islands",
+      "zh": "美属维尔京群岛"
+    }
+  },
+  {
+    "iso": "VN",
+    "iso3": "VNM",
+    "callingCodes": [
+      "84"
+    ],
+    "names": {
+      "en": "Vietnam",
+      "zh": "越南"
+    }
+  },
+  {
+    "iso": "VU",
+    "iso3": "VUT",
+    "callingCodes": [
+      "678"
+    ],
+    "names": {
+      "en": "Vanuatu",
+      "zh": "瓦努阿图"
+    }
+  },
+  {
+    "iso": "WF",
+    "iso3": "WLF",
+    "callingCodes": [
+      "681"
+    ],
+    "names": {
+      "en": "Wallis \u0026 Futuna",
+      "zh": "瓦利斯和富图纳"
+    }
+  },
+  {
+    "iso": "WS",
+    "iso3": "WSM",
+    "callingCodes": [
+      "685"
+    ],
+    "names": {
+      "en": "Samoa",
+      "zh": "萨摩亚"
+    }
+  },
+  {
+    "iso": "XA",
+    "iso3": "XAA",
+    "callingCodes": [],
+    "names": {
+      "en": "Pseudo-Accents",
+      "zh": "伪地区"
+    }
+  },
+  {
+    "iso": "XB",
+    "iso3": "XBB",
+    "callingCodes": [],
+    "names": {
+      "en": "Pseudo-Bidi",
+      "zh": "伪双向语言地区"
+    }
+  },
+  {
+    "iso": "YE",
+    "iso3": "YEM",
+    "callingCodes": [
+      "967"
+    ],
+    "names": {
+      "en": "Yemen",
+      "zh": "也门"
+    }
+  },
+  {
+    "iso": "YT",
+    "iso3": "MYT",
+    "callingCodes": [
+      "262"
+    ],
+    "names": {
+      "en": "Mayotte",
+      "zh": "马约特"
+    }
+  },
+  {
+    "iso": "ZA",
+    "iso3": "ZAF",
+    "callingCodes": [
+      "27"
+    ],
+    "names": {
+      "en": "South Africa",
+      "zh": "南非"
+    }
+  },
+  {
+    "iso": "ZM",
+    "iso3": "ZMB",
+    "callingCodes": [
+      "260"
+    ],
+    "names": {
+      "en": "Zambia",
+      "zh": "赞比亚"
+    }
+  },
+  {
+    "iso": "ZW",
+    "iso3": "ZWE",
+    "callingCodes": [
+      "263"
+    ],
+    "names": {
+      "en": "Zimbabwe",
+      "zh": "津巴布韦"
+    }
+  }
+]
