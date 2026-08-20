@@ -2,7 +2,6 @@ package internal
 
 const (
 	directSource = iota
-	githubLatestReleaseAsset
 	githubLatestReleaseArchive
 )
 
@@ -40,9 +39,10 @@ type Names struct {
 	Chinese string `json:"zh"`
 }
 
-type Country struct {
+type Region struct {
 	ISO          string   `json:"iso"`
 	ISO3         string   `json:"iso3,omitempty"`
+	Flag         string   `json:"flag"`
 	CallingCodes []string `json:"callingCodes"`
 	Names        Names    `json:"names"`
 }

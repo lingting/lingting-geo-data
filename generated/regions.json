@@ -2,6 +2,7 @@
   {
     "iso": "AD",
     "iso3": "AND",
+    "flag": "ad",
     "callingCodes": [
       "376"
     ],
@@ -13,6 +14,7 @@
   {
     "iso": "AE",
     "iso3": "ARE",
+    "flag": "ae",
     "callingCodes": [
       "971"
     ],
@@ -24,6 +26,7 @@
   {
     "iso": "AF",
     "iso3": "AFG",
+    "flag": "af",
     "callingCodes": [
       "93"
     ],
@@ -35,6 +38,7 @@
   {
     "iso": "AG",
     "iso3": "ATG",
+    "flag": "ag",
     "callingCodes": [
       "1"
     ],
@@ -46,6 +50,7 @@
   {
     "iso": "AI",
     "iso3": "AIA",
+    "flag": "ai",
     "callingCodes": [
       "1"
     ],
@@ -57,6 +62,7 @@
   {
     "iso": "AL",
     "iso3": "ALB",
+    "flag": "al",
     "callingCodes": [
       "355"
     ],
@@ -68,6 +74,7 @@
   {
     "iso": "AM",
     "iso3": "ARM",
+    "flag": "am",
     "callingCodes": [
       "374"
     ],
@@ -79,6 +86,7 @@
   {
     "iso": "AO",
     "iso3": "AGO",
+    "flag": "ao",
     "callingCodes": [
       "244"
     ],
@@ -90,6 +98,7 @@
   {
     "iso": "AQ",
     "iso3": "ATA",
+    "flag": "aq",
     "callingCodes": [],
     "names": {
       "en": "Antarctica",
@@ -99,6 +108,7 @@
   {
     "iso": "AR",
     "iso3": "ARG",
+    "flag": "ar",
     "callingCodes": [
       "54"
     ],
@@ -110,6 +120,7 @@
   {
     "iso": "AS",
     "iso3": "ASM",
+    "flag": "as",
     "callingCodes": [
       "1"
     ],
@@ -121,6 +132,7 @@
   {
     "iso": "AT",
     "iso3": "AUT",
+    "flag": "at",
     "callingCodes": [
       "43"
     ],
@@ -132,6 +144,7 @@
   {
     "iso": "AU",
     "iso3": "AUS",
+    "flag": "au",
     "callingCodes": [
       "61"
     ],
@@ -143,6 +156,7 @@
   {
     "iso": "AW",
     "iso3": "ABW",
+    "flag": "aw",
     "callingCodes": [
       "297"
     ],
@@ -154,6 +168,7 @@
   {
     "iso": "AX",
     "iso3": "ALA",
+    "flag": "ax",
     "callingCodes": [
       "358"
     ],
@@ -165,6 +180,7 @@
   {
     "iso": "AZ",
     "iso3": "AZE",
+    "flag": "az",
     "callingCodes": [
       "994"
     ],
@@ -176,6 +192,7 @@
   {
     "iso": "BA",
     "iso3": "BIH",
+    "flag": "ba",
     "callingCodes": [
       "387"
     ],
@@ -187,6 +204,7 @@
   {
     "iso": "BB",
     "iso3": "BRB",
+    "flag": "bb",
     "callingCodes": [
       "1"
     ],
@@ -198,6 +216,7 @@
   {
     "iso": "BD",
     "iso3": "BGD",
+    "flag": "bd",
     "callingCodes": [
       "880"
     ],
@@ -209,6 +228,7 @@
   {
     "iso": "BE",
     "iso3": "BEL",
+    "flag": "be",
     "callingCodes": [
       "32"
     ],
@@ -220,6 +240,7 @@
   {
     "iso": "BF",
     "iso3": "BFA",
+    "flag": "bf",
     "callingCodes": [
       "226"
     ],
@@ -231,6 +252,7 @@
   {
     "iso": "BG",
     "iso3": "BGR",
+    "flag": "bg",
     "callingCodes": [
       "359"
     ],
@@ -242,6 +264,7 @@
   {
     "iso": "BH",
     "iso3": "BHR",
+    "flag": "bh",
     "callingCodes": [
       "973"
     ],
@@ -253,6 +276,7 @@
   {
     "iso": "BI",
     "iso3": "BDI",
+    "flag": "bi",
     "callingCodes": [
       "257"
     ],
@@ -264,6 +288,7 @@
   {
     "iso": "BJ",
     "iso3": "BEN",
+    "flag": "bj",
     "callingCodes": [
       "229"
     ],
@@ -275,6 +300,7 @@
   {
     "iso": "BL",
     "iso3": "BLM",
+    "flag": "bl",
     "callingCodes": [
       "590"
     ],
@@ -286,6 +312,7 @@
   {
     "iso": "BM",
     "iso3": "BMU",
+    "flag": "bm",
     "callingCodes": [
       "1"
     ],
@@ -297,6 +324,7 @@
   {
     "iso": "BN",
     "iso3": "BRN",
+    "flag": "bn",
     "callingCodes": [
       "673"
     ],
@@ -308,6 +336,7 @@
   {
     "iso": "BO",
     "iso3": "BOL",
+    "flag": "bo",
     "callingCodes": [
       "591"
     ],
@@ -319,6 +348,7 @@
   {
     "iso": "BQ",
     "iso3": "BES",
+    "flag": "bq",
     "callingCodes": [
       "599"
     ],
@@ -330,6 +360,7 @@
   {
     "iso": "BR",
     "iso3": "BRA",
+    "flag": "br",
     "callingCodes": [
       "55"
     ],
@@ -341,6 +372,7 @@
   {
     "iso": "BS",
     "iso3": "BHS",
+    "flag": "bs",
     "callingCodes": [
       "1"
     ],
@@ -352,6 +384,7 @@
   {
     "iso": "BT",
     "iso3": "BTN",
+    "flag": "bt",
     "callingCodes": [
       "975"
     ],
@@ -363,6 +396,7 @@
   {
     "iso": "BV",
     "iso3": "BVT",
+    "flag": "bv",
     "callingCodes": [],
     "names": {
       "en": "Bouvet Island",
@@ -372,6 +406,7 @@
   {
     "iso": "BW",
     "iso3": "BWA",
+    "flag": "bw",
     "callingCodes": [
       "267"
     ],
@@ -383,6 +418,7 @@
   {
     "iso": "BY",
     "iso3": "BLR",
+    "flag": "by",
     "callingCodes": [
       "375"
     ],
@@ -394,6 +430,7 @@
   {
     "iso": "BZ",
     "iso3": "BLZ",
+    "flag": "bz",
     "callingCodes": [
       "501"
     ],
@@ -405,6 +442,7 @@
   {
     "iso": "CA",
     "iso3": "CAN",
+    "flag": "ca",
     "callingCodes": [
       "1"
     ],
@@ -416,6 +454,7 @@
   {
     "iso": "CC",
     "iso3": "CCK",
+    "flag": "cc",
     "callingCodes": [
       "61"
     ],
@@ -427,6 +466,7 @@
   {
     "iso": "CD",
     "iso3": "COD",
+    "flag": "cd",
     "callingCodes": [
       "243"
     ],
@@ -438,6 +478,7 @@
   {
     "iso": "CF",
     "iso3": "CAF",
+    "flag": "cf",
     "callingCodes": [
       "236"
     ],
@@ -449,6 +490,7 @@
   {
     "iso": "CG",
     "iso3": "COG",
+    "flag": "cg",
     "callingCodes": [
       "242"
     ],
@@ -460,6 +502,7 @@
   {
     "iso": "CH",
     "iso3": "CHE",
+    "flag": "ch",
     "callingCodes": [
       "41"
     ],
@@ -471,6 +514,7 @@
   {
     "iso": "CI",
     "iso3": "CIV",
+    "flag": "ci",
     "callingCodes": [
       "225"
     ],
@@ -482,6 +526,7 @@
   {
     "iso": "CK",
     "iso3": "COK",
+    "flag": "ck",
     "callingCodes": [
       "682"
     ],
@@ -493,6 +538,7 @@
   {
     "iso": "CL",
     "iso3": "CHL",
+    "flag": "cl",
     "callingCodes": [
       "56"
     ],
@@ -504,6 +550,7 @@
   {
     "iso": "CM",
     "iso3": "CMR",
+    "flag": "cm",
     "callingCodes": [
       "237"
     ],
@@ -515,6 +562,7 @@
   {
     "iso": "CN",
     "iso3": "CHN",
+    "flag": "cn",
     "callingCodes": [
       "86"
     ],
@@ -526,6 +574,7 @@
   {
     "iso": "CO",
     "iso3": "COL",
+    "flag": "co",
     "callingCodes": [
       "57"
     ],
@@ -537,6 +586,7 @@
   {
     "iso": "CR",
     "iso3": "CRI",
+    "flag": "cr",
     "callingCodes": [
       "506"
     ],
@@ -548,6 +598,7 @@
   {
     "iso": "CU",
     "iso3": "CUB",
+    "flag": "cu",
     "callingCodes": [
       "53"
     ],
@@ -559,6 +610,7 @@
   {
     "iso": "CV",
     "iso3": "CPV",
+    "flag": "cv",
     "callingCodes": [
       "238"
     ],
@@ -570,6 +622,7 @@
   {
     "iso": "CW",
     "iso3": "CUW",
+    "flag": "cw",
     "callingCodes": [
       "599"
     ],
@@ -581,6 +634,7 @@
   {
     "iso": "CX",
     "iso3": "CXR",
+    "flag": "cx",
     "callingCodes": [
       "61"
     ],
@@ -592,6 +646,7 @@
   {
     "iso": "CY",
     "iso3": "CYP",
+    "flag": "cy",
     "callingCodes": [
       "357"
     ],
@@ -603,6 +658,7 @@
   {
     "iso": "CZ",
     "iso3": "CZE",
+    "flag": "cz",
     "callingCodes": [
       "420"
     ],
@@ -614,6 +670,7 @@
   {
     "iso": "DE",
     "iso3": "DEU",
+    "flag": "de",
     "callingCodes": [
       "49"
     ],
@@ -625,6 +682,7 @@
   {
     "iso": "DJ",
     "iso3": "DJI",
+    "flag": "dj",
     "callingCodes": [
       "253"
     ],
@@ -636,6 +694,7 @@
   {
     "iso": "DK",
     "iso3": "DNK",
+    "flag": "dk",
     "callingCodes": [
       "45"
     ],
@@ -647,6 +706,7 @@
   {
     "iso": "DM",
     "iso3": "DMA",
+    "flag": "dm",
     "callingCodes": [
       "1"
     ],
@@ -658,6 +718,7 @@
   {
     "iso": "DO",
     "iso3": "DOM",
+    "flag": "do",
     "callingCodes": [
       "1"
     ],
@@ -669,6 +730,7 @@
   {
     "iso": "DZ",
     "iso3": "DZA",
+    "flag": "dz",
     "callingCodes": [
       "213"
     ],
@@ -680,6 +742,7 @@
   {
     "iso": "EC",
     "iso3": "ECU",
+    "flag": "ec",
     "callingCodes": [
       "593"
     ],
@@ -691,6 +754,7 @@
   {
     "iso": "EE",
     "iso3": "EST",
+    "flag": "ee",
     "callingCodes": [
       "372"
     ],
@@ -702,6 +766,7 @@
   {
     "iso": "EG",
     "iso3": "EGY",
+    "flag": "eg",
     "callingCodes": [
       "20"
     ],
@@ -713,6 +778,7 @@
   {
     "iso": "EH",
     "iso3": "ESH",
+    "flag": "eh",
     "callingCodes": [
       "212"
     ],
@@ -724,6 +790,7 @@
   {
     "iso": "ER",
     "iso3": "ERI",
+    "flag": "er",
     "callingCodes": [
       "291"
     ],
@@ -735,6 +802,7 @@
   {
     "iso": "ES",
     "iso3": "ESP",
+    "flag": "es",
     "callingCodes": [
       "34"
     ],
@@ -746,6 +814,7 @@
   {
     "iso": "ET",
     "iso3": "ETH",
+    "flag": "et",
     "callingCodes": [
       "251"
     ],
@@ -757,6 +826,7 @@
   {
     "iso": "FI",
     "iso3": "FIN",
+    "flag": "fi",
     "callingCodes": [
       "358"
     ],
@@ -768,6 +838,7 @@
   {
     "iso": "FJ",
     "iso3": "FJI",
+    "flag": "fj",
     "callingCodes": [
       "679"
     ],
@@ -779,6 +850,7 @@
   {
     "iso": "FK",
     "iso3": "FLK",
+    "flag": "fk",
     "callingCodes": [
       "500"
     ],
@@ -790,6 +862,7 @@
   {
     "iso": "FM",
     "iso3": "FSM",
+    "flag": "fm",
     "callingCodes": [
       "691"
     ],
@@ -801,6 +874,7 @@
   {
     "iso": "FO",
     "iso3": "FRO",
+    "flag": "fo",
     "callingCodes": [
       "298"
     ],
@@ -812,6 +886,7 @@
   {
     "iso": "FR",
     "iso3": "FRA",
+    "flag": "fr",
     "callingCodes": [
       "33"
     ],
@@ -823,6 +898,7 @@
   {
     "iso": "GA",
     "iso3": "GAB",
+    "flag": "ga",
     "callingCodes": [
       "241"
     ],
@@ -834,6 +910,7 @@
   {
     "iso": "GB",
     "iso3": "GBR",
+    "flag": "gb",
     "callingCodes": [
       "44"
     ],
@@ -845,6 +922,7 @@
   {
     "iso": "GD",
     "iso3": "GRD",
+    "flag": "gd",
     "callingCodes": [
       "1"
     ],
@@ -856,6 +934,7 @@
   {
     "iso": "GE",
     "iso3": "GEO",
+    "flag": "ge",
     "callingCodes": [
       "995"
     ],
@@ -867,6 +946,7 @@
   {
     "iso": "GF",
     "iso3": "GUF",
+    "flag": "gf",
     "callingCodes": [
       "594"
     ],
@@ -878,6 +958,7 @@
   {
     "iso": "GG",
     "iso3": "GGY",
+    "flag": "gg",
     "callingCodes": [
       "44"
     ],
@@ -889,6 +970,7 @@
   {
     "iso": "GH",
     "iso3": "GHA",
+    "flag": "gh",
     "callingCodes": [
       "233"
     ],
@@ -900,6 +982,7 @@
   {
     "iso": "GI",
     "iso3": "GIB",
+    "flag": "gi",
     "callingCodes": [
       "350"
     ],
@@ -911,6 +994,7 @@
   {
     "iso": "GL",
     "iso3": "GRL",
+    "flag": "gl",
     "callingCodes": [
       "299"
     ],
@@ -922,6 +1006,7 @@
   {
     "iso": "GM",
     "iso3": "GMB",
+    "flag": "gm",
     "callingCodes": [
       "220"
     ],
@@ -933,6 +1018,7 @@
   {
     "iso": "GN",
     "iso3": "GIN",
+    "flag": "gn",
     "callingCodes": [
       "224"
     ],
@@ -944,6 +1030,7 @@
   {
     "iso": "GP",
     "iso3": "GLP",
+    "flag": "gp",
     "callingCodes": [
       "590"
     ],
@@ -955,6 +1042,7 @@
   {
     "iso": "GQ",
     "iso3": "GNQ",
+    "flag": "gq",
     "callingCodes": [
       "240"
     ],
@@ -966,6 +1054,7 @@
   {
     "iso": "GR",
     "iso3": "GRC",
+    "flag": "gr",
     "callingCodes": [
       "30"
     ],
@@ -977,6 +1066,7 @@
   {
     "iso": "GS",
     "iso3": "SGS",
+    "flag": "gs",
     "callingCodes": [],
     "names": {
       "en": "South Georgia \u0026 South Sandwich Islands",
@@ -986,6 +1076,7 @@
   {
     "iso": "GT",
     "iso3": "GTM",
+    "flag": "gt",
     "callingCodes": [
       "502"
     ],
@@ -997,6 +1088,7 @@
   {
     "iso": "GU",
     "iso3": "GUM",
+    "flag": "gu",
     "callingCodes": [
       "1"
     ],
@@ -1008,6 +1100,7 @@
   {
     "iso": "GW",
     "iso3": "GNB",
+    "flag": "gw",
     "callingCodes": [
       "245"
     ],
@@ -1019,6 +1112,7 @@
   {
     "iso": "GY",
     "iso3": "GUY",
+    "flag": "gy",
     "callingCodes": [
       "592"
     ],
@@ -1030,6 +1124,7 @@
   {
     "iso": "HK",
     "iso3": "HKG",
+    "flag": "cn",
     "callingCodes": [
       "852"
     ],
@@ -1041,6 +1136,7 @@
   {
     "iso": "HM",
     "iso3": "HMD",
+    "flag": "hm",
     "callingCodes": [],
     "names": {
       "en": "Heard \u0026 McDonald Islands",
@@ -1050,6 +1146,7 @@
   {
     "iso": "HN",
     "iso3": "HND",
+    "flag": "hn",
     "callingCodes": [
       "504"
     ],
@@ -1061,6 +1158,7 @@
   {
     "iso": "HR",
     "iso3": "HRV",
+    "flag": "hr",
     "callingCodes": [
       "385"
     ],
@@ -1072,6 +1170,7 @@
   {
     "iso": "HT",
     "iso3": "HTI",
+    "flag": "ht",
     "callingCodes": [
       "509"
     ],
@@ -1083,6 +1182,7 @@
   {
     "iso": "HU",
     "iso3": "HUN",
+    "flag": "hu",
     "callingCodes": [
       "36"
     ],
@@ -1094,6 +1194,7 @@
   {
     "iso": "ID",
     "iso3": "IDN",
+    "flag": "id",
     "callingCodes": [
       "62"
     ],
@@ -1105,6 +1206,7 @@
   {
     "iso": "IE",
     "iso3": "IRL",
+    "flag": "ie",
     "callingCodes": [
       "353"
     ],
@@ -1116,6 +1218,7 @@
   {
     "iso": "IL",
     "iso3": "ISR",
+    "flag": "il",
     "callingCodes": [
       "972"
     ],
@@ -1127,6 +1230,7 @@
   {
     "iso": "IM",
     "iso3": "IMN",
+    "flag": "im",
     "callingCodes": [
       "44"
     ],
@@ -1138,6 +1242,7 @@
   {
     "iso": "IN",
     "iso3": "IND",
+    "flag": "in",
     "callingCodes": [
       "91"
     ],
@@ -1149,6 +1254,7 @@
   {
     "iso": "IO",
     "iso3": "IOT",
+    "flag": "io",
     "callingCodes": [
       "246"
     ],
@@ -1160,6 +1266,7 @@
   {
     "iso": "IQ",
     "iso3": "IRQ",
+    "flag": "iq",
     "callingCodes": [
       "964"
     ],
@@ -1171,6 +1278,7 @@
   {
     "iso": "IR",
     "iso3": "IRN",
+    "flag": "ir",
     "callingCodes": [
       "98"
     ],
@@ -1182,6 +1290,7 @@
   {
     "iso": "IS",
     "iso3": "ISL",
+    "flag": "is",
     "callingCodes": [
       "354"
     ],
@@ -1193,6 +1302,7 @@
   {
     "iso": "IT",
     "iso3": "ITA",
+    "flag": "it",
     "callingCodes": [
       "39"
     ],
@@ -1204,6 +1314,7 @@
   {
     "iso": "JE",
     "iso3": "JEY",
+    "flag": "je",
     "callingCodes": [
       "44"
     ],
@@ -1215,6 +1326,7 @@
   {
     "iso": "JM",
     "iso3": "JAM",
+    "flag": "jm",
     "callingCodes": [
       "1"
     ],
@@ -1226,6 +1338,7 @@
   {
     "iso": "JO",
     "iso3": "JOR",
+    "flag": "jo",
     "callingCodes": [
       "962"
     ],
@@ -1237,6 +1350,7 @@
   {
     "iso": "JP",
     "iso3": "JPN",
+    "flag": "jp",
     "callingCodes": [
       "81"
     ],
@@ -1248,6 +1362,7 @@
   {
     "iso": "KE",
     "iso3": "KEN",
+    "flag": "ke",
     "callingCodes": [
       "254"
     ],
@@ -1259,6 +1374,7 @@
   {
     "iso": "KG",
     "iso3": "KGZ",
+    "flag": "kg",
     "callingCodes": [
       "996"
     ],
@@ -1270,6 +1386,7 @@
   {
     "iso": "KH",
     "iso3": "KHM",
+    "flag": "kh",
     "callingCodes": [
       "855"
     ],
@@ -1281,6 +1398,7 @@
   {
     "iso": "KI",
     "iso3": "KIR",
+    "flag": "ki",
     "callingCodes": [
       "686"
     ],
@@ -1292,6 +1410,7 @@
   {
     "iso": "KM",
     "iso3": "COM",
+    "flag": "km",
     "callingCodes": [
       "269"
     ],
@@ -1303,6 +1422,7 @@
   {
     "iso": "KN",
     "iso3": "KNA",
+    "flag": "kn",
     "callingCodes": [
       "1"
     ],
@@ -1314,6 +1434,7 @@
   {
     "iso": "KP",
     "iso3": "PRK",
+    "flag": "kp",
     "callingCodes": [
       "850"
     ],
@@ -1325,6 +1446,7 @@
   {
     "iso": "KR",
     "iso3": "KOR",
+    "flag": "kr",
     "callingCodes": [
       "82"
     ],
@@ -1336,6 +1458,7 @@
   {
     "iso": "KW",
     "iso3": "KWT",
+    "flag": "kw",
     "callingCodes": [
       "965"
     ],
@@ -1347,6 +1470,7 @@
   {
     "iso": "KY",
     "iso3": "CYM",
+    "flag": "ky",
     "callingCodes": [
       "1"
     ],
@@ -1358,6 +1482,7 @@
   {
     "iso": "KZ",
     "iso3": "KAZ",
+    "flag": "kz",
     "callingCodes": [
       "7"
     ],
@@ -1369,6 +1494,7 @@
   {
     "iso": "LA",
     "iso3": "LAO",
+    "flag": "la",
     "callingCodes": [
       "856"
     ],
@@ -1380,6 +1506,7 @@
   {
     "iso": "LB",
     "iso3": "LBN",
+    "flag": "lb",
     "callingCodes": [
       "961"
     ],
@@ -1391,6 +1518,7 @@
   {
     "iso": "LC",
     "iso3": "LCA",
+    "flag": "lc",
     "callingCodes": [
       "1"
     ],
@@ -1402,6 +1530,7 @@
   {
     "iso": "LI",
     "iso3": "LIE",
+    "flag": "li",
     "callingCodes": [
       "423"
     ],
@@ -1413,6 +1542,7 @@
   {
     "iso": "LK",
     "iso3": "LKA",
+    "flag": "lk",
     "callingCodes": [
       "94"
     ],
@@ -1424,6 +1554,7 @@
   {
     "iso": "LR",
     "iso3": "LBR",
+    "flag": "lr",
     "callingCodes": [
       "231"
     ],
@@ -1435,6 +1566,7 @@
   {
     "iso": "LS",
     "iso3": "LSO",
+    "flag": "ls",
     "callingCodes": [
       "266"
     ],
@@ -1446,6 +1578,7 @@
   {
     "iso": "LT",
     "iso3": "LTU",
+    "flag": "lt",
     "callingCodes": [
       "370"
     ],
@@ -1457,6 +1590,7 @@
   {
     "iso": "LU",
     "iso3": "LUX",
+    "flag": "lu",
     "callingCodes": [
       "352"
     ],
@@ -1468,6 +1602,7 @@
   {
     "iso": "LV",
     "iso3": "LVA",
+    "flag": "lv",
     "callingCodes": [
       "371"
     ],
@@ -1479,6 +1614,7 @@
   {
     "iso": "LY",
     "iso3": "LBY",
+    "flag": "ly",
     "callingCodes": [
       "218"
     ],
@@ -1490,6 +1626,7 @@
   {
     "iso": "MA",
     "iso3": "MAR",
+    "flag": "ma",
     "callingCodes": [
       "212"
     ],
@@ -1501,6 +1638,7 @@
   {
     "iso": "MC",
     "iso3": "MCO",
+    "flag": "mc",
     "callingCodes": [
       "377"
     ],
@@ -1512,6 +1650,7 @@
   {
     "iso": "MD",
     "iso3": "MDA",
+    "flag": "md",
     "callingCodes": [
       "373"
     ],
@@ -1523,6 +1662,7 @@
   {
     "iso": "ME",
     "iso3": "MNE",
+    "flag": "me",
     "callingCodes": [
       "382"
     ],
@@ -1534,6 +1674,7 @@
   {
     "iso": "MF",
     "iso3": "MAF",
+    "flag": "mf",
     "callingCodes": [
       "590"
     ],
@@ -1545,6 +1686,7 @@
   {
     "iso": "MG",
     "iso3": "MDG",
+    "flag": "mg",
     "callingCodes": [
       "261"
     ],
@@ -1556,6 +1698,7 @@
   {
     "iso": "MH",
     "iso3": "MHL",
+    "flag": "mh",
     "callingCodes": [
       "692"
     ],
@@ -1567,6 +1710,7 @@
   {
     "iso": "MK",
     "iso3": "MKD",
+    "flag": "mk",
     "callingCodes": [
       "389"
     ],
@@ -1578,6 +1722,7 @@
   {
     "iso": "ML",
     "iso3": "MLI",
+    "flag": "ml",
     "callingCodes": [
       "223"
     ],
@@ -1589,6 +1734,7 @@
   {
     "iso": "MM",
     "iso3": "MMR",
+    "flag": "mm",
     "callingCodes": [
       "95"
     ],
@@ -1600,6 +1746,7 @@
   {
     "iso": "MN",
     "iso3": "MNG",
+    "flag": "mn",
     "callingCodes": [
       "976"
     ],
@@ -1611,6 +1758,7 @@
   {
     "iso": "MO",
     "iso3": "MAC",
+    "flag": "cn",
     "callingCodes": [
       "853"
     ],
@@ -1622,6 +1770,7 @@
   {
     "iso": "MP",
     "iso3": "MNP",
+    "flag": "mp",
     "callingCodes": [
       "1"
     ],
@@ -1633,6 +1782,7 @@
   {
     "iso": "MQ",
     "iso3": "MTQ",
+    "flag": "mq",
     "callingCodes": [
       "596"
     ],
@@ -1644,6 +1794,7 @@
   {
     "iso": "MR",
     "iso3": "MRT",
+    "flag": "mr",
     "callingCodes": [
       "222"
     ],
@@ -1655,6 +1806,7 @@
   {
     "iso": "MS",
     "iso3": "MSR",
+    "flag": "ms",
     "callingCodes": [
       "1"
     ],
@@ -1666,6 +1818,7 @@
   {
     "iso": "MT",
     "iso3": "MLT",
+    "flag": "mt",
     "callingCodes": [
       "356"
     ],
@@ -1677,6 +1830,7 @@
   {
     "iso": "MU",
     "iso3": "MUS",
+    "flag": "mu",
     "callingCodes": [
       "230"
     ],
@@ -1688,6 +1842,7 @@
   {
     "iso": "MV",
     "iso3": "MDV",
+    "flag": "mv",
     "callingCodes": [
       "960"
     ],
@@ -1699,6 +1854,7 @@
   {
     "iso": "MW",
     "iso3": "MWI",
+    "flag": "mw",
     "callingCodes": [
       "265"
     ],
@@ -1710,6 +1866,7 @@
   {
     "iso": "MX",
     "iso3": "MEX",
+    "flag": "mx",
     "callingCodes": [
       "52"
     ],
@@ -1721,6 +1878,7 @@
   {
     "iso": "MY",
     "iso3": "MYS",
+    "flag": "my",
     "callingCodes": [
       "60"
     ],
@@ -1732,6 +1890,7 @@
   {
     "iso": "MZ",
     "iso3": "MOZ",
+    "flag": "mz",
     "callingCodes": [
       "258"
     ],
@@ -1743,6 +1902,7 @@
   {
     "iso": "NA",
     "iso3": "NAM",
+    "flag": "na",
     "callingCodes": [
       "264"
     ],
@@ -1754,6 +1914,7 @@
   {
     "iso": "NC",
     "iso3": "NCL",
+    "flag": "nc",
     "callingCodes": [
       "687"
     ],
@@ -1765,6 +1926,7 @@
   {
     "iso": "NE",
     "iso3": "NER",
+    "flag": "ne",
     "callingCodes": [
       "227"
     ],
@@ -1776,6 +1938,7 @@
   {
     "iso": "NF",
     "iso3": "NFK",
+    "flag": "nf",
     "callingCodes": [
       "672"
     ],
@@ -1787,6 +1950,7 @@
   {
     "iso": "NG",
     "iso3": "NGA",
+    "flag": "ng",
     "callingCodes": [
       "234"
     ],
@@ -1798,6 +1962,7 @@
   {
     "iso": "NI",
     "iso3": "NIC",
+    "flag": "ni",
     "callingCodes": [
       "505"
     ],
@@ -1809,6 +1974,7 @@
   {
     "iso": "NL",
     "iso3": "NLD",
+    "flag": "nl",
     "callingCodes": [
       "31"
     ],
@@ -1820,6 +1986,7 @@
   {
     "iso": "NO",
     "iso3": "NOR",
+    "flag": "no",
     "callingCodes": [
       "47"
     ],
@@ -1831,6 +1998,7 @@
   {
     "iso": "NP",
     "iso3": "NPL",
+    "flag": "np",
     "callingCodes": [
       "977"
     ],
@@ -1842,6 +2010,7 @@
   {
     "iso": "NR",
     "iso3": "NRU",
+    "flag": "nr",
     "callingCodes": [
       "674"
     ],
@@ -1853,6 +2022,7 @@
   {
     "iso": "NU",
     "iso3": "NIU",
+    "flag": "nu",
     "callingCodes": [
       "683"
     ],
@@ -1864,6 +2034,7 @@
   {
     "iso": "NZ",
     "iso3": "NZL",
+    "flag": "nz",
     "callingCodes": [
       "64"
     ],
@@ -1875,6 +2046,7 @@
   {
     "iso": "OM",
     "iso3": "OMN",
+    "flag": "om",
     "callingCodes": [
       "968"
     ],
@@ -1886,6 +2058,7 @@
   {
     "iso": "PA",
     "iso3": "PAN",
+    "flag": "pa",
     "callingCodes": [
       "507"
     ],
@@ -1897,6 +2070,7 @@
   {
     "iso": "PE",
     "iso3": "PER",
+    "flag": "pe",
     "callingCodes": [
       "51"
     ],
@@ -1908,6 +2082,7 @@
   {
     "iso": "PF",
     "iso3": "PYF",
+    "flag": "pf",
     "callingCodes": [
       "689"
     ],
@@ -1919,6 +2094,7 @@
   {
     "iso": "PG",
     "iso3": "PNG",
+    "flag": "pg",
     "callingCodes": [
       "675"
     ],
@@ -1930,6 +2106,7 @@
   {
     "iso": "PH",
     "iso3": "PHL",
+    "flag": "ph",
     "callingCodes": [
       "63"
     ],
@@ -1941,6 +2118,7 @@
   {
     "iso": "PK",
     "iso3": "PAK",
+    "flag": "pk",
     "callingCodes": [
       "92"
     ],
@@ -1952,6 +2130,7 @@
   {
     "iso": "PL",
     "iso3": "POL",
+    "flag": "pl",
     "callingCodes": [
       "48"
     ],
@@ -1963,6 +2142,7 @@
   {
     "iso": "PM",
     "iso3": "SPM",
+    "flag": "pm",
     "callingCodes": [
       "508"
     ],
@@ -1974,6 +2154,7 @@
   {
     "iso": "PN",
     "iso3": "PCN",
+    "flag": "pn",
     "callingCodes": [],
     "names": {
       "en": "Pitcairn Islands",
@@ -1983,6 +2164,7 @@
   {
     "iso": "PR",
     "iso3": "PRI",
+    "flag": "pr",
     "callingCodes": [
       "1"
     ],
@@ -1994,6 +2176,7 @@
   {
     "iso": "PS",
     "iso3": "PSE",
+    "flag": "ps",
     "callingCodes": [
       "970"
     ],
@@ -2005,6 +2188,7 @@
   {
     "iso": "PT",
     "iso3": "PRT",
+    "flag": "pt",
     "callingCodes": [
       "351"
     ],
@@ -2016,6 +2200,7 @@
   {
     "iso": "PW",
     "iso3": "PLW",
+    "flag": "pw",
     "callingCodes": [
       "680"
     ],
@@ -2027,6 +2212,7 @@
   {
     "iso": "PY",
     "iso3": "PRY",
+    "flag": "py",
     "callingCodes": [
       "595"
     ],
@@ -2038,6 +2224,7 @@
   {
     "iso": "QA",
     "iso3": "QAT",
+    "flag": "qa",
     "callingCodes": [
       "974"
     ],
@@ -2049,6 +2236,7 @@
   {
     "iso": "RE",
     "iso3": "REU",
+    "flag": "re",
     "callingCodes": [
       "262"
     ],
@@ -2060,6 +2248,7 @@
   {
     "iso": "RO",
     "iso3": "ROU",
+    "flag": "ro",
     "callingCodes": [
       "40"
     ],
@@ -2071,6 +2260,7 @@
   {
     "iso": "RS",
     "iso3": "SRB",
+    "flag": "rs",
     "callingCodes": [
       "381"
     ],
@@ -2082,6 +2272,7 @@
   {
     "iso": "RU",
     "iso3": "RUS",
+    "flag": "ru",
     "callingCodes": [
       "7"
     ],
@@ -2093,6 +2284,7 @@
   {
     "iso": "RW",
     "iso3": "RWA",
+    "flag": "rw",
     "callingCodes": [
       "250"
     ],
@@ -2104,6 +2296,7 @@
   {
     "iso": "SA",
     "iso3": "SAU",
+    "flag": "sa",
     "callingCodes": [
       "966"
     ],
@@ -2115,6 +2308,7 @@
   {
     "iso": "SB",
     "iso3": "SLB",
+    "flag": "sb",
     "callingCodes": [
       "677"
     ],
@@ -2126,6 +2320,7 @@
   {
     "iso": "SC",
     "iso3": "SYC",
+    "flag": "sc",
     "callingCodes": [
       "248"
     ],
@@ -2137,6 +2332,7 @@
   {
     "iso": "SD",
     "iso3": "SDN",
+    "flag": "sd",
     "callingCodes": [
       "249"
     ],
@@ -2148,6 +2344,7 @@
   {
     "iso": "SE",
     "iso3": "SWE",
+    "flag": "se",
     "callingCodes": [
       "46"
     ],
@@ -2159,6 +2356,7 @@
   {
     "iso": "SG",
     "iso3": "SGP",
+    "flag": "sg",
     "callingCodes": [
       "65"
     ],
@@ -2170,6 +2368,7 @@
   {
     "iso": "SH",
     "iso3": "SHN",
+    "flag": "sh",
     "callingCodes": [
       "290"
     ],
@@ -2181,6 +2380,7 @@
   {
     "iso": "SI",
     "iso3": "SVN",
+    "flag": "si",
     "callingCodes": [
       "386"
     ],
@@ -2192,6 +2392,7 @@
   {
     "iso": "SJ",
     "iso3": "SJM",
+    "flag": "sj",
     "callingCodes": [
       "47"
     ],
@@ -2203,6 +2404,7 @@
   {
     "iso": "SK",
     "iso3": "SVK",
+    "flag": "sk",
     "callingCodes": [
       "421"
     ],
@@ -2214,6 +2416,7 @@
   {
     "iso": "SL",
     "iso3": "SLE",
+    "flag": "sl",
     "callingCodes": [
       "232"
     ],
@@ -2225,6 +2428,7 @@
   {
     "iso": "SM",
     "iso3": "SMR",
+    "flag": "sm",
     "callingCodes": [
       "378"
     ],
@@ -2236,6 +2440,7 @@
   {
     "iso": "SN",
     "iso3": "SEN",
+    "flag": "sn",
     "callingCodes": [
       "221"
     ],
@@ -2247,6 +2452,7 @@
   {
     "iso": "SO",
     "iso3": "SOM",
+    "flag": "so",
     "callingCodes": [
       "252"
     ],
@@ -2258,6 +2464,7 @@
   {
     "iso": "SR",
     "iso3": "SUR",
+    "flag": "sr",
     "callingCodes": [
       "597"
     ],
@@ -2269,6 +2476,7 @@
   {
     "iso": "SS",
     "iso3": "SSD",
+    "flag": "ss",
     "callingCodes": [
       "211"
     ],
@@ -2280,6 +2488,7 @@
   {
     "iso": "ST",
     "iso3": "STP",
+    "flag": "st",
     "callingCodes": [
       "239"
     ],
@@ -2291,6 +2500,7 @@
   {
     "iso": "SV",
     "iso3": "SLV",
+    "flag": "sv",
     "callingCodes": [
       "503"
     ],
@@ -2302,6 +2512,7 @@
   {
     "iso": "SX",
     "iso3": "SXM",
+    "flag": "sx",
     "callingCodes": [
       "1"
     ],
@@ -2313,6 +2524,7 @@
   {
     "iso": "SY",
     "iso3": "SYR",
+    "flag": "sy",
     "callingCodes": [
       "963"
     ],
@@ -2324,6 +2536,7 @@
   {
     "iso": "SZ",
     "iso3": "SWZ",
+    "flag": "sz",
     "callingCodes": [
       "268"
     ],
@@ -2335,6 +2548,7 @@
   {
     "iso": "TC",
     "iso3": "TCA",
+    "flag": "tc",
     "callingCodes": [
       "1"
     ],
@@ -2346,6 +2560,7 @@
   {
     "iso": "TD",
     "iso3": "TCD",
+    "flag": "td",
     "callingCodes": [
       "235"
     ],
@@ -2357,6 +2572,7 @@
   {
     "iso": "TF",
     "iso3": "ATF",
+    "flag": "tf",
     "callingCodes": [],
     "names": {
       "en": "French Southern Territories",
@@ -2366,6 +2582,7 @@
   {
     "iso": "TG",
     "iso3": "TGO",
+    "flag": "tg",
     "callingCodes": [
       "228"
     ],
@@ -2377,6 +2594,7 @@
   {
     "iso": "TH",
     "iso3": "THA",
+    "flag": "th",
     "callingCodes": [
       "66"
     ],
@@ -2388,6 +2606,7 @@
   {
     "iso": "TJ",
     "iso3": "TJK",
+    "flag": "tj",
     "callingCodes": [
       "992"
     ],
@@ -2399,6 +2618,7 @@
   {
     "iso": "TK",
     "iso3": "TKL",
+    "flag": "tk",
     "callingCodes": [
       "690"
     ],
@@ -2410,6 +2630,7 @@
   {
     "iso": "TL",
     "iso3": "TLS",
+    "flag": "tl",
     "callingCodes": [
       "670"
     ],
@@ -2421,6 +2642,7 @@
   {
     "iso": "TM",
     "iso3": "TKM",
+    "flag": "tm",
     "callingCodes": [
       "993"
     ],
@@ -2432,6 +2654,7 @@
   {
     "iso": "TN",
     "iso3": "TUN",
+    "flag": "tn",
     "callingCodes": [
       "216"
     ],
@@ -2443,6 +2666,7 @@
   {
     "iso": "TO",
     "iso3": "TON",
+    "flag": "to",
     "callingCodes": [
       "676"
     ],
@@ -2454,6 +2678,7 @@
   {
     "iso": "TR",
     "iso3": "TUR",
+    "flag": "tr",
     "callingCodes": [
       "90"
     ],
@@ -2465,6 +2690,7 @@
   {
     "iso": "TT",
     "iso3": "TTO",
+    "flag": "tt",
     "callingCodes": [
       "1"
     ],
@@ -2476,6 +2702,7 @@
   {
     "iso": "TV",
     "iso3": "TUV",
+    "flag": "tv",
     "callingCodes": [
       "688"
     ],
@@ -2487,6 +2714,7 @@
   {
     "iso": "TW",
     "iso3": "TWN",
+    "flag": "cn",
     "callingCodes": [
       "886"
     ],
@@ -2498,6 +2726,7 @@
   {
     "iso": "TZ",
     "iso3": "TZA",
+    "flag": "tz",
     "callingCodes": [
       "255"
     ],
@@ -2509,6 +2738,7 @@
   {
     "iso": "UA",
     "iso3": "UKR",
+    "flag": "ua",
     "callingCodes": [
       "380"
     ],
@@ -2520,6 +2750,7 @@
   {
     "iso": "UG",
     "iso3": "UGA",
+    "flag": "ug",
     "callingCodes": [
       "256"
     ],
@@ -2531,6 +2762,7 @@
   {
     "iso": "UM",
     "iso3": "UMI",
+    "flag": "um",
     "callingCodes": [],
     "names": {
       "en": "U.S. Outlying Islands",
@@ -2540,6 +2772,7 @@
   {
     "iso": "US",
     "iso3": "USA",
+    "flag": "us",
     "callingCodes": [
       "1"
     ],
@@ -2551,6 +2784,7 @@
   {
     "iso": "UY",
     "iso3": "URY",
+    "flag": "uy",
     "callingCodes": [
       "598"
     ],
@@ -2562,6 +2796,7 @@
   {
     "iso": "UZ",
     "iso3": "UZB",
+    "flag": "uz",
     "callingCodes": [
       "998"
     ],
@@ -2573,6 +2808,7 @@
   {
     "iso": "VA",
     "iso3": "VAT",
+    "flag": "va",
     "callingCodes": [
       "39"
     ],
@@ -2584,6 +2820,7 @@
   {
     "iso": "VC",
     "iso3": "VCT",
+    "flag": "vc",
     "callingCodes": [
       "1"
     ],
@@ -2595,6 +2832,7 @@
   {
     "iso": "VE",
     "iso3": "VEN",
+    "flag": "ve",
     "callingCodes": [
       "58"
     ],
@@ -2606,6 +2844,7 @@
   {
     "iso": "VG",
     "iso3": "VGB",
+    "flag": "vg",
     "callingCodes": [
       "1"
     ],
@@ -2617,6 +2856,7 @@
   {
     "iso": "VI",
     "iso3": "VIR",
+    "flag": "vi",
     "callingCodes": [
       "1"
     ],
@@ -2628,6 +2868,7 @@
   {
     "iso": "VN",
     "iso3": "VNM",
+    "flag": "vn",
     "callingCodes": [
       "84"
     ],
@@ -2639,6 +2880,7 @@
   {
     "iso": "VU",
     "iso3": "VUT",
+    "flag": "vu",
     "callingCodes": [
       "678"
     ],
@@ -2650,6 +2892,7 @@
   {
     "iso": "WF",
     "iso3": "WLF",
+    "flag": "wf",
     "callingCodes": [
       "681"
     ],
@@ -2661,6 +2904,7 @@
   {
     "iso": "WS",
     "iso3": "WSM",
+    "flag": "ws",
     "callingCodes": [
       "685"
     ],
@@ -2670,26 +2914,9 @@
     }
   },
   {
-    "iso": "XA",
-    "iso3": "XAA",
-    "callingCodes": [],
-    "names": {
-      "en": "Pseudo-Accents",
-      "zh": "伪地区"
-    }
-  },
-  {
-    "iso": "XB",
-    "iso3": "XBB",
-    "callingCodes": [],
-    "names": {
-      "en": "Pseudo-Bidi",
-      "zh": "伪双向语言地区"
-    }
-  },
-  {
     "iso": "YE",
     "iso3": "YEM",
+    "flag": "ye",
     "callingCodes": [
       "967"
     ],
@@ -2701,6 +2928,7 @@
   {
     "iso": "YT",
     "iso3": "MYT",
+    "flag": "yt",
     "callingCodes": [
       "262"
     ],
@@ -2712,6 +2940,7 @@
   {
     "iso": "ZA",
     "iso3": "ZAF",
+    "flag": "za",
     "callingCodes": [
       "27"
     ],
@@ -2723,6 +2952,7 @@
   {
     "iso": "ZM",
     "iso3": "ZMB",
+    "flag": "zm",
     "callingCodes": [
       "260"
     ],
@@ -2734,6 +2964,7 @@
   {
     "iso": "ZW",
     "iso3": "ZWE",
+    "flag": "zw",
     "callingCodes": [
       "263"
     ],

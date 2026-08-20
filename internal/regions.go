@@ -4,11 +4,13 @@ import (
 	"encoding/json"
 	"encoding/xml"
 	"fmt"
+	"os"
 	"path/filepath"
 	"sort"
+	"strings"
 )
 
-var countrySourcePaths = []string{
+var regionSourcePaths = []string{
 	"cldr/codeMappings.json",
 	"cldr/en-territories.json",
 	"cldr/zh-territories.json",
@@ -38,31 +40,44 @@ type phoneMetadata struct {
 	} `xml:"territories>territory"`
 }
 
-// GenerateCountries 在任一依赖源更新时重新生成 countries.json。
-func GenerateCountries(root string, states map[string]SourceState) (bool, error) {
-	if !anySourceUpdated(states, countrySourcePaths) {
-		return false, nil
+// GenerateRegions 在任一依赖源更新时重新生成 regions.json。
+func GenerateRegions(root string, states map[string]SourceState) (bool, error) {
+	if !anySourceUpdated(states, regionSourcePaths) {
+		regionsPath := filepath.Join(root, "generated", "regions.json")
+		legacyCountriesPath := filepath.Join(root, "generated", "countries.json")
+		if _, err := os.Stat(regionsPath); err == nil {
+			if _, err := os.Stat(legacyCountriesPath); os.IsNotExist(err) {
+				return false, nil
+			} else if err != nil {
+				return false, fmt.Errorf("stat legacy countries: %w", err)
+			}
+		} else if !os.IsNotExist(err) {
+			return false, fmt.Errorf("stat generated regions: %w", err)
+		}
 	}
-	files := make(map[string][]byte, len(countrySourcePaths))
-	for _, sourcePath := range countrySourcePaths {
+	files := make(map[string][]byte, len(regionSourcePaths))
+	for _, sourcePath := range regionSourcePaths {
 		state, exists := states[sourcePath]
 		if !exists {
-			return false, fmt.Errorf("missing country source %s", sourcePath)
+			return false, fmt.Errorf("missing region source %s", sourcePath)
 		}
 		for filePath, body := range state.Files {
 			files[filePath] = body
 		}
 	}
-	countries, _, err := parseCountries(files)
+	regions, _, err := parseRegions(files)
 	if err != nil {
 		return false, err
 	}
-	body, err := json.MarshalIndent(countries, "", "  ")
+	body, err := json.MarshalIndent(regions, "", "  ")
 	if err != nil {
 		return false, err
 	}
-	if err := writeFile(filepath.Join(root, "generated"), "countries.json", append(body, '\n')); err != nil {
+	if err := writeFile(filepath.Join(root, "generated"), "regions.json", append(body, '\n')); err != nil {
 		return false, err
+	}
+	if err := os.Remove(filepath.Join(root, "generated", "countries.json")); err != nil && !os.IsNotExist(err) {
+		return false, fmt.Errorf("remove legacy countries: %w", err)
 	}
 	return true, nil
 }
@@ -76,7 +91,7 @@ func anySourceUpdated(states map[string]SourceState, paths []string) bool {
 	return false
 }
 
-func parseCountries(files map[string][]byte) ([]Country, []SourceSpec, error) {
+func parseRegions(files map[string][]byte) ([]Region, []SourceSpec, error) {
 	var mappings codeMappingsFile
 	var en, zh territoryNamesFile
 	var phone phoneMetadata
@@ -100,20 +115,30 @@ func parseCountries(files map[string][]byte) ([]Country, []SourceSpec, error) {
 			callingCodes[territory.ID] = append(callingCodes[territory.ID], territory.CountryCode)
 		}
 	}
-	countries := make([]Country, 0, len(mappings.Supplemental.CodeMappings))
+	regions := make([]Region, 0, len(mappings.Supplemental.CodeMappings))
 	for iso := range mappings.Supplemental.CodeMappings {
 		mapping, exists := mappings.Supplemental.CodeMappings[iso]
 		name := enNames[iso]
-		if !exists || !validISO(iso) || !validISO3(mapping.Alpha3) || name == "" || nonISOTerritories[iso] {
+		if !exists || !validISO(iso) || !validISO3(mapping.Alpha3) || name == "" || nonISORegions[iso] {
 			continue
 		}
-		countries = append(countries, Country{
-			ISO: iso, ISO3: mapping.Alpha3, CallingCodes: sortedUnique(callingCodes[iso]),
-			Names: Names{English: name, Chinese: zhNames[iso]},
+		regions = append(regions, Region{
+			ISO:          iso,
+			ISO3:         mapping.Alpha3,
+			Flag:         flagFor(iso),
+			CallingCodes: sortedUnique(callingCodes[iso]),
+			Names:        Names{English: name, Chinese: zhNames[iso]},
 		})
 	}
-	sort.Slice(countries, func(i, j int) bool { return countries[i].ISO < countries[j].ISO })
-	return countries, nil, validateCountries(countries)
+	sort.Slice(regions, func(i, j int) bool { return regions[i].ISO < regions[j].ISO })
+	return regions, nil, validateRegions(regions)
+}
+
+func flagFor(iso string) string {
+	if iso == "HK" || iso == "MO" || iso == "TW" {
+		return "cn"
+	}
+	return strings.ToLower(iso)
 }
 
 func namesFor(file territoryNamesFile, locale string) map[string]string {

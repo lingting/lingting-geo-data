@@ -24,18 +24,18 @@ func Sync(ctx context.Context, root string) (bool, error) {
 	if err := writeUpdatedSources(root, states); err != nil {
 		return false, err
 	}
-	countriesUpdated, err := GenerateCountries(root, states)
+	regionsUpdated, err := GenerateRegions(root, states)
 	if err != nil {
 		return false, err
 	}
-	flagsUpdated, err := GenerateFlags(root, states["flag-icons"])
+	flagsUpdated, err := GenerateFlags(root)
 	if err != nil {
 		return false, err
 	}
 	if err := validateGeneratedData(root); err != nil {
 		return false, err
 	}
-	return sourcesUpdated(states) || countriesUpdated || flagsUpdated, nil
+	return sourcesUpdated(states) || regionsUpdated || flagsUpdated, nil
 }
 
 func readSourceIndex(root string) (SourceIndex, error) {
