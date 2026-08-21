@@ -13,7 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: ./bin/sync-linux-amd64
+      - run: |
+          chmod a+x ./bin/sync-linux-amd64
+          ./bin/sync-linux-amd64
       - run: |
           if git diff --quiet -- sources/ generated/; then
             exit 0
