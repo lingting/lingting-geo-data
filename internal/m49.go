@@ -58,7 +58,7 @@ func generateM49(root string, states *States) (M49Generation, error) {
 	if err != nil {
 		return M49Generation{}, err
 	}
-	body, err := json.MarshalIndent(parsed.Root, "", "  ")
+	body, err := marshalGeneratedData(parsed.Root)
 	if err != nil {
 		return M49Generation{}, err
 	}

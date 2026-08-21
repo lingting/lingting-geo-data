@@ -84,7 +84,7 @@ func generateRegions(root string, states *States) (RegionGeneration, error) {
 	if err := validateRegions(regions); err != nil {
 		return RegionGeneration{}, err
 	}
-	body, err := json.MarshalIndent(regions, "", "  ")
+	body, err := marshalGeneratedData(regions)
 	if err != nil {
 		return RegionGeneration{}, err
 	}

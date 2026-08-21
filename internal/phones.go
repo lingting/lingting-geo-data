@@ -1,7 +1,6 @@
 package internal
 
 import (
-	"encoding/json"
 	"encoding/xml"
 	"fmt"
 	"os"
@@ -46,7 +45,7 @@ func generatePhones(root string, states *States) (PhoneGeneration, error) {
 		return PhoneGeneration{}, err
 	}
 	result := newPhoneGeneration(regions, false)
-	body, err := json.MarshalIndent(flattenPhones(regions), "", "  ")
+	body, err := marshalGeneratedData(flattenPhones(regions))
 	if err != nil {
 		return PhoneGeneration{}, err
 	}

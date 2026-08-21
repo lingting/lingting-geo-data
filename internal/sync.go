@@ -80,7 +80,7 @@ func writeUpdatedSources(root string, states *States) error {
 			}
 		}
 	}
-	body, err := json.MarshalIndent(index, "", "  ")
+	body, err := marshalGeneratedData(index)
 	if err != nil {
 		return err
 	}

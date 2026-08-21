@@ -5,7 +5,68 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	"reflect"
 )
+
+func marshalGeneratedData(value any) ([]byte, error) {
+	return json.MarshalIndent(normalizeNilSlices(value), "", "  ")
+}
+
+func normalizeNilSlices(value any) any {
+	if value == nil {
+		return nil
+	}
+	return normalizeNilSlicesValue(reflect.ValueOf(value)).Interface()
+}
+
+func normalizeNilSlicesValue(value reflect.Value) reflect.Value {
+	if !value.IsValid() {
+		return value
+	}
+
+	switch value.Kind() {
+	case reflect.Interface:
+		if value.IsNil() {
+			return value
+		}
+		return normalizeNilSlicesValue(value.Elem())
+	case reflect.Ptr:
+		if value.IsNil() {
+			return value
+		}
+		result := reflect.New(value.Type().Elem())
+		result.Elem().Set(normalizeNilSlicesValue(value.Elem()))
+		return result
+	case reflect.Struct:
+		result := reflect.New(value.Type()).Elem()
+		result.Set(value)
+		for index := range value.NumField() {
+			field := result.Field(index)
+			if field.CanSet() {
+				field.Set(normalizeNilSlicesValue(value.Field(index)))
+			}
+		}
+		return result
+	case reflect.Slice:
+		result := reflect.MakeSlice(value.Type(), value.Len(), value.Len())
+		for index := range value.Len() {
+			result.Index(index).Set(normalizeNilSlicesValue(value.Index(index)))
+		}
+		return result
+	case reflect.Map:
+		if value.IsNil() {
+			return value
+		}
+		result := reflect.MakeMapWithSize(value.Type(), value.Len())
+		iterator := value.MapRange()
+		for iterator.Next() {
+			result.SetMapIndex(iterator.Key(), normalizeNilSlicesValue(iterator.Value()))
+		}
+		return result
+	default:
+		return value
+	}
+}
 
 func validateGeneratedData(root string) error {
 	for _, path := range []string{

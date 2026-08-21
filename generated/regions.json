@@ -163,7 +163,7 @@
     "iso": "AQ",
     "iso3": "ATA",
     "flag": "aq",
-    "callingCodes": null,
+    "callingCodes": [],
     "phonePrefixes": [],
     "names": {
       "en": "Antarctica",
@@ -658,7 +658,7 @@
     "iso": "BV",
     "iso3": "BVT",
     "flag": "bv",
-    "callingCodes": null,
+    "callingCodes": [],
     "phonePrefixes": [],
     "names": {
       "en": "Bouvet Island",
@@ -1792,7 +1792,7 @@
     "iso": "GS",
     "iso3": "SGS",
     "flag": "gs",
-    "callingCodes": null,
+    "callingCodes": [],
     "phonePrefixes": [],
     "names": {
       "en": "South Georgia \u0026 South Sandwich Islands",
@@ -1908,7 +1908,7 @@
     "iso": "HM",
     "iso3": "HMD",
     "flag": "hm",
-    "callingCodes": null,
+    "callingCodes": [],
     "phonePrefixes": [],
     "names": {
       "en": "Heard \u0026 McDonald Islands",
@@ -3627,7 +3627,7 @@
     "iso": "PN",
     "iso3": "PCN",
     "flag": "pn",
-    "callingCodes": null,
+    "callingCodes": [],
     "phonePrefixes": [],
     "names": {
       "en": "Pitcairn Islands",
@@ -4329,7 +4329,7 @@
     "iso": "TF",
     "iso3": "ATF",
     "flag": "tf",
-    "callingCodes": null,
+    "callingCodes": [],
     "phonePrefixes": [],
     "names": {
       "en": "French Southern Territories",
@@ -4645,7 +4645,7 @@
     "iso": "UM",
     "iso3": "UMI",
     "flag": "um",
-    "callingCodes": null,
+    "callingCodes": [],
     "phonePrefixes": [],
     "names": {
       "en": "U.S. Outlying Islands",
