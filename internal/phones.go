@@ -36,11 +36,6 @@ func GeneratePhones(root string, states *States) (PhoneGeneration, error) {
 }
 
 func generatePhones(root string, resource Resource) (PhoneGeneration, error) {
-	if !resource.Updated && targetExists(filepath.Join(root, "generated", "phones.json")) {
-		if _, cached := readCache[map[string][]PhoneNumber](root, "phone-number-metadata.json"); cached {
-			return readGeneratedPhones(root)
-		}
-	}
 	var regions map[string][]PhoneNumber
 	if !resource.Updated {
 		regions, _ = readCache[map[string][]PhoneNumber](root, "phone-number-metadata.json")
@@ -54,7 +49,7 @@ func generatePhones(root string, resource Resource) (PhoneGeneration, error) {
 			return PhoneGeneration{}, err
 		}
 	}
-	result := newPhoneGeneration(regions, false)
+	result := newPhoneGeneration(regions, true)
 	body, err := marshalGeneratedData(flattenPhones(regions))
 	if err != nil {
 		return PhoneGeneration{}, err
@@ -65,29 +60,6 @@ func generatePhones(root string, resource Resource) (PhoneGeneration, error) {
 	}
 	result.Updated = updated
 	return result, nil
-}
-func readGeneratedPhones(root string) (PhoneGeneration, error) {
-	phones, err := readJSON[[]PhonePrefix](filepath.Join(root, "generated", "phones.json"))
-	if err != nil {
-		return PhoneGeneration{}, fmt.Errorf("read generated phones: %w", err)
-	}
-	regions := make(map[string][]PhoneNumber)
-	for _, phone := range phones {
-		numbers := regions[phone.Region]
-		found := false
-		for index := range numbers {
-			if numbers[index].Calling == phone.Calling {
-				numbers[index].Prefixes = append(numbers[index].Prefixes, phone.Prefix)
-				found = true
-				break
-			}
-		}
-		if !found {
-			numbers = append(numbers, PhoneNumber{Calling: phone.Calling, Prefixes: []int{phone.Prefix}})
-		}
-		regions[phone.Region] = numbers
-	}
-	return newPhoneGeneration(regions, false), nil
 }
 
 func newPhoneGeneration(regions map[string][]PhoneNumber, updated bool) PhoneGeneration {
@@ -173,6 +145,7 @@ func parsePhones(body []byte) (map[string][]PhoneNumber, error) {
 	}
 	regions := make(map[string][]PhoneNumber, len(metadata.Territories))
 	callingByRegion := make(map[string]int, len(metadata.Territories))
+	regionsByCalling := make(map[int][]string)
 	mainByCalling := make(map[int]string)
 	for _, territory := range metadata.Territories {
 		if territory.ID == "" {
@@ -183,6 +156,7 @@ func parsePhones(body []byte) (map[string][]PhoneNumber, error) {
 			return nil, fmt.Errorf("parse calling code %q: %w", territory.CountryCode, err)
 		}
 		callingByRegion[territory.ID] = calling
+		regionsByCalling[calling] = append(regionsByCalling[calling], territory.ID)
 		if territory.MainCountryForCode {
 			mainByCalling[calling] = territory.ID
 		}
@@ -195,12 +169,22 @@ func parsePhones(body []byte) (map[string][]PhoneNumber, error) {
 	for region, numbers := range regions {
 		calling := callingByRegion[region]
 		prefixes := numbers[0].Prefixes
-		if mainByCalling[calling] == region {
+		if fallbackRegion(calling, regionsByCalling, mainByCalling) == region {
 			prefixes = append(prefixes, calling)
 		}
 		regions[region] = []PhoneNumber{{Calling: calling, Prefixes: uniqueInts(prefixes)}}
 	}
 	return regions, nil
+}
+func fallbackRegion(calling int, regionsByCalling map[int][]string, mainByCalling map[int]string) string {
+	if region := mainByCalling[calling]; region != "" {
+		return region
+	}
+	regions := regionsByCalling[calling]
+	if len(regions) == 1 {
+		return regions[0]
+	}
+	return ""
 }
 
 func geographicPrefixes(territory phoneTerritory, calling int) ([]int, error) {
@@ -226,7 +210,62 @@ func geographicPrefixes(territory phoneTerritory, calling int) ([]int, error) {
 			prefixes = append(prefixes, prefix)
 		}
 	}
-	return uniqueInts(prefixes), nil
+	return compactPhonePrefixes(uniqueInts(prefixes)), nil
+}
+
+type phonePrefixNode struct {
+	children [10]*phonePrefixNode
+	terminal bool
+}
+
+func compactPhonePrefixes(prefixes []int) []int {
+	root := &phonePrefixNode{}
+	for _, prefix := range prefixes {
+		node := root
+		for _, digit := range strconv.Itoa(prefix) {
+			index := digit - '0'
+			if node.children[index] == nil {
+				node.children[index] = &phonePrefixNode{}
+			}
+			node = node.children[index]
+		}
+		node.terminal = true
+	}
+	values := make([]string, 0, len(root.children))
+	for digit, child := range root.children {
+		if child != nil {
+			values = append(values, child.compact(strconv.Itoa(digit))...)
+		}
+	}
+	result := make([]int, 0, len(values))
+	for _, value := range values {
+		prefix, _ := strconv.Atoi(value)
+		result = append(result, prefix)
+	}
+	return uniqueInts(result)
+}
+
+func (node *phonePrefixNode) compact(prefix string) []string {
+	if node.terminal {
+		return []string{prefix}
+	}
+	values := make([]string, 0, len(node.children))
+	allCovered := true
+	for digit, child := range node.children {
+		if child == nil {
+			allCovered = false
+			continue
+		}
+		childValues := child.compact(prefix + strconv.Itoa(digit))
+		if len(childValues) != 1 || childValues[0] != prefix+strconv.Itoa(digit) {
+			allCovered = false
+		}
+		values = append(values, childValues...)
+	}
+	if allCovered {
+		return []string{prefix}
+	}
+	return values
 }
 
 func uniqueInts(values []int) []int {

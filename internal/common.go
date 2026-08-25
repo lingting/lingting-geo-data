@@ -10,7 +10,7 @@ import (
 	"sort"
 )
 
-const cacheVersion = 1
+const cacheVersion = 3
 
 type cacheEnvelope[T any] struct {
 	Version int `json:"version"`

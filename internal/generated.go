@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	"strconv"
 )
 
 func validateGeneratedData(root string) error {
@@ -24,7 +25,51 @@ func validateGeneratedData(root string) error {
 			return fmt.Errorf("validate generated data: flag for %s: %w", region.ISO, err)
 		}
 	}
+	phones, err := readJSON[[]PhonePrefix](filepath.Join(root, "generated", "phones.json"))
+	if err != nil {
+		return fmt.Errorf("read generated phones: %w", err)
+	}
+	if err := validatePhonePrefixes(regions.Regions, phones); err != nil {
+		return err
+	}
 	return nil
+}
+
+func validatePhonePrefixes(regions []Region, phones []PhonePrefix) error {
+	prefixesByRegion := make(map[string]map[string]struct{}, len(regions))
+	for _, region := range regions {
+		prefixes := make(map[string]struct{}, len(region.PhonePrefixes))
+		for _, prefix := range region.PhonePrefixes {
+			prefixes[prefix] = struct{}{}
+		}
+		prefixesByRegion[region.ISO] = prefixes
+	}
+	for _, phone := range phones {
+		prefixes, exists := prefixesByRegion[phone.Region]
+		if !exists {
+			continue
+		}
+		if _, exists := prefixes[strconv.Itoa(phone.Prefix)]; !exists {
+			return fmt.Errorf("validate generated data: phone prefix %d missing from %s", phone.Prefix, phone.Region)
+		}
+	}
+	for region, prefixes := range prefixesByRegion {
+		for prefix := range prefixes {
+			if hasCompletePhonePrefixChildren(prefix, prefixes) {
+				return fmt.Errorf("validate generated data: phone prefix %s for %s is not shortest", prefix, region)
+			}
+		}
+	}
+	return nil
+}
+
+func hasCompletePhonePrefixChildren(prefix string, prefixes map[string]struct{}) bool {
+	for digit := '0'; digit <= '9'; digit++ {
+		if _, exists := prefixes[prefix+string(digit)]; !exists {
+			return false
+		}
+	}
+	return true
 }
 
 func readGeneratedRegions(root string) (RegionGeneration, error) {
