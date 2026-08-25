@@ -63,7 +63,7 @@ func (s *States) ReadM49() (M49Generation, error) {
 	if result, ok := s.m49.Read(); ok {
 		return result, nil
 	}
-	return M49Generation{}, fmt.Errorf("M.49 has not been generated")
+	return M49Generation{}, fmt.Errorf("m.49 has not been generated")
 }
 
 func (s *States) ReadPhones() (PhoneGeneration, error) {

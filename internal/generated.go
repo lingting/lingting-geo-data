@@ -45,11 +45,12 @@ func validatePhonePrefixes(regions []Region, phones []PhonePrefix) error {
 		prefixesByRegion[region.ISO] = prefixes
 	}
 	for _, phone := range phones {
+		prefix := strconv.Itoa(phone.Prefix)
 		prefixes, exists := prefixesByRegion[phone.Region]
 		if !exists {
 			continue
 		}
-		if _, exists := prefixes[strconv.Itoa(phone.Prefix)]; !exists {
+		if _, exists := prefixes[prefix]; !exists {
 			return fmt.Errorf("validate generated data: phone prefix %d missing from %s", phone.Prefix, phone.Region)
 		}
 	}

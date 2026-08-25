@@ -12,8 +12,6 @@ import (
 	"unicode"
 )
 
-const phoneMetadataSourcePath = "libphonenumber/PhoneNumberMetadata.xml"
-
 // PhonePrefix 表示国际号码前缀与 ISO 区域代码的映射。
 type PhonePrefix struct {
 	Prefix  int    `json:"prefix"`
@@ -49,7 +47,7 @@ func generatePhones(root string, resource Resource) (PhoneGeneration, error) {
 			return PhoneGeneration{}, err
 		}
 	}
-	result := newPhoneGeneration(regions, true)
+	result := newPhoneGeneration(regions, false)
 	body, err := marshalGeneratedData(flattenPhones(regions))
 	if err != nil {
 		return PhoneGeneration{}, err
@@ -120,9 +118,41 @@ func flattenPhones(regions map[string][]PhoneNumber) []PhonePrefix {
 	return phones
 }
 
-func generatedPhonesNeedCalling(err error) bool {
-	return strings.Contains(err.Error(), "missing calling")
+func removeFallbackCoveredPrefixes(regions map[string][]PhoneNumber) map[string][]PhoneNumber {
+	fallbacks := make(map[string][]string, len(regions))
+	for region, numbers := range regions {
+		for _, number := range numbers {
+			for _, prefix := range number.Prefixes {
+				if prefix == number.Calling {
+					fallbacks[region] = append(fallbacks[region], strconv.Itoa(prefix))
+				}
+			}
+		}
+	}
+	for region, numbers := range regions {
+		for index, number := range numbers {
+			prefixes := make([]int, 0, len(number.Prefixes))
+			for _, prefix := range number.Prefixes {
+				if !isCoveredByFallback(strconv.Itoa(prefix), fallbacks[region]) {
+					prefixes = append(prefixes, prefix)
+				}
+			}
+			numbers[index].Prefixes = uniqueInts(prefixes)
+		}
+		regions[region] = numbers
+	}
+	return regions
 }
+
+func isCoveredByFallback(prefix string, fallbacks []string) bool {
+	for _, fallback := range fallbacks {
+		if prefix != fallback && strings.HasPrefix(prefix, fallback) {
+			return true
+		}
+	}
+	return false
+}
+
 func writeGeneratedPhones(root string, body []byte) (bool, error) {
 	phonesPath := filepath.Join(root, "generated", "phones.json")
 	current, err := os.ReadFile(phonesPath)
@@ -174,7 +204,7 @@ func parsePhones(body []byte) (map[string][]PhoneNumber, error) {
 		}
 		regions[region] = []PhoneNumber{{Calling: calling, Prefixes: uniqueInts(prefixes)}}
 	}
-	return regions, nil
+	return removeFallbackCoveredPrefixes(regions), nil
 }
 func fallbackRegion(calling int, regionsByCalling map[int][]string, mainByCalling map[int]string) string {
 	if region := mainByCalling[calling]; region != "" {
