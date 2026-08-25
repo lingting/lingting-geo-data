@@ -13,7 +13,7 @@ func GenerateFlags(root string, states *States) (bool, error) {
 	if err != nil {
 		return false, err
 	}
-	if !regions.Updated && !states.SourcesUpdated([]string{"flag-icons"}) {
+	if !regions.Updated && !states.ReadFlagIcons().Updated && targetExists(filepath.Join(root, "generated", "flags")) {
 		return false, nil
 	}
 

@@ -3,6 +3,8 @@ package internal
 import (
 	"fmt"
 	"regexp"
+
+	"github.com/lingting/lingting-geo-data/internal/cldr"
 )
 
 var (
@@ -23,13 +25,10 @@ func validISO(value string) bool  { return isoPattern.MatchString(value) }
 func validISO3(value string) bool { return iso3Pattern.MatchString(value) }
 func validM49(value string) bool  { return m49Pattern.MatchString(value) }
 
-func isISORegion(iso string, mapping codeMapping) bool {
+func isISORegion(iso string, mapping cldr.CodeMapping) bool {
 	return validISO(iso) &&
-
 		validISO3(mapping.Alpha3) &&
-
 		validM49(mapping.Numeric) &&
-
 		!nonISORegions[iso]
 }
 func validateRegions(regions []Region) error {

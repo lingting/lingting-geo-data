@@ -25,75 +25,110 @@ type githubRelease struct {
 	} `json:"assets"`
 }
 
-func downloadAll(ctx context.Context, root string, specs []SourceSpec, previous SourceIndex) (map[string]SourceState, error) {
+func downloadResources(ctx context.Context, root string, specs Resources, previous SourceIndex) (Resources, error) {
 	client := &http.Client{Timeout: requestTimeout}
-	results := make(map[string]SourceState, len(specs))
-	for _, spec := range specs {
-		state, err := download(ctx, root, client, spec, previous.Sources[spec.Path])
-		if err != nil {
-			return nil, err
-		}
-		results[spec.Path] = state
+	result := specs
+	var err error
+	result.CldrCodeMappings, err = downloadResource(ctx, root, client, specs.CldrCodeMappings, previous.CldrCodeMappings)
+	if err != nil {
+		return Resources{}, err
 	}
-	return results, nil
+	result.CldrEnTerritories, err = downloadResource(ctx, root, client, specs.CldrEnTerritories, previous.CldrEnTerritories)
+	if err != nil {
+		return Resources{}, err
+	}
+	result.CldrZhTerritories, err = downloadResource(ctx, root, client, specs.CldrZhTerritories, previous.CldrZhTerritories)
+	if err != nil {
+		return Resources{}, err
+	}
+	result.CldrSupplementalData, err = downloadResource(ctx, root, client, specs.CldrSupplementalData, previous.CldrSupplementalData)
+	if err != nil {
+		return Resources{}, err
+	}
+	result.PhoneNumberMetadata, err = downloadResource(ctx, root, client, specs.PhoneNumberMetadata, previous.PhoneNumberMetadata)
+	if err != nil {
+		return Resources{}, err
+	}
+	result.FlagIcons, err = downloadResource(ctx, root, client, specs.FlagIcons, previous.FlagIcons)
+	if err != nil {
+		return Resources{}, err
+	}
+	return result, nil
 }
 
-func download(ctx context.Context, root string, client *http.Client, spec SourceSpec, previous SourceRecord) (SourceState, error) {
+func downloadResource(ctx context.Context, root string, client *http.Client, resource Resource, previous SourceRecord) (Resource, error) {
+	result, err := download(ctx, root, client, resource.Spec, previous)
+	if err != nil {
+		return Resource{}, err
+	}
+	return result, nil
+}
+
+func download(ctx context.Context, root string, client *http.Client, spec SourceSpec, previous SourceRecord) (Resource, error) {
 	if spec.Kind == directSource {
 		return downloadDirect(ctx, root, client, spec, previous)
 	}
 	return downloadLatestRelease(ctx, root, client, spec, previous)
 }
 
-func downloadDirect(ctx context.Context, root string, client *http.Client, spec SourceSpec, previous SourceRecord) (SourceState, error) {
+func downloadDirect(ctx context.Context, root string, client *http.Client, spec SourceSpec, previous SourceRecord) (Resource, error) {
 	body, etag, unchanged, err := get(ctx, client, spec.URL, previous.ETag)
 	if err != nil {
-		return SourceState{}, fmt.Errorf("download %s: %w", spec.URL, err)
+		return Resource{}, fmt.Errorf("download %s: %w", spec.URL, err)
 	}
 	files := map[string][]byte{spec.Path: body}
 	if unchanged {
 		files, err = readCachedSource(root, spec.Path)
 		if err != nil {
-			return SourceState{}, err
+			return Resource{}, err
 		}
 	}
 	if !validContent(spec.Path, files[spec.Path]) {
-		return SourceState{}, fmt.Errorf("invalid content for %s", spec.Path)
+		return Resource{}, fmt.Errorf("invalid content for %s", spec.Path)
 	}
-	return SourceState{Spec: spec, Files: files, Record: SourceRecord{URL: spec.URL, ETag: etag, Provenance: spec.Provenance}, Updated: !unchanged}, nil
+	return Resource{
+		Spec:    spec,
+		Files:   files,
+		Record:  SourceRecord{URL: spec.URL, ETag: etag, Provenance: spec.Provenance},
+		Updated: !unchanged,
+	}, nil
 }
 
-func downloadLatestRelease(ctx context.Context, root string, client *http.Client, spec SourceSpec, previous SourceRecord) (SourceState, error) {
+func downloadLatestRelease(ctx context.Context, root string, client *http.Client, spec SourceSpec, previous SourceRecord) (Resource, error) {
 	releaseURL := "https://api.github.com/repos/" + spec.Repository + "/releases/latest"
 	body, etag, unchanged, err := get(ctx, client, releaseURL, previous.ETag)
 	if err != nil {
-		return SourceState{}, fmt.Errorf("get latest release for %s: %w", spec.Repository, err)
+		return Resource{}, fmt.Errorf("get latest release for %s: %w", spec.Repository, err)
 	}
 	if unchanged {
 		files, err := readCachedSource(root, spec.Path)
 		if err != nil {
-			return SourceState{}, err
+			return Resource{}, err
 		}
-		return SourceState{Spec: spec, Files: files, Record: previous, Updated: false}, nil
+		return Resource{Spec: spec, Files: files, Record: previous}, nil
 	}
-
 	var release githubRelease
 	if err := json.Unmarshal(body, &release); err != nil {
-		return SourceState{}, fmt.Errorf("parse latest release for %s: %w", spec.Repository, err)
+		return Resource{}, fmt.Errorf("parse latest release for %s: %w", spec.Repository, err)
 	}
 	downloadURL, err := releaseDownloadURL(spec, release)
 	if err != nil {
-		return SourceState{}, err
+		return Resource{}, err
 	}
 	archive, _, _, err := get(ctx, client, downloadURL, "")
 	if err != nil {
-		return SourceState{}, fmt.Errorf("download release file %s: %w", downloadURL, err)
+		return Resource{}, fmt.Errorf("download release file %s: %w", downloadURL, err)
 	}
 	files, err := archiveFiles(spec.Path, archive)
 	if err != nil {
-		return SourceState{}, err
+		return Resource{}, err
 	}
-	return SourceState{Spec: spec, Files: files, Record: SourceRecord{URL: releaseURL, ETag: etag, Provenance: spec.Provenance}, Updated: true}, nil
+	return Resource{
+		Spec:    spec,
+		Files:   files,
+		Record:  SourceRecord{URL: releaseURL, ETag: etag, Provenance: spec.Provenance},
+		Updated: true,
+	}, nil
 }
 
 func releaseDownloadURL(spec SourceSpec, release githubRelease) (string, error) {

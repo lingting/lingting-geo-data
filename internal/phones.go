@@ -9,6 +9,7 @@ import (
 	"sort"
 	"strconv"
 	"strings"
+	"unicode"
 )
 
 const phoneMetadataSourcePath = "libphonenumber/PhoneNumberMetadata.xml"
@@ -22,11 +23,11 @@ type PhonePrefix struct {
 
 // GeneratePhones 在元数据更新时重新生成 phones.json，否则解析既有生成文件。
 func GeneratePhones(root string, states *States) (PhoneGeneration, error) {
-	if cached := states.Phones(); cached != nil {
-		return *cached, nil
+	if cached, err := states.ReadPhones(); err == nil {
+		return cached, nil
 	}
-
-	result, err := generatePhones(root, states)
+	resource := states.ReadPhoneMetadata()
+	result, err := generatePhones(root, resource)
 	if err != nil {
 		return PhoneGeneration{}, err
 	}
@@ -34,15 +35,24 @@ func GeneratePhones(root string, states *States) (PhoneGeneration, error) {
 	return result, nil
 }
 
-func generatePhones(root string, states *States) (PhoneGeneration, error) {
-	state, err := states.Source(phoneMetadataSourcePath)
-	if err != nil {
-		return PhoneGeneration{}, err
+func generatePhones(root string, resource Resource) (PhoneGeneration, error) {
+	if !resource.Updated && targetExists(filepath.Join(root, "generated", "phones.json")) {
+		if _, cached := readCache[map[string][]PhoneNumber](root, "phone-number-metadata.json"); cached {
+			return readGeneratedPhones(root)
+		}
 	}
-
-	regions, err := parsePhones(state.Files[phoneMetadataSourcePath])
-	if err != nil {
-		return PhoneGeneration{}, err
+	var regions map[string][]PhoneNumber
+	if !resource.Updated {
+		regions, _ = readCache[map[string][]PhoneNumber](root, "phone-number-metadata.json")
+	}
+	if regions == nil {
+		regions, err := parsePhones(resource.Files[resource.Spec.Path])
+		if err != nil {
+			return PhoneGeneration{}, err
+		}
+		if err := writeCache(root, "phone-number-metadata.json", regions); err != nil {
+			return PhoneGeneration{}, err
+		}
 	}
 	result := newPhoneGeneration(regions, false)
 	body, err := marshalGeneratedData(flattenPhones(regions))
@@ -55,6 +65,29 @@ func generatePhones(root string, states *States) (PhoneGeneration, error) {
 	}
 	result.Updated = updated
 	return result, nil
+}
+func readGeneratedPhones(root string) (PhoneGeneration, error) {
+	phones, err := readJSON[[]PhonePrefix](filepath.Join(root, "generated", "phones.json"))
+	if err != nil {
+		return PhoneGeneration{}, fmt.Errorf("read generated phones: %w", err)
+	}
+	regions := make(map[string][]PhoneNumber)
+	for _, phone := range phones {
+		numbers := regions[phone.Region]
+		found := false
+		for index := range numbers {
+			if numbers[index].Calling == phone.Calling {
+				numbers[index].Prefixes = append(numbers[index].Prefixes, phone.Prefix)
+				found = true
+				break
+			}
+		}
+		if !found {
+			numbers = append(numbers, PhoneNumber{Calling: phone.Calling, Prefixes: []int{phone.Prefix}})
+		}
+		regions[phone.Region] = numbers
+	}
+	return newPhoneGeneration(regions, false), nil
 }
 
 func newPhoneGeneration(regions map[string][]PhoneNumber, updated bool) PhoneGeneration {
@@ -107,10 +140,10 @@ func flattenPhones(regions map[string][]PhoneNumber) []PhonePrefix {
 		if phones[i].Prefix != phones[j].Prefix {
 			return phones[i].Prefix > phones[j].Prefix
 		}
-		if phones[i].Calling != phones[j].Calling {
-			return phones[i].Calling > phones[j].Calling
+		if phones[i].Region != phones[j].Region {
+			return phones[i].Region < phones[j].Region
 		}
-		return phones[i].Region < phones[j].Region
+		return phones[i].Calling < phones[j].Calling
 	})
 	return phones
 }
@@ -138,8 +171,9 @@ func parsePhones(body []byte) (map[string][]PhoneNumber, error) {
 	if err := xml.Unmarshal(body, &metadata); err != nil {
 		return nil, fmt.Errorf("parse libphonenumber metadata: %w", err)
 	}
-
 	regions := make(map[string][]PhoneNumber, len(metadata.Territories))
+	callingByRegion := make(map[string]int, len(metadata.Territories))
+	mainByCalling := make(map[int]string)
 	for _, territory := range metadata.Territories {
 		if territory.ID == "" {
 			return nil, fmt.Errorf("missing territory ID")
@@ -148,34 +182,49 @@ func parsePhones(body []byte) (map[string][]PhoneNumber, error) {
 		if err != nil {
 			return nil, fmt.Errorf("parse calling code %q: %w", territory.CountryCode, err)
 		}
-		prefixes, err := phonePrefixesForTerritory(territory, calling)
-		if err != nil {
-			return nil, err
+		callingByRegion[territory.ID] = calling
+		if territory.MainCountryForCode {
+			mainByCalling[calling] = territory.ID
 		}
-		regions[territory.ID] = append(regions[territory.ID], PhoneNumber{
-			Calling:  calling,
-			Prefixes: prefixes,
-		})
+		values, err := geographicPrefixes(territory, calling)
+		if err != nil {
+			return nil, fmt.Errorf("parse geographic prefixes for %s: %w", territory.ID, err)
+		}
+		regions[territory.ID] = []PhoneNumber{{Calling: calling, Prefixes: values}}
+	}
+	for region, numbers := range regions {
+		calling := callingByRegion[region]
+		prefixes := numbers[0].Prefixes
+		if mainByCalling[calling] == region {
+			prefixes = append(prefixes, calling)
+		}
+		regions[region] = []PhoneNumber{{Calling: calling, Prefixes: uniqueInts(prefixes)}}
 	}
 	return regions, nil
 }
 
-func phonePrefixesForTerritory(territory phoneTerritory, calling int) ([]int, error) {
-	leadingDigits, err := expandLeadingDigits(territory.LeadingDigits)
-	if err != nil {
-		return nil, fmt.Errorf("expand leading digits for %s: %w", territory.ID, err)
-	}
-	if len(leadingDigits) == 0 {
-		return []int{calling}, nil
-	}
-
-	prefixes := make([]int, 0, len(leadingDigits))
-	for _, leadingDigit := range leadingDigits {
-		prefix, err := strconv.Atoi(strconv.Itoa(calling) + leadingDigit)
-		if err != nil {
-			return nil, fmt.Errorf("parse phone prefix for %s: %w", territory.ID, err)
+func geographicPrefixes(territory phoneTerritory, calling int) ([]int, error) {
+	patterns := []string{territory.LeadingDigits, territory.FixedLine.NationalNumberPattern, territory.Mobile.NationalNumberPattern}
+	var prefixes []int
+	for _, pattern := range patterns {
+		if strings.TrimSpace(pattern) == "" {
+			continue
 		}
-		prefixes = append(prefixes, prefix)
+		values, err := expandLeadingDigits(pattern)
+		if err != nil {
+			return nil, err
+		}
+		for _, value := range values {
+			value = numericPrefix(value)
+			if value == "" {
+				continue
+			}
+			prefix, err := strconv.Atoi(strconv.Itoa(calling) + value)
+			if err != nil {
+				return nil, err
+			}
+			prefixes = append(prefixes, prefix)
+		}
 	}
 	return uniqueInts(prefixes), nil
 }
@@ -194,6 +243,7 @@ func uniqueInts(values []int) []int {
 }
 
 func expandLeadingDigits(value string) ([]string, error) {
+	value = strings.Join(strings.Fields(value), "")
 	if value == "" {
 		return nil, nil
 	}
@@ -206,6 +256,15 @@ func expandLeadingDigits(value string) ([]string, error) {
 		return nil, err
 	}
 	return uniqueStrings(prefixes), nil
+}
+
+func numericPrefix(value string) string {
+	for index, runeValue := range value {
+		if !unicode.IsDigit(runeValue) {
+			return value[:index]
+		}
+	}
+	return value
 }
 
 func expandRegexp(regexp *syntax.Regexp) ([]string, error) {
@@ -236,8 +295,14 @@ func expandRegexp(regexp *syntax.Regexp) ([]string, error) {
 				return nil, err
 			}
 			values = combinePrefixes(values, expanded)
+			if len(values) > maxPrefixLength {
+				values = trimPrefixes(values, maxPrefixLength)
+				break
+			}
 		}
 		return values, nil
+	case syntax.OpRepeat, syntax.OpStar, syntax.OpPlus:
+		return []string{""}, nil
 	case syntax.OpQuest:
 		expanded, err := expandRegexp(regexp.Sub[0])
 		return append([]string{""}, expanded...), err
@@ -259,14 +324,32 @@ func expandCharClass(ranges []rune) ([]string, error) {
 	return values, nil
 }
 
+const (
+	maxExpandedPrefixes = 1_024
+	maxPrefixLength     = 7
+)
+
 func combinePrefixes(left, right []string) []string {
-	values := make([]string, 0, len(left)*len(right))
+	values := make([]string, 0, min(len(left)*len(right), maxExpandedPrefixes))
 	for _, prefix := range left {
 		for _, suffix := range right {
 			values = append(values, prefix+suffix)
+			if len(values) == maxExpandedPrefixes {
+				return values
+			}
 		}
 	}
 	return values
+}
+func trimPrefixes(values []string, length int) []string {
+	result := make([]string, 0, len(values))
+	for _, value := range values {
+		if len(value) > length {
+			value = value[:length]
+		}
+		result = append(result, value)
+	}
+	return uniqueStrings(result)
 }
 
 func uniqueStrings(values []string) []string {

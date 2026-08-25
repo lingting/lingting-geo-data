@@ -11,20 +11,19 @@ import (
 	"sort"
 )
 
-// Sync 更新上游源，并仅在相关源更新时重新生成产物。
 func Sync(ctx context.Context, root string) (bool, error) {
 	previous, err := readSourceIndex(root)
 	if err != nil {
 		return false, err
 	}
-	sources, err := downloadAll(ctx, root, baseSources(), previous)
+	resources, err := downloadResources(ctx, root, baseSources(), previous)
 	if err != nil {
 		return false, err
 	}
-	states := newStates(sources)
-	if err := writeUpdatedSources(root, states); err != nil {
+	if err := writeUpdatedResources(root, &resources); err != nil {
 		return false, err
 	}
+	states := newStates(resources)
 	m49, err := GenerateM49(root, states)
 	if err != nil {
 		return false, err
@@ -44,13 +43,13 @@ func Sync(ctx context.Context, root string) (bool, error) {
 	if err := validateGeneratedData(root); err != nil {
 		return false, err
 	}
-	return states.SourcesAreUpdated() || m49.Updated || phones.Updated || regions.Updated || flagsUpdated, nil
+	return resourcesUpdated(resources) || m49.Updated || phones.Updated || regions.Updated || flagsUpdated, nil
 }
 
 func readSourceIndex(root string) (SourceIndex, error) {
 	body, err := os.ReadFile(filepath.Join(root, "generated", "sources.json"))
 	if os.IsNotExist(err) {
-		return SourceIndex{Sources: map[string]SourceRecord{}}, nil
+		return SourceIndex{}, nil
 	}
 	if err != nil {
 		return SourceIndex{}, err
@@ -59,52 +58,62 @@ func readSourceIndex(root string) (SourceIndex, error) {
 	if err := json.Unmarshal(body, &index); err != nil {
 		return SourceIndex{}, fmt.Errorf("parse sources.json: %w", err)
 	}
-	if index.Sources == nil {
-		index.Sources = map[string]SourceRecord{}
-	}
 	return index, nil
 }
 
-func writeUpdatedSources(root string, states *States) error {
-	sources := states.Sources()
-	index := SourceIndex{Sources: make(map[string]SourceRecord, len(sources))}
-	for sourcePath, state := range sources {
-		state.Record.SHA256 = filesHash(state.Files)
-		index.Sources[sourcePath] = state.Record
-		if !state.Updated {
-			continue
-		}
-		for filePath, body := range state.Files {
-			if err := writeFile(filepath.Join(root, "sources"), filePath, body); err != nil {
-				return err
+func writeUpdatedResources(root string, resources *Resources) error {
+	for _, resource := range resourceList(*resources) {
+		record := resource.Record
+		record.Path = resource.Spec.Path
+		record.SHA256 = filesHash(resource.Files)
+		if resource.Updated {
+			for path, body := range resource.Files {
+				if err := writePath(filepath.Join(root, "sources", filepath.FromSlash(path)), body); err != nil {
+					return err
+				}
 			}
 		}
+		setResourceRecord(resources, resource.Spec.Path, record)
 	}
-	body, err := marshalGeneratedData(index)
+	body, err := marshalJSON(resourcesIndex(*resources))
 	if err != nil {
 		return err
 	}
-	return writeFile(filepath.Join(root, "generated"), "sources.json", append(body, '\n'))
+	return writePath(filepath.Join(root, "generated", "sources.json"), append(body, '\n'))
 }
 
 func filesHash(files map[string][]byte) string {
 	paths := make([]string, 0, len(files))
-	for filePath := range files {
-		paths = append(paths, filePath)
+	for path := range files {
+		paths = append(paths, path)
 	}
 	sort.Strings(paths)
 	hash := sha256.New()
-	for _, filePath := range paths {
-		digest := sha256.Sum256(files[filePath])
-		_, _ = hash.Write([]byte(filePath + "\x00" + hex.EncodeToString(digest[:]) + "\n"))
+	for _, path := range paths {
+		digest := sha256.Sum256(files[path])
+		_, _ = hash.Write([]byte(path + "\x00" + hex.EncodeToString(digest[:]) + "\n"))
 	}
 	return hex.EncodeToString(hash.Sum(nil))
 }
-
-func writeFile(root, relative string, body []byte) error {
-	filePath := filepath.Join(root, filepath.FromSlash(relative))
-	if err := os.MkdirAll(filepath.Dir(filePath), 0o755); err != nil {
-		return err
+func resourcesUpdated(resources Resources) bool {
+	for _, resource := range resourceList(resources) {
+		if resource.Updated {
+			return true
+		}
 	}
-	return os.WriteFile(filePath, body, 0o644)
+	return false
+}
+func resourceList(resources Resources) []Resource {
+	return []Resource{resources.CldrCodeMappings, resources.CldrEnTerritories, resources.CldrZhTerritories, resources.CldrSupplementalData, resources.PhoneNumberMetadata, resources.FlagIcons}
+}
+func resourcesIndex(r Resources) SourceIndex {
+	return SourceIndex{r.CldrCodeMappings.Record, r.CldrEnTerritories.Record, r.CldrZhTerritories.Record, r.CldrSupplementalData.Record, r.PhoneNumberMetadata.Record, r.FlagIcons.Record}
+}
+func setResourceRecord(r *Resources, path string, record SourceRecord) {
+	for _, resource := range []*Resource{&r.CldrCodeMappings, &r.CldrEnTerritories, &r.CldrZhTerritories, &r.CldrSupplementalData, &r.PhoneNumberMetadata, &r.FlagIcons} {
+		if resource.Spec.Path == path {
+			resource.Record = record
+			return
+		}
+	}
 }

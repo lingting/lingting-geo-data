@@ -1,90 +1,48 @@
 package internal
 
 import (
-	"bytes"
-	"encoding/json"
-	"encoding/xml"
 	"fmt"
-	"os"
 	"path/filepath"
 	"sort"
 	"strings"
+
+	"github.com/lingting/lingting-geo-data/internal/cldr"
 )
 
-var m49SourcePaths = []string{
-	"cldr/codeMappings.json",
-	"cldr/en-territories.json",
-	"cldr/zh-territories.json",
-	"cldr/supplementalData.xml",
-}
-
-type supplementalData struct {
-	TerritoryContainment struct {
-		Groups []territoryGroup `xml:"group"`
-	} `xml:"territoryContainment"`
-}
-
-type territoryGroup struct {
-	Type     string `xml:"type,attr"`
-	Contains string `xml:"contains,attr"`
-	Status   string `xml:"status,attr"`
-	Grouping bool   `xml:"grouping,attr"`
-}
-
-// GenerateM49 在依赖源更新时重新生成 M.49 层级，否则解析既有生成文件。
+// GenerateM49 在 CLDR 更新或生成目标缺失时重新生成 M.49 层级。
 func GenerateM49(root string, states *States) (M49Generation, error) {
-	if cached := states.M49(); cached != nil {
-		return *cached, nil
+	if cached, err := states.ReadM49(); err == nil {
+		return cached, nil
 	}
-
-	result, err := generateM49(root, states)
+	data, err := states.ReadCLDR(root)
 	if err != nil {
 		return M49Generation{}, err
 	}
+	if !data.Updated && targetExists(filepath.Join(root, "generated", "m49.json")) {
+		result, err := readGeneratedM49(root)
+		if err != nil {
+			return M49Generation{}, err
+		}
+		states.SetM49(result)
+		return result, nil
+	}
+	parsed, err := parseM49(data)
+	if err != nil {
+		return M49Generation{}, err
+	}
+	updated, err := writeGeneratedJSON(root, "m49.json", parsed.Root)
+	if err != nil {
+		return M49Generation{}, err
+	}
+	result := M49Generation{Indexes: parsed.Indexes, Updated: updated}
 	states.SetM49(result)
 	return result, nil
 }
 
-func generateM49(root string, states *States) (M49Generation, error) {
-	if !states.SourcesUpdated(m49SourcePaths) {
-		return readGeneratedM49(root)
-	}
-
-	files, err := states.SourceFiles(m49SourcePaths)
-	if err != nil {
-		return M49Generation{}, err
-	}
-	parsed, err := parseM49(files)
-	if err != nil {
-		return M49Generation{}, err
-	}
-	body, err := marshalGeneratedData(parsed.Root)
-	if err != nil {
-		return M49Generation{}, err
-	}
-	body = append(body, '\n')
-	path := filepath.Join(root, "generated", "m49.json")
-	current, err := os.ReadFile(path)
-	if err == nil && bytes.Equal(current, body) {
-		return M49Generation{Indexes: parsed.Indexes}, nil
-	}
-	if err != nil && !os.IsNotExist(err) {
-		return M49Generation{}, fmt.Errorf("read generated M.49: %w", err)
-	}
-	if err := writeFile(filepath.Join(root, "generated"), "m49.json", body); err != nil {
-		return M49Generation{}, err
-	}
-	return M49Generation{Indexes: parsed.Indexes, Updated: true}, nil
-}
-
 func readGeneratedM49(root string) (M49Generation, error) {
-	body, err := os.ReadFile(filepath.Join(root, "generated", "m49.json"))
+	node, err := readJSON[M49Node](filepath.Join(root, "generated", "m49.json"))
 	if err != nil {
 		return M49Generation{}, fmt.Errorf("read generated M.49: %w", err)
-	}
-	var node M49Node
-	if err := json.Unmarshal(body, &node); err != nil {
-		return M49Generation{}, fmt.Errorf("parse generated M.49: %w", err)
 	}
 	indexes := make(map[string]M49Index)
 	collectM49Indexes(&node, M49Index{}, indexes)
@@ -106,31 +64,22 @@ func collectM49Indexes(node *M49Node, parent M49Index, indexes map[string]M49Ind
 	}
 }
 
-func parseM49(files map[string][]byte) (M49ParseResult, error) {
-	var mappings codeMappingsFile
-	var en, zh territoryNamesFile
-	var data supplementalData
-	if err := json.Unmarshal(files["cldr/codeMappings.json"], &mappings); err != nil {
-		return M49ParseResult{}, fmt.Errorf("parse codeMappings: %w", err)
-	}
-	if err := json.Unmarshal(files["cldr/en-territories.json"], &en); err != nil {
-		return M49ParseResult{}, fmt.Errorf("parse English territories: %w", err)
-	}
-	if err := json.Unmarshal(files["cldr/zh-territories.json"], &zh); err != nil {
-		return M49ParseResult{}, fmt.Errorf("parse Chinese territories: %w", err)
-	}
-	if err := xml.Unmarshal(files["cldr/supplementalData.xml"], &data); err != nil {
-		return M49ParseResult{}, fmt.Errorf("parse supplementalData: %w", err)
-	}
-
-	groups := regularGroups(data.TerritoryContainment.Groups)
-	enNames, zhNames := namesFor(en, "en"), namesFor(zh, "zh")
+func parseM49(data cldr.Data) (M49ParseResult, error) {
+	groups := regularGroups(data.SupplementalData.Groups)
 	indexes := make(map[string]M49Index)
-	root, err := buildM49Node("001", groups, mappings.Supplemental.CodeMappings, enNames, zhNames, indexes, M49Index{})
+	root, err := buildM49Node(
+		"001",
+		groups,
+		data.CodeMappings.Mappings,
+		data.EnglishTerritory.Names,
+		data.ChineseTerritory.Names,
+		indexes,
+		M49Index{},
+	)
 	if err != nil {
 		return M49ParseResult{}, err
 	}
-	for iso, mapping := range mappings.Supplemental.CodeMappings {
+	for iso, mapping := range data.CodeMappings.Mappings {
 		if !isISORegion(iso, mapping) {
 			continue
 		}
@@ -144,7 +93,7 @@ func parseM49(files map[string][]byte) (M49ParseResult, error) {
 	return M49ParseResult{Root: root, Indexes: indexes}, nil
 }
 
-func regularGroups(groups []territoryGroup) map[string][]string {
+func regularGroups(groups []cldr.TerritoryGroup) map[string][]string {
 	result := make(map[string][]string)
 	for _, group := range groups {
 		if group.Status != "" || group.Grouping || !validM49(group.Type) {
@@ -155,7 +104,7 @@ func regularGroups(groups []territoryGroup) map[string][]string {
 	return result
 }
 
-func buildM49Node(code string, groups map[string][]string, mappings map[string]codeMapping, enNames, zhNames map[string]string, indexes map[string]M49Index, parent M49Index) (*M49Node, error) {
+func buildM49Node(code string, groups map[string][]string, mappings map[string]cldr.CodeMapping, enNames, zhNames map[string]string, indexes map[string]M49Index, parent M49Index) (*M49Node, error) {
 	name := enNames[code]
 	if name == "" {
 		return nil, fmt.Errorf("missing English M.49 name for %s", code)
@@ -183,7 +132,9 @@ func buildM49Node(code string, groups map[string][]string, mappings map[string]c
 		indexes[child] = parent
 		node.Regions = append(node.Regions, child)
 	}
-	sort.Slice(node.Children, func(i, j int) bool { return node.Children[i].Names.English < node.Children[j].Names.English })
+	sort.Slice(node.Children, func(i, j int) bool {
+		return node.Children[i].Names.English < node.Children[j].Names.English
+	})
 	sort.Strings(node.Regions)
 	return node, nil
 }

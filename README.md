@@ -17,6 +17,7 @@
 │   ├── flags/                 # regions.json 引用的 4:3 SVG 旗帜
 │   └── sources.json           # 本次生成使用的上游来源与校验信息
 ├── sources/                   # 从上游同步的原始数据快照
+├── cached/                    # 受版本控制的版本化解析缓存（含四份 CLDR 输入）
 ├── cmd/sync/                  # 数据同步命令入口
 └── internal/                  # 同步、解析、生成与校验逻辑
 ```
@@ -81,7 +82,7 @@ UN M.49 地理层级树，根节点为世界（`001`）。每个节点结构如�
 
 ### `generated/phones.json`
 
-电话前缀对象数组，按 `prefix`、`calling` 倒序及 `region` 升序排列，适合按最长前缀匹配电话号码：
+电话前缀对象数组，按 `prefix` 数值降序、同一 `prefix` 下 `region` 升序（最后以 `calling` 稳定排序），适合按最长前缀匹配电话号码：
 
 ```json
 {
@@ -93,8 +94,8 @@ UN M.49 地理层级树，根节点为世界（`001`）。每个节点结构如�
 
 | 字段 | 含义 |
 | --- | --- |
-| `prefix` | 用于地区识别的数字前缀，不含 `+` 号；可能为国际区号加地区前导数字。 |
-| `calling` | 国际电话区号，不含 `+` 号。 |
+| `prefix` | 用于地区识别的数字前缀，不含 `+` 号；由固定电话、移动电话模式及主国家代码推导，不为共享国际区号生成普通地区前缀。 |
+| `calling` | 国际电话区号，不含 `+` 号。相同前缀可有多条记录，以表达无法唯一归属的地区。 |
 | `region` | 对应的 ISO 3166-1 alpha-2 地区代码。 |
 
 ### `generated/flags/`
@@ -107,13 +108,13 @@ UN M.49 地理层级树，根节点为世界（`001`）。每个节点结构如�
 
 ```json
 {
-  "sources": {
-    "cldr/codeMappings.json": {
-      "url": "https://...",
-      "etag": "...",
-      "sha256": "...",
-      "provenance": "Unicode CLDR (Unicode License v3)"
-    }
+  "cldrCodeMappings": {
+    "path": "cldr/codeMappings.json",
+    "url": "https://...",
+    "etag": "...",
+    "sha256": "...",
+    "provenance": "Unicode CLDR (Unicode License v3)",
+    "updated": false
   }
 }
 ```
@@ -140,7 +141,7 @@ UN M.49 地理层级树，根节点为世界（`001`）。每个节点结构如�
 go run ./cmd/sync
 ```
 
-同步程序会使用 HTTP ETag 检查上游更新，仅在来源或生成结果变化时写入 `sources/` 和 `generated/`。运行成功时输出 `changes detected` 或 `no changes`。
+同步程序会使用 HTTP ETag 检查上游更新，仅在来源或生成结果变化时写入 `sources/` 和 `generated/`。四份 CLDR 输入与电话号码元数据会分别写入 `cached/` 下带 `version` 字段的解析缓存；缓存缺失或版本不兼容时自动从 `sources/` 快照恢复。运行成功时输出 `changes detected` 或 `no changes`。
 
 ## 注意事项
 
