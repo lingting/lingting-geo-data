@@ -1,13 +1,1283 @@
 [
   {
+    "prefix": 61891959,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61891958,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61891712,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61891711,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61891710,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61891703,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61891702,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61891701,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61891700,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61891498,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61891497,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61891456,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61891428,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61891375,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61891368,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61891326,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61891322,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61891312,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61891308,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61891264,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61891263,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61891210,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61891209,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61891182,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61891181,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61891179,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61891178,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61891150,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61891149,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61891122,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61891121,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61891029,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61891012,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61891011,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61891010,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61891009,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61891008,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61891007,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61891006,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61851235,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61851223,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61851222,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61851176,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61851175,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61851146,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61851118,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61851117,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61851089,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61851088,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61851060,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61851059,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61851031,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61851030,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61851002,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61851001,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 59070904,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 59070904,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59070903,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 59070903,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59070902,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 59070902,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59070901,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 59070901,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59070900,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 59070900,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59069135,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 59069135,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59069134,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 59069134,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59069133,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 59069133,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59069132,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 59069132,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59069131,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 59069131,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59069130,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 59069130,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59069129,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 59069129,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59069128,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 59069128,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59069127,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 59069127,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59069126,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 59069126,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59069125,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 59069125,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59069124,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 59069124,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59069123,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 59069123,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59069122,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 59069122,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59059087,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 59059087,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59059079,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59059077,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59059058,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59059056,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59059052,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 59059052,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59059051,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 59059051,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59059050,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59059043,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59059037,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 59059037,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59059036,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 59059036,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59059035,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 59059035,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59059034,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 59059034,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59059033,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 59059033,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59059030,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59059029,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 59059029,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59059028,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 59059027,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 59059027,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59059013,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59059009,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59059007,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 59059000,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 26270937,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26270936,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26270935,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26263999,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26263997,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26263996,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26263995,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26263994,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26263990,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26263959,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26263958,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26263957,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26263956,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26263955,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26263950,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26263940,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26263939,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26263930,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26263919,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26263911,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26263910,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26263909,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26263907,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26263906,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26263905,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26263904,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26263903,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26263902,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26263901,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26263900,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26226980,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26226970,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26226954,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26226953,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26226952,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26226951,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26226950,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26226915,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26226907,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26226906,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26226904,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26226903,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26226902,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26226901,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 26226900,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 6189164,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 6189162,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 5905987,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 5905987,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 4479117,
+    "calling": 44,
+    "region": "GG"
+  },
+  {
+    "prefix": 4479111,
+    "calling": 44,
+    "region": "GG"
+  },
+  {
+    "prefix": 4477008,
+    "calling": 44,
+    "region": "JE"
+  },
+  {
+    "prefix": 4477007,
+    "calling": 44,
+    "region": "JE"
+  },
+  {
+    "prefix": 4477003,
+    "calling": 44,
+    "region": "JE"
+  },
+  {
     "prefix": 4474576,
     "calling": 44,
     "region": "IM"
   },
   {
+    "prefix": 4415348,
+    "calling": 44,
+    "region": "JE"
+  },
+  {
+    "prefix": 4415347,
+    "calling": 44,
+    "region": "JE"
+  },
+  {
+    "prefix": 4415346,
+    "calling": 44,
+    "region": "JE"
+  },
+  {
+    "prefix": 4415345,
+    "calling": 44,
+    "region": "JE"
+  },
+  {
+    "prefix": 4415344,
+    "calling": 44,
+    "region": "JE"
+  },
+  {
+    "prefix": 4415342,
+    "calling": 44,
+    "region": "JE"
+  },
+  {
+    "prefix": 4415341,
+    "calling": 44,
+    "region": "JE"
+  },
+  {
+    "prefix": 4415340,
+    "calling": 44,
+    "region": "JE"
+  },
+  {
+    "prefix": 4414819,
+    "calling": 44,
+    "region": "GG"
+  },
+  {
+    "prefix": 4414818,
+    "calling": 44,
+    "region": "GG"
+  },
+  {
+    "prefix": 4414817,
+    "calling": 44,
+    "region": "GG"
+  },
+  {
+    "prefix": 4414816,
+    "calling": 44,
+    "region": "GG"
+  },
+  {
+    "prefix": 4414815,
+    "calling": 44,
+    "region": "GG"
+  },
+  {
+    "prefix": 4414812,
+    "calling": 44,
+    "region": "GG"
+  },
+  {
     "prefix": 3906698,
     "calling": 39,
     "region": "VA"
+  },
+  {
+    "prefix": 3584946,
+    "calling": 358,
+    "region": "AX"
+  },
+  {
+    "prefix": 2626397,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 2626396,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 2626392,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 2622696,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 2622689,
+    "calling": 262,
+    "region": "YT"
+  },
+  {
+    "prefix": 2125289,
+    "calling": 212,
+    "region": "EH"
+  },
+  {
+    "prefix": 2125288,
+    "calling": 212,
+    "region": "EH"
+  },
+  {
+    "prefix": 614953,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 614953,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 614952,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 614952,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 614951,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 614951,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 614950,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 614950,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 614839,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 614839,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 614838,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 614838,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 614837,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 614837,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 614836,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 614836,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 614833,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 614833,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 614832,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 614832,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 614831,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 614831,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 614830,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 614830,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 614791,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 614791,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 614790,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 614790,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 590809,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 590809,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 590808,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 590808,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 590807,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 590807,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 590806,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 590806,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 590690,
+    "calling": 590,
+    "region": "BL"
+  },
+  {
+    "prefix": 590690,
+    "calling": 590,
+    "region": "MF"
+  },
+  {
+    "prefix": 474539,
+    "calling": 47,
+    "region": "SJ"
+  },
+  {
+    "prefix": 474538,
+    "calling": 47,
+    "region": "SJ"
+  },
+  {
+    "prefix": 474537,
+    "calling": 47,
+    "region": "SJ"
+  },
+  {
+    "prefix": 474535,
+    "calling": 47,
+    "region": "SJ"
+  },
+  {
+    "prefix": 474534,
+    "calling": 47,
+    "region": "SJ"
+  },
+  {
+    "prefix": 474533,
+    "calling": 47,
+    "region": "SJ"
+  },
+  {
+    "prefix": 474532,
+    "calling": 47,
+    "region": "SJ"
+  },
+  {
+    "prefix": 474531,
+    "calling": 47,
+    "region": "SJ"
+  },
+  {
+    "prefix": 474530,
+    "calling": 47,
+    "region": "SJ"
+  },
+  {
+    "prefix": 447937,
+    "calling": 44,
+    "region": "JE"
+  },
+  {
+    "prefix": 447924,
+    "calling": 44,
+    "region": "IM"
+  },
+  {
+    "prefix": 447839,
+    "calling": 44,
+    "region": "GG"
+  },
+  {
+    "prefix": 447829,
+    "calling": 44,
+    "region": "JE"
+  },
+  {
+    "prefix": 447797,
+    "calling": 44,
+    "region": "JE"
+  },
+  {
+    "prefix": 447781,
+    "calling": 44,
+    "region": "GG"
   },
   {
     "prefix": 447624,
@@ -20,14 +1290,619 @@
     "region": "IM"
   },
   {
+    "prefix": 447509,
+    "calling": 44,
+    "region": "JE"
+  },
+  {
     "prefix": 441624,
     "calling": 44,
     "region": "IM"
   },
   {
-    "prefix": 35819,
+    "prefix": 212755,
+    "calling": 212,
+    "region": "EH"
+  },
+  {
+    "prefix": 212754,
+    "calling": 212,
+    "region": "EH"
+  },
+  {
+    "prefix": 212753,
+    "calling": 212,
+    "region": "EH"
+  },
+  {
+    "prefix": 212752,
+    "calling": 212,
+    "region": "EH"
+  },
+  {
+    "prefix": 212751,
+    "calling": 212,
+    "region": "EH"
+  },
+  {
+    "prefix": 212750,
+    "calling": 212,
+    "region": "EH"
+  },
+  {
+    "prefix": 212731,
+    "calling": 212,
+    "region": "EH"
+  },
+  {
+    "prefix": 212730,
+    "calling": 212,
+    "region": "EH"
+  },
+  {
+    "prefix": 212728,
+    "calling": 212,
+    "region": "EH"
+  },
+  {
+    "prefix": 212727,
+    "calling": 212,
+    "region": "EH"
+  },
+  {
+    "prefix": 212726,
+    "calling": 212,
+    "region": "EH"
+  },
+  {
+    "prefix": 212725,
+    "calling": 212,
+    "region": "EH"
+  },
+  {
+    "prefix": 212724,
+    "calling": 212,
+    "region": "EH"
+  },
+  {
+    "prefix": 212723,
+    "calling": 212,
+    "region": "EH"
+  },
+  {
+    "prefix": 212722,
+    "calling": 212,
+    "region": "EH"
+  },
+  {
+    "prefix": 212721,
+    "calling": 212,
+    "region": "EH"
+  },
+  {
+    "prefix": 212720,
+    "calling": 212,
+    "region": "EH"
+  },
+  {
+    "prefix": 212689,
+    "calling": 212,
+    "region": "EH"
+  },
+  {
+    "prefix": 212688,
+    "calling": 212,
+    "region": "EH"
+  },
+  {
+    "prefix": 212687,
+    "calling": 212,
+    "region": "EH"
+  },
+  {
+    "prefix": 212684,
+    "calling": 212,
+    "region": "EH"
+  },
+  {
+    "prefix": 212682,
+    "calling": 212,
+    "region": "EH"
+  },
+  {
+    "prefix": 212681,
+    "calling": 212,
+    "region": "EH"
+  },
+  {
+    "prefix": 212680,
+    "calling": 212,
+    "region": "EH"
+  },
+  {
+    "prefix": 61499,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61499,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61498,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61498,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61497,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61497,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61494,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61494,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61493,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61493,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61492,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61492,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61491,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61491,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61490,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61490,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61489,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61489,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61488,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61488,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61487,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61487,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61486,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61486,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61485,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61485,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61484,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61484,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61482,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61482,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61481,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61481,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61480,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61480,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61478,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61478,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61477,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61477,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61476,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61476,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61475,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61475,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61474,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61474,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61473,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61473,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61472,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61472,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61470,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61470,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61459,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61459,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61458,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61458,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61457,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61457,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61456,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61456,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61455,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61455,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61454,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61454,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61452,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61452,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61451,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61451,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61450,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61450,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61449,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61449,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61448,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61448,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61447,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61447,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61444,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61444,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 61440,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 61440,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 47459,
+    "calling": 47,
+    "region": "SJ"
+  },
+  {
+    "prefix": 47458,
+    "calling": 47,
+    "region": "SJ"
+  },
+  {
+    "prefix": 47457,
+    "calling": 47,
+    "region": "SJ"
+  },
+  {
+    "prefix": 47456,
+    "calling": 47,
+    "region": "SJ"
+  },
+  {
+    "prefix": 47455,
+    "calling": 47,
+    "region": "SJ"
+  },
+  {
+    "prefix": 47454,
+    "calling": 47,
+    "region": "SJ"
+  },
+  {
+    "prefix": 47452,
+    "calling": 47,
+    "region": "SJ"
+  },
+  {
+    "prefix": 47451,
+    "calling": 47,
+    "region": "SJ"
+  },
+  {
+    "prefix": 47450,
+    "calling": 47,
+    "region": "SJ"
+  },
+  {
+    "prefix": 35850,
     "calling": 358,
-    "region": "FI"
+    "region": "AX"
+  },
+  {
+    "prefix": 35848,
+    "calling": 358,
+    "region": "AX"
+  },
+  {
+    "prefix": 35847,
+    "calling": 358,
+    "region": "AX"
+  },
+  {
+    "prefix": 35846,
+    "calling": 358,
+    "region": "AX"
+  },
+  {
+    "prefix": 35845,
+    "calling": 358,
+    "region": "AX"
+  },
+  {
+    "prefix": 35844,
+    "calling": 358,
+    "region": "AX"
+  },
+  {
+    "prefix": 35843,
+    "calling": 358,
+    "region": "AX"
+  },
+  {
+    "prefix": 35842,
+    "calling": 358,
+    "region": "AX"
+  },
+  {
+    "prefix": 35841,
+    "calling": 358,
+    "region": "AX"
+  },
+  {
+    "prefix": 35840,
+    "calling": 358,
+    "region": "AX"
   },
   {
     "prefix": 35818,
@@ -35,34 +1910,74 @@
     "region": "AX"
   },
   {
-    "prefix": 35817,
-    "calling": 358,
-    "region": "FI"
+    "prefix": 21278,
+    "calling": 212,
+    "region": "EH"
   },
   {
-    "prefix": 35816,
-    "calling": 358,
-    "region": "FI"
+    "prefix": 21277,
+    "calling": 212,
+    "region": "EH"
   },
   {
-    "prefix": 35815,
-    "calling": 358,
-    "region": "FI"
+    "prefix": 21276,
+    "calling": 212,
+    "region": "EH"
   },
   {
-    "prefix": 35814,
-    "calling": 358,
-    "region": "FI"
+    "prefix": 21271,
+    "calling": 212,
+    "region": "EH"
   },
   {
-    "prefix": 35813,
-    "calling": 358,
-    "region": "FI"
+    "prefix": 21270,
+    "calling": 212,
+    "region": "EH"
   },
   {
-    "prefix": 35810,
-    "calling": 358,
-    "region": "FI"
+    "prefix": 21269,
+    "calling": 212,
+    "region": "EH"
+  },
+  {
+    "prefix": 21267,
+    "calling": 212,
+    "region": "EH"
+  },
+  {
+    "prefix": 21266,
+    "calling": 212,
+    "region": "EH"
+  },
+  {
+    "prefix": 21265,
+    "calling": 212,
+    "region": "EH"
+  },
+  {
+    "prefix": 21264,
+    "calling": 212,
+    "region": "EH"
+  },
+  {
+    "prefix": 21263,
+    "calling": 212,
+    "region": "EH"
+  },
+  {
+    "prefix": 21262,
+    "calling": 212,
+    "region": "EH"
+  },
+  {
+    "prefix": 21261,
+    "calling": 212,
+    "region": "EH"
+  },
+  {
+    "prefix": 21260,
+    "calling": 212,
+    "region": "EH"
   },
   {
     "prefix": 18001,
@@ -70,19 +1985,59 @@
     "region": "DO"
   },
   {
-    "prefix": 5999,
-    "calling": 599,
-    "region": "CW"
+    "prefix": 6146,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 6146,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 6143,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 6143,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 6142,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 6142,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 6141,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 6141,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 6140,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 6140,
+    "calling": 61,
+    "region": "CX"
   },
   {
     "prefix": 5997,
     "calling": 599,
     "region": "BQ"
-  },
-  {
-    "prefix": 5996,
-    "calling": 599,
-    "region": "CW"
   },
   {
     "prefix": 5994,
@@ -100,89 +2055,74 @@
     "region": "SJ"
   },
   {
-    "prefix": 4778,
+    "prefix": 4748,
     "calling": 47,
-    "region": "NO"
+    "region": "SJ"
   },
   {
-    "prefix": 4777,
+    "prefix": 4747,
     "calling": 47,
-    "region": "NO"
+    "region": "SJ"
   },
   {
-    "prefix": 4776,
+    "prefix": 4746,
     "calling": 47,
-    "region": "NO"
+    "region": "SJ"
   },
   {
-    "prefix": 4775,
+    "prefix": 4741,
     "calling": 47,
-    "region": "NO"
+    "region": "SJ"
   },
   {
-    "prefix": 4774,
+    "prefix": 4740,
     "calling": 47,
-    "region": "NO"
+    "region": "SJ"
   },
   {
-    "prefix": 4773,
-    "calling": 47,
-    "region": "NO"
+    "prefix": 3939,
+    "calling": 39,
+    "region": "VA"
   },
   {
-    "prefix": 4772,
-    "calling": 47,
-    "region": "NO"
+    "prefix": 3938,
+    "calling": 39,
+    "region": "VA"
   },
   {
-    "prefix": 4771,
-    "calling": 47,
-    "region": "NO"
+    "prefix": 3937,
+    "calling": 39,
+    "region": "VA"
   },
   {
-    "prefix": 4770,
-    "calling": 47,
-    "region": "NO"
+    "prefix": 3936,
+    "calling": 39,
+    "region": "VA"
   },
   {
-    "prefix": 3589,
-    "calling": 358,
-    "region": "FI"
+    "prefix": 3935,
+    "calling": 39,
+    "region": "VA"
   },
   {
-    "prefix": 3588,
-    "calling": 358,
-    "region": "FI"
+    "prefix": 3934,
+    "calling": 39,
+    "region": "VA"
   },
   {
-    "prefix": 3587,
-    "calling": 358,
-    "region": "FI"
+    "prefix": 3933,
+    "calling": 39,
+    "region": "VA"
   },
   {
-    "prefix": 3586,
-    "calling": 358,
-    "region": "FI"
+    "prefix": 3932,
+    "calling": 39,
+    "region": "VA"
   },
   {
-    "prefix": 3585,
-    "calling": 358,
-    "region": "FI"
-  },
-  {
-    "prefix": 3584,
-    "calling": 358,
-    "region": "FI"
-  },
-  {
-    "prefix": 3583,
-    "calling": 358,
-    "region": "FI"
-  },
-  {
-    "prefix": 3582,
-    "calling": 358,
-    "region": "FI"
+    "prefix": 3931,
+    "calling": 39,
+    "region": "VA"
   },
   {
     "prefix": 2908,
@@ -190,39 +2130,9 @@
     "region": "TA"
   },
   {
-    "prefix": 2906,
-    "calling": 290,
-    "region": "SH"
-  },
-  {
-    "prefix": 2905,
-    "calling": 290,
-    "region": "SH"
-  },
-  {
-    "prefix": 2902,
-    "calling": 290,
-    "region": "SH"
-  },
-  {
-    "prefix": 2128,
-    "calling": 212,
-    "region": "MA"
-  },
-  {
-    "prefix": 2127,
-    "calling": 212,
-    "region": "MA"
-  },
-  {
-    "prefix": 2126,
-    "calling": 212,
-    "region": "MA"
-  },
-  {
-    "prefix": 2125,
-    "calling": 212,
-    "region": "MA"
+    "prefix": 1942,
+    "calling": 1,
+    "region": "CA"
   },
   {
     "prefix": 1939,
@@ -230,9 +2140,29 @@
     "region": "PR"
   },
   {
+    "prefix": 1905,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1902,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1879,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
     "prefix": 1876,
     "calling": 1,
     "region": "JM"
+  },
+  {
+    "prefix": 1873,
+    "calling": 1,
+    "region": "CA"
   },
   {
     "prefix": 1869,
@@ -245,6 +2175,11 @@
     "region": "TT"
   },
   {
+    "prefix": 1867,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
     "prefix": 1849,
     "calling": 1,
     "region": "DO"
@@ -255,9 +2190,24 @@
     "region": "DO"
   },
   {
+    "prefix": 1825,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1819,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
     "prefix": 1809,
     "calling": 1,
     "region": "DO"
+  },
+  {
+    "prefix": 1807,
+    "calling": 1,
+    "region": "CA"
   },
   {
     "prefix": 1787,
@@ -270,6 +2220,21 @@
     "region": "VC"
   },
   {
+    "prefix": 1782,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1780,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1778,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
     "prefix": 1767,
     "calling": 1,
     "region": "DM"
@@ -280,14 +2245,44 @@
     "region": "LC"
   },
   {
+    "prefix": 1753,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1742,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
     "prefix": 1721,
     "calling": 1,
     "region": "SX"
   },
   {
+    "prefix": 1709,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1705,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
     "prefix": 1684,
     "calling": 1,
     "region": "AS"
+  },
+  {
+    "prefix": 1683,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1672,
+    "calling": 1,
+    "region": "CA"
   },
   {
     "prefix": 1671,
@@ -315,9 +2310,84 @@
     "region": "TC"
   },
   {
+    "prefix": 1647,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1639,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1613,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1604,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1587,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1584,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1581,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1579,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1548,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1519,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1514,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1506,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1474,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
     "prefix": 1473,
     "calling": 1,
     "region": "GD"
+  },
+  {
+    "prefix": 1468,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1450,
+    "calling": 1,
+    "region": "CA"
   },
   {
     "prefix": 1441,
@@ -325,14 +2395,89 @@
     "region": "BM"
   },
   {
+    "prefix": 1438,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1437,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1431,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1428,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1418,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1416,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1403,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1382,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1368,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1367,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1365,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1354,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
     "prefix": 1345,
     "calling": 1,
     "region": "KY"
   },
   {
+    "prefix": 1343,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
     "prefix": 1340,
     "calling": 1,
     "region": "VI"
+  },
+  {
+    "prefix": 1306,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1289,
+    "calling": 1,
+    "region": "CA"
   },
   {
     "prefix": 1284,
@@ -350,6 +2495,26 @@
     "region": "AI"
   },
   {
+    "prefix": 1263,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1257,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1250,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1249,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
     "prefix": 1246,
     "calling": 1,
     "region": "BB"
@@ -358,6 +2523,21 @@
     "prefix": 1242,
     "calling": 1,
     "region": "BS"
+  },
+  {
+    "prefix": 1236,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1226,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
+    "prefix": 1204,
+    "calling": 1,
+    "region": "CA"
   },
   {
     "prefix": 998,
@@ -480,44 +2660,14 @@
     "region": "MV"
   },
   {
-    "prefix": 888,
-    "calling": 888,
-    "region": "001"
-  },
-  {
     "prefix": 886,
     "calling": 886,
     "region": "TW"
   },
   {
-    "prefix": 883,
-    "calling": 883,
-    "region": "001"
-  },
-  {
-    "prefix": 882,
-    "calling": 882,
-    "region": "001"
-  },
-  {
-    "prefix": 881,
-    "calling": 881,
-    "region": "001"
-  },
-  {
     "prefix": 880,
     "calling": 880,
     "region": "BD"
-  },
-  {
-    "prefix": 878,
-    "calling": 878,
-    "region": "001"
-  },
-  {
-    "prefix": 870,
-    "calling": 870,
-    "region": "001"
   },
   {
     "prefix": 856,
@@ -543,16 +2693,6 @@
     "prefix": 850,
     "calling": 850,
     "region": "KP"
-  },
-  {
-    "prefix": 808,
-    "calling": 808,
-    "region": "001"
-  },
-  {
-    "prefix": 800,
-    "calling": 800,
-    "region": "001"
   },
   {
     "prefix": 692,
@@ -660,6 +2800,11 @@
     "region": "TL"
   },
   {
+    "prefix": 599,
+    "calling": 599,
+    "region": "CW"
+  },
+  {
     "prefix": 598,
     "calling": 598,
     "region": "UY"
@@ -702,17 +2847,7 @@
   {
     "prefix": 590,
     "calling": 590,
-    "region": "BL"
-  },
-  {
-    "prefix": 590,
-    "calling": 590,
     "region": "GP"
-  },
-  {
-    "prefix": 590,
-    "calling": 590,
-    "region": "MF"
   },
   {
     "prefix": 509,
@@ -767,42 +2902,7 @@
   {
     "prefix": 479,
     "calling": 47,
-    "region": "NO"
-  },
-  {
-    "prefix": 478,
-    "calling": 47,
-    "region": "NO"
-  },
-  {
-    "prefix": 476,
-    "calling": 47,
-    "region": "NO"
-  },
-  {
-    "prefix": 475,
-    "calling": 47,
-    "region": "NO"
-  },
-  {
-    "prefix": 474,
-    "calling": 47,
-    "region": "NO"
-  },
-  {
-    "prefix": 473,
-    "calling": 47,
-    "region": "NO"
-  },
-  {
-    "prefix": 472,
-    "calling": 47,
-    "region": "NO"
-  },
-  {
-    "prefix": 470,
-    "calling": 47,
-    "region": "NO"
+    "region": "SJ"
   },
   {
     "prefix": 423,
@@ -910,6 +3010,11 @@
     "region": "BG"
   },
   {
+    "prefix": 358,
+    "calling": 358,
+    "region": "FI"
+  },
+  {
     "prefix": 357,
     "calling": 357,
     "region": "CY"
@@ -970,6 +3075,11 @@
     "region": "ER"
   },
   {
+    "prefix": 290,
+    "calling": 290,
+    "region": "SH"
+  },
+  {
     "prefix": 269,
     "calling": 269,
     "region": "KM"
@@ -1008,11 +3118,6 @@
     "prefix": 262,
     "calling": 262,
     "region": "RE"
-  },
-  {
-    "prefix": 262,
-    "calling": 262,
-    "region": "YT"
   },
   {
     "prefix": 261,
@@ -1237,7 +3342,7 @@
   {
     "prefix": 212,
     "calling": 212,
-    "region": "EH"
+    "region": "MA"
   },
   {
     "prefix": 211,
@@ -1300,29 +3405,9 @@
     "region": "JP"
   },
   {
-    "prefix": 79,
-    "calling": 7,
-    "region": "RU"
-  },
-  {
-    "prefix": 78,
-    "calling": 7,
-    "region": "RU"
-  },
-  {
     "prefix": 77,
     "calling": 7,
     "region": "KZ"
-  },
-  {
-    "prefix": 74,
-    "calling": 7,
-    "region": "RU"
-  },
-  {
-    "prefix": 73,
-    "calling": 7,
-    "region": "RU"
   },
   {
     "prefix": 66,
@@ -1353,16 +3438,6 @@
     "prefix": 61,
     "calling": 61,
     "region": "AU"
-  },
-  {
-    "prefix": 61,
-    "calling": 61,
-    "region": "CC"
-  },
-  {
-    "prefix": 61,
-    "calling": 61,
-    "region": "CX"
   },
   {
     "prefix": 60,
@@ -1420,6 +3495,11 @@
     "region": "PL"
   },
   {
+    "prefix": 47,
+    "calling": 47,
+    "region": "NO"
+  },
+  {
     "prefix": 46,
     "calling": 46,
     "region": "SE"
@@ -1433,16 +3513,6 @@
     "prefix": 44,
     "calling": 44,
     "region": "GB"
-  },
-  {
-    "prefix": 44,
-    "calling": 44,
-    "region": "GG"
-  },
-  {
-    "prefix": 44,
-    "calling": 44,
-    "region": "JE"
   },
   {
     "prefix": 43,
@@ -1505,9 +3575,9 @@
     "region": "EG"
   },
   {
-    "prefix": 1,
-    "calling": 1,
-    "region": "CA"
+    "prefix": 7,
+    "calling": 7,
+    "region": "RU"
   },
   {
     "prefix": 1,
