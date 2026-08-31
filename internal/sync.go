@@ -20,9 +20,6 @@ func Sync(ctx context.Context, root string) (bool, error) {
 	if err != nil {
 		return false, err
 	}
-	if err := writeUpdatedResources(root, &resources); err != nil {
-		return false, err
-	}
 	states := newStates(resources)
 	m49, err := GenerateM49(root, states)
 	if err != nil {
@@ -36,14 +33,40 @@ func Sync(ctx context.Context, root string) (bool, error) {
 	if err != nil {
 		return false, err
 	}
+	if err := validateGeneratedData(root, m49, regions, phones); err != nil {
+		return false, err
+	}
+	m49Updated, err := writeGeneratedJSON(root, "m49.json", m49.Root)
+	if err != nil {
+		return false, err
+	}
+	phonesUpdated, err := writeGeneratedJSON(root, "phones.json", flattenPhones(phones.Regions))
+	if err != nil {
+		return false, err
+	}
+	regionsUpdated, err := writeGeneratedJSON(root, "regions.json", regions.Regions)
+	if err != nil {
+		return false, err
+	}
+	if err := writeUpdatedResources(root, &resources); err != nil {
+		return false, err
+	}
+	if err := removeLegacyCountries(root); err != nil {
+		return false, err
+	}
 	flagsUpdated, err := GenerateFlags(root, states)
 	if err != nil {
 		return false, err
 	}
-	if err := validateGeneratedData(root); err != nil {
-		return false, err
+	return resourcesUpdated(resources) || m49Updated || phonesUpdated || regionsUpdated || flagsUpdated, nil
+}
+
+func removeLegacyCountries(root string) error {
+	err := os.Remove(filepath.Join(root, "generated", "countries.json"))
+	if err != nil && !os.IsNotExist(err) {
+		return fmt.Errorf("remove legacy countries: %w", err)
 	}
-	return resourcesUpdated(resources) || m49.Updated || phones.Updated || regions.Updated || flagsUpdated, nil
+	return nil
 }
 
 func readSourceIndex(root string) (SourceIndex, error) {

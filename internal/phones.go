@@ -53,15 +53,9 @@ func generatePhones(root string, resource Resource) (PhoneGeneration, error) {
 	}
 	fmt.Printf("generating phones: sourceUpdated=%t, regions=%d, prefixes=%d\n", resource.Updated, len(regions), phonePrefixCount(regions))
 	result := newPhoneGeneration(regions, false)
-	body, err := marshalGeneratedData(flattenPhones(regions))
-	if err != nil {
+	if _, err := marshalGeneratedData(flattenPhones(regions)); err != nil {
 		return PhoneGeneration{}, err
 	}
-	updated, err := writeGeneratedPhones(root, append(body, '\n'))
-	if err != nil {
-		return PhoneGeneration{}, err
-	}
-	result.Updated = updated
 	return result, nil
 }
 

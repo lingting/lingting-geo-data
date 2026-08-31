@@ -30,11 +30,7 @@ func GenerateM49(root string, states *States) (M49Generation, error) {
 	if err != nil {
 		return M49Generation{}, err
 	}
-	updated, err := writeGeneratedJSON(root, "m49.json", parsed.Root)
-	if err != nil {
-		return M49Generation{}, err
-	}
-	result := M49Generation{Indexes: parsed.Indexes, Updated: updated}
+	result := M49Generation{Root: parsed.Root, Indexes: parsed.Indexes}
 	states.SetM49(result)
 	return result, nil
 }
@@ -46,7 +42,7 @@ func readGeneratedM49(root string) (M49Generation, error) {
 	}
 	indexes := make(map[string]M49Index)
 	collectM49Indexes(&node, M49Index{}, indexes)
-	return M49Generation{Indexes: indexes}, nil
+	return M49Generation{Root: &node, Indexes: indexes}, nil
 }
 
 func collectM49Indexes(node *M49Node, parent M49Index, indexes map[string]M49Index) {

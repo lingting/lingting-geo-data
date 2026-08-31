@@ -7,37 +7,34 @@ import (
 	"strconv"
 )
 
-func validateGeneratedData(root string) error {
-	for _, path := range []string{"sources.json", "m49.json", "regions.json", "phones.json", "flags"} {
-		if _, err := os.Stat(filepath.Join(root, "generated", path)); err != nil {
-			return fmt.Errorf("validate generated data %s: %w", path, err)
-		}
-	}
-	regions, err := readGeneratedRegions(root)
-	if err != nil {
-		return err
+func validateGeneratedData(root string, m49 M49Generation, regions RegionGeneration, phones PhoneGeneration) error {
+	if m49.Root == nil {
+		return fmt.Errorf("validate generated data: M.49 root is nil")
 	}
 	if len(regions.Regions) == 0 {
 		return fmt.Errorf("validate generated data: regions are empty")
 	}
-	for _, region := range regions.Regions {
-		if _, err := os.Stat(filepath.Join(root, "generated", "flags", region.Flag+".svg")); err != nil {
-			return fmt.Errorf("validate generated data: flag for %s: %w", region.ISO, err)
-		}
-	}
-	phones, err := readJSON[[]PhonePrefix](filepath.Join(root, "generated", "phones.json"))
-	if err != nil {
-		return fmt.Errorf("read generated phones: %w", err)
-	}
-	if len(phones) == 0 {
+	if len(phones.Regions) == 0 {
 		return fmt.Errorf("validate generated data: phones are empty")
 	}
-	if err := validatePhonePrefixes(regions.Regions, phones); err != nil {
+	if err := validateRegions(regions.Regions); err != nil {
 		return err
+	}
+	if err := validateFlags(root, regions.Regions); err != nil {
+		return err
+	}
+	return validatePhonePrefixes(regions.Regions, flattenPhones(phones.Regions))
+}
+
+func validateFlags(root string, regions []Region) error {
+	for _, region := range regions {
+		path := filepath.Join(root, "sources", "flag-icons", "4x3", region.Flag+".svg")
+		if _, err := os.Stat(path); err != nil {
+			return fmt.Errorf("validate flag for %s: %w", region.ISO, err)
+		}
 	}
 	return nil
 }
-
 func validatePhonePrefixes(regions []Region, phones []PhonePrefix) error {
 	prefixesByRegion := make(map[string]map[string]struct{}, len(regions))
 	for _, region := range regions {

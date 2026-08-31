@@ -44,6 +44,7 @@ type SourceIndex struct {
 	FlagIcons            SourceRecord `json:"flagIcons"`
 }
 type M49Generation struct {
+	Root    *M49Node
 	Indexes map[string]M49Index
 	Updated bool
 }

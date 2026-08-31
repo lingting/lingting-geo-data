@@ -1,8 +1,6 @@
 package internal
 
 import (
-	"fmt"
-	"os"
 	"path/filepath"
 	"sort"
 	"strings"
@@ -42,14 +40,7 @@ func GenerateRegions(root string, states *States) (RegionGeneration, error) {
 	if err := validateRegions(regions); err != nil {
 		return RegionGeneration{}, err
 	}
-	updated, err := writeGeneratedJSON(root, "regions.json", regions)
-	if err != nil {
-		return RegionGeneration{}, err
-	}
-	if err := os.Remove(filepath.Join(root, "generated", "countries.json")); err != nil && !os.IsNotExist(err) {
-		return RegionGeneration{}, fmt.Errorf("remove legacy countries: %w", err)
-	}
-	result := RegionGeneration{Regions: regions, Updated: updated}
+	result := RegionGeneration{Regions: regions}
 	states.SetRegions(result)
 	return result, nil
 }
