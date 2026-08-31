@@ -43,7 +43,8 @@ func generatePhones(root string, resource Resource) (PhoneGeneration, error) {
 		regions = nil
 	}
 	if regions == nil {
-		regions, err := parsePhones(resource.Files[resource.Spec.Path])
+		var err error
+		regions, err = parsePhones(resource.Files[resource.Spec.Path])
 		if err != nil {
 			return PhoneGeneration{}, err
 		}
@@ -186,24 +187,35 @@ func parsePhones(body []byte) (map[string][]PhoneNumber, error) {
 	callingByRegion := make(map[string]int, len(metadata.Territories))
 	regionsByCalling := make(map[int][]string)
 	mainByCalling := make(map[int]string)
+	skipped := 0
 	for _, territory := range metadata.Territories {
-		if territory.ID == "" {
-			return nil, fmt.Errorf("missing territory ID")
-		}
-		calling, err := strconv.Atoi(territory.CountryCode)
+		region, numbers, err := parsePhoneTerritory(territory)
 		if err != nil {
-			return nil, fmt.Errorf("parse calling code %q: %w", territory.CountryCode, err)
+			skipped++
+			fmt.Printf(
+				"skip phone metadata territory: id=%q countryCode=%q leadingDigits=%q fixedLine=%q mobile=%q error=%v\n",
+				territory.ID,
+				territory.CountryCode,
+				territory.LeadingDigits,
+				territory.FixedLine.NationalNumberPattern,
+				territory.Mobile.NationalNumberPattern,
+				err,
+			)
+			continue
 		}
-		callingByRegion[territory.ID] = calling
-		regionsByCalling[calling] = append(regionsByCalling[calling], territory.ID)
+		calling := numbers[0].Calling
+		callingByRegion[region] = calling
+		regionsByCalling[calling] = append(regionsByCalling[calling], region)
 		if territory.MainCountryForCode {
-			mainByCalling[calling] = territory.ID
+			mainByCalling[calling] = region
 		}
-		values, err := geographicPrefixes(territory, calling)
-		if err != nil {
-			return nil, fmt.Errorf("parse geographic prefixes for %s: %w", territory.ID, err)
-		}
-		regions[territory.ID] = []PhoneNumber{{Calling: calling, Prefixes: values}}
+		regions[region] = numbers
+	}
+	if skipped > 0 {
+		return nil, fmt.Errorf("存在%d个区域号码解析异常", skipped)
+	}
+	if len(regions) == 0 {
+		return nil, fmt.Errorf("no phone territories parsed")
 	}
 	for region, numbers := range regions {
 		calling := callingByRegion[region]
@@ -216,6 +228,21 @@ func parsePhones(body []byte) (map[string][]PhoneNumber, error) {
 	result := removeFallbackCoveredPrefixes(regions)
 	fmt.Printf("parsed libphonenumber metadata: territories=%d, prefixes=%d\n", len(metadata.Territories), phonePrefixCount(result))
 	return result, nil
+}
+
+func parsePhoneTerritory(territory phoneTerritory) (string, []PhoneNumber, error) {
+	if territory.ID == "" {
+		return "", nil, fmt.Errorf("missing territory ID")
+	}
+	calling, err := strconv.Atoi(territory.CountryCode)
+	if err != nil {
+		return "", nil, fmt.Errorf("parse calling code %q: %w", territory.CountryCode, err)
+	}
+	prefixes, err := geographicPrefixes(territory, calling)
+	if err != nil {
+		return "", nil, fmt.Errorf("parse geographic prefixes: %w", err)
+	}
+	return territory.ID, []PhoneNumber{{Calling: calling, Prefixes: prefixes}}, nil
 }
 func fallbackRegion(calling int, regionsByCalling map[int][]string, mainByCalling map[int]string) string {
 	if region := mainByCalling[calling]; region != "" {
