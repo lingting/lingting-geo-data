@@ -29,6 +29,9 @@ func validateGeneratedData(root string) error {
 	if err != nil {
 		return fmt.Errorf("read generated phones: %w", err)
 	}
+	if len(phones) == 0 {
+		return fmt.Errorf("validate generated data: phones are empty")
+	}
 	if err := validatePhonePrefixes(regions.Regions, phones); err != nil {
 		return err
 	}

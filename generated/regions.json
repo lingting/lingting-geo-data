@@ -3,8 +3,12 @@
     "iso": "AD",
     "iso3": "AND",
     "flag": "ad",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "376"
+    ],
+    "phonePrefixes": [
+      "376"
+    ],
     "names": {
       "en": "Andorra",
       "zh": "安道尔"
@@ -19,8 +23,12 @@
     "iso": "AE",
     "iso3": "ARE",
     "flag": "ae",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "971"
+    ],
+    "phonePrefixes": [
+      "971"
+    ],
     "names": {
       "en": "United Arab Emirates",
       "zh": "阿拉伯联合酋长国"
@@ -35,8 +43,12 @@
     "iso": "AF",
     "iso3": "AFG",
     "flag": "af",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "93"
+    ],
+    "phonePrefixes": [
+      "93"
+    ],
     "names": {
       "en": "Afghanistan",
       "zh": "阿富汗"
@@ -51,8 +63,12 @@
     "iso": "AG",
     "iso3": "ATG",
     "flag": "ag",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "1"
+    ],
+    "phonePrefixes": [
+      "1268"
+    ],
     "names": {
       "en": "Antigua \u0026 Barbuda",
       "zh": "安提瓜和巴布达"
@@ -67,8 +83,12 @@
     "iso": "AI",
     "iso3": "AIA",
     "flag": "ai",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "1"
+    ],
+    "phonePrefixes": [
+      "1264"
+    ],
     "names": {
       "en": "Anguilla",
       "zh": "安圭拉"
@@ -83,8 +103,12 @@
     "iso": "AL",
     "iso3": "ALB",
     "flag": "al",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "355"
+    ],
+    "phonePrefixes": [
+      "355"
+    ],
     "names": {
       "en": "Albania",
       "zh": "阿尔巴尼亚"
@@ -99,8 +123,12 @@
     "iso": "AM",
     "iso3": "ARM",
     "flag": "am",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "374"
+    ],
+    "phonePrefixes": [
+      "374"
+    ],
     "names": {
       "en": "Armenia",
       "zh": "亚美尼亚"
@@ -115,8 +143,12 @@
     "iso": "AO",
     "iso3": "AGO",
     "flag": "ao",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "244"
+    ],
+    "phonePrefixes": [
+      "244"
+    ],
     "names": {
       "en": "Angola",
       "zh": "安哥拉"
@@ -144,8 +176,12 @@
     "iso": "AR",
     "iso3": "ARG",
     "flag": "ar",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "54"
+    ],
+    "phonePrefixes": [
+      "54"
+    ],
     "names": {
       "en": "Argentina",
       "zh": "阿根廷"
@@ -160,8 +196,12 @@
     "iso": "AS",
     "iso3": "ASM",
     "flag": "as",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "1"
+    ],
+    "phonePrefixes": [
+      "1684"
+    ],
     "names": {
       "en": "American Samoa",
       "zh": "美属萨摩亚"
@@ -176,8 +216,12 @@
     "iso": "AT",
     "iso3": "AUT",
     "flag": "at",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "43"
+    ],
+    "phonePrefixes": [
+      "43"
+    ],
     "names": {
       "en": "Austria",
       "zh": "奥地利"
@@ -192,8 +236,12 @@
     "iso": "AU",
     "iso3": "AUS",
     "flag": "au",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "61"
+    ],
+    "phonePrefixes": [
+      "61"
+    ],
     "names": {
       "en": "Australia",
       "zh": "澳大利亚"
@@ -208,8 +256,12 @@
     "iso": "AW",
     "iso3": "ABW",
     "flag": "aw",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "297"
+    ],
+    "phonePrefixes": [
+      "297"
+    ],
     "names": {
       "en": "Aruba",
       "zh": "阿鲁巴"
@@ -224,8 +276,23 @@
     "iso": "AX",
     "iso3": "ALA",
     "flag": "ax",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "358"
+    ],
+    "phonePrefixes": [
+      "35818",
+      "35840",
+      "35841",
+      "35842",
+      "35843",
+      "35844",
+      "35845",
+      "35846",
+      "35847",
+      "35848",
+      "3584946",
+      "35850"
+    ],
     "names": {
       "en": "Åland Islands",
       "zh": "奥兰群岛"
@@ -240,8 +307,12 @@
     "iso": "AZ",
     "iso3": "AZE",
     "flag": "az",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "994"
+    ],
+    "phonePrefixes": [
+      "994"
+    ],
     "names": {
       "en": "Azerbaijan",
       "zh": "阿塞拜疆"
@@ -256,8 +327,12 @@
     "iso": "BA",
     "iso3": "BIH",
     "flag": "ba",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "387"
+    ],
+    "phonePrefixes": [
+      "387"
+    ],
     "names": {
       "en": "Bosnia \u0026 Herzegovina",
       "zh": "波斯尼亚和黑塞哥维那"
@@ -272,8 +347,12 @@
     "iso": "BB",
     "iso3": "BRB",
     "flag": "bb",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "1"
+    ],
+    "phonePrefixes": [
+      "1246"
+    ],
     "names": {
       "en": "Barbados",
       "zh": "巴巴多斯"
@@ -288,8 +367,12 @@
     "iso": "BD",
     "iso3": "BGD",
     "flag": "bd",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "880"
+    ],
+    "phonePrefixes": [
+      "880"
+    ],
     "names": {
       "en": "Bangladesh",
       "zh": "孟加拉国"
@@ -304,8 +387,12 @@
     "iso": "BE",
     "iso3": "BEL",
     "flag": "be",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "32"
+    ],
+    "phonePrefixes": [
+      "32"
+    ],
     "names": {
       "en": "Belgium",
       "zh": "比利时"
@@ -320,8 +407,12 @@
     "iso": "BF",
     "iso3": "BFA",
     "flag": "bf",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "226"
+    ],
+    "phonePrefixes": [
+      "226"
+    ],
     "names": {
       "en": "Burkina Faso",
       "zh": "布基纳法索"
@@ -336,8 +427,12 @@
     "iso": "BG",
     "iso3": "BGR",
     "flag": "bg",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "359"
+    ],
+    "phonePrefixes": [
+      "359"
+    ],
     "names": {
       "en": "Bulgaria",
       "zh": "保加利亚"
@@ -352,8 +447,12 @@
     "iso": "BH",
     "iso3": "BHR",
     "flag": "bh",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "973"
+    ],
+    "phonePrefixes": [
+      "973"
+    ],
     "names": {
       "en": "Bahrain",
       "zh": "巴林"
@@ -368,8 +467,12 @@
     "iso": "BI",
     "iso3": "BDI",
     "flag": "bi",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "257"
+    ],
+    "phonePrefixes": [
+      "257"
+    ],
     "names": {
       "en": "Burundi",
       "zh": "布隆迪"
@@ -384,8 +487,12 @@
     "iso": "BJ",
     "iso3": "BEN",
     "flag": "bj",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "229"
+    ],
+    "phonePrefixes": [
+      "229"
+    ],
     "names": {
       "en": "Benin",
       "zh": "贝宁"
@@ -400,8 +507,47 @@
     "iso": "BL",
     "iso3": "BLM",
     "flag": "bl",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "590"
+    ],
+    "phonePrefixes": [
+      "59059027",
+      "59059028",
+      "59059029",
+      "59059033",
+      "59059034",
+      "59059035",
+      "59059036",
+      "59059037",
+      "59059051",
+      "59059052",
+      "59059087",
+      "5905987",
+      "590690",
+      "59069122",
+      "59069123",
+      "59069124",
+      "59069125",
+      "59069126",
+      "59069127",
+      "59069128",
+      "59069129",
+      "59069130",
+      "59069131",
+      "59069132",
+      "59069133",
+      "59069134",
+      "59069135",
+      "59070900",
+      "59070901",
+      "59070902",
+      "59070903",
+      "59070904",
+      "590806",
+      "590807",
+      "590808",
+      "590809"
+    ],
     "names": {
       "en": "St. Barthélemy",
       "zh": "圣巴泰勒米"
@@ -416,8 +562,12 @@
     "iso": "BM",
     "iso3": "BMU",
     "flag": "bm",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "1"
+    ],
+    "phonePrefixes": [
+      "1441"
+    ],
     "names": {
       "en": "Bermuda",
       "zh": "百慕大"
@@ -432,8 +582,12 @@
     "iso": "BN",
     "iso3": "BRN",
     "flag": "bn",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "673"
+    ],
+    "phonePrefixes": [
+      "673"
+    ],
     "names": {
       "en": "Brunei",
       "zh": "文莱"
@@ -448,8 +602,12 @@
     "iso": "BO",
     "iso3": "BOL",
     "flag": "bo",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "591"
+    ],
+    "phonePrefixes": [
+      "591"
+    ],
     "names": {
       "en": "Bolivia",
       "zh": "玻利维亚"
@@ -464,8 +622,14 @@
     "iso": "BQ",
     "iso3": "BES",
     "flag": "bq",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "599"
+    ],
+    "phonePrefixes": [
+      "5993",
+      "5994",
+      "5997"
+    ],
     "names": {
       "en": "Caribbean Netherlands",
       "zh": "荷属加勒比区"
@@ -480,8 +644,12 @@
     "iso": "BR",
     "iso3": "BRA",
     "flag": "br",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "55"
+    ],
+    "phonePrefixes": [
+      "55"
+    ],
     "names": {
       "en": "Brazil",
       "zh": "巴西"
@@ -496,8 +664,12 @@
     "iso": "BS",
     "iso3": "BHS",
     "flag": "bs",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "1"
+    ],
+    "phonePrefixes": [
+      "1242"
+    ],
     "names": {
       "en": "Bahamas",
       "zh": "巴哈马"
@@ -512,8 +684,12 @@
     "iso": "BT",
     "iso3": "BTN",
     "flag": "bt",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "975"
+    ],
+    "phonePrefixes": [
+      "975"
+    ],
     "names": {
       "en": "Bhutan",
       "zh": "不丹"
@@ -544,8 +720,12 @@
     "iso": "BW",
     "iso3": "BWA",
     "flag": "bw",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "267"
+    ],
+    "phonePrefixes": [
+      "267"
+    ],
     "names": {
       "en": "Botswana",
       "zh": "博茨瓦纳"
@@ -560,8 +740,12 @@
     "iso": "BY",
     "iso3": "BLR",
     "flag": "by",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "375"
+    ],
+    "phonePrefixes": [
+      "375"
+    ],
     "names": {
       "en": "Belarus",
       "zh": "白俄罗斯"
@@ -576,8 +760,12 @@
     "iso": "BZ",
     "iso3": "BLZ",
     "flag": "bz",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "501"
+    ],
+    "phonePrefixes": [
+      "501"
+    ],
     "names": {
       "en": "Belize",
       "zh": "伯利兹"
@@ -592,8 +780,66 @@
     "iso": "CA",
     "iso3": "CAN",
     "flag": "ca",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "1"
+    ],
+    "phonePrefixes": [
+      "1204",
+      "1226",
+      "1236",
+      "1249",
+      "1250",
+      "1257",
+      "1263",
+      "1289",
+      "1306",
+      "1343",
+      "1354",
+      "1365",
+      "1367",
+      "1368",
+      "1382",
+      "1403",
+      "1416",
+      "1418",
+      "1428",
+      "1431",
+      "1437",
+      "1438",
+      "1450",
+      "1468",
+      "1474",
+      "1506",
+      "1514",
+      "1519",
+      "1548",
+      "1579",
+      "1581",
+      "1584",
+      "1587",
+      "1604",
+      "1613",
+      "1639",
+      "1647",
+      "1672",
+      "1683",
+      "1705",
+      "1709",
+      "1742",
+      "1753",
+      "1778",
+      "1780",
+      "1782",
+      "1807",
+      "1819",
+      "1825",
+      "1867",
+      "1873",
+      "1879",
+      "1902",
+      "1905",
+      "1942"
+    ],
     "names": {
       "en": "Canada",
       "zh": "加拿大"
@@ -608,8 +854,95 @@
     "iso": "CC",
     "iso3": "CCK",
     "flag": "cc",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "61"
+    ],
+    "phonePrefixes": [
+      "6140",
+      "6141",
+      "6142",
+      "6143",
+      "61440",
+      "61444",
+      "61447",
+      "61448",
+      "61449",
+      "61450",
+      "61451",
+      "61452",
+      "61454",
+      "61455",
+      "61456",
+      "61457",
+      "61458",
+      "61459",
+      "6146",
+      "61470",
+      "61472",
+      "61473",
+      "61474",
+      "61475",
+      "61476",
+      "61477",
+      "61478",
+      "614790",
+      "614791",
+      "61480",
+      "61481",
+      "61482",
+      "614830",
+      "614831",
+      "614832",
+      "614833",
+      "614836",
+      "614837",
+      "614838",
+      "614839",
+      "61484",
+      "61485",
+      "61486",
+      "61487",
+      "61488",
+      "61489",
+      "61490",
+      "61491",
+      "61492",
+      "61493",
+      "61494",
+      "614950",
+      "614951",
+      "614952",
+      "614953",
+      "61497",
+      "61498",
+      "61499",
+      "61851002",
+      "61851031",
+      "61851060",
+      "61851089",
+      "61851118",
+      "61851176",
+      "61851223",
+      "61891010",
+      "61891011",
+      "61891012",
+      "61891029",
+      "61891122",
+      "61891150",
+      "61891179",
+      "61891182",
+      "61891210",
+      "61891264",
+      "61891308",
+      "61891322",
+      "61891368",
+      "61891428",
+      "61891498",
+      "6189162",
+      "61891702",
+      "61891703",
+      "61891959"
+    ],
     "names": {
       "en": "Cocos (Keeling) Islands",
       "zh": "科科斯（基林）群岛"
@@ -624,8 +957,12 @@
     "iso": "CD",
     "iso3": "COD",
     "flag": "cd",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "243"
+    ],
+    "phonePrefixes": [
+      "243"
+    ],
     "names": {
       "en": "Congo - Kinshasa",
       "zh": "刚果（金）"
@@ -640,8 +977,12 @@
     "iso": "CF",
     "iso3": "CAF",
     "flag": "cf",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "236"
+    ],
+    "phonePrefixes": [
+      "236"
+    ],
     "names": {
       "en": "Central African Republic",
       "zh": "中非共和国"
@@ -656,8 +997,12 @@
     "iso": "CG",
     "iso3": "COG",
     "flag": "cg",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "242"
+    ],
+    "phonePrefixes": [
+      "242"
+    ],
     "names": {
       "en": "Congo - Brazzaville",
       "zh": "刚果（布）"
@@ -672,8 +1017,12 @@
     "iso": "CH",
     "iso3": "CHE",
     "flag": "ch",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "41"
+    ],
+    "phonePrefixes": [
+      "41"
+    ],
     "names": {
       "en": "Switzerland",
       "zh": "瑞士"
@@ -688,8 +1037,12 @@
     "iso": "CI",
     "iso3": "CIV",
     "flag": "ci",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "225"
+    ],
+    "phonePrefixes": [
+      "225"
+    ],
     "names": {
       "en": "Côte d’Ivoire",
       "zh": "科特迪瓦"
@@ -704,8 +1057,12 @@
     "iso": "CK",
     "iso3": "COK",
     "flag": "ck",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "682"
+    ],
+    "phonePrefixes": [
+      "682"
+    ],
     "names": {
       "en": "Cook Islands",
       "zh": "库克群岛"
@@ -720,8 +1077,12 @@
     "iso": "CL",
     "iso3": "CHL",
     "flag": "cl",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "56"
+    ],
+    "phonePrefixes": [
+      "56"
+    ],
     "names": {
       "en": "Chile",
       "zh": "智利"
@@ -736,8 +1097,12 @@
     "iso": "CM",
     "iso3": "CMR",
     "flag": "cm",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "237"
+    ],
+    "phonePrefixes": [
+      "237"
+    ],
     "names": {
       "en": "Cameroon",
       "zh": "喀麦隆"
@@ -752,8 +1117,12 @@
     "iso": "CN",
     "iso3": "CHN",
     "flag": "cn",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "86"
+    ],
+    "phonePrefixes": [
+      "86"
+    ],
     "names": {
       "en": "China",
       "zh": "中国"
@@ -768,8 +1137,12 @@
     "iso": "CO",
     "iso3": "COL",
     "flag": "co",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "57"
+    ],
+    "phonePrefixes": [
+      "57"
+    ],
     "names": {
       "en": "Colombia",
       "zh": "哥伦比亚"
@@ -784,8 +1157,12 @@
     "iso": "CR",
     "iso3": "CRI",
     "flag": "cr",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "506"
+    ],
+    "phonePrefixes": [
+      "506"
+    ],
     "names": {
       "en": "Costa Rica",
       "zh": "哥斯达黎加"
@@ -800,8 +1177,12 @@
     "iso": "CU",
     "iso3": "CUB",
     "flag": "cu",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "53"
+    ],
+    "phonePrefixes": [
+      "53"
+    ],
     "names": {
       "en": "Cuba",
       "zh": "古巴"
@@ -816,8 +1197,12 @@
     "iso": "CV",
     "iso3": "CPV",
     "flag": "cv",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "238"
+    ],
+    "phonePrefixes": [
+      "238"
+    ],
     "names": {
       "en": "Cape Verde",
       "zh": "佛得角"
@@ -832,8 +1217,12 @@
     "iso": "CW",
     "iso3": "CUW",
     "flag": "cw",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "599"
+    ],
+    "phonePrefixes": [
+      "599"
+    ],
     "names": {
       "en": "Curaçao",
       "zh": "库拉索"
@@ -848,8 +1237,100 @@
     "iso": "CX",
     "iso3": "CXR",
     "flag": "cx",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "61"
+    ],
+    "phonePrefixes": [
+      "6140",
+      "6141",
+      "6142",
+      "6143",
+      "61440",
+      "61444",
+      "61447",
+      "61448",
+      "61449",
+      "61450",
+      "61451",
+      "61452",
+      "61454",
+      "61455",
+      "61456",
+      "61457",
+      "61458",
+      "61459",
+      "6146",
+      "61470",
+      "61472",
+      "61473",
+      "61474",
+      "61475",
+      "61476",
+      "61477",
+      "61478",
+      "614790",
+      "614791",
+      "61480",
+      "61481",
+      "61482",
+      "614830",
+      "614831",
+      "614832",
+      "614833",
+      "614836",
+      "614837",
+      "614838",
+      "614839",
+      "61484",
+      "61485",
+      "61486",
+      "61487",
+      "61488",
+      "61489",
+      "61490",
+      "61491",
+      "61492",
+      "61493",
+      "61494",
+      "614950",
+      "614951",
+      "614952",
+      "614953",
+      "61497",
+      "61498",
+      "61499",
+      "61851001",
+      "61851030",
+      "61851059",
+      "61851088",
+      "61851117",
+      "61851146",
+      "61851175",
+      "61851222",
+      "61851235",
+      "61891006",
+      "61891007",
+      "61891008",
+      "61891009",
+      "61891121",
+      "61891149",
+      "61891178",
+      "61891181",
+      "61891209",
+      "61891263",
+      "61891312",
+      "61891326",
+      "61891375",
+      "61891456",
+      "61891497",
+      "6189164",
+      "61891700",
+      "61891701",
+      "61891710",
+      "61891711",
+      "61891712",
+      "61891958"
+    ],
     "names": {
       "en": "Christmas Island",
       "zh": "圣诞岛"
@@ -864,8 +1345,12 @@
     "iso": "CY",
     "iso3": "CYP",
     "flag": "cy",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "357"
+    ],
+    "phonePrefixes": [
+      "357"
+    ],
     "names": {
       "en": "Cyprus",
       "zh": "塞浦路斯"
@@ -880,8 +1365,12 @@
     "iso": "CZ",
     "iso3": "CZE",
     "flag": "cz",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "420"
+    ],
+    "phonePrefixes": [
+      "420"
+    ],
     "names": {
       "en": "Czechia",
       "zh": "捷克"
@@ -896,8 +1385,12 @@
     "iso": "DE",
     "iso3": "DEU",
     "flag": "de",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "49"
+    ],
+    "phonePrefixes": [
+      "49"
+    ],
     "names": {
       "en": "Germany",
       "zh": "德国"
@@ -912,8 +1405,12 @@
     "iso": "DJ",
     "iso3": "DJI",
     "flag": "dj",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "253"
+    ],
+    "phonePrefixes": [
+      "253"
+    ],
     "names": {
       "en": "Djibouti",
       "zh": "吉布提"
@@ -928,8 +1425,12 @@
     "iso": "DK",
     "iso3": "DNK",
     "flag": "dk",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "45"
+    ],
+    "phonePrefixes": [
+      "45"
+    ],
     "names": {
       "en": "Denmark",
       "zh": "丹麦"
@@ -944,8 +1445,12 @@
     "iso": "DM",
     "iso3": "DMA",
     "flag": "dm",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "1"
+    ],
+    "phonePrefixes": [
+      "1767"
+    ],
     "names": {
       "en": "Dominica",
       "zh": "多米尼克"
@@ -960,8 +1465,15 @@
     "iso": "DO",
     "iso3": "DOM",
     "flag": "do",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "1"
+    ],
+    "phonePrefixes": [
+      "18001",
+      "1809",
+      "1829",
+      "1849"
+    ],
     "names": {
       "en": "Dominican Republic",
       "zh": "多米尼加共和国"
@@ -976,8 +1488,12 @@
     "iso": "DZ",
     "iso3": "DZA",
     "flag": "dz",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "213"
+    ],
+    "phonePrefixes": [
+      "213"
+    ],
     "names": {
       "en": "Algeria",
       "zh": "阿尔及利亚"
@@ -992,8 +1508,12 @@
     "iso": "EC",
     "iso3": "ECU",
     "flag": "ec",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "593"
+    ],
+    "phonePrefixes": [
+      "593"
+    ],
     "names": {
       "en": "Ecuador",
       "zh": "厄瓜多尔"
@@ -1008,8 +1528,12 @@
     "iso": "EE",
     "iso3": "EST",
     "flag": "ee",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "372"
+    ],
+    "phonePrefixes": [
+      "372"
+    ],
     "names": {
       "en": "Estonia",
       "zh": "爱沙尼亚"
@@ -1024,8 +1548,12 @@
     "iso": "EG",
     "iso3": "EGY",
     "flag": "eg",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "20"
+    ],
+    "phonePrefixes": [
+      "20"
+    ],
     "names": {
       "en": "Egypt",
       "zh": "埃及"
@@ -1040,8 +1568,51 @@
     "iso": "EH",
     "iso3": "ESH",
     "flag": "eh",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "212"
+    ],
+    "phonePrefixes": [
+      "2125288",
+      "2125289",
+      "21260",
+      "21261",
+      "21262",
+      "21263",
+      "21264",
+      "21265",
+      "21266",
+      "21267",
+      "212680",
+      "212681",
+      "212682",
+      "212684",
+      "212687",
+      "212688",
+      "212689",
+      "21269",
+      "21270",
+      "21271",
+      "212720",
+      "212721",
+      "212722",
+      "212723",
+      "212724",
+      "212725",
+      "212726",
+      "212727",
+      "212728",
+      "212730",
+      "212731",
+      "212750",
+      "212751",
+      "212752",
+      "212753",
+      "212754",
+      "212755",
+      "21276",
+      "21277",
+      "21278"
+    ],
     "names": {
       "en": "Western Sahara",
       "zh": "西撒哈拉"
@@ -1056,8 +1627,12 @@
     "iso": "ER",
     "iso3": "ERI",
     "flag": "er",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "291"
+    ],
+    "phonePrefixes": [
+      "291"
+    ],
     "names": {
       "en": "Eritrea",
       "zh": "厄立特里亚"
@@ -1072,8 +1647,12 @@
     "iso": "ES",
     "iso3": "ESP",
     "flag": "es",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "34"
+    ],
+    "phonePrefixes": [
+      "34"
+    ],
     "names": {
       "en": "Spain",
       "zh": "西班牙"
@@ -1088,8 +1667,12 @@
     "iso": "ET",
     "iso3": "ETH",
     "flag": "et",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "251"
+    ],
+    "phonePrefixes": [
+      "251"
+    ],
     "names": {
       "en": "Ethiopia",
       "zh": "埃塞俄比亚"
@@ -1104,8 +1687,12 @@
     "iso": "FI",
     "iso3": "FIN",
     "flag": "fi",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "358"
+    ],
+    "phonePrefixes": [
+      "358"
+    ],
     "names": {
       "en": "Finland",
       "zh": "芬兰"
@@ -1120,8 +1707,12 @@
     "iso": "FJ",
     "iso3": "FJI",
     "flag": "fj",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "679"
+    ],
+    "phonePrefixes": [
+      "679"
+    ],
     "names": {
       "en": "Fiji",
       "zh": "斐济"
@@ -1136,8 +1727,12 @@
     "iso": "FK",
     "iso3": "FLK",
     "flag": "fk",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "500"
+    ],
+    "phonePrefixes": [
+      "500"
+    ],
     "names": {
       "en": "Falkland Islands",
       "zh": "福克兰群岛"
@@ -1152,8 +1747,12 @@
     "iso": "FM",
     "iso3": "FSM",
     "flag": "fm",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "691"
+    ],
+    "phonePrefixes": [
+      "691"
+    ],
     "names": {
       "en": "Micronesia",
       "zh": "密克罗尼西亚"
@@ -1168,8 +1767,12 @@
     "iso": "FO",
     "iso3": "FRO",
     "flag": "fo",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "298"
+    ],
+    "phonePrefixes": [
+      "298"
+    ],
     "names": {
       "en": "Faroe Islands",
       "zh": "法罗群岛"
@@ -1184,8 +1787,12 @@
     "iso": "FR",
     "iso3": "FRA",
     "flag": "fr",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "33"
+    ],
+    "phonePrefixes": [
+      "33"
+    ],
     "names": {
       "en": "France",
       "zh": "法国"
@@ -1200,8 +1807,12 @@
     "iso": "GA",
     "iso3": "GAB",
     "flag": "ga",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "241"
+    ],
+    "phonePrefixes": [
+      "241"
+    ],
     "names": {
       "en": "Gabon",
       "zh": "加蓬"
@@ -1216,8 +1827,12 @@
     "iso": "GB",
     "iso3": "GBR",
     "flag": "gb",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "44"
+    ],
+    "phonePrefixes": [
+      "44"
+    ],
     "names": {
       "en": "United Kingdom",
       "zh": "英国"
@@ -1232,8 +1847,12 @@
     "iso": "GD",
     "iso3": "GRD",
     "flag": "gd",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "1"
+    ],
+    "phonePrefixes": [
+      "1473"
+    ],
     "names": {
       "en": "Grenada",
       "zh": "格林纳达"
@@ -1248,8 +1867,12 @@
     "iso": "GE",
     "iso3": "GEO",
     "flag": "ge",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "995"
+    ],
+    "phonePrefixes": [
+      "995"
+    ],
     "names": {
       "en": "Georgia",
       "zh": "格鲁吉亚"
@@ -1264,8 +1887,12 @@
     "iso": "GF",
     "iso3": "GUF",
     "flag": "gf",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "594"
+    ],
+    "phonePrefixes": [
+      "594"
+    ],
     "names": {
       "en": "French Guiana",
       "zh": "法属圭亚那"
@@ -1280,8 +1907,21 @@
     "iso": "GG",
     "iso3": "GGY",
     "flag": "gg",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "44"
+    ],
+    "phonePrefixes": [
+      "4414812",
+      "4414815",
+      "4414816",
+      "4414817",
+      "4414818",
+      "4414819",
+      "447781",
+      "447839",
+      "4479111",
+      "4479117"
+    ],
     "names": {
       "en": "Guernsey",
       "zh": "根西岛"
@@ -1296,8 +1936,12 @@
     "iso": "GH",
     "iso3": "GHA",
     "flag": "gh",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "233"
+    ],
+    "phonePrefixes": [
+      "233"
+    ],
     "names": {
       "en": "Ghana",
       "zh": "加纳"
@@ -1312,8 +1956,12 @@
     "iso": "GI",
     "iso3": "GIB",
     "flag": "gi",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "350"
+    ],
+    "phonePrefixes": [
+      "350"
+    ],
     "names": {
       "en": "Gibraltar",
       "zh": "直布罗陀"
@@ -1328,8 +1976,12 @@
     "iso": "GL",
     "iso3": "GRL",
     "flag": "gl",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "299"
+    ],
+    "phonePrefixes": [
+      "299"
+    ],
     "names": {
       "en": "Greenland",
       "zh": "格陵兰"
@@ -1344,8 +1996,12 @@
     "iso": "GM",
     "iso3": "GMB",
     "flag": "gm",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "220"
+    ],
+    "phonePrefixes": [
+      "220"
+    ],
     "names": {
       "en": "Gambia",
       "zh": "冈比亚"
@@ -1360,8 +2016,12 @@
     "iso": "GN",
     "iso3": "GIN",
     "flag": "gn",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "224"
+    ],
+    "phonePrefixes": [
+      "224"
+    ],
     "names": {
       "en": "Guinea",
       "zh": "几内亚"
@@ -1376,8 +2036,12 @@
     "iso": "GP",
     "iso3": "GLP",
     "flag": "gp",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "590"
+    ],
+    "phonePrefixes": [
+      "590"
+    ],
     "names": {
       "en": "Guadeloupe",
       "zh": "瓜德罗普"
@@ -1392,8 +2056,12 @@
     "iso": "GQ",
     "iso3": "GNQ",
     "flag": "gq",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "240"
+    ],
+    "phonePrefixes": [
+      "240"
+    ],
     "names": {
       "en": "Equatorial Guinea",
       "zh": "赤道几内亚"
@@ -1408,8 +2076,12 @@
     "iso": "GR",
     "iso3": "GRC",
     "flag": "gr",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "30"
+    ],
+    "phonePrefixes": [
+      "30"
+    ],
     "names": {
       "en": "Greece",
       "zh": "希腊"
@@ -1440,8 +2112,12 @@
     "iso": "GT",
     "iso3": "GTM",
     "flag": "gt",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "502"
+    ],
+    "phonePrefixes": [
+      "502"
+    ],
     "names": {
       "en": "Guatemala",
       "zh": "危地马拉"
@@ -1456,8 +2132,12 @@
     "iso": "GU",
     "iso3": "GUM",
     "flag": "gu",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "1"
+    ],
+    "phonePrefixes": [
+      "1671"
+    ],
     "names": {
       "en": "Guam",
       "zh": "关岛"
@@ -1472,8 +2152,12 @@
     "iso": "GW",
     "iso3": "GNB",
     "flag": "gw",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "245"
+    ],
+    "phonePrefixes": [
+      "245"
+    ],
     "names": {
       "en": "Guinea-Bissau",
       "zh": "几内亚比绍"
@@ -1488,8 +2172,12 @@
     "iso": "GY",
     "iso3": "GUY",
     "flag": "gy",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "592"
+    ],
+    "phonePrefixes": [
+      "592"
+    ],
     "names": {
       "en": "Guyana",
       "zh": "圭亚那"
@@ -1504,8 +2192,12 @@
     "iso": "HK",
     "iso3": "HKG",
     "flag": "cn",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "852"
+    ],
+    "phonePrefixes": [
+      "852"
+    ],
     "names": {
       "en": "Hong Kong SAR China",
       "zh": "中国香港特别行政区"
@@ -1536,8 +2228,12 @@
     "iso": "HN",
     "iso3": "HND",
     "flag": "hn",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "504"
+    ],
+    "phonePrefixes": [
+      "504"
+    ],
     "names": {
       "en": "Honduras",
       "zh": "洪都拉斯"
@@ -1552,8 +2248,12 @@
     "iso": "HR",
     "iso3": "HRV",
     "flag": "hr",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "385"
+    ],
+    "phonePrefixes": [
+      "385"
+    ],
     "names": {
       "en": "Croatia",
       "zh": "克罗地亚"
@@ -1568,8 +2268,12 @@
     "iso": "HT",
     "iso3": "HTI",
     "flag": "ht",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "509"
+    ],
+    "phonePrefixes": [
+      "509"
+    ],
     "names": {
       "en": "Haiti",
       "zh": "海地"
@@ -1584,8 +2288,12 @@
     "iso": "HU",
     "iso3": "HUN",
     "flag": "hu",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "36"
+    ],
+    "phonePrefixes": [
+      "36"
+    ],
     "names": {
       "en": "Hungary",
       "zh": "匈牙利"
@@ -1600,8 +2308,12 @@
     "iso": "ID",
     "iso3": "IDN",
     "flag": "id",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "62"
+    ],
+    "phonePrefixes": [
+      "62"
+    ],
     "names": {
       "en": "Indonesia",
       "zh": "印度尼西亚"
@@ -1616,8 +2328,12 @@
     "iso": "IE",
     "iso3": "IRL",
     "flag": "ie",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "353"
+    ],
+    "phonePrefixes": [
+      "353"
+    ],
     "names": {
       "en": "Ireland",
       "zh": "爱尔兰"
@@ -1632,8 +2348,12 @@
     "iso": "IL",
     "iso3": "ISR",
     "flag": "il",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "972"
+    ],
+    "phonePrefixes": [
+      "972"
+    ],
     "names": {
       "en": "Israel",
       "zh": "以色列"
@@ -1648,8 +2368,16 @@
     "iso": "IM",
     "iso3": "IMN",
     "flag": "im",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "44"
+    ],
+    "phonePrefixes": [
+      "441624",
+      "4474576",
+      "447524",
+      "447624",
+      "447924"
+    ],
     "names": {
       "en": "Isle of Man",
       "zh": "马恩岛"
@@ -1664,8 +2392,12 @@
     "iso": "IN",
     "iso3": "IND",
     "flag": "in",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "91"
+    ],
+    "phonePrefixes": [
+      "91"
+    ],
     "names": {
       "en": "India",
       "zh": "印度"
@@ -1680,8 +2412,12 @@
     "iso": "IO",
     "iso3": "IOT",
     "flag": "io",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "246"
+    ],
+    "phonePrefixes": [
+      "246"
+    ],
     "names": {
       "en": "British Indian Ocean Territory",
       "zh": "英属印度洋领地"
@@ -1696,8 +2432,12 @@
     "iso": "IQ",
     "iso3": "IRQ",
     "flag": "iq",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "964"
+    ],
+    "phonePrefixes": [
+      "964"
+    ],
     "names": {
       "en": "Iraq",
       "zh": "伊拉克"
@@ -1712,8 +2452,12 @@
     "iso": "IR",
     "iso3": "IRN",
     "flag": "ir",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "98"
+    ],
+    "phonePrefixes": [
+      "98"
+    ],
     "names": {
       "en": "Iran",
       "zh": "伊朗"
@@ -1728,8 +2472,12 @@
     "iso": "IS",
     "iso3": "ISL",
     "flag": "is",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "354"
+    ],
+    "phonePrefixes": [
+      "354"
+    ],
     "names": {
       "en": "Iceland",
       "zh": "冰岛"
@@ -1744,8 +2492,12 @@
     "iso": "IT",
     "iso3": "ITA",
     "flag": "it",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "39"
+    ],
+    "phonePrefixes": [
+      "39"
+    ],
     "names": {
       "en": "Italy",
       "zh": "意大利"
@@ -1760,8 +2512,26 @@
     "iso": "JE",
     "iso3": "JEY",
     "flag": "je",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "44"
+    ],
+    "phonePrefixes": [
+      "4415340",
+      "4415341",
+      "4415342",
+      "4415344",
+      "4415345",
+      "4415346",
+      "4415347",
+      "4415348",
+      "447509",
+      "4477003",
+      "4477007",
+      "4477008",
+      "447797",
+      "447829",
+      "447937"
+    ],
     "names": {
       "en": "Jersey",
       "zh": "泽西岛"
@@ -1776,8 +2546,13 @@
     "iso": "JM",
     "iso3": "JAM",
     "flag": "jm",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "1"
+    ],
+    "phonePrefixes": [
+      "1658",
+      "1876"
+    ],
     "names": {
       "en": "Jamaica",
       "zh": "牙买加"
@@ -1792,8 +2567,12 @@
     "iso": "JO",
     "iso3": "JOR",
     "flag": "jo",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "962"
+    ],
+    "phonePrefixes": [
+      "962"
+    ],
     "names": {
       "en": "Jordan",
       "zh": "约旦"
@@ -1808,8 +2587,12 @@
     "iso": "JP",
     "iso3": "JPN",
     "flag": "jp",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "81"
+    ],
+    "phonePrefixes": [
+      "81"
+    ],
     "names": {
       "en": "Japan",
       "zh": "日本"
@@ -1824,8 +2607,12 @@
     "iso": "KE",
     "iso3": "KEN",
     "flag": "ke",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "254"
+    ],
+    "phonePrefixes": [
+      "254"
+    ],
     "names": {
       "en": "Kenya",
       "zh": "肯尼亚"
@@ -1840,8 +2627,12 @@
     "iso": "KG",
     "iso3": "KGZ",
     "flag": "kg",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "996"
+    ],
+    "phonePrefixes": [
+      "996"
+    ],
     "names": {
       "en": "Kyrgyzstan",
       "zh": "吉尔吉斯斯坦"
@@ -1856,8 +2647,12 @@
     "iso": "KH",
     "iso3": "KHM",
     "flag": "kh",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "855"
+    ],
+    "phonePrefixes": [
+      "855"
+    ],
     "names": {
       "en": "Cambodia",
       "zh": "柬埔寨"
@@ -1872,8 +2667,12 @@
     "iso": "KI",
     "iso3": "KIR",
     "flag": "ki",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "686"
+    ],
+    "phonePrefixes": [
+      "686"
+    ],
     "names": {
       "en": "Kiribati",
       "zh": "基里巴斯"
@@ -1888,8 +2687,12 @@
     "iso": "KM",
     "iso3": "COM",
     "flag": "km",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "269"
+    ],
+    "phonePrefixes": [
+      "269"
+    ],
     "names": {
       "en": "Comoros",
       "zh": "科摩罗"
@@ -1904,8 +2707,12 @@
     "iso": "KN",
     "iso3": "KNA",
     "flag": "kn",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "1"
+    ],
+    "phonePrefixes": [
+      "1869"
+    ],
     "names": {
       "en": "St. Kitts \u0026 Nevis",
       "zh": "圣基茨和尼维斯"
@@ -1920,8 +2727,12 @@
     "iso": "KP",
     "iso3": "PRK",
     "flag": "kp",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "850"
+    ],
+    "phonePrefixes": [
+      "850"
+    ],
     "names": {
       "en": "North Korea",
       "zh": "朝鲜"
@@ -1936,8 +2747,12 @@
     "iso": "KR",
     "iso3": "KOR",
     "flag": "kr",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "82"
+    ],
+    "phonePrefixes": [
+      "82"
+    ],
     "names": {
       "en": "South Korea",
       "zh": "韩国"
@@ -1952,8 +2767,12 @@
     "iso": "KW",
     "iso3": "KWT",
     "flag": "kw",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "965"
+    ],
+    "phonePrefixes": [
+      "965"
+    ],
     "names": {
       "en": "Kuwait",
       "zh": "科威特"
@@ -1968,8 +2787,12 @@
     "iso": "KY",
     "iso3": "CYM",
     "flag": "ky",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "1"
+    ],
+    "phonePrefixes": [
+      "1345"
+    ],
     "names": {
       "en": "Cayman Islands",
       "zh": "开曼群岛"
@@ -1984,8 +2807,12 @@
     "iso": "KZ",
     "iso3": "KAZ",
     "flag": "kz",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "7"
+    ],
+    "phonePrefixes": [
+      "77"
+    ],
     "names": {
       "en": "Kazakhstan",
       "zh": "哈萨克斯坦"
@@ -2000,8 +2827,12 @@
     "iso": "LA",
     "iso3": "LAO",
     "flag": "la",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "856"
+    ],
+    "phonePrefixes": [
+      "856"
+    ],
     "names": {
       "en": "Laos",
       "zh": "老挝"
@@ -2016,8 +2847,12 @@
     "iso": "LB",
     "iso3": "LBN",
     "flag": "lb",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "961"
+    ],
+    "phonePrefixes": [
+      "961"
+    ],
     "names": {
       "en": "Lebanon",
       "zh": "黎巴嫩"
@@ -2032,8 +2867,12 @@
     "iso": "LC",
     "iso3": "LCA",
     "flag": "lc",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "1"
+    ],
+    "phonePrefixes": [
+      "1758"
+    ],
     "names": {
       "en": "St. Lucia",
       "zh": "圣卢西亚"
@@ -2048,8 +2887,12 @@
     "iso": "LI",
     "iso3": "LIE",
     "flag": "li",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "423"
+    ],
+    "phonePrefixes": [
+      "423"
+    ],
     "names": {
       "en": "Liechtenstein",
       "zh": "列支敦士登"
@@ -2064,8 +2907,12 @@
     "iso": "LK",
     "iso3": "LKA",
     "flag": "lk",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "94"
+    ],
+    "phonePrefixes": [
+      "94"
+    ],
     "names": {
       "en": "Sri Lanka",
       "zh": "斯里兰卡"
@@ -2080,8 +2927,12 @@
     "iso": "LR",
     "iso3": "LBR",
     "flag": "lr",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "231"
+    ],
+    "phonePrefixes": [
+      "231"
+    ],
     "names": {
       "en": "Liberia",
       "zh": "利比里亚"
@@ -2096,8 +2947,12 @@
     "iso": "LS",
     "iso3": "LSO",
     "flag": "ls",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "266"
+    ],
+    "phonePrefixes": [
+      "266"
+    ],
     "names": {
       "en": "Lesotho",
       "zh": "莱索托"
@@ -2112,8 +2967,12 @@
     "iso": "LT",
     "iso3": "LTU",
     "flag": "lt",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "370"
+    ],
+    "phonePrefixes": [
+      "370"
+    ],
     "names": {
       "en": "Lithuania",
       "zh": "立陶宛"
@@ -2128,8 +2987,12 @@
     "iso": "LU",
     "iso3": "LUX",
     "flag": "lu",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "352"
+    ],
+    "phonePrefixes": [
+      "352"
+    ],
     "names": {
       "en": "Luxembourg",
       "zh": "卢森堡"
@@ -2144,8 +3007,12 @@
     "iso": "LV",
     "iso3": "LVA",
     "flag": "lv",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "371"
+    ],
+    "phonePrefixes": [
+      "371"
+    ],
     "names": {
       "en": "Latvia",
       "zh": "拉脱维亚"
@@ -2160,8 +3027,12 @@
     "iso": "LY",
     "iso3": "LBY",
     "flag": "ly",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "218"
+    ],
+    "phonePrefixes": [
+      "218"
+    ],
     "names": {
       "en": "Libya",
       "zh": "利比亚"
@@ -2176,8 +3047,12 @@
     "iso": "MA",
     "iso3": "MAR",
     "flag": "ma",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "212"
+    ],
+    "phonePrefixes": [
+      "212"
+    ],
     "names": {
       "en": "Morocco",
       "zh": "摩洛哥"
@@ -2192,8 +3067,12 @@
     "iso": "MC",
     "iso3": "MCO",
     "flag": "mc",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "377"
+    ],
+    "phonePrefixes": [
+      "377"
+    ],
     "names": {
       "en": "Monaco",
       "zh": "摩纳哥"
@@ -2208,8 +3087,12 @@
     "iso": "MD",
     "iso3": "MDA",
     "flag": "md",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "373"
+    ],
+    "phonePrefixes": [
+      "373"
+    ],
     "names": {
       "en": "Moldova",
       "zh": "摩尔多瓦"
@@ -2224,8 +3107,12 @@
     "iso": "ME",
     "iso3": "MNE",
     "flag": "me",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "382"
+    ],
+    "phonePrefixes": [
+      "382"
+    ],
     "names": {
       "en": "Montenegro",
       "zh": "黑山"
@@ -2240,8 +3127,57 @@
     "iso": "MF",
     "iso3": "MAF",
     "flag": "mf",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "590"
+    ],
+    "phonePrefixes": [
+      "59059000",
+      "59059007",
+      "59059009",
+      "59059013",
+      "59059027",
+      "59059029",
+      "59059030",
+      "59059033",
+      "59059034",
+      "59059035",
+      "59059036",
+      "59059037",
+      "59059043",
+      "59059050",
+      "59059051",
+      "59059052",
+      "59059056",
+      "59059058",
+      "59059077",
+      "59059079",
+      "59059087",
+      "5905987",
+      "590690",
+      "59069122",
+      "59069123",
+      "59069124",
+      "59069125",
+      "59069126",
+      "59069127",
+      "59069128",
+      "59069129",
+      "59069130",
+      "59069131",
+      "59069132",
+      "59069133",
+      "59069134",
+      "59069135",
+      "59070900",
+      "59070901",
+      "59070902",
+      "59070903",
+      "59070904",
+      "590806",
+      "590807",
+      "590808",
+      "590809"
+    ],
     "names": {
       "en": "St. Martin",
       "zh": "法属圣马丁"
@@ -2256,8 +3192,12 @@
     "iso": "MG",
     "iso3": "MDG",
     "flag": "mg",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "261"
+    ],
+    "phonePrefixes": [
+      "261"
+    ],
     "names": {
       "en": "Madagascar",
       "zh": "马达加斯加"
@@ -2272,8 +3212,12 @@
     "iso": "MH",
     "iso3": "MHL",
     "flag": "mh",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "692"
+    ],
+    "phonePrefixes": [
+      "692"
+    ],
     "names": {
       "en": "Marshall Islands",
       "zh": "马绍尔群岛"
@@ -2288,8 +3232,12 @@
     "iso": "MK",
     "iso3": "MKD",
     "flag": "mk",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "389"
+    ],
+    "phonePrefixes": [
+      "389"
+    ],
     "names": {
       "en": "North Macedonia",
       "zh": "北马其顿"
@@ -2304,8 +3252,12 @@
     "iso": "ML",
     "iso3": "MLI",
     "flag": "ml",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "223"
+    ],
+    "phonePrefixes": [
+      "223"
+    ],
     "names": {
       "en": "Mali",
       "zh": "马里"
@@ -2320,8 +3272,12 @@
     "iso": "MM",
     "iso3": "MMR",
     "flag": "mm",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "95"
+    ],
+    "phonePrefixes": [
+      "95"
+    ],
     "names": {
       "en": "Myanmar (Burma)",
       "zh": "缅甸"
@@ -2336,8 +3292,12 @@
     "iso": "MN",
     "iso3": "MNG",
     "flag": "mn",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "976"
+    ],
+    "phonePrefixes": [
+      "976"
+    ],
     "names": {
       "en": "Mongolia",
       "zh": "蒙古"
@@ -2352,8 +3312,12 @@
     "iso": "MO",
     "iso3": "MAC",
     "flag": "cn",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "853"
+    ],
+    "phonePrefixes": [
+      "853"
+    ],
     "names": {
       "en": "Macao SAR China",
       "zh": "中国澳门特别行政区"
@@ -2368,8 +3332,12 @@
     "iso": "MP",
     "iso3": "MNP",
     "flag": "mp",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "1"
+    ],
+    "phonePrefixes": [
+      "1670"
+    ],
     "names": {
       "en": "Northern Mariana Islands",
       "zh": "北马里亚纳群岛"
@@ -2384,8 +3352,12 @@
     "iso": "MQ",
     "iso3": "MTQ",
     "flag": "mq",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "596"
+    ],
+    "phonePrefixes": [
+      "596"
+    ],
     "names": {
       "en": "Martinique",
       "zh": "马提尼克"
@@ -2400,8 +3372,12 @@
     "iso": "MR",
     "iso3": "MRT",
     "flag": "mr",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "222"
+    ],
+    "phonePrefixes": [
+      "222"
+    ],
     "names": {
       "en": "Mauritania",
       "zh": "毛里塔尼亚"
@@ -2416,8 +3392,12 @@
     "iso": "MS",
     "iso3": "MSR",
     "flag": "ms",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "1"
+    ],
+    "phonePrefixes": [
+      "1664"
+    ],
     "names": {
       "en": "Montserrat",
       "zh": "蒙特塞拉特"
@@ -2432,8 +3412,12 @@
     "iso": "MT",
     "iso3": "MLT",
     "flag": "mt",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "356"
+    ],
+    "phonePrefixes": [
+      "356"
+    ],
     "names": {
       "en": "Malta",
       "zh": "马耳他"
@@ -2448,8 +3432,12 @@
     "iso": "MU",
     "iso3": "MUS",
     "flag": "mu",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "230"
+    ],
+    "phonePrefixes": [
+      "230"
+    ],
     "names": {
       "en": "Mauritius",
       "zh": "毛里求斯"
@@ -2464,8 +3452,12 @@
     "iso": "MV",
     "iso3": "MDV",
     "flag": "mv",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "960"
+    ],
+    "phonePrefixes": [
+      "960"
+    ],
     "names": {
       "en": "Maldives",
       "zh": "马尔代夫"
@@ -2480,8 +3472,12 @@
     "iso": "MW",
     "iso3": "MWI",
     "flag": "mw",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "265"
+    ],
+    "phonePrefixes": [
+      "265"
+    ],
     "names": {
       "en": "Malawi",
       "zh": "马拉维"
@@ -2496,8 +3492,12 @@
     "iso": "MX",
     "iso3": "MEX",
     "flag": "mx",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "52"
+    ],
+    "phonePrefixes": [
+      "52"
+    ],
     "names": {
       "en": "Mexico",
       "zh": "墨西哥"
@@ -2512,8 +3512,12 @@
     "iso": "MY",
     "iso3": "MYS",
     "flag": "my",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "60"
+    ],
+    "phonePrefixes": [
+      "60"
+    ],
     "names": {
       "en": "Malaysia",
       "zh": "马来西亚"
@@ -2528,8 +3532,12 @@
     "iso": "MZ",
     "iso3": "MOZ",
     "flag": "mz",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "258"
+    ],
+    "phonePrefixes": [
+      "258"
+    ],
     "names": {
       "en": "Mozambique",
       "zh": "莫桑比克"
@@ -2544,8 +3552,12 @@
     "iso": "NA",
     "iso3": "NAM",
     "flag": "na",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "264"
+    ],
+    "phonePrefixes": [
+      "264"
+    ],
     "names": {
       "en": "Namibia",
       "zh": "纳米比亚"
@@ -2560,8 +3572,12 @@
     "iso": "NC",
     "iso3": "NCL",
     "flag": "nc",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "687"
+    ],
+    "phonePrefixes": [
+      "687"
+    ],
     "names": {
       "en": "New Caledonia",
       "zh": "新喀里多尼亚"
@@ -2576,8 +3592,12 @@
     "iso": "NE",
     "iso3": "NER",
     "flag": "ne",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "227"
+    ],
+    "phonePrefixes": [
+      "227"
+    ],
     "names": {
       "en": "Niger",
       "zh": "尼日尔"
@@ -2592,8 +3612,12 @@
     "iso": "NF",
     "iso3": "NFK",
     "flag": "nf",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "672"
+    ],
+    "phonePrefixes": [
+      "672"
+    ],
     "names": {
       "en": "Norfolk Island",
       "zh": "诺福克岛"
@@ -2608,8 +3632,12 @@
     "iso": "NG",
     "iso3": "NGA",
     "flag": "ng",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "234"
+    ],
+    "phonePrefixes": [
+      "234"
+    ],
     "names": {
       "en": "Nigeria",
       "zh": "尼日利亚"
@@ -2624,8 +3652,12 @@
     "iso": "NI",
     "iso3": "NIC",
     "flag": "ni",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "505"
+    ],
+    "phonePrefixes": [
+      "505"
+    ],
     "names": {
       "en": "Nicaragua",
       "zh": "尼加拉瓜"
@@ -2640,8 +3672,12 @@
     "iso": "NL",
     "iso3": "NLD",
     "flag": "nl",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "31"
+    ],
+    "phonePrefixes": [
+      "31"
+    ],
     "names": {
       "en": "Netherlands",
       "zh": "荷兰"
@@ -2656,8 +3692,12 @@
     "iso": "NO",
     "iso3": "NOR",
     "flag": "no",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "47"
+    ],
+    "phonePrefixes": [
+      "47"
+    ],
     "names": {
       "en": "Norway",
       "zh": "挪威"
@@ -2672,8 +3712,12 @@
     "iso": "NP",
     "iso3": "NPL",
     "flag": "np",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "977"
+    ],
+    "phonePrefixes": [
+      "977"
+    ],
     "names": {
       "en": "Nepal",
       "zh": "尼泊尔"
@@ -2688,8 +3732,12 @@
     "iso": "NR",
     "iso3": "NRU",
     "flag": "nr",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "674"
+    ],
+    "phonePrefixes": [
+      "674"
+    ],
     "names": {
       "en": "Nauru",
       "zh": "瑙鲁"
@@ -2704,8 +3752,12 @@
     "iso": "NU",
     "iso3": "NIU",
     "flag": "nu",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "683"
+    ],
+    "phonePrefixes": [
+      "683"
+    ],
     "names": {
       "en": "Niue",
       "zh": "纽埃"
@@ -2720,8 +3772,12 @@
     "iso": "NZ",
     "iso3": "NZL",
     "flag": "nz",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "64"
+    ],
+    "phonePrefixes": [
+      "64"
+    ],
     "names": {
       "en": "New Zealand",
       "zh": "新西兰"
@@ -2736,8 +3792,12 @@
     "iso": "OM",
     "iso3": "OMN",
     "flag": "om",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "968"
+    ],
+    "phonePrefixes": [
+      "968"
+    ],
     "names": {
       "en": "Oman",
       "zh": "阿曼"
@@ -2752,8 +3812,12 @@
     "iso": "PA",
     "iso3": "PAN",
     "flag": "pa",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "507"
+    ],
+    "phonePrefixes": [
+      "507"
+    ],
     "names": {
       "en": "Panama",
       "zh": "巴拿马"
@@ -2768,8 +3832,12 @@
     "iso": "PE",
     "iso3": "PER",
     "flag": "pe",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "51"
+    ],
+    "phonePrefixes": [
+      "51"
+    ],
     "names": {
       "en": "Peru",
       "zh": "秘鲁"
@@ -2784,8 +3852,12 @@
     "iso": "PF",
     "iso3": "PYF",
     "flag": "pf",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "689"
+    ],
+    "phonePrefixes": [
+      "689"
+    ],
     "names": {
       "en": "French Polynesia",
       "zh": "法属波利尼西亚"
@@ -2800,8 +3872,12 @@
     "iso": "PG",
     "iso3": "PNG",
     "flag": "pg",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "675"
+    ],
+    "phonePrefixes": [
+      "675"
+    ],
     "names": {
       "en": "Papua New Guinea",
       "zh": "巴布亚新几内亚"
@@ -2816,8 +3892,12 @@
     "iso": "PH",
     "iso3": "PHL",
     "flag": "ph",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "63"
+    ],
+    "phonePrefixes": [
+      "63"
+    ],
     "names": {
       "en": "Philippines",
       "zh": "菲律宾"
@@ -2832,8 +3912,12 @@
     "iso": "PK",
     "iso3": "PAK",
     "flag": "pk",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "92"
+    ],
+    "phonePrefixes": [
+      "92"
+    ],
     "names": {
       "en": "Pakistan",
       "zh": "巴基斯坦"
@@ -2848,8 +3932,12 @@
     "iso": "PL",
     "iso3": "POL",
     "flag": "pl",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "48"
+    ],
+    "phonePrefixes": [
+      "48"
+    ],
     "names": {
       "en": "Poland",
       "zh": "波兰"
@@ -2864,8 +3952,12 @@
     "iso": "PM",
     "iso3": "SPM",
     "flag": "pm",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "508"
+    ],
+    "phonePrefixes": [
+      "508"
+    ],
     "names": {
       "en": "St. Pierre \u0026 Miquelon",
       "zh": "圣皮埃尔和密克隆群岛"
@@ -2896,8 +3988,13 @@
     "iso": "PR",
     "iso3": "PRI",
     "flag": "pr",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "1"
+    ],
+    "phonePrefixes": [
+      "1787",
+      "1939"
+    ],
     "names": {
       "en": "Puerto Rico",
       "zh": "波多黎各"
@@ -2912,8 +4009,12 @@
     "iso": "PS",
     "iso3": "PSE",
     "flag": "ps",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "970"
+    ],
+    "phonePrefixes": [
+      "970"
+    ],
     "names": {
       "en": "Palestinian Territories",
       "zh": "巴勒斯坦领土"
@@ -2928,8 +4029,12 @@
     "iso": "PT",
     "iso3": "PRT",
     "flag": "pt",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "351"
+    ],
+    "phonePrefixes": [
+      "351"
+    ],
     "names": {
       "en": "Portugal",
       "zh": "葡萄牙"
@@ -2944,8 +4049,12 @@
     "iso": "PW",
     "iso3": "PLW",
     "flag": "pw",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "680"
+    ],
+    "phonePrefixes": [
+      "680"
+    ],
     "names": {
       "en": "Palau",
       "zh": "帕劳"
@@ -2960,8 +4069,12 @@
     "iso": "PY",
     "iso3": "PRY",
     "flag": "py",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "595"
+    ],
+    "phonePrefixes": [
+      "595"
+    ],
     "names": {
       "en": "Paraguay",
       "zh": "巴拉圭"
@@ -2976,8 +4089,12 @@
     "iso": "QA",
     "iso3": "QAT",
     "flag": "qa",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "974"
+    ],
+    "phonePrefixes": [
+      "974"
+    ],
     "names": {
       "en": "Qatar",
       "zh": "卡塔尔"
@@ -2992,8 +4109,12 @@
     "iso": "RE",
     "iso3": "REU",
     "flag": "re",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "262"
+    ],
+    "phonePrefixes": [
+      "262"
+    ],
     "names": {
       "en": "Réunion",
       "zh": "留尼汪"
@@ -3008,8 +4129,12 @@
     "iso": "RO",
     "iso3": "ROU",
     "flag": "ro",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "40"
+    ],
+    "phonePrefixes": [
+      "40"
+    ],
     "names": {
       "en": "Romania",
       "zh": "罗马尼亚"
@@ -3024,8 +4149,12 @@
     "iso": "RS",
     "iso3": "SRB",
     "flag": "rs",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "381"
+    ],
+    "phonePrefixes": [
+      "381"
+    ],
     "names": {
       "en": "Serbia",
       "zh": "塞尔维亚"
@@ -3040,8 +4169,12 @@
     "iso": "RU",
     "iso3": "RUS",
     "flag": "ru",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "7"
+    ],
+    "phonePrefixes": [
+      "7"
+    ],
     "names": {
       "en": "Russia",
       "zh": "俄罗斯"
@@ -3056,8 +4189,12 @@
     "iso": "RW",
     "iso3": "RWA",
     "flag": "rw",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "250"
+    ],
+    "phonePrefixes": [
+      "250"
+    ],
     "names": {
       "en": "Rwanda",
       "zh": "卢旺达"
@@ -3072,8 +4209,12 @@
     "iso": "SA",
     "iso3": "SAU",
     "flag": "sa",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "966"
+    ],
+    "phonePrefixes": [
+      "966"
+    ],
     "names": {
       "en": "Saudi Arabia",
       "zh": "沙特阿拉伯"
@@ -3088,8 +4229,12 @@
     "iso": "SB",
     "iso3": "SLB",
     "flag": "sb",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "677"
+    ],
+    "phonePrefixes": [
+      "677"
+    ],
     "names": {
       "en": "Solomon Islands",
       "zh": "所罗门群岛"
@@ -3104,8 +4249,12 @@
     "iso": "SC",
     "iso3": "SYC",
     "flag": "sc",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "248"
+    ],
+    "phonePrefixes": [
+      "248"
+    ],
     "names": {
       "en": "Seychelles",
       "zh": "塞舌尔"
@@ -3120,8 +4269,12 @@
     "iso": "SD",
     "iso3": "SDN",
     "flag": "sd",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "249"
+    ],
+    "phonePrefixes": [
+      "249"
+    ],
     "names": {
       "en": "Sudan",
       "zh": "苏丹"
@@ -3136,8 +4289,12 @@
     "iso": "SE",
     "iso3": "SWE",
     "flag": "se",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "46"
+    ],
+    "phonePrefixes": [
+      "46"
+    ],
     "names": {
       "en": "Sweden",
       "zh": "瑞典"
@@ -3152,8 +4309,12 @@
     "iso": "SG",
     "iso3": "SGP",
     "flag": "sg",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "65"
+    ],
+    "phonePrefixes": [
+      "65"
+    ],
     "names": {
       "en": "Singapore",
       "zh": "新加坡"
@@ -3168,8 +4329,12 @@
     "iso": "SH",
     "iso3": "SHN",
     "flag": "sh",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "290"
+    ],
+    "phonePrefixes": [
+      "290"
+    ],
     "names": {
       "en": "St. Helena",
       "zh": "圣赫勒拿"
@@ -3184,8 +4349,12 @@
     "iso": "SI",
     "iso3": "SVN",
     "flag": "si",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "386"
+    ],
+    "phonePrefixes": [
+      "386"
+    ],
     "names": {
       "en": "Slovenia",
       "zh": "斯洛文尼亚"
@@ -3200,8 +4369,36 @@
     "iso": "SJ",
     "iso3": "SJM",
     "flag": "sj",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "47"
+    ],
+    "phonePrefixes": [
+      "4740",
+      "4741",
+      "47450",
+      "47451",
+      "47452",
+      "474530",
+      "474531",
+      "474532",
+      "474533",
+      "474534",
+      "474535",
+      "474537",
+      "474538",
+      "474539",
+      "47454",
+      "47455",
+      "47456",
+      "47457",
+      "47458",
+      "47459",
+      "4746",
+      "4747",
+      "4748",
+      "4779",
+      "479"
+    ],
     "names": {
       "en": "Svalbard \u0026 Jan Mayen",
       "zh": "斯瓦尔巴和扬马延"
@@ -3216,8 +4413,12 @@
     "iso": "SK",
     "iso3": "SVK",
     "flag": "sk",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "421"
+    ],
+    "phonePrefixes": [
+      "421"
+    ],
     "names": {
       "en": "Slovakia",
       "zh": "斯洛伐克"
@@ -3232,8 +4433,12 @@
     "iso": "SL",
     "iso3": "SLE",
     "flag": "sl",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "232"
+    ],
+    "phonePrefixes": [
+      "232"
+    ],
     "names": {
       "en": "Sierra Leone",
       "zh": "塞拉利昂"
@@ -3248,8 +4453,12 @@
     "iso": "SM",
     "iso3": "SMR",
     "flag": "sm",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "378"
+    ],
+    "phonePrefixes": [
+      "378"
+    ],
     "names": {
       "en": "San Marino",
       "zh": "圣马力诺"
@@ -3264,8 +4473,12 @@
     "iso": "SN",
     "iso3": "SEN",
     "flag": "sn",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "221"
+    ],
+    "phonePrefixes": [
+      "221"
+    ],
     "names": {
       "en": "Senegal",
       "zh": "塞内加尔"
@@ -3280,8 +4493,12 @@
     "iso": "SO",
     "iso3": "SOM",
     "flag": "so",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "252"
+    ],
+    "phonePrefixes": [
+      "252"
+    ],
     "names": {
       "en": "Somalia",
       "zh": "索马里"
@@ -3296,8 +4513,12 @@
     "iso": "SR",
     "iso3": "SUR",
     "flag": "sr",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "597"
+    ],
+    "phonePrefixes": [
+      "597"
+    ],
     "names": {
       "en": "Suriname",
       "zh": "苏里南"
@@ -3312,8 +4533,12 @@
     "iso": "SS",
     "iso3": "SSD",
     "flag": "ss",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "211"
+    ],
+    "phonePrefixes": [
+      "211"
+    ],
     "names": {
       "en": "South Sudan",
       "zh": "南苏丹"
@@ -3328,8 +4553,12 @@
     "iso": "ST",
     "iso3": "STP",
     "flag": "st",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "239"
+    ],
+    "phonePrefixes": [
+      "239"
+    ],
     "names": {
       "en": "São Tomé \u0026 Príncipe",
       "zh": "圣多美和普林西比"
@@ -3344,8 +4573,12 @@
     "iso": "SV",
     "iso3": "SLV",
     "flag": "sv",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "503"
+    ],
+    "phonePrefixes": [
+      "503"
+    ],
     "names": {
       "en": "El Salvador",
       "zh": "萨尔瓦多"
@@ -3360,8 +4593,12 @@
     "iso": "SX",
     "iso3": "SXM",
     "flag": "sx",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "1"
+    ],
+    "phonePrefixes": [
+      "1721"
+    ],
     "names": {
       "en": "Sint Maarten",
       "zh": "荷属圣马丁"
@@ -3376,8 +4613,12 @@
     "iso": "SY",
     "iso3": "SYR",
     "flag": "sy",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "963"
+    ],
+    "phonePrefixes": [
+      "963"
+    ],
     "names": {
       "en": "Syria",
       "zh": "叙利亚"
@@ -3392,8 +4633,12 @@
     "iso": "SZ",
     "iso3": "SWZ",
     "flag": "sz",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "268"
+    ],
+    "phonePrefixes": [
+      "268"
+    ],
     "names": {
       "en": "Eswatini",
       "zh": "斯威士兰"
@@ -3408,8 +4653,12 @@
     "iso": "TC",
     "iso3": "TCA",
     "flag": "tc",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "1"
+    ],
+    "phonePrefixes": [
+      "1649"
+    ],
     "names": {
       "en": "Turks \u0026 Caicos Islands",
       "zh": "特克斯和凯科斯群岛"
@@ -3424,8 +4673,12 @@
     "iso": "TD",
     "iso3": "TCD",
     "flag": "td",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "235"
+    ],
+    "phonePrefixes": [
+      "235"
+    ],
     "names": {
       "en": "Chad",
       "zh": "乍得"
@@ -3456,8 +4709,12 @@
     "iso": "TG",
     "iso3": "TGO",
     "flag": "tg",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "228"
+    ],
+    "phonePrefixes": [
+      "228"
+    ],
     "names": {
       "en": "Togo",
       "zh": "多哥"
@@ -3472,8 +4729,12 @@
     "iso": "TH",
     "iso3": "THA",
     "flag": "th",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "66"
+    ],
+    "phonePrefixes": [
+      "66"
+    ],
     "names": {
       "en": "Thailand",
       "zh": "泰国"
@@ -3488,8 +4749,12 @@
     "iso": "TJ",
     "iso3": "TJK",
     "flag": "tj",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "992"
+    ],
+    "phonePrefixes": [
+      "992"
+    ],
     "names": {
       "en": "Tajikistan",
       "zh": "塔吉克斯坦"
@@ -3504,8 +4769,12 @@
     "iso": "TK",
     "iso3": "TKL",
     "flag": "tk",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "690"
+    ],
+    "phonePrefixes": [
+      "690"
+    ],
     "names": {
       "en": "Tokelau",
       "zh": "托克劳"
@@ -3520,8 +4789,12 @@
     "iso": "TL",
     "iso3": "TLS",
     "flag": "tl",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "670"
+    ],
+    "phonePrefixes": [
+      "670"
+    ],
     "names": {
       "en": "Timor-Leste",
       "zh": "东帝汶"
@@ -3536,8 +4809,12 @@
     "iso": "TM",
     "iso3": "TKM",
     "flag": "tm",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "993"
+    ],
+    "phonePrefixes": [
+      "993"
+    ],
     "names": {
       "en": "Turkmenistan",
       "zh": "土库曼斯坦"
@@ -3552,8 +4829,12 @@
     "iso": "TN",
     "iso3": "TUN",
     "flag": "tn",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "216"
+    ],
+    "phonePrefixes": [
+      "216"
+    ],
     "names": {
       "en": "Tunisia",
       "zh": "突尼斯"
@@ -3568,8 +4849,12 @@
     "iso": "TO",
     "iso3": "TON",
     "flag": "to",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "676"
+    ],
+    "phonePrefixes": [
+      "676"
+    ],
     "names": {
       "en": "Tonga",
       "zh": "汤加"
@@ -3584,8 +4869,12 @@
     "iso": "TR",
     "iso3": "TUR",
     "flag": "tr",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "90"
+    ],
+    "phonePrefixes": [
+      "90"
+    ],
     "names": {
       "en": "Türkiye",
       "zh": "土耳其"
@@ -3600,8 +4889,12 @@
     "iso": "TT",
     "iso3": "TTO",
     "flag": "tt",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "1"
+    ],
+    "phonePrefixes": [
+      "1868"
+    ],
     "names": {
       "en": "Trinidad \u0026 Tobago",
       "zh": "特立尼达和多巴哥"
@@ -3616,8 +4909,12 @@
     "iso": "TV",
     "iso3": "TUV",
     "flag": "tv",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "688"
+    ],
+    "phonePrefixes": [
+      "688"
+    ],
     "names": {
       "en": "Tuvalu",
       "zh": "图瓦卢"
@@ -3632,8 +4929,12 @@
     "iso": "TW",
     "iso3": "TWN",
     "flag": "cn",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "886"
+    ],
+    "phonePrefixes": [
+      "886"
+    ],
     "names": {
       "en": "Taiwan",
       "zh": "台湾"
@@ -3648,8 +4949,12 @@
     "iso": "TZ",
     "iso3": "TZA",
     "flag": "tz",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "255"
+    ],
+    "phonePrefixes": [
+      "255"
+    ],
     "names": {
       "en": "Tanzania",
       "zh": "坦桑尼亚"
@@ -3664,8 +4969,12 @@
     "iso": "UA",
     "iso3": "UKR",
     "flag": "ua",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "380"
+    ],
+    "phonePrefixes": [
+      "380"
+    ],
     "names": {
       "en": "Ukraine",
       "zh": "乌克兰"
@@ -3680,8 +4989,12 @@
     "iso": "UG",
     "iso3": "UGA",
     "flag": "ug",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "256"
+    ],
+    "phonePrefixes": [
+      "256"
+    ],
     "names": {
       "en": "Uganda",
       "zh": "乌干达"
@@ -3712,8 +5025,12 @@
     "iso": "US",
     "iso3": "USA",
     "flag": "us",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "1"
+    ],
+    "phonePrefixes": [
+      "1"
+    ],
     "names": {
       "en": "United States",
       "zh": "美国"
@@ -3728,8 +5045,12 @@
     "iso": "UY",
     "iso3": "URY",
     "flag": "uy",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "598"
+    ],
+    "phonePrefixes": [
+      "598"
+    ],
     "names": {
       "en": "Uruguay",
       "zh": "乌拉圭"
@@ -3744,8 +5065,12 @@
     "iso": "UZ",
     "iso3": "UZB",
     "flag": "uz",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "998"
+    ],
+    "phonePrefixes": [
+      "998"
+    ],
     "names": {
       "en": "Uzbekistan",
       "zh": "乌兹别克斯坦"
@@ -3760,8 +5085,21 @@
     "iso": "VA",
     "iso3": "VAT",
     "flag": "va",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "39"
+    ],
+    "phonePrefixes": [
+      "3906698",
+      "3931",
+      "3932",
+      "3933",
+      "3934",
+      "3935",
+      "3936",
+      "3937",
+      "3938",
+      "3939"
+    ],
     "names": {
       "en": "Vatican City",
       "zh": "梵蒂冈"
@@ -3776,8 +5114,12 @@
     "iso": "VC",
     "iso3": "VCT",
     "flag": "vc",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "1"
+    ],
+    "phonePrefixes": [
+      "1784"
+    ],
     "names": {
       "en": "St. Vincent \u0026 Grenadines",
       "zh": "圣文森特和格林纳丁斯"
@@ -3792,8 +5134,12 @@
     "iso": "VE",
     "iso3": "VEN",
     "flag": "ve",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "58"
+    ],
+    "phonePrefixes": [
+      "58"
+    ],
     "names": {
       "en": "Venezuela",
       "zh": "委内瑞拉"
@@ -3808,8 +5154,12 @@
     "iso": "VG",
     "iso3": "VGB",
     "flag": "vg",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "1"
+    ],
+    "phonePrefixes": [
+      "1284"
+    ],
     "names": {
       "en": "British Virgin Islands",
       "zh": "英属维尔京群岛"
@@ -3824,8 +5174,12 @@
     "iso": "VI",
     "iso3": "VIR",
     "flag": "vi",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "1"
+    ],
+    "phonePrefixes": [
+      "1340"
+    ],
     "names": {
       "en": "U.S. Virgin Islands",
       "zh": "美属维尔京群岛"
@@ -3840,8 +5194,12 @@
     "iso": "VN",
     "iso3": "VNM",
     "flag": "vn",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "84"
+    ],
+    "phonePrefixes": [
+      "84"
+    ],
     "names": {
       "en": "Vietnam",
       "zh": "越南"
@@ -3856,8 +5214,12 @@
     "iso": "VU",
     "iso3": "VUT",
     "flag": "vu",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "678"
+    ],
+    "phonePrefixes": [
+      "678"
+    ],
     "names": {
       "en": "Vanuatu",
       "zh": "瓦努阿图"
@@ -3872,8 +5234,12 @@
     "iso": "WF",
     "iso3": "WLF",
     "flag": "wf",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "681"
+    ],
+    "phonePrefixes": [
+      "681"
+    ],
     "names": {
       "en": "Wallis \u0026 Futuna",
       "zh": "瓦利斯和富图纳"
@@ -3888,8 +5254,12 @@
     "iso": "WS",
     "iso3": "WSM",
     "flag": "ws",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "685"
+    ],
+    "phonePrefixes": [
+      "685"
+    ],
     "names": {
       "en": "Samoa",
       "zh": "萨摩亚"
@@ -3904,8 +5274,12 @@
     "iso": "YE",
     "iso3": "YEM",
     "flag": "ye",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "967"
+    ],
+    "phonePrefixes": [
+      "967"
+    ],
     "names": {
       "en": "Yemen",
       "zh": "也门"
@@ -3920,8 +5294,61 @@
     "iso": "YT",
     "iso3": "MYT",
     "flag": "yt",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "262"
+    ],
+    "phonePrefixes": [
+      "2622689",
+      "26226900",
+      "26226901",
+      "26226902",
+      "26226903",
+      "26226904",
+      "26226906",
+      "26226907",
+      "26226915",
+      "26226950",
+      "26226951",
+      "26226952",
+      "26226953",
+      "26226954",
+      "2622696",
+      "26226970",
+      "26226980",
+      "26263900",
+      "26263901",
+      "26263902",
+      "26263903",
+      "26263904",
+      "26263905",
+      "26263906",
+      "26263907",
+      "26263909",
+      "26263910",
+      "26263911",
+      "26263919",
+      "2626392",
+      "26263930",
+      "26263939",
+      "26263940",
+      "26263950",
+      "26263955",
+      "26263956",
+      "26263957",
+      "26263958",
+      "26263959",
+      "2626396",
+      "2626397",
+      "26263990",
+      "26263994",
+      "26263995",
+      "26263996",
+      "26263997",
+      "26263999",
+      "26270935",
+      "26270936",
+      "26270937"
+    ],
     "names": {
       "en": "Mayotte",
       "zh": "马约特"
@@ -3936,8 +5363,12 @@
     "iso": "ZA",
     "iso3": "ZAF",
     "flag": "za",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "27"
+    ],
+    "phonePrefixes": [
+      "27"
+    ],
     "names": {
       "en": "South Africa",
       "zh": "南非"
@@ -3952,8 +5383,12 @@
     "iso": "ZM",
     "iso3": "ZMB",
     "flag": "zm",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "260"
+    ],
+    "phonePrefixes": [
+      "260"
+    ],
     "names": {
       "en": "Zambia",
       "zh": "赞比亚"
@@ -3968,8 +5403,12 @@
     "iso": "ZW",
     "iso3": "ZWE",
     "flag": "zw",
-    "callingCodes": [],
-    "phonePrefixes": [],
+    "callingCodes": [
+      "263"
+    ],
+    "phonePrefixes": [
+      "263"
+    ],
     "names": {
       "en": "Zimbabwe",
       "zh": "津巴布韦"

@@ -38,6 +38,10 @@ func generatePhones(root string, resource Resource) (PhoneGeneration, error) {
 	if !resource.Updated {
 		regions, _ = readCache[map[string][]PhoneNumber](root, "phone-number-metadata.json")
 	}
+	if regions != nil && phonePrefixCount(regions) == 0 {
+		fmt.Println("cached phone metadata has no prefixes; regenerating from libphonenumber metadata")
+		regions = nil
+	}
 	if regions == nil {
 		regions, err := parsePhones(resource.Files[resource.Spec.Path])
 		if err != nil {
@@ -47,6 +51,7 @@ func generatePhones(root string, resource Resource) (PhoneGeneration, error) {
 			return PhoneGeneration{}, err
 		}
 	}
+	fmt.Printf("generating phones: sourceUpdated=%t, regions=%d, prefixes=%d\n", resource.Updated, len(regions), phonePrefixCount(regions))
 	result := newPhoneGeneration(regions, false)
 	body, err := marshalGeneratedData(flattenPhones(regions))
 	if err != nil {
@@ -153,6 +158,16 @@ func isCoveredByFallback(prefix string, fallbacks []string) bool {
 	return false
 }
 
+func phonePrefixCount(regions map[string][]PhoneNumber) int {
+	count := 0
+	for _, numbers := range regions {
+		for _, number := range numbers {
+			count += len(number.Prefixes)
+		}
+	}
+	return count
+}
+
 func writeGeneratedPhones(root string, body []byte) (bool, error) {
 	phonesPath := filepath.Join(root, "generated", "phones.json")
 	current, err := os.ReadFile(phonesPath)
@@ -204,7 +219,9 @@ func parsePhones(body []byte) (map[string][]PhoneNumber, error) {
 		}
 		regions[region] = []PhoneNumber{{Calling: calling, Prefixes: uniqueInts(prefixes)}}
 	}
-	return removeFallbackCoveredPrefixes(regions), nil
+	result := removeFallbackCoveredPrefixes(regions)
+	fmt.Printf("parsed libphonenumber metadata: territories=%d, prefixes=%d\n", len(metadata.Territories), phonePrefixCount(result))
+	return result, nil
 }
 func fallbackRegion(calling int, regionsByCalling map[int][]string, mainByCalling map[int]string) string {
 	if region := mainByCalling[calling]; region != "" {
