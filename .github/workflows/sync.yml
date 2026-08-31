@@ -20,6 +20,8 @@ jobs:
           if git diff --quiet -- sources/ generated/; then
             exit 0
           fi
+          git config user.email "sunlisten.gzm@foxmail.com"
+          git config user.name "lingting ci"
           git add sources/ generated/
           git commit -m "chore(data): sync upstream data"
           git push
