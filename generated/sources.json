@@ -26,8 +26,8 @@
   "cldrSupplementalData": {
     "path": "cldr/supplementalData.xml",
     "url": "https://raw.githubusercontent.com/unicode-org/cldr/main/common/supplemental/supplementalData.xml",
-    "etag": "W/\"20b6502cd4daf340d501874c028a1ec8d5f05d6d4e71d9a5cceaf0a6d8530026\"",
-    "sha256": "ee0f73dedd854969e429ca8338126bfda01a468b5900ec262f182ecbc78722e8",
+    "etag": "W/\"dcdc19ec2163ea877a00a2fe015a2f3c44e7ba5ab4e0ae12a828b0baa58cdf59\"",
+    "sha256": "5e227881e3f259f035c67e90b18d1abbd243ec8edf5b0a98aa10e78d2c2f27a7",
     "provenance": "Unicode CLDR (Unicode License v3)",
     "updated": false
   },
