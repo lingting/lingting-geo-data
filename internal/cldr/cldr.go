@@ -25,10 +25,10 @@ type TerritoryNames struct {
 }
 
 type TerritoryGroup struct {
-	Type     string `json:"type"`
-	Contains string `json:"contains"`
-	Status   string `json:"status,omitempty"`
-	Grouping bool   `json:"grouping,omitempty"`
+	Type     string `json:"type" xml:"type,attr"`
+	Contains string `json:"contains" xml:"contains,attr"`
+	Status   string `json:"status,omitempty" xml:"status,attr"`
+	Grouping bool   `json:"grouping,omitempty" xml:"grouping,attr"`
 }
 
 type SupplementalData struct {
