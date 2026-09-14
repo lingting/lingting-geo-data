@@ -26,16 +26,16 @@
   "cldrSupplementalData": {
     "path": "cldr/supplementalData.xml",
     "url": "https://raw.githubusercontent.com/unicode-org/cldr/main/common/supplemental/supplementalData.xml",
-    "etag": "W/\"dcdc19ec2163ea877a00a2fe015a2f3c44e7ba5ab4e0ae12a828b0baa58cdf59\"",
-    "sha256": "5e227881e3f259f035c67e90b18d1abbd243ec8edf5b0a98aa10e78d2c2f27a7",
+    "etag": "W/\"20b6502cd4daf340d501874c028a1ec8d5f05d6d4e71d9a5cceaf0a6d8530026\"",
+    "sha256": "ee0f73dedd854969e429ca8338126bfda01a468b5900ec262f182ecbc78722e8",
     "provenance": "Unicode CLDR (Unicode License v3)",
     "updated": false
   },
   "phoneNumberMetadata": {
     "path": "libphonenumber/PhoneNumberMetadata.xml",
     "url": "https://raw.githubusercontent.com/google/libphonenumber/master/resources/PhoneNumberMetadata.xml",
-    "etag": "W/\"52b27639c74d7f2164cc1fa1aa35b7f3fa5566b797c3693d78192207e3a74d63\"",
-    "sha256": "2c5dc20d833c76b5fbc0fbad77a56a9e297229b2a0539bc99ceb3232fe84ca57",
+    "etag": "W/\"5367b18c7dcc632236f6d0ac586543f065b6edebea578a994dfcdda462f0d790\"",
+    "sha256": "b5a5fb580b27b4986789bece02cb6d819939ecc155d61435301dfe3581a5440a",
     "provenance": "Google libphonenumber (Apache-2.0)",
     "updated": false
   },
