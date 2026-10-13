@@ -2485,6 +2485,11 @@
     "region": "VG"
   },
   {
+    "prefix": 1273,
+    "calling": 1,
+    "region": "CA"
+  },
+  {
     "prefix": 1268,
     "calling": 1,
     "region": "AG"
