@@ -50,13 +50,22 @@ func validatePhonePrefixes(regions []Region, phones []PhonePrefix) error {
 		if !exists {
 			continue
 		}
-		if _, exists := prefixes[prefix]; !exists {
+		if _, ok := prefixes[prefix]; !ok {
+			fmt.Printf(
+				"validate phones: prefix mismatch, phone={prefix:%d calling:%d region:%s}, regionPrefixes=%d, regionHasPrefix=%t\n",
+				phone.Prefix,
+				phone.Calling,
+				phone.Region,
+				len(prefixes),
+				exists,
+			)
 			return fmt.Errorf("validate generated data: phone prefix %d missing from %s", phone.Prefix, phone.Region)
 		}
 	}
 	for region, prefixes := range prefixesByRegion {
 		for prefix := range prefixes {
 			if hasCompletePhonePrefixChildren(prefix, prefixes) {
+				fmt.Printf("validate phones: prefix %s for %s is not shortest, regionPrefixes=%d\n", prefix, region, len(prefixes))
 				return fmt.Errorf("validate generated data: phone prefix %s for %s is not shortest", prefix, region)
 			}
 		}

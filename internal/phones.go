@@ -35,12 +35,17 @@ func GeneratePhones(root string, states *States) (PhoneGeneration, error) {
 
 func generatePhones(root string, resource Resource) (PhoneGeneration, error) {
 	var regions map[string][]PhoneNumber
+	source := "libphonenumber"
 	if !resource.Updated {
-		regions, _ = readCache[map[string][]PhoneNumber](root, "phone-number-metadata.json")
+		if cached, ok := readCache[map[string][]PhoneNumber](root, "phone-number-metadata.json"); ok {
+			regions = cached
+			source = "cache"
+		}
 	}
 	if regions != nil && phonePrefixCount(regions) == 0 {
 		fmt.Println("cached phone metadata has no prefixes; regenerating from libphonenumber metadata")
 		regions = nil
+		source = "libphonenumber"
 	}
 	if regions == nil {
 		var err error
@@ -52,12 +57,19 @@ func generatePhones(root string, resource Resource) (PhoneGeneration, error) {
 			return PhoneGeneration{}, err
 		}
 	}
-	fmt.Printf("generating phones: sourceUpdated=%t, regions=%d, prefixes=%d\n", resource.Updated, len(regions), phonePrefixCount(regions))
-	result := newPhoneGeneration(regions, false)
-	if _, err := marshalGeneratedData(flattenPhones(regions)); err != nil {
+	_, updated, err := generatedJSONBody(root, "phones.json", flattenPhones(regions))
+	if err != nil {
 		return PhoneGeneration{}, err
 	}
-	return result, nil
+	fmt.Printf(
+		"generating phones: source=%s, sourceUpdated=%t, regions=%d, prefixes=%d, generatedUpdated=%t\n",
+		source,
+		resource.Updated,
+		len(regions),
+		phonePrefixCount(regions),
+		updated,
+	)
+	return newPhoneGeneration(regions, updated), nil
 }
 
 func newPhoneGeneration(regions map[string][]PhoneNumber, updated bool) PhoneGeneration {

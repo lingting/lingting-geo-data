@@ -50,21 +50,30 @@ func readJSON[T any](path string) (T, error) {
 	return value, nil
 }
 
-func writeGeneratedJSON(root, name string, value any) (bool, error) {
+// generatedJSONBody 序列化 value 为生成文件内容，并报告它与磁盘上既有生成文件是否不同。
+// 生成步骤在校验通过前不落盘，通过该结果判断自身输出是否发生变化。
+func generatedJSONBody(root, name string, value any) ([]byte, bool, error) {
 	body, err := marshalJSON(value)
 	if err != nil {
-		return false, err
+		return nil, false, err
 	}
 	body = append(body, '\n')
-	path := filepath.Join(root, "generated", name)
-	current, err := os.ReadFile(path)
+	current, err := os.ReadFile(filepath.Join(root, "generated", name))
 	if err == nil && bytes.Equal(current, body) {
-		return false, nil
+		return body, false, nil
 	}
 	if err != nil && !os.IsNotExist(err) {
-		return false, fmt.Errorf("read generated %s: %w", name, err)
+		return nil, false, fmt.Errorf("read generated %s: %w", name, err)
 	}
-	return true, writePath(path, body)
+	return body, true, nil
+}
+
+func writeGeneratedJSON(root, name string, value any) (bool, error) {
+	body, changed, err := generatedJSONBody(root, name, value)
+	if err != nil || !changed {
+		return false, err
+	}
+	return true, writePath(filepath.Join(root, "generated", name), body)
 }
 
 func writePath(path string, body []byte) error {
@@ -94,11 +103,6 @@ func sortedUnique(values []string) []string {
 
 func marshalJSON(value any) ([]byte, error) {
 	return json.MarshalIndent(normalizeNilSlices(value), "", "  ")
-}
-
-// 兼容逐步迁移中的生成器调用。
-func marshalGeneratedData(value any) ([]byte, error) {
-	return marshalJSON(value)
 }
 
 func writeFile(root, relative string, body []byte) error {

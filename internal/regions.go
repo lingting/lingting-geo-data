@@ -1,6 +1,7 @@
 package internal
 
 import (
+	"fmt"
 	"path/filepath"
 	"sort"
 	"strings"
@@ -30,9 +31,23 @@ func GenerateRegions(root string, states *States) (RegionGeneration, error) {
 		if err != nil {
 			return RegionGeneration{}, err
 		}
+		fmt.Printf(
+			"regions: reuse generated file, cldrUpdated=%t, m49Updated=%t, phonesUpdated=%t, regions=%d\n",
+			data.Updated,
+			m49.Updated,
+			phones.Updated,
+			len(result.Regions),
+		)
 		states.SetRegions(result)
 		return result, nil
 	}
+	fmt.Printf(
+		"regions: regenerate, cldrUpdated=%t, m49Updated=%t, phonesUpdated=%t, targetExists=%t\n",
+		data.Updated,
+		m49.Updated,
+		phones.Updated,
+		targetExists(filepath.Join(root, "generated", "regions.json")),
+	)
 	regions, err := parseRegions(data, m49.Indexes, phones.CallingCodes, phones.PhonePrefixes)
 	if err != nil {
 		return RegionGeneration{}, err
@@ -40,7 +55,12 @@ func GenerateRegions(root string, states *States) (RegionGeneration, error) {
 	if err := validateRegions(regions); err != nil {
 		return RegionGeneration{}, err
 	}
-	result := RegionGeneration{Regions: regions}
+	_, updated, err := generatedJSONBody(root, "regions.json", regions)
+	if err != nil {
+		return RegionGeneration{}, err
+	}
+	fmt.Printf("regions: parsed=%d, generatedUpdated=%t\n", len(regions), updated)
+	result := RegionGeneration{Regions: regions, Updated: updated}
 	states.SetRegions(result)
 	return result, nil
 }

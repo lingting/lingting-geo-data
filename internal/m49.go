@@ -23,14 +23,21 @@ func GenerateM49(root string, states *States) (M49Generation, error) {
 		if err != nil {
 			return M49Generation{}, err
 		}
+		fmt.Printf("m49: reuse generated file, cldrUpdated=false, regions=%d\n", len(result.Indexes))
 		states.SetM49(result)
 		return result, nil
 	}
+	fmt.Printf("m49: regenerate, cldrUpdated=%t\n", data.Updated)
 	parsed, err := parseM49(data)
 	if err != nil {
 		return M49Generation{}, err
 	}
-	result := M49Generation{Root: parsed.Root, Indexes: parsed.Indexes}
+	_, updated, err := generatedJSONBody(root, "m49.json", parsed.Root)
+	if err != nil {
+		return M49Generation{}, err
+	}
+	fmt.Printf("m49: parsed=%d, generatedUpdated=%t\n", len(parsed.Indexes), updated)
+	result := M49Generation{Root: parsed.Root, Indexes: parsed.Indexes, Updated: updated}
 	states.SetM49(result)
 	return result, nil
 }

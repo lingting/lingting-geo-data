@@ -21,6 +21,11 @@ func Sync(ctx context.Context, root string) (bool, error) {
 		return false, err
 	}
 	states := newStates(resources)
+	fmt.Printf(
+		"sync: sources updated=%t, resources=%d\n",
+		resourcesUpdated(resources),
+		len(resourceList(resources)),
+	)
 	m49, err := GenerateM49(root, states)
 	if err != nil {
 		return false, err
@@ -34,6 +39,16 @@ func Sync(ctx context.Context, root string) (bool, error) {
 		return false, err
 	}
 	if err := validateGeneratedData(root, m49, regions, phones); err != nil {
+		fmt.Printf(
+			"sync: validate failed, m49Regions=%d, m49Updated=%t, regions=%d, regionsUpdated=%t, phoneRegions=%d, phonePrefixes=%d, phonesUpdated=%t\n",
+			len(m49.Indexes),
+			m49.Updated,
+			len(regions.Regions),
+			regions.Updated,
+			len(phones.Regions),
+			phonePrefixCount(phones.Regions),
+			phones.Updated,
+		)
 		return false, err
 	}
 	m49Updated, err := writeGeneratedJSON(root, "m49.json", m49.Root)
