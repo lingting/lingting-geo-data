@@ -42,8 +42,8 @@
   "flagIcons": {
     "path": "flag-icons",
     "url": "https://api.github.com/repos/lipis/flag-icons/releases/latest",
-    "etag": "W/\"007a3596f8356a79a223df2f3fff87d98ba895f11606046aadb7e8d27a7f416c\"",
-    "sha256": "ecd90f3c499eb0d588dfef14a435fe420d2a32992dfeb81112a05227fdc43c42",
+    "etag": "W/\"0c8b8705acd4a18da74a803a0da03125df72442e8e4de43e16039601aa3d07b9\"",
+    "sha256": "8c32406bb5cee9d57be9472c6f7be2a534edc7fd09d9642324896b926b1d730f",
     "provenance": "flag-icons (MIT)",
     "updated": false
   }
