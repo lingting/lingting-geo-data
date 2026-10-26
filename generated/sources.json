@@ -34,8 +34,8 @@
   "phoneNumberMetadata": {
     "path": "libphonenumber/PhoneNumberMetadata.xml",
     "url": "https://raw.githubusercontent.com/google/libphonenumber/master/resources/PhoneNumberMetadata.xml",
-    "etag": "W/\"7ffbd10d65442c3aac549632e892d7f97cc827ae72657f3c4bf22325cd9adda7\"",
-    "sha256": "93c0a544452761f96d7c8ea2d44a5ca6112a2be812da7e023022f6eb2962de93",
+    "etag": "W/\"7514e81fc6dd95dba39daeaf8bc07f24236734cbe7b43ea1aa34e6f0c63864c5\"",
+    "sha256": "645da928fb0c2174fe5072089a179ebc8c9a979de57e31f7bd1a5dc6cba1ab65",
     "provenance": "Google libphonenumber (Apache-2.0)",
     "updated": false
   },
