@@ -2,16 +2,16 @@
   "cldrCodeMappings": {
     "path": "cldr/codeMappings.json",
     "url": "https://raw.githubusercontent.com/unicode-org/cldr-json/main/cldr-json/cldr-core/supplemental/codeMappings.json",
-    "etag": "W/\"0e9ad644deb6ca65b1933caebb91b25b4b3e7474468214bbe5bfbd94b1c4479d\"",
-    "sha256": "14c7f056f7ef391de421d95743613e5bd3b3fe14a300681be56b7bdc07e8b1c9",
+    "etag": "W/\"c2f3881a5427b70e32e16b9307f284c5924a20b741d2ebf42a626ead1370fbd8\"",
+    "sha256": "1496f67822b644151a7a2789b0f0e202d2b1c68e5108f82fb59962aed5cecf03",
     "provenance": "Unicode CLDR (Unicode License v3)",
     "updated": false
   },
   "cldrEnTerritories": {
     "path": "cldr/en-territories.json",
     "url": "https://raw.githubusercontent.com/unicode-org/cldr-json/main/cldr-json/cldr-localenames-full/main/en/territories.json",
-    "etag": "W/\"5868f9041cb37e75ae3d7cac9d64f1e8a5bd1fd93b4d4c19c5ff1381b7f7c746\"",
-    "sha256": "9366b0dd98e81bd4610b945521b82f3e450a2bc4a072f3a47bbd9780e281b473",
+    "etag": "W/\"493f1353cf3b97ba79cc7d0fd14912b4940896c2424a5322bb7e5217d8d6b295\"",
+    "sha256": "73166ae190d73566ce080e5234af73ab93d340b985442d3db397018afe36d0d5",
     "provenance": "Unicode CLDR (Unicode License v3)",
     "updated": false
   },
