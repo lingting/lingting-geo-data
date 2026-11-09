@@ -975,11 +975,6 @@
     "region": "VA"
   },
   {
-    "prefix": 3584946,
-    "calling": 358,
-    "region": "AX"
-  },
-  {
     "prefix": 2626397,
     "calling": 262,
     "region": "YT"
@@ -1013,6 +1008,56 @@
     "prefix": 2125288,
     "calling": 212,
     "region": "EH"
+  },
+  {
+    "prefix": 614964,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 614964,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 614963,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 614963,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 614962,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 614962,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 614961,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 614961,
+    "calling": 61,
+    "region": "CX"
+  },
+  {
+    "prefix": 614960,
+    "calling": 61,
+    "region": "CC"
+  },
+  {
+    "prefix": 614960,
+    "calling": 61,
+    "region": "CX"
   },
   {
     "prefix": 614953,
@@ -2483,6 +2528,11 @@
     "prefix": 1284,
     "calling": 1,
     "region": "VG"
+  },
+  {
+    "prefix": 1273,
+    "calling": 1,
+    "region": "CA"
   },
   {
     "prefix": 1268,
